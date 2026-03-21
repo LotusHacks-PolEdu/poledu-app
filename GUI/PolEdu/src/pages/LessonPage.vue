@@ -160,6 +160,23 @@ function trueFalseAnswer(questionId: string): boolean | undefined {
   return undefined
 }
 
+const isNarrating = ref(false)
+
+function toggleNarration(): void {
+  if (isNarrating.value) {
+    window.speechSynthesis.cancel()
+    isNarrating.value = false
+    return
+  }
+  const script = lesson.value?.narration_script
+  if (!script) return
+  const utterance = new SpeechSynthesisUtterance(script)
+  utterance.onend = () => { isNarrating.value = false }
+  utterance.onerror = () => { isNarrating.value = false }
+  window.speechSynthesis.speak(utterance)
+  isNarrating.value = true
+}
+
 watch(
   lessonCode,
   async (code) => {
@@ -174,6 +191,7 @@ watch(
 
 onBeforeUnmount(() => {
   stopPolling()
+  window.speechSynthesis.cancel()
 })
 </script>
 
@@ -298,10 +316,17 @@ onBeforeUnmount(() => {
         </div>
       </section>
 
-      <details v-if="lesson.narration_script" class="lesson-page__details">
-        <summary>Listening mode narration script</summary>
-        <pre>{{ lesson.narration_script }}</pre>
-      </details>
+      <section v-if="lesson.narration_script" class="lesson-narration">
+        <p class="lesson-page__eyebrow">Audio narration</p>
+        <h2>Listen to the lesson</h2>
+        <p class="lesson-narration__hint">This lesson was designed for listening. Press play to hear it read aloud.</p>
+        <div class="lesson-narration__controls">
+          <button type="button" class="lesson-narration__play-btn" @click="toggleNarration">
+            {{ isNarrating ? '⏹ Stop' : '▶ Play narration' }}
+          </button>
+          <span v-if="isNarrating" class="lesson-narration__status">Speaking...</span>
+        </div>
+      </section>
 
       <details class="lesson-page__details">
         <summary>Answer key</summary>
@@ -342,10 +367,9 @@ onBeforeUnmount(() => {
 .lesson-page {
   min-height: 100dvh;
   padding: clamp(1rem, 2vw, 2rem);
-  background:
-    radial-gradient(circle at top right, rgba(20, 184, 166, 0.12), transparent 22rem),
-    linear-gradient(180deg, #020617 0%, #0f172a 55%, #111827 100%);
-  color: #f8fafc;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
 }
 
 .lesson-page__header,
@@ -366,13 +390,13 @@ onBeforeUnmount(() => {
 }
 
 .lesson-page__back {
-  color: #99f6e4;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
 .lesson-page__eyebrow {
   margin: 0.45rem 0 0.3rem;
-  color: #67e8f9;
+  color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8rem;
@@ -385,7 +409,7 @@ onBeforeUnmount(() => {
 
 .lesson-page__introline {
   margin: 0.4rem 0 0;
-  color: #cbd5e1;
+  color: var(--color-text-muted);
 }
 
 .lesson-page__meta {
@@ -398,14 +422,14 @@ onBeforeUnmount(() => {
   min-width: 9rem;
   padding: 1rem;
   border-radius: 1.2rem;
-  background: rgba(15, 23, 42, 0.58);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .lesson-page__meta-card span {
   display: block;
   margin-bottom: 0.35rem;
-  color: #cbd5e1;
+  color: var(--color-text-muted);
   font-size: 0.82rem;
 }
 
@@ -418,13 +442,13 @@ onBeforeUnmount(() => {
 }
 
 .lesson-page__info {
-  background: rgba(37, 99, 235, 0.16);
-  color: #dbeafe;
+  background: var(--color-primary-dim);
+  color: var(--color-primary);
 }
 
 .lesson-page__error {
-  background: rgba(220, 38, 38, 0.18);
-  color: #fecaca;
+  background: rgba(255, 80, 80, 0.15);
+  color: #ff6b6b;
 }
 
 .lesson-page__logs {
@@ -437,12 +461,12 @@ onBeforeUnmount(() => {
   gap: 0.25rem;
   padding: 0.85rem 1rem;
   border-radius: 1rem;
-  background: rgba(15, 23, 42, 0.44);
-  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .lesson-page__log strong {
-  color: #99f6e4;
+  color: var(--color-primary);
   text-transform: uppercase;
   font-size: 0.78rem;
   letter-spacing: 0.08em;
@@ -458,8 +482,8 @@ onBeforeUnmount(() => {
 .lesson-hero__profile {
   padding: 1.25rem;
   border-radius: 1.45rem;
-  background: rgba(15, 23, 42, 0.52);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .lesson-hero__copy h2,
@@ -473,7 +497,7 @@ onBeforeUnmount(() => {
 .lesson-sources__item p {
   margin: 0;
   line-height: 1.7;
-  color: #dbeafe;
+  color: var(--color-text-muted);
 }
 
 .lesson-hero__profile {
@@ -484,8 +508,8 @@ onBeforeUnmount(() => {
 .lesson-mini-test {
   padding: 1.25rem;
   border-radius: 1.5rem;
-  background: rgba(15, 23, 42, 0.52);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .lesson-mini-test__header {
@@ -499,8 +523,8 @@ onBeforeUnmount(() => {
 .lesson-mini-test__header span {
   padding: 0.45rem 0.7rem;
   border-radius: 999px;
-  background: rgba(20, 184, 166, 0.18);
-  color: #99f6e4;
+  background: var(--color-primary-dim);
+  color: var(--color-primary);
 }
 
 .lesson-mini-test__list {
@@ -511,8 +535,8 @@ onBeforeUnmount(() => {
 .lesson-mini-test__item {
   padding: 1rem;
   border-radius: 1.1rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
 }
 
 .lesson-mini-test__title {
@@ -522,7 +546,7 @@ onBeforeUnmount(() => {
 }
 
 .lesson-mini-test__title span {
-  color: #99f6e4;
+  color: var(--color-primary);
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -535,20 +559,70 @@ onBeforeUnmount(() => {
 
 .lesson-mini-test__explanation {
   margin: 0.85rem 0 0;
-  color: #cbd5e1;
+  color: var(--color-text-muted);
   line-height: 1.6;
+}
+
+.lesson-narration {
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+  padding: 1.25rem;
+  border-radius: 1.45rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.lesson-narration h2 {
+  margin: 0;
+}
+
+.lesson-narration__hint {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.lesson-narration__controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lesson-narration__play-btn {
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 0.95rem;
+  background: var(--color-primary);
+  color: #1A1A1A;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.lesson-narration__status {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
 }
 
 .lesson-page__details {
   padding: 1rem 1.1rem;
   border-radius: 1.2rem;
-  background: rgba(15, 23, 42, 0.52);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .lesson-page__details summary {
   cursor: pointer;
-  color: #99f6e4;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -556,7 +630,7 @@ onBeforeUnmount(() => {
   margin: 1rem 0 0;
   white-space: pre-wrap;
   line-height: 1.7;
-  color: #dbeafe;
+  color: var(--color-text-muted);
 }
 
 .lesson-page__answer-key {
@@ -568,17 +642,17 @@ onBeforeUnmount(() => {
 .lesson-page__answer-item {
   padding: 0.95rem;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--color-surface-2);
 }
 
 .lesson-page__answer-item p {
   margin: 0.45rem 0 0;
   line-height: 1.6;
-  color: #dbeafe;
+  color: var(--color-text-muted);
 }
 
 .lesson-page__answer-summary {
-  color: #99f6e4;
+  color: var(--color-primary);
 }
 
 .lesson-sources {
@@ -589,17 +663,17 @@ onBeforeUnmount(() => {
 .lesson-sources__item {
   padding: 1rem 1.05rem;
   border-radius: 1rem;
-  background: rgba(15, 23, 42, 0.52);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .lesson-sources__query {
-  color: #99f6e4;
+  color: var(--color-primary);
   font-size: 0.85rem;
 }
 
 .lesson-sources__item a {
-  color: #67e8f9;
+  color: var(--color-primary);
 }
 
 @media (max-width: 900px) {

@@ -1,0 +1,38 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+.env.*
+credentials.json
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+dist/
+*.ipynb_checkpoints/
+tempCodeRunnerFile.py
+
+# ── Generated runtime data ────────────────────────────────────────────────────
+material_collection/learners/*/
+material_collection/lessons/*/
+material_collection/ielts_tests/*/
+material_collection/outputs/
+material_collection/database/
+material_collection/ielts_test_*.json
+material_collection/ielts_test_*.raw.txt
+
+# ── Node / frontend ───────────────────────────────────────────────────────────
+node_modules/
+GUI/PolEdu/dist/
+GUI/PolEdu/.env
+GUI/PolEdu/.env.*
+
+# ── OS / editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

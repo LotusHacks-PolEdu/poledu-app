@@ -2,11 +2,8 @@
 import { ref } from 'vue'
 
 export interface MultipleChoiceProps {
-  /** The question text */
   question: string
-  /** Array of option strings */
   options: string[]
-  /** Index of the correct answer (0-based), optional — used for grading */
   correctIndex?: number
 }
 
@@ -14,16 +11,12 @@ const props = defineProps<MultipleChoiceProps>()
 const selected = ref<number | null>(null)
 const submitted = ref(false)
 
-function submit() {
-  submitted.value = true
-}
-
 const emit = defineEmits<{
   (e: 'answer', payload: { selected: number; correct: boolean }): void
 }>()
 
 function handleSubmit() {
-  submit()
+  submitted.value = true
   if (selected.value !== null) {
     emit('answer', {
       selected: selected.value,
@@ -35,13 +28,15 @@ function handleSubmit() {
 
 <template>
   <div class="mc-block">
-    <p class="mc-question"><strong>{{ question }}</strong></p>
-
-    <div v-for="(opt, i) in options" :key="i" class="mc-option">
+    <div class="mc-options">
       <label
+        v-for="(opt, i) in options"
+        :key="i"
+        class="mc-option"
         :class="{
-          'correct': submitted && correctIndex !== undefined && i === correctIndex,
-          'wrong': submitted && selected === i && correctIndex !== undefined && i !== correctIndex,
+          'mc-option--correct': submitted && correctIndex !== undefined && i === correctIndex,
+          'mc-option--wrong': submitted && selected === i && correctIndex !== undefined && i !== correctIndex,
+          'mc-option--selected': selected === i,
         }"
       >
         <input
@@ -51,36 +46,98 @@ function handleSubmit() {
           v-model="selected"
           :disabled="submitted"
         />
-        {{ opt }}
+        <span>{{ opt }}</span>
       </label>
     </div>
 
-    <button @click="handleSubmit" :disabled="selected === null || submitted">Submit</button>
-
-    <p v-if="submitted && correctIndex !== undefined" class="mc-feedback">
-      {{ selected === correctIndex ? '✅ Correct!' : '❌ Incorrect. The correct answer is: ' + options[correctIndex] }}
-    </p>
+    <div class="mc-row">
+      <button
+        type="button"
+        class="mc-button"
+        :disabled="selected === null || submitted"
+        @click="handleSubmit"
+      >
+        Submit
+      </button>
+      <p v-if="submitted && correctIndex !== undefined" class="mc-feedback" :class="{ correct: selected === correctIndex }">
+        {{ selected === correctIndex ? 'Correct!' : 'Incorrect. The correct answer is: ' + options[correctIndex] }}
+      </p>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .mc-block {
-  border: 1px solid #ccc;
-  padding: 12px;
-  margin-bottom: 16px;
+  display: grid;
+  gap: 0.65rem;
 }
+
+.mc-options {
+  display: grid;
+  gap: 0.4rem;
+}
+
 .mc-option {
-  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  cursor: pointer;
+  font-size: 0.93rem;
+  color: var(--color-text);
+  transition: border-color 0.1s;
 }
-.correct {
-  color: green;
-  font-weight: bold;
+
+.mc-option--selected {
+  border-color: var(--color-primary);
 }
-.wrong {
-  color: red;
+
+.mc-option--correct {
+  border-color: var(--color-green);
+  color: var(--color-green);
+  font-weight: 700;
+}
+
+.mc-option--wrong {
+  border-color: #c0392b;
+  color: #c0392b;
   text-decoration: line-through;
 }
+
+.mc-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.mc-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-primary);
+  color: #1A1A1A;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mc-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .mc-feedback {
-  margin-top: 8px;
+  margin: 0;
+  font-size: 0.88rem;
+  color: #c0392b;
+}
+
+.mc-feedback.correct {
+  color: var(--color-green);
 }
 </style>

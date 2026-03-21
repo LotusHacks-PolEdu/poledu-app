@@ -44,6 +44,8 @@ function parseMathExpr(expr: string): ((x: number) => number) | null {
       .replace(/log/g, 'Math.log')
       .replace(/pi/gi, 'Math.PI')
       .replace(/e(?![a-zA-Z])/g, 'Math.E')
+      // Replace any remaining uppercase single-letter params (e.g. A, B, C) with 1
+      .replace(/\b([A-Z])\b/g, '1')
 
     const fn = new Function('x', `"use strict"; return (${prepared});`) as (x: number) => number
     fn(1)
@@ -431,6 +433,7 @@ onBeforeUnmount(() => {
 .graph-playground__header h3 {
   margin: 0;
   font-size: 1.35rem;
+  color: #f8fafc;
 }
 
 .graph-playground__close,

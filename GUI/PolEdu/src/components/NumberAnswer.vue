@@ -52,75 +52,89 @@ const feedbackText = computed(() => {
   }
 
   return isCorrect.value
-    ? 'Correct.'
-    : `Incorrect. Accepted answers: ${props.acceptedAnswers.join(', ')}`
+    ? 'Correct!'
+    : `Incorrect. Accepted: ${props.acceptedAnswers.join(', ')}`
 })
 </script>
 
 <template>
   <div class="number-answer">
-    <p class="number-answer__question"><strong>{{ question }}</strong></p>
     <input
       v-model="answer"
       type="text"
       class="number-answer__input"
-      :placeholder="placeholder || 'Enter a numeric answer'"
+      :placeholder="placeholder || 'Enter your answer'"
       :disabled="submitted"
     />
-    <button
-      type="button"
-      class="number-answer__button"
-      :disabled="answer.trim() === '' || submitted"
-      @click="handleSubmit"
-    >
-      Submit
-    </button>
-    <p v-if="feedbackText" class="number-answer__feedback">{{ feedbackText }}</p>
+    <div class="number-answer__row">
+      <button
+        type="button"
+        class="number-answer__button"
+        :disabled="answer.trim() === '' || submitted"
+        @click="handleSubmit"
+      >
+        Submit
+      </button>
+      <p v-if="feedbackText" class="number-answer__feedback" :class="{ correct: isCorrect }">
+        {{ feedbackText }}
+      </p>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .number-answer {
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  border-radius: 1rem;
-  padding: 1rem;
-  background: rgba(15, 23, 42, 0.45);
-}
-
-.number-answer__question {
-  margin: 0 0 0.85rem;
+  display: grid;
+  gap: 0.65rem;
 }
 
 .number-answer__input {
   width: 100%;
-  max-width: 20rem;
-  padding: 0.75rem 0.9rem;
-  border-radius: 0.85rem;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  background: rgba(15, 23, 42, 0.85);
-  color: #f8fafc;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.number-answer__input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 0;
+}
+
+.number-answer__row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .number-answer__button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.8rem;
-  padding: 0.7rem 1rem;
   border: none;
-  border-radius: 0.85rem;
-  background: #0f766e;
-  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-primary);
+  color: #1A1A1A;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
 .number-answer__button:disabled {
-  opacity: 0.55;
+  opacity: 0.45;
   cursor: not-allowed;
 }
 
 .number-answer__feedback {
-  margin: 0.8rem 0 0;
-  color: #dbeafe;
+  margin: 0;
+  font-size: 0.88rem;
+  color: #c0392b;
+}
+
+.number-answer__feedback.correct {
+  color: var(--color-green);
 }
 </style>

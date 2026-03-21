@@ -7,6 +7,7 @@ import OnboardingWizard from '../components/OnboardingWizard.vue'
 import {
   createLearnerProfile,
   fetchLearnerProfile,
+  fetchLessonPayload,
   fetchLessonStatus,
   fetchTestStatus,
   sendAssistantMessage,
@@ -16,7 +17,45 @@ import type {
   LearnerOnboardRequest,
   LearnerProfile,
   LessonStatusResponse,
+  MathLessonPayload,
 } from '../types/lessons'
+import InlineLessonCard from '../components/InlineLessonCard.vue'
+
+interface DemoPersona {
+  key: string
+  label: string
+  description: string
+  request: LearnerOnboardRequest
+}
+
+const DEMO_PERSONAS: DemoPersona[] = [
+  {
+    key: 'demo-alex',
+    label: 'Alex',
+    description: 'Learns by doing · Swimming & gaming',
+    request: {
+      name: 'Alex',
+      learning_by_doing: true,
+      learning_by_listening: false,
+      learning_by_reading: false,
+      hobbies: ['swimming', 'gaming'],
+      favorite_food: 'pizza',
+    },
+  },
+  {
+    key: 'demo-jamie',
+    label: 'Jamie',
+    description: 'Learns by listening · Soccer & music',
+    request: {
+      name: 'Jamie',
+      learning_by_doing: false,
+      learning_by_listening: true,
+      learning_by_reading: false,
+      hobbies: ['soccer', 'music'],
+      favorite_food: 'sushi',
+    },
+  },
+]
 
 type MessageRole = 'user' | 'assistant'
 type JobType = 'lesson' | 'ielts' | null
@@ -26,6 +65,7 @@ interface ChatMessage {
   role: MessageRole
   content: string
   timestamp: string
+  lessonPayload?: MathLessonPayload
 }
 
 const route = useRoute()
@@ -49,6 +89,8 @@ const latestTestCode = ref<string | null>(null)
 const latestTestStatus = ref<TestStatusResponse | null>(null)
 
 const messageViewport = ref<HTMLElement | null>(null)
+const demoPersonaBusy = ref<string | null>(null)
+const sidebarOpen = ref(false)
 
 let pollTimer: number | null = null
 const autoOpenJobKey = ref<string | null>(null)
@@ -103,12 +145,13 @@ function isTerminalState(state: string | undefined): boolean {
   return state === 'completed' || state === 'failed'
 }
 
-function addMessage(role: MessageRole, content: string): void {
+function addMessage(role: MessageRole, content: string, lessonPayload?: MathLessonPayload): void {
   messages.value.push({
     id: createId(role),
     role,
     content,
     timestamp: new Date().toISOString(),
+    lessonPayload,
   })
 }
 
@@ -128,6 +171,33 @@ function saveLearnerProfile(profile: LearnerProfile | null): void {
   }
 
   localStorage.setItem(LEARNER_STORAGE_KEY, JSON.stringify(profile))
+}
+
+async function switchToPersona(persona: DemoPersona): Promise<void> {
+  demoPersonaBusy.value = persona.key
+  const cacheKey = `poledu-demo-v2-${persona.key}`
+  const cached = localStorage.getItem(cacheKey)
+  if (cached) {
+    try {
+      const profile = JSON.parse(cached) as LearnerProfile
+      saveLearnerProfile(profile)
+      showOnboarding.value = false
+      demoPersonaBusy.value = null
+      return
+    } catch {
+      localStorage.removeItem(cacheKey)
+    }
+  }
+  try {
+    const response = await createLearnerProfile(persona.request)
+    localStorage.setItem(cacheKey, JSON.stringify(response.profile))
+    saveLearnerProfile(response.profile)
+    showOnboarding.value = false
+  } catch (err) {
+    addMessage('assistant', `Could not create profile for ${persona.label}: ${err instanceof Error ? err.message : 'Unknown error'}`)
+  } finally {
+    demoPersonaBusy.value = null
+  }
 }
 
 function loadStoredLearnerProfile(): LearnerProfile | null {
@@ -202,10 +272,19 @@ async function refreshLessonStatus(code: string): Promise<void> {
 
     announcedJobs.add(jobKey)
     if (status.state === 'completed') {
-      addMessage('assistant', `Your math lesson ${code.toUpperCase()} is ready. Opening it now.`)
-      if (autoOpenJobKey.value === jobKey) {
-        autoOpenJobKey.value = null
-        await router.push({ name: 'lesson-viewer', params: { lessonCode: code } })
+      if (autoOpenJobKey.value === jobKey) autoOpenJobKey.value = null
+      try {
+        const payload = await fetchLessonPayload(code)
+        addMessage(
+          'assistant',
+          `Here's your lesson on "${payload.topic}", ${payload.learner_profile.display_name}!`,
+          payload,
+        )
+      } catch {
+        addMessage(
+          'assistant',
+          `Lesson ${code.toUpperCase()} is ready! Tap "Open lesson page" in the menu to view it.`,
+        )
       }
     } else {
       addMessage('assistant', `The math lesson job ${code.toUpperCase()} failed. Check the latest log message.`)
@@ -384,14 +463,33 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="chat-page">
-    <aside class="chat-page__sidebar">
-      <div class="chat-page__brand">
+  <div class="chat-page" :class="{ 'sidebar-open': sidebarOpen }">
+
+    <!-- Mobile top bar -->
+    <header class="chat-page__topbar">
+      <div class="chat-page__topbar-brand">
         <img :src="logoUrl" alt="PolEdu logo" />
-        <div>
-          <strong>PolEdu</strong>
-          <span>Math-first tutor</span>
+        <strong>PolEdu</strong>
+      </div>
+      <button type="button" class="chat-page__hamburger" @click="sidebarOpen = !sidebarOpen" aria-label="Menu">
+        ☰
+      </button>
+    </header>
+
+    <!-- Backdrop (mobile) -->
+    <div v-if="sidebarOpen" class="chat-page__backdrop" @click="sidebarOpen = false" />
+
+    <!-- Sidebar -->
+    <aside class="chat-page__sidebar">
+      <div class="chat-page__sidebar-head">
+        <div class="chat-page__brand">
+          <img :src="logoUrl" alt="PolEdu logo" />
+          <div>
+            <strong>PolEdu</strong>
+            <span>Personalized tutor</span>
+          </div>
         </div>
+        <button type="button" class="chat-page__close-btn" @click="sidebarOpen = false" aria-label="Close menu">✕</button>
       </div>
 
       <div class="chat-page__mode-switch">
@@ -430,8 +528,8 @@ onBeforeUnmount(() => {
         <p>
           {{
             entryMode === 'ielts'
-              ? 'IELTS can run without onboarding. Switch back to Tutor when you want personalized math lessons.'
-              : 'Create a learner profile to unlock personalized math lessons.'
+              ? 'IELTS can run without onboarding.'
+              : 'Pick a demo persona below or create your own profile.'
           }}
         </p>
         <button
@@ -475,11 +573,29 @@ onBeforeUnmount(() => {
         <p v-if="jobError" class="chat-page__error">{{ jobError }}</p>
       </section>
 
+      <section class="chat-page__panel chat-page__demo-panel">
+        <p class="chat-page__panel-label">Demo personas</p>
+        <button
+          v-for="persona in DEMO_PERSONAS"
+          :key="persona.key"
+          type="button"
+          class="chat-page__persona-btn"
+          :class="{ active: learnerProfile?.display_name === persona.label }"
+          :disabled="demoPersonaBusy !== null"
+          @click="switchToPersona(persona)"
+        >
+          <strong>{{ persona.label }}</strong>
+          <span>{{ persona.description }}</span>
+          <span v-if="demoPersonaBusy === persona.key" class="chat-page__persona-loading">Loading…</span>
+        </button>
+      </section>
+
       <RouterLink class="chat-page__home-link" :to="{ name: 'landing' }">
         Back to landing page
       </RouterLink>
     </aside>
 
+    <!-- Main chat -->
     <main class="chat-page__main">
       <header class="chat-page__header">
         <div>
@@ -487,8 +603,8 @@ onBeforeUnmount(() => {
           <h1>
             {{
               entryMode === 'ielts'
-                ? 'Generate IELTS practice tests when you ask for them.'
-                : 'Ask for a math topic and PolEdu will build a short lesson around you.'
+                ? 'Generate IELTS practice tests.'
+                : 'Your lesson, your way.'
             }}
           </h1>
         </div>
@@ -503,14 +619,14 @@ onBeforeUnmount(() => {
         />
 
         <div v-else class="chat-page__welcome-shell">
-          <h2>{{ entryMode === 'ielts' ? 'IELTS tools are ready.' : 'Start with a question.' }}</h2>
+          <h2>{{ entryMode === 'ielts' ? 'IELTS tools are ready.' : 'What do you want to learn?' }}</h2>
           <p class="chat-page__welcome-copy">
             {{
               entryMode === 'ielts'
-                ? 'Ask for an IELTS mock test, or switch back to Tutor for personalized math lessons.'
+                ? 'Ask for an IELTS mock test, or switch back to Tutor for personalized lessons.'
                 : learnerProfile
-                  ? `Profile loaded for ${learnerProfile.display_name}. Ask for a math topic to begin.`
-                  : 'Create a learner profile first, or switch to IELTS mode if you only want test generation.'
+                  ? `Hi ${learnerProfile.display_name}! Ask me any math topic.`
+                  : 'Pick a demo persona on the left, or tap Menu and choose one.'
             }}
           </p>
 
@@ -542,12 +658,33 @@ onBeforeUnmount(() => {
             <p>{{ message.content }}</p>
             <time>{{ formatTime(message.timestamp) }}</time>
           </div>
+          <InlineLessonCard
+            v-if="message.lessonPayload"
+            :payload="message.lessonPayload"
+            class="chat-page__lesson-card"
+          />
         </div>
 
+        <!-- Thinking (initial API call) -->
         <div v-if="busy" class="chat-page__message-row chat-page__message-row--assistant">
           <div class="chat-page__message">
             <span class="chat-page__message-role">PolEdu</span>
-            <p>Thinking...</p>
+            <span class="chat-page__dots" aria-label="Thinking">
+              <span /><span /><span />
+            </span>
+          </div>
+        </div>
+
+        <!-- Generating (background job polling) -->
+        <div v-else-if="autoOpenJobKey" class="chat-page__message-row chat-page__message-row--assistant">
+          <div class="chat-page__message">
+            <span class="chat-page__message-role">PolEdu</span>
+            <span class="chat-page__generating-label">
+              {{ latestJobType === 'ielts' ? 'Generating IELTS test' : 'Generating lesson' }}
+            </span>
+            <span class="chat-page__dots" aria-label="Generating">
+              <span /><span /><span />
+            </span>
           </div>
         </div>
       </section>
@@ -558,7 +695,7 @@ onBeforeUnmount(() => {
           <textarea
             v-model="input"
             rows="1"
-            placeholder="Message PolEdu"
+            placeholder="Ask about any math topic…"
             :disabled="busy || (showOnboarding && !learnerProfile && entryMode !== 'ielts')"
           ></textarea>
           <button
@@ -568,106 +705,203 @@ onBeforeUnmount(() => {
             Send
           </button>
         </form>
-        <p class="chat-page__footnote">
-          Math-first tutoring is personalized. IELTS remains available as a secondary feature.
-        </p>
       </footer>
     </main>
   </div>
 </template>
 
 <style scoped>
+/* ── Layout ───────────────────────────────────────────────────────────────── */
+
 .chat-page {
   min-height: 100dvh;
-  display: grid;
-  grid-template-columns: 20rem minmax(0, 1fr);
-  background: #020617;
-  color: #f8fafc;
+  background: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
 }
 
+/* Mobile top bar — always dark regardless of page theme */
+.chat-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: #1A1A1A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.chat-page__topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.chat-page__topbar-brand img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+  object-fit: cover;
+}
+
+.chat-page__topbar-brand strong {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+.chat-page__hamburger {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Backdrop */
+.chat-page__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 20;
+}
+
+/* Sidebar — mobile: fixed drawer */
 .chat-page__sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: min(18rem, 80vw);
+  z-index: 30;
   display: grid;
   align-content: start;
   gap: 1rem;
-  padding: 1.2rem;
-  background: rgba(15, 23, 42, 0.92);
-  border-right: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 1rem;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+}
+
+.sidebar-open .chat-page__sidebar {
+  transform: translateX(0);
+}
+
+.chat-page__sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.chat-page__close-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  flex-shrink: 0;
 }
 
 .chat-page__brand {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.75rem;
 }
 
 .chat-page__brand img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.95rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
   object-fit: cover;
 }
 
-.chat-page__brand strong,
-.chat-page__panel h2,
-.chat-page__header h1 {
+.chat-page__brand strong {
   display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-primary);
 }
 
 .chat-page__brand span {
-  color: #cbd5e1;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
 }
+
+/* Main area */
+.chat-page__main {
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  min-height: 0;
+}
+
+/* ── Sidebar internals ────────────────────────────────────────────────────── */
 
 .chat-page__mode-switch {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .chat-page__mode-button {
   flex: 1;
-  border: none;
-  border-radius: 0.95rem;
-  padding: 0.8rem 0.95rem;
-  background: rgba(255, 255, 255, 0.06);
-  color: #e2e8f0;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.65rem 0.8rem;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
   cursor: pointer;
+  transition: background 0.15s, color 0.15s;
 }
 
 .chat-page__mode-button.active {
-  background: linear-gradient(135deg, #0f766e, #14b8a6);
-  color: #ffffff;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #1A1A1A;
 }
 
 .chat-page__panel {
   display: grid;
-  gap: 0.65rem;
-  padding: 1rem;
-  border-radius: 1.25rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  gap: 0.6rem;
+  padding: 0.9rem;
+  border-radius: 1rem;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
 }
 
 .chat-page__panel-label,
 .chat-page__eyebrow {
   margin: 0;
-  color: #67e8f9;
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .chat-page__panel h2 {
   margin: 0;
-  font-size: 1.25rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
 }
 
 .chat-page__panel p,
-.chat-page__welcome-copy,
-.chat-page__message p,
 .chat-page__preferences {
   margin: 0;
-  line-height: 1.7;
-  color: #cbd5e1;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
 }
 
 .chat-page__preferences {
@@ -676,10 +910,12 @@ onBeforeUnmount(() => {
 
 .chat-page__status-pill {
   justify-self: start;
-  padding: 0.38rem 0.72rem;
+  padding: 0.3rem 0.65rem;
   border-radius: 999px;
-  background: rgba(45, 212, 191, 0.16);
-  color: #99f6e4;
+  background: var(--color-primary-dim);
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -688,44 +924,92 @@ onBeforeUnmount(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 0.95rem;
-  border-radius: 0.95rem;
-  border: none;
-  background: rgba(255, 255, 255, 0.08);
-  color: #f8fafc;
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
   text-decoration: none;
   cursor: pointer;
+  transition: border-color 0.15s;
 }
+
+.chat-page__sidebar-button:hover,
+.chat-page__sidebar-link:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Demo personas */
+.chat-page__demo-panel { gap: 0.45rem; }
+
+.chat-page__persona-btn {
+  display: grid;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.chat-page__persona-btn.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-dim);
+}
+
+.chat-page__persona-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.chat-page__persona-btn strong { font-size: 0.95rem; font-weight: 700; }
+
+.chat-page__persona-btn span {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.chat-page__persona-btn.active span { color: var(--color-primary); }
+
+.chat-page__persona-loading { color: var(--color-primary) !important; }
 
 .chat-page__home-link {
-  color: #94a3b8;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
   text-decoration: none;
-  font-size: 0.92rem;
 }
 
-.chat-page__main {
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto;
-  min-height: 100dvh;
-}
+/* ── Main chat area ───────────────────────────────────────────────────────── */
 
 .chat-page__header,
 .chat-page__welcome,
 .chat-page__messages,
 .chat-page__composer {
-  width: min(980px, calc(100% - 2rem));
+  width: min(960px, calc(100% - 1rem));
   margin: 0 auto;
 }
 
 .chat-page__header {
-  padding: 1.4rem 0 1rem;
+  padding: 1.25rem 0 0.75rem;
+}
+
+.chat-page__eyebrow {
+  font-size: 0.72rem;
+  margin-bottom: 0.3rem;
 }
 
 .chat-page__header h1 {
-  margin: 0.5rem 0 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.08;
-  max-width: 16ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  color: var(--color-text);
 }
 
 .chat-page__welcome {
@@ -737,35 +1021,47 @@ onBeforeUnmount(() => {
 .chat-page__welcome-shell {
   display: grid;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 1.4rem;
   border-radius: 1.5rem;
-  background:
-    radial-gradient(circle at top right, rgba(20, 184, 166, 0.14), transparent 16rem),
-    rgba(15, 23, 42, 0.62);
-  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .chat-page__welcome-shell h2 {
   margin: 0;
-  font-size: 1.8rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+}
+
+.chat-page__welcome-copy {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
 }
 
 .chat-page__suggestions {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
 }
 
 .chat-page__suggestion {
-  padding: 1rem;
+  padding: 0.9rem 1rem;
   border-radius: 1rem;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  background: rgba(255, 255, 255, 0.04);
-  color: #f8fafc;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
   text-align: left;
   cursor: pointer;
+  transition: border-color 0.15s;
 }
 
+.chat-page__suggestion:hover { border-color: var(--color-primary); }
+
+/* Messages */
 .chat-page__messages {
   min-height: 0;
   overflow-y: auto;
@@ -773,107 +1069,163 @@ onBeforeUnmount(() => {
 }
 
 .chat-page__message-row {
-  padding: 0.8rem 0;
-}
-
-.chat-page__message-row--assistant .chat-page__message {
-  background: rgba(15, 23, 42, 0.62);
+  padding: 0.7rem 0;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .chat-page__message {
-  max-width: 48rem;
-  padding: 1rem 1.1rem;
+  max-width: 36rem;
+  padding: 0.9rem 1rem;
   border-radius: 1.2rem;
-  background: rgba(30, 41, 59, 0.72);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 0.95rem;
+}
+
+.chat-page__message-row--assistant .chat-page__message {
+  background: var(--color-surface-2);
 }
 
 .chat-page__message-role {
   display: inline-block;
-  margin-bottom: 0.45rem;
-  color: #99f6e4;
-  font-size: 0.82rem;
-  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
 }
+
+.chat-page__message p { margin: 0; line-height: 1.65; }
 
 .chat-page__message time {
   display: inline-block;
-  margin-top: 0.6rem;
-  color: #94a3b8;
-  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
 }
 
-.chat-page__composer {
-  padding: 1rem 0 1.3rem;
+/* Inline lesson card — sits outside the 36rem bubble */
+.chat-page__lesson-card {
+  margin-top: 0.75rem;
+  width: 100%;
 }
+
+/* Composer */
+.chat-page__composer { padding: 0.75rem 0 1rem; }
 
 .chat-page__composer-form {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.65rem;
   align-items: flex-end;
-  padding: 0.7rem;
+  padding: 0.6rem 0.65rem;
   border-radius: 1.2rem;
-  background: rgba(15, 23, 42, 0.82);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .chat-page__composer-form textarea {
   flex: 1;
-  min-height: 3rem;
-  max-height: 12rem;
+  min-height: 2.8rem;
+  max-height: 10rem;
   resize: vertical;
   border: none;
   background: transparent;
-  color: #f8fafc;
+  color: var(--color-text);
   outline: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
   line-height: 1.6;
 }
 
+.chat-page__composer-form textarea::placeholder { color: var(--color-text-muted); }
+
 .chat-page__composer-form button {
   border: none;
-  border-radius: 0.95rem;
-  padding: 0.9rem 1.2rem;
-  background: linear-gradient(135deg, #0f766e, #14b8a6);
-  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.8rem 1.3rem;
+  background: var(--color-primary);
+  color: #1A1A1A;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
   cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s;
 }
 
-.chat-page__composer-form button:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
+.chat-page__composer-form button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.chat-page__error { color: #ff6b6b; font-size: 0.88rem; margin: 0; }
+
+/* Three-dot loading indicator */
+.chat-page__dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
-.chat-page__footnote {
-  margin: 0.65rem 0 0;
-  color: #94a3b8;
-  font-size: 0.84rem;
-  text-align: center;
+.chat-page__dots span {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--color-text-muted);
+  animation: dot-bounce 1.2s ease-in-out infinite;
 }
 
-.chat-page__error {
-  color: #fca5a5;
+.chat-page__dots span:nth-child(2) { animation-delay: 0.2s; }
+.chat-page__dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes dot-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+  40% { transform: translateY(-0.35rem); opacity: 1; }
 }
 
-@media (max-width: 980px) {
+.chat-page__generating-label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+/* ── Desktop: sidebar always visible ─────────────────────────────────────── */
+
+@media (min-width: 768px) {
   .chat-page {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 18rem minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
   }
 
+  /* Hide mobile top bar on desktop */
+  .chat-page__topbar { display: none; }
+
+  /* Sidebar always visible, not a drawer */
   .chat-page__sidebar {
-    border-right: none;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+    position: static;
+    height: auto;
+    transform: none !important;
+    width: auto;
+    border-right: 1px solid var(--color-border);
+    overflow-y: auto;
+  }
+
+  /* Hide drawer close button on desktop */
+  .chat-page__close-btn { display: none; }
+
+  /* No backdrop needed on desktop */
+  .chat-page__backdrop { display: none; }
+
+  .chat-page__main {
+    grid-column: 2;
+    min-height: 100dvh;
   }
 
   .chat-page__suggestions {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .chat-page__composer-form {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>

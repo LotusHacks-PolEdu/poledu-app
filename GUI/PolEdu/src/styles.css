@@ -1,3 +1,21 @@
+/* PolEdu brand tokens */
+:root {
+  --color-bg: #FFFFFF;
+  --color-surface: #F2F4F6;
+  --color-surface-2: #E6E8EB;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-text: #1A1A1A;
+  --color-text-muted: rgba(0, 0, 0, 0.52);
+  --color-primary: #00BAFF;
+  --color-primary-dim: rgba(0, 186, 255, 0.12);
+  --color-green: #1B8000;
+  --color-green-dim: rgba(27, 128, 0, 0.1);
+  --color-yellow: #8B6800;
+  --color-yellow-dim: rgba(139, 104, 0, 0.1);
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+}
+
 html,
 body,
 #app {
@@ -7,20 +25,30 @@ body,
 }
 
 html {
-  background: #212121;
+  background: var(--color-bg);
 }
 
 body {
   min-height: 100dvh;
   overflow-x: hidden;
-  background: #212121;
-  color: #ffffff;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 button,

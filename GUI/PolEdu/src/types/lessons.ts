@@ -98,11 +98,62 @@ export interface LessonGraphPlaygroundBlock {
   initial_expression: string
 }
 
-export type LessonBlock = LessonTextBlock | LessonGraphBlock | LessonGraphPlaygroundBlock
+export interface SliderParam {
+  label: string
+  min: number
+  max: number
+  step: number
+  default: number
+}
+
+export interface LessonSliderGraphBlock {
+  id: string
+  type: 'slider-graph'
+  title: string
+  prompt: string
+  expression_template: string
+  param_a: SliderParam
+  param_b: SliderParam
+  xMin?: number
+  xMax?: number
+  yMin?: number
+  yMax?: number
+}
+
+export interface GuidedStep {
+  instruction: string
+  reveal: string
+  latex?: string
+}
+
+export interface LessonGuidedStepsBlock {
+  id: string
+  type: 'guided-steps'
+  title: string
+  prompt: string
+  steps: GuidedStep[]
+}
+
+export interface LessonAnalogyBlock {
+  id: string
+  type: 'analogy'
+  title: string
+  analogy: string
+  connection: string
+}
+
+export type LessonBlock =
+  | LessonTextBlock
+  | LessonGraphBlock
+  | LessonGraphPlaygroundBlock
+  | LessonSliderGraphBlock
+  | LessonGuidedStepsBlock
+  | LessonAnalogyBlock
 
 export interface LessonSection {
   id: string
   title: string
+  narration?: string
   blocks: LessonBlock[]
 }
 

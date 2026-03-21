@@ -185,14 +185,17 @@ watch(() => [props.expression, props.xMin, props.xMax, props.yMin, props.yMax, p
 
 <style scoped>
 .graph-block {
-  border: 1px solid #ccc;
-  padding: 12px;
-  margin-bottom: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  min-width: 0;
 }
 canvas {
   display: block;
-  margin-top: 8px;
-  border: 1px solid #ddd;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 .graph-error {
   color: red;
