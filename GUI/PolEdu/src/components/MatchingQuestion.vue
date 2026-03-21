@@ -2,16 +2,9 @@
 import { ref } from 'vue'
 
 export interface MatchingQuestionProps {
-  /** Instruction text */
   question: string
-  /** Left-hand items (prompts) */
   prompts: string[]
-  /** Right-hand items (choices) — order can differ from correct mapping */
   choices: string[]
-  /**
-   * Correct mapping: correctMap[i] is the index into `choices` that matches prompts[i].
-   * Optional — used for grading.
-   */
   correctMap?: number[]
 }
 
@@ -23,14 +16,27 @@ const emit = defineEmits<{
   (e: 'answer', payload: { answers: (number | null)[]; score: number; total: number }): void
 }>()
 
+function correctChoiceLabel(index: number) {
+  if (!props.correctMap) {
+    return ''
+  }
+
+  const choiceIndex = props.correctMap[index]
+  return typeof choiceIndex === 'number' ? props.choices[choiceIndex] ?? '' : ''
+}
+
 function handleSubmit() {
   submitted.value = true
   let score = 0
+
   if (props.correctMap) {
-    props.correctMap.forEach((correct, i) => {
-      if (answers.value[i] === correct) score++
+    props.correctMap.forEach((correct, index) => {
+      if (answers.value[index] === correct) {
+        score += 1
+      }
     })
   }
+
   emit('answer', { answers: answers.value, score, total: props.prompts.length })
 }
 </script>
@@ -53,11 +59,13 @@ function handleSubmit() {
           <td>
             <select v-model="answers[i]" :disabled="submitted">
               <option :value="null" disabled>-- select --</option>
-              <option v-for="(ch, ci) in choices" :key="ci" :value="ci">{{ ch }}</option>
+              <option v-for="(choice, choiceIndex) in choices" :key="choiceIndex" :value="choiceIndex">
+                {{ choice }}
+              </option>
             </select>
           </td>
           <td v-if="submitted && correctMap">
-            {{ answers[i] === correctMap[i] ? '✅' : '❌ → ' + choices[correctMap[i]] }}
+            {{ answers[i] === correctMap[i] ? 'Correct' : `Incorrect -> ${correctChoiceLabel(i)}` }}
           </td>
         </tr>
       </tbody>
@@ -66,7 +74,7 @@ function handleSubmit() {
     <button @click="handleSubmit" :disabled="submitted">Submit</button>
 
     <p v-if="submitted && correctMap" class="match-feedback">
-      Score: {{ correctMap.filter((c, i) => answers[i] === c).length }} / {{ prompts.length }}
+      Score: {{ correctMap.filter((choiceIndex, i) => answers[i] === choiceIndex).length }} / {{ prompts.length }}
     </p>
   </div>
 </template>
@@ -77,15 +85,19 @@ function handleSubmit() {
   padding: 12px;
   margin-bottom: 16px;
 }
+
 table {
   border-collapse: collapse;
   margin: 8px 0;
 }
-th, td {
+
+th,
+td {
   border: 1px solid #ddd;
   padding: 6px 10px;
   text-align: left;
 }
+
 .match-feedback {
   margin-top: 8px;
 }

@@ -19,14 +19,22 @@ const submitted = ref(false)
 function moveUp(index: number) {
   if (index === 0) return
   const arr = [...order.value]
-  ;[arr[index - 1], arr[index]] = [arr[index], arr[index - 1]]
+  const previous = arr[index - 1]
+  const current = arr[index]
+  if (previous === undefined || current === undefined) return
+  arr[index - 1] = current
+  arr[index] = previous
   order.value = arr
 }
 
 function moveDown(index: number) {
   if (index === order.value.length - 1) return
   const arr = [...order.value]
-  ;[arr[index], arr[index + 1]] = [arr[index + 1], arr[index]]
+  const current = arr[index]
+  const next = arr[index + 1]
+  if (current === undefined || next === undefined) return
+  arr[index] = next
+  arr[index + 1] = current
   order.value = arr
 }
 

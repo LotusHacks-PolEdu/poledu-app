@@ -1,0 +1,35 @@
+html,
+body,
+#app {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html {
+  background: #212121;
+}
+
+body {
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background: #212121;
+  color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}

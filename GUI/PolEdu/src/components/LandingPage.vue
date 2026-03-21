@@ -4,375 +4,244 @@ import logoUrl from '../assets/logo.png'
 
 <template>
   <div class="landing">
-    <!-- Hexagonal pattern background -->
-    <div class="hex-bg">
-      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="hexagons" width="100" height="87" patternUnits="userSpaceOnUse" patternTransform="scale(1.5)">
-            <path
-              d="M25,0 L75,0 L100,43.5 L75,87 L25,87 L0,43.5 Z"
-              fill="none"
-              stroke="url(#hex-gradient)"
-              stroke-width="1.5"
-            />
-          </pattern>
-          <linearGradient id="hex-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#10b981" stop-opacity="1" />
-            <stop offset="50%" stop-color="#06b6d4" stop-opacity="1" />
-            <stop offset="100%" stop-color="#10b981" stop-opacity="1" />
-          </linearGradient>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#hexagons)" />
-      </svg>
-    </div>
+    <div class="landing__glow landing__glow--left"></div>
+    <div class="landing__glow landing__glow--right"></div>
 
-    <!-- Animated gradient overlay -->
-    <div class="gradient-overlay"></div>
-
-    <!-- Fixed logo top-left -->
-    <div class="logo-bar">
-      <div class="logo-icon">
-        <img :src="logoUrl" alt="PolEdu Logo" />
+    <header class="landing__header">
+      <div class="landing__brand">
+        <img :src="logoUrl" alt="PolEdu logo" />
+        <span>PolEdu</span>
       </div>
-      <span class="logo-text">PolEdu</span>
-    </div>
+      <nav class="landing__nav">
+        <RouterLink :to="{ name: 'chat' }">Tutor</RouterLink>
+        <RouterLink :to="{ name: 'chat', query: { entry: 'ielts' } }">IELTS</RouterLink>
+      </nav>
+    </header>
 
-    <!-- Hero section -->
-    <div class="hero">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <h1>
-            <span class="gradient-text">Learn</span><span class="white-text">, in your way,</span>
-            <br />
-            <span class="white-text">at your </span><span class="gradient-text-alt">pace</span>
-          </h1>
-          <p class="hero-subtitle">Your personal AI tutor, ready to help you master any subject</p>
+    <main class="landing__hero">
+      <section class="landing__copy">
+        <p class="landing__eyebrow">Math-first AI tutor</p>
+        <h1>Learn math your way, then keep IELTS tools close by.</h1>
+        <p class="landing__summary">
+          PolEdu now starts with a personalized tutoring flow that adapts to how you like to
+          learn. Tell it who you are, pick a math topic, and it builds a short lesson with
+          explanations, graphs, interactive practice, and a mini test.
+        </p>
+
+        <div class="landing__actions">
+          <RouterLink class="landing__primary" :to="{ name: 'chat' }">
+            Enter personalized tutor
+          </RouterLink>
+          <RouterLink class="landing__secondary" :to="{ name: 'chat', query: { entry: 'ielts' } }">
+            Use IELTS tools
+          </RouterLink>
         </div>
+      </section>
 
-        <!-- CTA button -->
-        <div class="cta-wrap">
-          <router-link to="/sample_test" class="cta-btn">Enter PolEdu Tutor</router-link>
-        </div>
+      <section class="landing__cards">
+        <article class="landing__card landing__card--feature">
+          <p class="landing__card-label">Core flow</p>
+          <h2>Personalized math lessons</h2>
+          <p>
+            Onboarding captures learning style, hobbies, and a few small preferences so each
+            lesson feels more tailored instead of generic.
+          </p>
+        </article>
 
-        <!-- Feature cards -->
-        <div class="features">
-          <div class="feature-card">
-            <div class="feature-icon icon-green-cyan">
-              <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-            </div>
-            <h3>Personalized Learning</h3>
-            <p>Adapt to your unique learning style and pace</p>
-          </div>
+        <article class="landing__card">
+          <p class="landing__card-label">Interactive blocks</p>
+          <h2>Graphs and playgrounds</h2>
+          <p>
+            Generated lessons can include graph visualizations, graph playground challenges, and
+            a 10-question mini test with answer explanations.
+          </p>
+        </article>
 
-          <div class="feature-card">
-            <div class="feature-icon icon-cyan-green">
-              <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            </div>
-            <h3>AI-Powered Insights</h3>
-            <p>Smart assistance that grows with you</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon icon-green-cyan">
-              <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h3>24/7 Availability</h3>
-            <p>Learn anytime, anywhere, at your convenience</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- White "Coming Soon" section -->
-    <div class="coming-soon">
-      <div class="coming-soon-inner">
-        <div class="coming-soon-header">
-          <h2>Coming Soon</h2>
-          <p>More features and content will be added here</p>
-        </div>
-        <div class="placeholder-grid">
-          <div class="placeholder-box">Content Area 1</div>
-          <div class="placeholder-box">Content Area 2</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <p>© 2026 PolEdu. All rights reserved.</p>
-    </div>
+        <article class="landing__card">
+          <p class="landing__card-label">Secondary feature</p>
+          <h2>IELTS remains available</h2>
+          <p>
+            Mock IELTS generation, listening audio, and the exam viewer still work inside the same
+            PolEdu app when you explicitly ask for them.
+          </p>
+        </article>
+      </section>
+    </main>
   </div>
 </template>
 
 <style scoped>
-/* ── Reset & base ── */
 .landing {
-  min-height: 100vh;
-  background: #000;
-  color: #fff;
   position: relative;
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100dvh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgba(20, 184, 166, 0.2), transparent 26rem),
+    linear-gradient(180deg, #020617 0%, #0f172a 52%, #111827 100%);
+  color: #f8fafc;
 }
 
-/* ── Hexagonal SVG background ── */
-.hex-bg {
+.landing__glow {
   position: absolute;
-  inset: 0;
-  opacity: 0.10;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 999px;
+  filter: blur(70px);
+  opacity: 0.3;
   pointer-events: none;
 }
 
-/* ── Pulsing gradient overlay ── */
-.gradient-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom right, rgba(16,185,129,0.05), rgba(6,182,212,0.05), rgba(16,185,129,0.05));
-  animation: pulse-overlay 4s ease-in-out infinite;
-  pointer-events: none;
-}
-@keyframes pulse-overlay {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
+.landing__glow--left {
+  top: -10rem;
+  left: -10rem;
+  background: rgba(45, 212, 191, 0.38);
 }
 
-/* ── Logo bar ── */
-.logo-bar {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 50;
+.landing__glow--right {
+  right: -8rem;
+  bottom: 4rem;
+  background: rgba(34, 211, 238, 0.2);
+}
+
+.landing__header,
+.landing__hero {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.landing__header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 8px 16px 8px 8px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  padding: 1.25rem 0;
 }
-.logo-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  flex-shrink: 0;
+
+.landing__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-weight: 700;
 }
-.logo-icon img {
-  width: 100%;
-  height: 100%;
+
+.landing__brand img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.9rem;
   object-fit: cover;
 }
-.logo-text {
-  font-size: 22px;
-  font-weight: 700;
-  color: #fff;
-}
 
-/* ── Hero ── */
-.hero {
-  position: relative;
-  z-index: 10;
+.landing__nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 16px;
-}
-.hero-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-}
-.hero-text h1 {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 700;
-  line-height: 1.15;
-  margin: 0 0 24px;
-}
-.white-text {
-  color: #fff;
-}
-.gradient-text {
-  background: linear-gradient(to right, #34d399, #22d3ee, #34d399);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient-shift 3s ease infinite;
-}
-.gradient-text-alt {
-  background: linear-gradient(to right, #22d3ee, #34d399, #22d3ee);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient-shift 3s ease infinite;
-}
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-.hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: #9ca3af;
-  max-width: 640px;
-  margin: 0 auto;
+  gap: 1rem;
 }
 
-/* ── CTA ── */
-.cta-wrap {
-  padding-top: 32px;
-}
-.cta-btn {
-  display: inline-block;
-  padding: 16px 48px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 16px;
-  border: none;
-  cursor: pointer;
+.landing__nav a {
+  color: #cbd5e1;
   text-decoration: none;
-  background: linear-gradient(to right, #fff, #f3f4f6);
-  color: #000;
-  box-shadow: 0 8px 32px rgba(16,185,129,0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.cta-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 40px rgba(16,185,129,0.25);
 }
 
-/* ── Feature cards ── */
-.features {
+.landing__hero {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  padding-top: 64px;
-}
-@media (max-width: 768px) {
-  .features { grid-template-columns: 1fr; }
-}
-.feature-card {
-  position: relative;
-  padding: 24px;
-  border-radius: 24px;
-  border: 1px solid rgba(16,185,129,0.3);
-  backdrop-filter: blur(8px);
-  text-align: center;
-  transition: transform 0.3s;
-}
-.feature-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 24px;
-  background: linear-gradient(to bottom right, rgba(16,185,129,0.15), rgba(6,182,212,0.15));
-  z-index: -1;
-  transition: transform 0.3s;
-}
-.feature-card:hover {
-  transform: scale(1.05);
-}
-.feature-card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 8px;
-  color: #fff;
-}
-.feature-card p {
-  font-size: 14px;
-  color: #9ca3af;
-  margin: 0;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 3rem 0 4rem;
 }
 
-/* ── Feature icons ── */
-.feature-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 16px;
-  border-radius: 16px;
+.landing__eyebrow,
+.landing__card-label {
+  margin: 0;
+  color: #67e8f9;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.landing__copy h1 {
+  margin: 0.75rem 0 1rem;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 0.98;
+  max-width: 12ch;
+}
+
+.landing__summary {
+  margin: 0;
+  max-width: 60ch;
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.landing__actions {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.landing__primary,
+.landing__secondary {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-}
-.icon-green-cyan {
-  background: linear-gradient(to bottom right, #10b981, #06b6d4);
-}
-.icon-cyan-green {
-  background: linear-gradient(to bottom right, #06b6d4, #10b981);
-}
-
-/* ── Coming Soon (white) ── */
-.coming-soon {
-  position: relative;
-  z-index: 10;
-  background: #fff;
-  padding: 128px 16px;
-  margin-top: 128px;
-}
-.coming-soon-inner {
-  max-width: 1152px;
-  margin: 0 auto;
-}
-.coming-soon-header {
-  text-align: center;
-  margin-bottom: 64px;
-}
-.coming-soon-header h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  padding: 0.95rem 1.2rem;
+  border-radius: 1rem;
+  text-decoration: none;
   font-weight: 700;
-  color: #000;
-  margin: 0 0 16px;
-}
-.coming-soon-header p {
-  font-size: 20px;
-  color: #4b5563;
-  margin: 0;
-}
-.placeholder-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px;
-}
-@media (max-width: 768px) {
-  .placeholder-grid { grid-template-columns: 1fr; }
-}
-.placeholder-box {
-  background: #f9fafb;
-  border: 2px dashed #d1d5db;
-  border-radius: 24px;
-  padding: 48px;
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: #9ca3af;
 }
 
-/* ── Footer ── */
-.footer {
-  position: relative;
-  z-index: 10;
-  background: #fff;
-  padding: 64px 16px;
-  text-align: center;
+.landing__primary {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  color: #f8fafc;
 }
-.footer p {
-  color: #6b7280;
+
+.landing__secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+}
+
+.landing__cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.landing__card {
+  padding: 1.3rem;
+  border-radius: 1.5rem;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 22px 40px rgba(2, 6, 23, 0.3);
+}
+
+.landing__card--feature {
+  background:
+    radial-gradient(circle at top right, rgba(45, 212, 191, 0.15), transparent 14rem),
+    rgba(15, 23, 42, 0.68);
+}
+
+.landing__card h2 {
+  margin: 0.6rem 0 0.5rem;
+  font-size: 1.45rem;
+}
+
+.landing__card p:last-child {
   margin: 0;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .landing__hero {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+  }
+
+  .landing__header {
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: flex-start;
+  }
 }
 </style>

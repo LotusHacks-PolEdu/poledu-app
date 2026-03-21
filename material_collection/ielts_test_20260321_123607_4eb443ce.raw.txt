@@ -1,0 +1,792 @@
+{
+  "test_title": "Mock IELTS Academic Test",
+  "listening": {
+    "parts": [
+      {
+        "part_number": 1,
+        "context": "A conversation between a travel agent and a customer.",
+        "audio_script": "Agent: Good morning, Globe Travel Agency. How can I help you today? Customer: Hi, I’d like to book a holiday for next week. Agent: Certainly. May I know your preferred destination? Customer: I’m thinking about Paris. Agent: Wonderful choice. When would you like to travel? Customer: I’d prefer to leave on Tuesday. Agent: And how many nights will you be staying? Customer: Four nights, please. Agent: Will you be travelling alone or with someone? Customer: With my sister. Agent: Great. May I have your full name, please? Customer: Yes, it’s Emily Carter. Agent: Thank you, Ms. Carter. Do you have any dietary requirements? Customer: Yes, I’m vegetarian. Agent: Noted. Now, let me tell you about our packages. The basic package includes breakfast, but not dinner or flights. Customer: I see. What about sightseeing tours? Agent: Those are included in the premium package. Customer: I think I’ll go with the basic one for now. Agent: No problem. I’ll just need your contact number to confirm the booking. Customer: It’s 07923 654 112. Agent: Thank you. We’ll send you the confirmation shortly.",
+        "question_sets": [
+          {
+            "questions_range": "1-6",
+            "question_type": "fill_in_the_blanks",
+            "instruction": "Complete the notes below. Write ONE WORD ONLY AND/OR A NUMBER for each answer.",
+            "questions": [
+              {
+                "question_number": 1,
+                "question_text": "Customer wants to travel on ______.",
+                "options": null,
+                "answer_key": "Tuesday"
+              },
+              {
+                "question_number": 2,
+                "question_text": "Destination: ______.",
+                "options": null,
+                "answer_key": "Paris"
+              },
+              {
+                "question_number": 3,
+                "question_text": "Number of nights: ______.",
+                "options": null,
+                "answer_key": "Four"
+              },
+              {
+                "question_number": 4,
+                "question_text": "Travelling with: ______.",
+                "options": null,
+                "answer_key": "sister"
+              },
+              {
+                "question_number": 5,
+                "question_text": "Customer’s surname: ______.",
+                "options": null,
+                "answer_key": "Carter"
+              },
+              {
+                "question_number": 6,
+                "question_text": "Dietary requirement: ______.",
+                "options": null,
+                "answer_key": "vegetarian"
+              }
+            ]
+          },
+          {
+            "questions_range": "7-10",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B, or C.",
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "What is included in the basic package?",
+                "options": ["A. Breakfast", "B. Dinner", "C. Flight"],
+                "answer_key": "A"
+              },
+              {
+                "question_number": 8,
+                "question_text": "Who is the customer travelling with?",
+                "options": ["A. Alone", "B. Sister", "C. Friend"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 9,
+                "question_text": "What is required to confirm the booking?",
+                "options": ["A. Passport", "B. Contact number", "C. Email address"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 10,
+                "question_text": "Which package includes sightseeing tours?",
+                "options": ["A. Basic", "B. Premium", "C. Standard"],
+                "answer_key": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "part_number": 2,
+        "context": "A guide giving information about a city park.",
+        "audio_script": "Guide: Welcome to Greenfield City Park. The park opens at 6 a.m. and closes at 9 p.m. daily. The main entrance is on Oak Street, opposite the library. If you walk straight ahead, you’ll find the children’s playground on your left and the rose garden on your right. The café is next to the playground, and the public toilets are behind the café. For those interested in sports, the tennis courts are located in the northeast corner, while the football field is in the southwest. There are picnic areas throughout the park, but the largest one is near the lake, which is at the far end of the park. Please remember that dogs must be kept on a lead at all times, and cycling is only allowed on designated paths. Enjoy your visit!",
+        "question_sets": [
+          {
+            "questions_range": "11-15",
+            "question_type": "map_labeling",
+            "instruction": "Label the map below. Choose FIVE answers from the box and write the correct letter, A–H, next to questions 11–15.",
+            "questions": [
+              {
+                "question_number": 11,
+                "question_text": "Children’s playground",
+                "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 12,
+                "question_text": "Rose garden",
+                "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+                "answer_key": "C"
+              },
+              {
+                "question_number": 13,
+                "question_text": "Café",
+                "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+                "answer_key": "D"
+              },
+              {
+                "question_number": 14,
+                "question_text": "Tennis courts",
+                "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+                "answer_key": "F"
+              },
+              {
+                "question_number": 15,
+                "question_text": "Lake",
+                "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+                "answer_key": "H"
+              }
+            ]
+          },
+          {
+            "questions_range": "16-20",
+            "question_type": "matching",
+            "instruction": "Match each rule with the correct area of the park. Choose from the options below.",
+            "questions": [
+              {
+                "question_number": 16,
+                "question_text": "Dogs must be kept on a lead",
+                "options": ["A. All areas", "B. Playground", "C. Lake", "D. Picnic area", "E. Tennis courts"],
+                "answer_key": "A"
+              },
+              {
+                "question_number": 17,
+                "question_text": "Cycling allowed",
+                "options": ["A. All areas", "B. Designated paths", "C. Playground", "D. Rose garden", "E. Football field"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 18,
+                "question_text": "Largest picnic area",
+                "options": ["A. Near the lake", "B. Near the café", "C. Near the playground", "D. Near the entrance", "E. Near the tennis courts"],
+                "answer_key": "A"
+              },
+              {
+                "question_number": 19,
+                "question_text": "Public toilets location",
+                "options": ["A. Next to the playground", "B. Behind the café", "C. Near the lake", "D. Near the rose garden", "E. At the entrance"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 20,
+                "question_text": "Football field location",
+                "options": ["A. Northeast corner", "B. Southwest corner", "C. Southeast corner", "D. Northwest corner", "E. Centre"],
+                "answer_key": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "part_number": 3,
+        "context": "A discussion between two students and their tutor about a group project.",
+        "audio_script": "Tutor: So, how is your group project on renewable energy coming along? Student 1: We’ve divided the work. I’m researching solar power, and Alex is focusing on wind energy. Student 2: Yes, and we’re planning to meet twice a week to discuss our findings. Tutor: That’s good. Have you decided how to present your results? Student 1: We’re thinking of making a poster and giving a short talk. Tutor: Excellent. Remember to include data and real-life examples. Student 2: We’ll do that. We’re also planning to interview a local expert. Tutor: That’s a great idea. When is your deadline? Student 1: It’s the 15th of next month. Tutor: Make sure you finish your research by the end of this month, so you have time to prepare the presentation. Student 2: We will. Tutor: Good luck!",
+        "question_sets": [
+          {
+            "questions_range": "21-25",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B, or C.",
+            "questions": [
+              {
+                "question_number": 21,
+                "question_text": "What is the topic of the group project?",
+                "options": ["A. Fossil fuels", "B. Renewable energy", "C. Recycling"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 22,
+                "question_text": "How often do the students plan to meet?",
+                "options": ["A. Once a week", "B. Twice a week", "C. Every day"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 23,
+                "question_text": "What will the students include in their presentation?",
+                "options": ["A. Only data", "B. Only real-life examples", "C. Data and real-life examples"],
+                "answer_key": "C"
+              },
+              {
+                "question_number": 24,
+                "question_text": "Who will the students interview?",
+                "options": ["A. A teacher", "B. A local expert", "C. A classmate"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 25,
+                "question_text": "When is the project deadline?",
+                "options": ["A. End of this month", "B. 15th of next month", "C. 1st of next month"],
+                "answer_key": "B"
+              }
+            ]
+          },
+          {
+            "questions_range": "26-30",
+            "question_type": "matching",
+            "instruction": "Match each student with the topic they are researching.",
+            "questions": [
+              {
+                "question_number": 26,
+                "question_text": "Student 1",
+                "options": ["A. Solar power", "B. Wind energy", "C. Hydroelectric power"],
+                "answer_key": "A"
+              },
+              {
+                "question_number": 27,
+                "question_text": "Student 2 (Alex)",
+                "options": ["A. Solar power", "B. Wind energy", "C. Hydroelectric power"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 28,
+                "question_text": "Tutor’s advice",
+                "options": ["A. Finish research early", "B. Interview a teacher", "C. Use only data"],
+                "answer_key": "A"
+              },
+              {
+                "question_number": 29,
+                "question_text": "Presentation format",
+                "options": ["A. Poster and talk", "B. Essay", "C. Video"],
+                "answer_key": "A"
+              },
+              {
+                "question_number": 30,
+                "question_text": "Meeting frequency",
+                "options": ["A. Once a week", "B. Twice a week", "C. Every day"],
+                "answer_key": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "part_number": 4,
+        "context": "A university lecture on the topic of sleep and memory.",
+        "audio_script": "Lecturer: Good afternoon. Today, we’ll discuss the relationship between sleep and memory. Research shows that sleep plays a vital role in consolidating memories. There are two main types of sleep: REM, or rapid eye movement sleep, and non-REM sleep. Both are important, but REM sleep is particularly linked to learning and creativity. Studies have found that students who get enough sleep after studying perform better in tests. Lack of sleep can impair concentration and make it harder to remember information. To improve memory, it’s recommended to maintain a regular sleep schedule, avoid caffeine late in the day, and create a restful environment. In addition, short naps can help boost memory, especially after learning new material. However, excessive napping may disrupt nighttime sleep. In summary, good sleep habits are essential for effective learning and memory retention.",
+        "question_sets": [
+          {
+            "questions_range": "31-35",
+            "question_type": "note_completion",
+            "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+            "questions": [
+              {
+                "question_number": 31,
+                "question_text": "Sleep helps to ______ memories.",
+                "options": null,
+                "answer_key": "consolidate"
+              },
+              {
+                "question_number": 32,
+                "question_text": "REM sleep is linked to learning and ______.",
+                "options": null,
+                "answer_key": "creativity"
+              },
+              {
+                "question_number": 33,
+                "question_text": "Lack of sleep affects ______.",
+                "options": null,
+                "answer_key": "concentration"
+              },
+              {
+                "question_number": 34,
+                "question_text": "Short naps can help after ______ new material.",
+                "options": null,
+                "answer_key": "learning"
+              },
+              {
+                "question_number": 35,
+                "question_text": "Excessive napping may disrupt ______ sleep.",
+                "options": null,
+                "answer_key": "nighttime"
+              }
+            ]
+          },
+          {
+            "questions_range": "36-40",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B, or C.",
+            "questions": [
+              {
+                "question_number": 36,
+                "question_text": "What is the main topic of the lecture?",
+                "options": ["A. Types of sleep", "B. Sleep and memory", "C. Sleep disorders"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 37,
+                "question_text": "Which type of sleep is linked to creativity?",
+                "options": ["A. Non-REM", "B. REM", "C. Deep sleep"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 38,
+                "question_text": "What is recommended to improve memory?",
+                "options": ["A. Drinking coffee", "B. Regular sleep schedule", "C. Studying late at night"],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 39,
+                "question_text": "What can short naps help with?",
+                "options": ["A. Boosting memory", "B. Disrupting sleep", "C. Causing insomnia"],
+                "answer_key": "A"
+              },
+              {
+                "question_number": 40,
+                "question_text": "What is a possible negative effect of excessive napping?",
+                "options": ["A. Improved concentration", "B. Disrupted nighttime sleep", "C. Better learning"],
+                "answer_key": "B"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "passages": [
+      {
+        "passage_number": 1,
+        "title": "The History of the Modern Bicycle",
+        "content": "The modern bicycle is the result of nearly two centuries of innovation. The earliest known bicycle, called the 'Draisine' or 'running machine', was invented by Baron Karl von Drais in 1817. This wooden vehicle had two wheels and was propelled by the rider pushing their feet against the ground. It had no pedals, chain, or brakes, and was made almost entirely of wood. In the 1860s, French inventors Pierre Michaux and his son Ernest added pedals to the front wheel, creating the 'velocipede', also known as the 'boneshaker' due to its uncomfortable ride on cobblestone streets. The next major development came in the 1870s with the 'penny-farthing', which featured a large front wheel and a much smaller rear wheel. This design allowed for greater speed but was difficult to mount and dangerous to ride. The breakthrough that led to the modern bicycle came in the 1880s, when John Kemp Starley developed the 'safety bicycle'. This model had two wheels of equal size, a chain drive to the rear wheel, and pneumatic tyres, making it safer and more comfortable. The safety bicycle quickly became popular and set the standard for future designs. Over the 20th century, bicycles continued to evolve. Lightweight steel frames replaced heavy iron ones, gears were introduced to make riding easier on hills, and new materials like aluminium and carbon fibre made bikes even lighter and stronger. Today, bicycles are used for transportation, sport, and recreation all over the world. They are valued for their efficiency, environmental friendliness, and health benefits. In many cities, bike-sharing schemes and dedicated cycling lanes have encouraged more people to cycle. The bicycle remains a symbol of innovation and sustainable transport.",
+        "question_sets": [
+          {
+            "questions_range": "1-7",
+            "question_type": "true_false_not_given",
+            "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE, FALSE, or NOT GIVEN.",
+            "questions": [
+              {
+                "question_number": 1,
+                "question_text": "The first bicycle was made entirely of wood.",
+                "options": null,
+                "answer_key": "TRUE"
+              },
+              {
+                "question_number": 2,
+                "question_text": "The 'velocipede' was comfortable to ride on all surfaces.",
+                "options": null,
+                "answer_key": "FALSE"
+              },
+              {
+                "question_number": 3,
+                "question_text": "The 'penny-farthing' was safer than earlier bicycles.",
+                "options": null,
+                "answer_key": "FALSE"
+              },
+              {
+                "question_number": 4,
+                "question_text": "The safety bicycle had two wheels of equal size.",
+                "options": null,
+                "answer_key": "TRUE"
+              },
+              {
+                "question_number": 5,
+                "question_text": "Gears were introduced in the 19th century.",
+                "options": null,
+                "answer_key": "NOT GIVEN"
+              },
+              {
+                "question_number": 6,
+                "question_text": "Modern bicycles are made from a variety of materials.",
+                "options": null,
+                "answer_key": "TRUE"
+              },
+              {
+                "question_number": 7,
+                "question_text": "Bicycles are only used for sport today.",
+                "options": null,
+                "answer_key": "FALSE"
+              }
+            ]
+          },
+          {
+            "questions_range": "8-13",
+            "question_type": "fill_in_the_blanks",
+            "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+            "questions": [
+              {
+                "question_number": 8,
+                "question_text": "The first bicycle was called the ______.",
+                "options": null,
+                "answer_key": "Draisine"
+              },
+              {
+                "question_number": 9,
+                "question_text": "The 'velocipede' was also known as the ______.",
+                "options": null,
+                "answer_key": "boneshaker"
+              },
+              {
+                "question_number": 10,
+                "question_text": "The 'penny-farthing' had a large ______ wheel.",
+                "options": null,
+                "answer_key": "front"
+              },
+              {
+                "question_number": 11,
+                "question_text": "The 'safety bicycle' used ______ tyres.",
+                "options": null,
+                "answer_key": "pneumatic"
+              },
+              {
+                "question_number": 12,
+                "question_text": "Modern bicycles are valued for their ______.",
+                "options": null,
+                "answer_key": "efficiency"
+              },
+              {
+                "question_number": 13,
+                "question_text": "Many cities have introduced bike-sharing ______.",
+                "options": null,
+                "answer_key": "schemes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passage_number": 2,
+        "title": "The Benefits and Challenges of Urban Green Spaces",
+        "content": "Urban green spaces, such as parks, gardens, and nature reserves, play a crucial role in improving the quality of life in cities. They provide residents with opportunities for recreation, relaxation, and social interaction. Studies have shown that access to green spaces can reduce stress, improve mental health, and encourage physical activity. In addition, these areas help to reduce air pollution, lower urban temperatures, and support biodiversity by providing habitats for various species. However, creating and maintaining green spaces in densely populated cities is not without challenges. Land is often expensive and limited, making it difficult to allocate space for parks. Furthermore, green spaces require ongoing maintenance, including watering, landscaping, and waste management. There is also the issue of safety, as poorly maintained parks can attract crime. Despite these challenges, many city planners are finding innovative solutions. Some cities are converting unused land, such as old railway lines, into parks. Others are encouraging rooftop gardens and vertical greenery on buildings. Community involvement is also key, with local residents participating in the design and upkeep of green spaces. In conclusion, while urban green spaces present certain difficulties, their benefits to health, environment, and community well-being make them an essential part of modern cities.",
+        "question_sets": [
+          {
+            "questions_range": "14-18",
+            "question_type": "matching_headings",
+            "instruction": "Choose the correct heading for each section from the list of headings below.",
+            "questions": [
+              {
+                "question_number": 14,
+                "question_text": "Paragraph A",
+                "options": [
+                  "i. The importance of green spaces",
+                  "ii. Urban planning challenges",
+                  "iii. Community involvement",
+                  "iv. Environmental benefits"
+                ],
+                "answer_key": "i"
+              },
+              {
+                "question_number": 15,
+                "question_text": "Paragraph B",
+                "options": [
+                  "i. The importance of green spaces",
+                  "ii. Urban planning challenges",
+                  "iii. Community involvement",
+                  "iv. Environmental benefits"
+                ],
+                "answer_key": "iv"
+              },
+              {
+                "question_number": 16,
+                "question_text": "Paragraph C",
+                "options": [
+                  "i. The importance of green spaces",
+                  "ii. Urban planning challenges",
+                  "iii. Community involvement",
+                  "iv. Environmental benefits"
+                ],
+                "answer_key": "ii"
+              },
+              {
+                "question_number": 17,
+                "question_text": "Paragraph D",
+                "options": [
+                  "i. The importance of green spaces",
+                  "ii. Urban planning challenges",
+                  "iii. Community involvement",
+                  "iv. Environmental benefits"
+                ],
+                "answer_key": "iii"
+              },
+              {
+                "question_number": 18,
+                "question_text": "Paragraph E",
+                "options": [
+                  "i. The importance of green spaces",
+                  "ii. Urban planning challenges",
+                  "iii. Community involvement",
+                  "iv. Environmental benefits"
+                ],
+                "answer_key": "i"
+              }
+            ]
+          },
+          {
+            "questions_range": "19-22",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B, C, or D.",
+            "questions": [
+              {
+                "question_number": 19,
+                "question_text": "Which of the following is NOT mentioned as a benefit of green spaces?",
+                "options": [
+                  "A. Reducing stress",
+                  "B. Increasing property prices",
+                  "C. Supporting biodiversity",
+                  "D. Lowering urban temperatures"
+                ],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 20,
+                "question_text": "What is a challenge in creating urban green spaces?",
+                "options": [
+                  "A. Lack of interest",
+                  "B. High land costs",
+                  "C. Too much rainfall",
+                  "D. Overpopulation of animals"
+                ],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 21,
+                "question_text": "How are some cities creating new green spaces?",
+                "options": [
+                  "A. Building new parks in forests",
+                  "B. Converting unused land",
+                  "C. Reducing the number of buildings",
+                  "D. Planting trees on roads"
+                ],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 22,
+                "question_text": "Who is involved in the upkeep of green spaces?",
+                "options": [
+                  "A. Only city officials",
+                  "B. Only private companies",
+                  "C. Local residents",
+                  "D. Tourists"
+                ],
+                "answer_key": "C"
+              }
+            ]
+          },
+          {
+            "questions_range": "23-26",
+            "question_type": "fill_in_the_blanks",
+            "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+            "questions": [
+              {
+                "question_number": 23,
+                "question_text": "Green spaces can help to reduce ______ in cities.",
+                "options": null,
+                "answer_key": "air pollution"
+              },
+              {
+                "question_number": 24,
+                "question_text": "Some parks are created from old ______ lines.",
+                "options": null,
+                "answer_key": "railway"
+              },
+              {
+                "question_number": 25,
+                "question_text": "Rooftop gardens are an example of ______ greenery.",
+                "options": null,
+                "answer_key": "vertical"
+              },
+              {
+                "question_number": 26,
+                "question_text": "Green spaces require regular ______.",
+                "options": null,
+                "answer_key": "maintenance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passage_number": 3,
+        "title": "The Rise of Online Education",
+        "content": "In recent years, online education has transformed the way people learn. With the development of high-speed internet and digital platforms, students can now access courses from universities around the world without leaving their homes. Online education offers flexibility, allowing learners to study at their own pace and fit their studies around work or family commitments. It also provides opportunities for people in remote areas to gain qualifications that were previously out of reach. However, online learning is not without its drawbacks. Some students find it difficult to stay motivated without face-to-face interaction. Technical issues, such as poor internet connections, can also disrupt learning. In addition, not all courses are suitable for online delivery, especially those requiring practical skills or laboratory work. Despite these challenges, the popularity of online education continues to grow. Many universities now offer 'blended' courses, combining online and in-person teaching. Employers are increasingly recognising online qualifications, although some still prefer traditional degrees. The future of education is likely to involve a mix of online and classroom learning, as technology continues to evolve and new teaching methods are developed.",
+        "question_sets": [
+          {
+            "questions_range": "27-32",
+            "question_type": "yes_no_not_given",
+            "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3? Write YES, NO, or NOT GIVEN.",
+            "questions": [
+              {
+                "question_number": 27,
+                "question_text": "Online education is only available to university students.",
+                "options": null,
+                "answer_key": "NO"
+              },
+              {
+                "question_number": 28,
+                "question_text": "Online education allows students to study at their own pace.",
+                "options": null,
+                "answer_key": "YES"
+              },
+              {
+                "question_number": 29,
+                "question_text": "All employers accept online qualifications.",
+                "options": null,
+                "answer_key": "NO"
+              },
+              {
+                "question_number": 30,
+                "question_text": "Technical problems can affect online learning.",
+                "options": null,
+                "answer_key": "YES"
+              },
+              {
+                "question_number": 31,
+                "question_text": "Online courses are suitable for all subjects.",
+                "options": null,
+                "answer_key": "NO"
+              },
+              {
+                "question_number": 32,
+                "question_text": "Blended courses combine online and classroom teaching.",
+                "options": null,
+                "answer_key": "YES"
+              }
+            ]
+          },
+          {
+            "questions_range": "33-37",
+            "question_type": "matching_sentence_endings",
+            "instruction": "Complete each sentence with the correct ending, A–G, below.",
+            "questions": [
+              {
+                "question_number": 33,
+                "question_text": "Online education has made it possible for students to",
+                "options": [
+                  "A. study at their own pace",
+                  "B. access courses from anywhere",
+                  "C. avoid technical problems",
+                  "D. meet face-to-face",
+                  "E. gain practical skills",
+                  "F. combine work and study",
+                  "G. attend laboratory classes"
+                ],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 34,
+                "question_text": "Some students struggle with online learning because",
+                "options": [
+                  "A. study at their own pace",
+                  "B. access courses from anywhere",
+                  "C. avoid technical problems",
+                  "D. meet face-to-face",
+                  "E. gain practical skills",
+                  "F. combine work and study",
+                  "G. attend laboratory classes"
+                ],
+                "answer_key": "D"
+              },
+              {
+                "question_number": 35,
+                "question_text": "Not all courses are suitable for online delivery, especially those that",
+                "options": [
+                  "A. study at their own pace",
+                  "B. access courses from anywhere",
+                  "C. avoid technical problems",
+                  "D. meet face-to-face",
+                  "E. gain practical skills",
+                  "F. combine work and study",
+                  "G. attend laboratory classes"
+                ],
+                "answer_key": "E"
+              },
+              {
+                "question_number": 36,
+                "question_text": "Blended courses are becoming more common because they",
+                "options": [
+                  "A. study at their own pace",
+                  "B. access courses from anywhere",
+                  "C. avoid technical problems",
+                  "D. meet face-to-face",
+                  "E. gain practical skills",
+                  "F. combine work and study",
+                  "G. attend laboratory classes"
+                ],
+                "answer_key": "F"
+              },
+              {
+                "question_number": 37,
+                "question_text": "The future of education will probably",
+                "options": [
+                  "A. study at their own pace",
+                  "B. access courses from anywhere",
+                  "C. avoid technical problems",
+                  "D. meet face-to-face",
+                  "E. gain practical skills",
+                  "F. combine work and study",
+                  "G. attend laboratory classes"
+                ],
+                "answer_key": "F"
+              }
+            ]
+          },
+          {
+            "questions_range": "38-40",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B, C, or D.",
+            "questions": [
+              {
+                "question_number": 38,
+                "question_text": "What is one advantage of online education mentioned in the passage?",
+                "options": [
+                  "A. Lower tuition fees",
+                  "B. Flexible study schedule",
+                  "C. Guaranteed employment",
+                  "D. More social interaction"
+                ],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 39,
+                "question_text": "What is a disadvantage of online learning?",
+                "options": [
+                  "A. Lack of flexibility",
+                  "B. Technical issues",
+                  "C. High costs",
+                  "D. Limited course options"
+                ],
+                "answer_key": "B"
+              },
+              {
+                "question_number": 40,
+                "question_text": "According to the passage, the future of education will most likely involve",
+                "options": [
+                  "A. Only online learning",
+                  "B. Only classroom learning",
+                  "C. A combination of online and classroom learning",
+                  "D. No formal education"
+                ],
+                "answer_key": "C"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "tasks": [
+      {
+        "task_number": 1,
+        "instruction": "You should spend about 20 minutes on this task. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+        "data_description": "The table below shows the percentage of households in five different countries (USA, UK, Japan, Brazil, and India) that owned a computer in the years 2000, 2005, and 2010. In 2000, the USA had the highest percentage at 51%, followed by the UK at 38%, Japan at 30%, Brazil at 12%, and India at 5%. By 2005, ownership had increased in all countries: USA (65%), UK (54%), Japan (48%), Brazil (25%), and India (13%). In 2010, the figures rose further: USA (78%), UK (70%), Japan (66%), Brazil (42%), and India (27%). The data shows a steady increase in computer ownership in all countries, with the USA consistently leading and India having the lowest percentage throughout the period."
+      },
+      {
+        "task_number": 2,
+        "instruction": "You should spend about 40 minutes on this task. Write about the following topic. Give reasons for your answer and include any relevant examples. Write at least 250 words.",
+        "prompt": "Some people believe that the best way to improve public health is by increasing the number of sports facilities. Others, however, think that this would have little effect on public health and that other measures are required. Discuss both views and give your own opinion."
+      }
+    ]
+  },
+  "speaking": {
+    "part_1": {
+      "topic": "Daily Routine",
+      "questions": [
+        "What is your typical morning routine?",
+        "Is your routine different on weekends?"
+      ]
+    },
+    "part_2": {
+      "cue_card_topic": "Describe a historical building you have visited.",
+      "bullet_points": [
+        "Where it is located",
+        "What it looks like",
+        "What you learned there",
+        "And explain why you liked or disliked it."
+      ],
+      "instruction": "You will have to talk about the topic for one to two minutes. You have one minute to think about what you are going to say."
+    },
+    "part_3": {
+      "topic": "History and Architecture",
+      "questions": [
+        "How important is it to preserve historical buildings?",
+        "Should modern cities be designed to look like historical ones?"
+      ]
+    }
+  }
+}

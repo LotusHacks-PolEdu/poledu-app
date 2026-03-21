@@ -1,0 +1,909 @@
+{
+  "test_title": "Mock IELTS Academic Test",
+  "listening": {
+    "parts": [
+      {
+        "part_number": 1,
+        "context": "A conversation between a customer and a travel agent about booking a holiday.",
+        "audio_script": "Agent: Good morning, Sunbeam Travel Agency, how can I help you today?\nCustomer: Hi, yes, I’d like to book a holiday, but I’m not quite sure where to start. I was hoping you could help me with some information.\nAgent: Of course! I’d be happy to help. First, can I take your name, please?\nCustomer: Sure, it’s Emily Carter.\nAgent: Thank you, Emily. Now, do you have a particular destination in mind, or are you open to suggestions?\nCustomer: I’m thinking about somewhere warm, maybe Spain or Italy. I haven’t decided yet.\nAgent: Both are excellent choices. When are you planning to travel?\nCustomer: I’d like to go next week, preferably on Tuesday if possible.\nAgent: Let me check availability for flights on Tuesday. And how long would you like to stay?\nCustomer: I was thinking about a week, so returning the following Tuesday.\nAgent: Great. Are you travelling alone or with someone?\nCustomer: I’ll be travelling with my sister, so there will be two of us.\nAgent: Noted. And what’s your budget for the trip?\nCustomer: I’d like to keep it under £1,000 per person, if possible.\nAgent: That should be doable. Do you prefer a hotel or an apartment?\nCustomer: I think an apartment would be better for us.\nAgent: Alright. And do you have any special requirements? For example, do you need wheelchair access or a swimming pool?\nCustomer: No special requirements, but a swimming pool would be nice.\nAgent: Okay, I’ll look for apartments with a pool. Now, would you prefer to fly from Heathrow or Gatwick?\nCustomer: Heathrow would be more convenient for us.\nAgent: Perfect. I’ll search for flights from Heathrow to Spain and Italy on Tuesday next week, for two people, staying for one week, with accommodation in an apartment with a swimming pool, and a budget of £1,000 per person. Is that correct?\nCustomer: Yes, that’s right.\nAgent: Do you have a preference between Spain and Italy, or should I check both?\nCustomer: Could you check both, please?\nAgent: Certainly. I’ll get back to you with some options. Can I have your contact number?\nCustomer: Yes, it’s 07983 456 210.\nAgent: Thank you. And your email address?\nCustomer: It’s emily.carter@gmail.com.\nAgent: Got it. I’ll send you an email with the options by this afternoon. Is there anything else I can help you with?\nCustomer: No, that’s everything for now. Thank you so much for your help.\nAgent: You’re welcome, Emily. I’ll be in touch soon. Have a great day!\nCustomer: You too. Goodbye.\nAgent: Goodbye.",
+        "question_sets": [
+          {
+            "questions_range": "1-6",
+            "question_type": "fill_in_the_blanks",
+            "instruction": "Complete the notes below. Write ONE WORD ONLY AND/OR A NUMBER for each answer.",
+            "questions": [
+              {
+                "question_number": 1,
+                "question_text": "Customer wants to travel on ______.",
+                "options": null,
+                "answer": "Tuesday"
+              },
+              {
+                "question_number": 2,
+                "question_text": "Customer's surname is ______.",
+                "options": null,
+                "answer": "Carter"
+              },
+              {
+                "question_number": 3,
+                "question_text": "Customer will be travelling with her ______.",
+                "options": null,
+                "answer": "sister"
+              },
+              {
+                "question_number": 4,
+                "question_text": "Preferred departure airport is ______.",
+                "options": null,
+                "answer": "Heathrow"
+              },
+              {
+                "question_number": 5,
+                "question_text": "Customer's budget is £______ per person.",
+                "options": null,
+                "answer": "1,000"
+              },
+              {
+                "question_number": 6,
+                "question_text": "Customer's contact number is ______.",
+                "options": null,
+                "answer": "07983 456 210"
+              }
+            ]
+          },
+          {
+            "questions_range": "7-10",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B or C.",
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "What type of accommodation does the customer prefer?",
+                "options": {
+                  "A": "Hotel",
+                  "B": "Apartment",
+                  "C": "Villa"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 8,
+                "question_text": "Which facility is important to the customer?",
+                "options": {
+                  "A": "Wheelchair access",
+                  "B": "Swimming pool",
+                  "C": "Gym"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 9,
+                "question_text": "How long does the customer want to stay?",
+                "options": {
+                  "A": "Five days",
+                  "B": "One week",
+                  "C": "Two weeks"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 10,
+                "question_text": "How will the agent send the holiday options?",
+                "options": {
+                  "A": "By post",
+                  "B": "By email",
+                  "C": "By phone"
+                },
+                "answer": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "part_number": 2,
+        "context": "A monologue by a community centre manager about upcoming events.",
+        "audio_script": "Hello everyone, and thank you for coming to our monthly update here at the Riverside Community Centre. My name is Mark Evans, and I’m the manager here. I’d like to take a few minutes to tell you about some of the exciting events and activities we have planned for the coming month. \n\nFirst, let me start with our annual Spring Fair, which will take place on Saturday, the 15th of April. The fair will run from 10 a.m. until 4 p.m., and we’ll have a variety of stalls selling homemade crafts, local produce, and delicious food. There will also be games and activities for children, including face painting and a bouncy castle. Entry is free for everyone, so please bring your friends and family along.\n\nNext, we’re launching a new series of evening classes. These will begin on Monday, the 17th of April, and will run every Monday and Wednesday evening from 7 to 9 p.m. The classes cover a range of topics, including photography, creative writing, and basic computer skills. Each course lasts for six weeks, and the cost is £30 per person for the full course. You can sign up at the reception desk or on our website.\n\nFor those interested in sports, our weekly yoga sessions continue every Thursday morning at 9:30. These are suitable for all levels, and mats are provided. We also have a new badminton club starting on Friday evenings at 6 p.m. All equipment is supplied, and there’s no need to book in advance—just turn up and play.\n\nI’d also like to mention our monthly film night, which is held on the last Friday of every month. This month, we’ll be showing ‘The Grand Adventure’ on Friday, the 28th of April, starting at 7:30 p.m. Tickets are £3 each and include a free drink and popcorn. \n\nFinally, we’re always looking for volunteers to help with our events, especially the Spring Fair. If you’re interested in volunteering, please speak to me or any member of staff after this meeting, or send us an email at info@riversidecc.org. Volunteers receive a free T-shirt and lunch on the day of the fair.\n\nThank you for your attention. I hope you’ll join us for some of these activities, and please don’t hesitate to ask if you have any questions or suggestions.",
+        "question_sets": [
+          {
+            "questions_range": "11-15",
+            "question_type": "fill_in_the_blanks",
+            "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+            "questions": [
+              {
+                "question_number": 11,
+                "question_text": "The Spring Fair will be held on ______.",
+                "options": null,
+                "answer": "15th of April"
+              },
+              {
+                "question_number": 12,
+                "question_text": "The fair will finish at ______.",
+                "options": null,
+                "answer": "4 p.m."
+              },
+              {
+                "question_number": 13,
+                "question_text": "Evening classes start on ______.",
+                "options": null,
+                "answer": "17th of April"
+              },
+              {
+                "question_number": 14,
+                "question_text": "Each evening course costs £______ per person.",
+                "options": null,
+                "answer": "30"
+              },
+              {
+                "question_number": 15,
+                "question_text": "Yoga sessions are held every ______ morning.",
+                "options": null,
+                "answer": "Thursday"
+              }
+            ]
+          },
+          {
+            "questions_range": "16-20",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B or C.",
+            "questions": [
+              {
+                "question_number": 16,
+                "question_text": "What time do the evening classes begin?",
+                "options": {
+                  "A": "6 p.m.",
+                  "B": "7 p.m.",
+                  "C": "8 p.m."
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 17,
+                "question_text": "How long does each evening course last?",
+                "options": {
+                  "A": "Four weeks",
+                  "B": "Six weeks",
+                  "C": "Eight weeks"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 18,
+                "question_text": "When does the badminton club meet?",
+                "options": {
+                  "A": "Thursday morning",
+                  "B": "Friday evening",
+                  "C": "Wednesday evening"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 19,
+                "question_text": "What is included in the film night ticket?",
+                "options": {
+                  "A": "A free drink and popcorn",
+                  "B": "A free meal",
+                  "C": "A free T-shirt"
+                },
+                "answer": "A"
+              },
+              {
+                "question_number": 20,
+                "question_text": "What do volunteers receive for helping at the Spring Fair?",
+                "options": {
+                  "A": "A free course",
+                  "B": "A free T-shirt and lunch",
+                  "C": "A free ticket"
+                },
+                "answer": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "part_number": 3,
+        "context": "A discussion between two university students, Anna and Ben, and their tutor, Dr. Lee, about a group project.",
+        "audio_script": "Dr. Lee: Good afternoon, Anna and Ben. I wanted to meet today to discuss your progress on the group project. How are things going so far?\nAnna: Hi, Dr. Lee. Um, we’ve made a start, but we’re a bit unsure about the structure. We’ve done some research, but we’re not sure if we’re on the right track.\nBen: Yeah, we’ve divided the work, but I think we need some guidance on the main sections.\nDr. Lee: That’s understandable. Let’s go over the requirements. The project should have an introduction, a literature review, a methodology section, results, and a conclusion. Have you decided who will write each part?\nAnna: Yes, I’m doing the introduction and the conclusion, and Ben is working on the literature review and results. We’re both going to work on the methodology together.\nDr. Lee: That sounds like a good plan. Have you found enough sources for your literature review, Ben?\nBen: I’ve found about ten articles, but I’m not sure if they’re all relevant. Some are a bit outdated.\nDr. Lee: Try to use more recent studies, ideally from the last five years. Also, make sure to include at least one book as well as journal articles.\nBen: Okay, I’ll look for a book to include.\nDr. Lee: And Anna, how are you getting on with the introduction?\nAnna: I’ve written a draft, but I think it’s too long. It’s about 600 words.\nDr. Lee: The introduction should be around 300 words, so you’ll need to shorten it. Focus on the main aims and background.\nAnna: Right, I’ll cut it down.\nDr. Lee: What about your methodology? Have you decided how you’ll collect your data?\nBen: We’re planning to use a questionnaire. We’ve written some questions, but we’re not sure how many responses we need.\nDr. Lee: Aim for at least 30 responses to get reliable results. And remember to include both open and closed questions.\nAnna: Should we do interviews as well?\nDr. Lee: It’s not required, but it could add depth to your findings if you have time.\nBen: Okay, we’ll see if we can fit that in.\nDr. Lee: When do you plan to finish the first draft?\nAnna: We’re aiming for next Friday.\nDr. Lee: That’s good. I’d like to see your draft by then so I can give you feedback before the final submission.\nBen: Sure, we’ll send it to you by email.\nDr. Lee: Excellent. And don’t forget to check the referencing guidelines before you submit.\nAnna: Yes, we’ll make sure to do that.\nDr. Lee: Great. If you have any more questions, just let me know. Good luck with the project!\nBen: Thank you, Dr. Lee.\nAnna: Thanks!",
+        "question_sets": [
+          {
+            "questions_range": "21-25",
+            "question_type": "matching",
+            "instruction": "Match each person to the part of the project they are responsible for. Write the correct letter, A, B, or C, next to questions 21-25.\nA. Anna\nB. Ben\nC. Both",
+            "questions": [
+              {
+                "question_number": 21,
+                "question_text": "Introduction",
+                "options": {
+                  "A": "Anna",
+                  "B": "Ben",
+                  "C": "Both"
+                },
+                "answer": "A"
+              },
+              {
+                "question_number": 22,
+                "question_text": "Literature review",
+                "options": {
+                  "A": "Anna",
+                  "B": "Ben",
+                  "C": "Both"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 23,
+                "question_text": "Methodology",
+                "options": {
+                  "A": "Anna",
+                  "B": "Ben",
+                  "C": "Both"
+                },
+                "answer": "C"
+              },
+              {
+                "question_number": 24,
+                "question_text": "Results",
+                "options": {
+                  "A": "Anna",
+                  "B": "Ben",
+                  "C": "Both"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 25,
+                "question_text": "Conclusion",
+                "options": {
+                  "A": "Anna",
+                  "B": "Ben",
+                  "C": "Both"
+                },
+                "answer": "A"
+              }
+            ]
+          },
+          {
+            "questions_range": "26-30",
+            "question_type": "fill_in_the_blanks",
+            "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+            "questions": [
+              {
+                "question_number": 26,
+                "question_text": "The introduction should be about ______ words.",
+                "options": null,
+                "answer": "300"
+              },
+              {
+                "question_number": 27,
+                "question_text": "Ben needs to include at least one ______ in the literature review.",
+                "options": null,
+                "answer": "book"
+              },
+              {
+                "question_number": 28,
+                "question_text": "The questionnaire should have at least ______ responses.",
+                "options": null,
+                "answer": "30"
+              },
+              {
+                "question_number": 29,
+                "question_text": "The first draft is due next ______.",
+                "options": null,
+                "answer": "Friday"
+              },
+              {
+                "question_number": 30,
+                "question_text": "The students will send their draft by ______.",
+                "options": null,
+                "answer": "email"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "part_number": 4,
+        "context": "A lecture by Dr. Patel about the history of bicycles.",
+        "audio_script": "Good morning, everyone. Today, I’d like to talk to you about the fascinating history of bicycles. The story of the bicycle begins in the early 19th century, with a German inventor named Karl Drais. In 1817, Drais created a two-wheeled vehicle called the ‘laufmaschine’ or ‘running machine’. It didn’t have pedals; instead, riders pushed themselves along with their feet. This invention was also known as the ‘dandy horse’ in England.\n\nThe next major development came in the 1860s in France, when pedals were added to the front wheel, creating what was called the ‘velocipede’. These early bicycles were made of wood and iron, and they were quite uncomfortable to ride. Because of the bumpy ride, they earned the nickname ‘boneshaker’.\n\nIn the 1870s, the design changed again with the introduction of the ‘penny-farthing’. This bicycle had a very large front wheel and a much smaller rear wheel. The large wheel allowed for greater speed, but the high seat made it difficult and dangerous to ride, especially when stopping or mounting.\n\nThe modern bicycle, as we know it, began to take shape in the 1880s. The ‘safety bicycle’ was invented, featuring two wheels of equal size, a chain drive to the rear wheel, and pneumatic tyres. This design made bicycles much safer and more comfortable, and it quickly became popular around the world.\n\nBicycles had a significant impact on society. They provided affordable personal transport and gave people, especially women, greater independence. In fact, the bicycle played a role in the women’s rights movement, as it allowed women to travel freely and even influenced changes in clothing, such as the adoption of bloomers instead of long skirts.\n\nIn the 20th century, bicycles continued to evolve. The development of lightweight materials, such as aluminium and carbon fibre, made bikes faster and easier to handle. Gears and advanced braking systems were introduced, allowing cyclists to tackle hills and ride more safely.\n\nToday, bicycles are used for many purposes: commuting, sport, recreation, and even as a tool for environmental sustainability. In many cities, bike-sharing schemes have become popular, encouraging more people to cycle and reducing traffic congestion.\n\nTo sum up, the bicycle has a rich history of innovation and social change. From the simple running machine to the high-tech bikes of today, it remains an important part of our lives. Thank you for listening.",
+        "question_sets": [
+          {
+            "questions_range": "31-35",
+            "question_type": "fill_in_the_blanks",
+            "instruction": "Complete the summary below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+            "questions": [
+              {
+                "question_number": 31,
+                "question_text": "The first bicycle was invented in ______.",
+                "options": null,
+                "answer": "1817"
+              },
+              {
+                "question_number": 32,
+                "question_text": "The ‘laufmaschine’ was also called the ______ in England.",
+                "options": null,
+                "answer": "dandy horse"
+              },
+              {
+                "question_number": 33,
+                "question_text": "The ‘velocipede’ was nicknamed the ______.",
+                "options": null,
+                "answer": "boneshaker"
+              },
+              {
+                "question_number": 34,
+                "question_text": "The ‘penny-farthing’ had a large ______ wheel.",
+                "options": null,
+                "answer": "front"
+              },
+              {
+                "question_number": 35,
+                "question_text": "The ‘safety bicycle’ had two wheels of ______ size.",
+                "options": null,
+                "answer": "equal"
+              }
+            ]
+          },
+          {
+            "questions_range": "36-40",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B or C.",
+            "questions": [
+              {
+                "question_number": 36,
+                "question_text": "Who invented the first bicycle?",
+                "options": {
+                  "A": "Karl Drais",
+                  "B": "John Starley",
+                  "C": "Pierre Michaux"
+                },
+                "answer": "A"
+              },
+              {
+                "question_number": 37,
+                "question_text": "What was a major advantage of the ‘safety bicycle’?",
+                "options": {
+                  "A": "It was faster",
+                  "B": "It was safer and more comfortable",
+                  "C": "It was made of wood"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 38,
+                "question_text": "How did bicycles contribute to women’s rights?",
+                "options": {
+                  "A": "They were used in protests",
+                  "B": "They allowed women to travel freely",
+                  "C": "They were invented by women"
+                },
+                "answer": "B"
+              },
+              {
+                "question_number": 39,
+                "question_text": "Which material is NOT mentioned as used in modern bicycles?",
+                "options": {
+                  "A": "Aluminium",
+                  "B": "Carbon fibre",
+                  "C": "Steel"
+                },
+                "answer": "C"
+              },
+              {
+                "question_number": 40,
+                "question_text": "What is one modern use of bicycles mentioned in the lecture?",
+                "options": {
+                  "A": "Bike-sharing schemes",
+                  "B": "Motor racing",
+                  "C": "Delivery services"
+                },
+                "answer": "A"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "passages": [
+      {
+        "passage_number": 1,
+        "title": "The Evolution of Urban Green Spaces",
+        "content": "Urban green spaces, such as parks, gardens, and tree-lined avenues, have become integral components of modern cities. Their evolution reflects shifting societal values, urban planning philosophies, and environmental imperatives. In the 19th century, the rapid industrialization of Western cities led to overcrowding, pollution, and a decline in public health. Reformers advocated for the creation of public parks as a remedy, inspired by the belief that access to nature could counteract the deleterious effects of urban life. The establishment of Central Park in New York City in 1857, designed by Frederick Law Olmsted and Calvert Vaux, marked a seminal moment in the history of urban green spaces. The park was conceived not merely as a recreational facility but as a social equalizer, offering respite to all citizens regardless of class.\n\nThroughout the 20th century, the function and design of urban green spaces diversified. The Garden City movement, initiated by Ebenezer Howard in the United Kingdom, proposed self-contained communities surrounded by greenbelts, integrating nature and urbanity. This concept influenced the development of suburbs and satellite towns worldwide. Meanwhile, the post-war era saw the proliferation of smaller neighborhood parks and playgrounds, reflecting a growing emphasis on accessibility and community engagement.\n\nIn recent decades, the ecological value of urban green spaces has gained prominence. Research has demonstrated that vegetation in cities mitigates the urban heat island effect, improves air quality, and supports biodiversity. Urban planners now prioritize the creation of green corridors and rooftop gardens to enhance ecological connectivity. Moreover, green spaces are increasingly recognized for their role in promoting mental health, fostering social cohesion, and providing opportunities for physical activity.\n\nDespite these benefits, the distribution of green spaces remains uneven. Socioeconomic disparities often dictate access, with affluent neighborhoods enjoying more and better-maintained parks than marginalized communities. Urban densification and competing land uses further threaten the preservation and expansion of green areas. In response, some cities have adopted innovative strategies, such as converting disused railways into linear parks or implementing policies that mandate green space quotas in new developments.\n\nThe future of urban green spaces hinges on balancing competing demands: accommodating population growth, ensuring equitable access, and addressing environmental challenges. As cities grapple with climate change and public health crises, the imperative to integrate nature into urban environments has never been more urgent. The evolution of urban green spaces thus encapsulates broader trends in urbanization, reflecting humanity’s enduring quest to harmonize built and natural environments.",
+        "question_sets": [
+          {
+            "questions_range": "1-7",
+            "question_type": "true_false_not_given",
+            "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+            "questions": [
+              {
+                "question_number": 1,
+                "question_text": "Central Park was the first public park established in the United States.",
+                "options": null,
+                "answer": "NOT GIVEN"
+              },
+              {
+                "question_number": 2,
+                "question_text": "Frederick Law Olmsted believed parks could improve public health.",
+                "options": null,
+                "answer": "TRUE"
+              },
+              {
+                "question_number": 3,
+                "question_text": "The Garden City movement originated in the United States.",
+                "options": null,
+                "answer": "FALSE"
+              },
+              {
+                "question_number": 4,
+                "question_text": "Urban green spaces can help reduce city temperatures.",
+                "options": null,
+                "answer": "TRUE"
+              },
+              {
+                "question_number": 5,
+                "question_text": "All neighborhoods in cities have equal access to green spaces.",
+                "options": null,
+                "answer": "FALSE"
+              },
+              {
+                "question_number": 6,
+                "question_text": "Some cities have transformed old railways into parks.",
+                "options": null,
+                "answer": "TRUE"
+              },
+              {
+                "question_number": 7,
+                "question_text": "The passage predicts that urban green spaces will disappear in the future.",
+                "options": null,
+                "answer": "FALSE"
+              }
+            ]
+          },
+          {
+            "questions_range": "8-13",
+            "question_type": "matching_information",
+            "instruction": "Match each statement with the correct section of the passage (A–E). Write the correct letter, A–E, next to questions 8–13.",
+            "questions": [
+              {
+                "question_number": 8,
+                "question_text": "Describes the historical context that led to the creation of public parks.",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "answer": "A"
+              },
+              {
+                "question_number": 9,
+                "question_text": "Mentions the influence of the Garden City movement on urban development.",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "answer": "B"
+              },
+              {
+                "question_number": 10,
+                "question_text": "Explains the environmental benefits of urban vegetation.",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "answer": "C"
+              },
+              {
+                "question_number": 11,
+                "question_text": "Highlights the unequal distribution of green spaces.",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "answer": "D"
+              },
+              {
+                "question_number": 12,
+                "question_text": "Discusses innovative approaches to creating new green spaces.",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "answer": "D"
+              },
+              {
+                "question_number": 13,
+                "question_text": "Considers the challenges and future prospects for urban green spaces.",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "answer": "E"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passage_number": 2,
+        "title": "The Role of Peer Review in Scientific Publishing",
+        "content": "Peer review is a cornerstone of modern scientific publishing, serving as a mechanism for quality control and validation of research findings. The process typically involves the evaluation of submitted manuscripts by independent experts in the relevant field, who assess the validity, originality, and significance of the work. While the origins of peer review can be traced back to the 18th century, it was not until the mid-20th century that the practice became institutionalized across most scientific disciplines.\n\nThe rationale behind peer review is multifaceted. Primarily, it acts as a filter, ensuring that only research meeting certain standards is disseminated to the wider community. Reviewers scrutinize methodologies, data interpretation, and the logical coherence of arguments, often recommending revisions or, in some cases, outright rejection. This process is intended to safeguard the integrity of the scientific record and foster incremental progress.\n\nHowever, peer review is not without its critics. Detractors argue that the system is susceptible to bias, both conscious and unconscious. For instance, reviewers may favor established paradigms or researchers from prestigious institutions, potentially stifling innovation and perpetuating existing hierarchies. Furthermore, the anonymity of the process, while designed to promote impartiality, can sometimes lead to unconstructive or overly harsh feedback.\n\nRecent years have witnessed calls for reform. Some journals have experimented with open peer review, wherein the identities of authors and reviewers are disclosed, and review reports are published alongside articles. Proponents claim that transparency enhances accountability and encourages more thoughtful critique. Others advocate for post-publication peer review, allowing the broader scientific community to evaluate and comment on published work. While these models offer potential benefits, they also raise concerns about reviewer fatigue, information overload, and the potential for public disputes.\n\nDespite its imperfections, peer review remains deeply embedded in the culture of science. Surveys indicate that most researchers view it as essential, albeit in need of improvement. The challenge lies in balancing rigor with fairness, and innovation with reliability. As the volume and complexity of scientific output continue to grow, the evolution of peer review will likely remain a subject of intense debate.",
+        "question_sets": [
+          {
+            "questions_range": "14-19",
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B, C, or D.",
+            "questions": [
+              {
+                "question_number": 14,
+                "question_text": "What is the primary purpose of peer review in scientific publishing?",
+                "options": [
+                  "A. To increase the number of published articles",
+                  "B. To ensure research meets certain standards",
+                  "C. To promote collaboration between scientists",
+                  "D. To reduce publication costs"
+                ],
+                "answer": "B"
+              },
+              {
+                "question_number": 15,
+                "question_text": "According to the passage, what is a potential drawback of reviewer anonymity?",
+                "options": [
+                  "A. It can lead to biased selection of articles",
+                  "B. It may result in unconstructive feedback",
+                  "C. It increases publication delays",
+                  "D. It discourages innovative research"
+                ],
+                "answer": "B"
+              },
+              {
+                "question_number": 16,
+                "question_text": "Open peer review is characterized by:",
+                "options": [
+                  "A. Faster publication times",
+                  "B. Anonymous reviewers",
+                  "C. Disclosure of author and reviewer identities",
+                  "D. No requirement for revisions"
+                ],
+                "answer": "C"
+              },
+              {
+                "question_number": 17,
+                "question_text": "What concern is associated with post-publication peer review?",
+                "options": [
+                  "A. Lack of transparency",
+                  "B. Reviewer fatigue",
+                  "C. Reduced accountability",
+                  "D. Limited access to articles"
+                ],
+                "answer": "B"
+              },
+              {
+                "question_number": 18,
+                "question_text": "Most researchers believe peer review is:",
+                "options": [
+                  "A. Outdated and unnecessary",
+                  "B. Essential but needs improvement",
+                  "C. Perfect as it is",
+                  "D. Only suitable for certain disciplines"
+                ],
+                "answer": "B"
+              },
+              {
+                "question_number": 19,
+                "question_text": "The passage suggests that the future of peer review will be:",
+                "options": [
+                  "A. Unchanged",
+                  "B. Less important",
+                  "C. A topic of ongoing discussion",
+                  "D. Decided by publishers alone"
+                ],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "questions_range": "20-23",
+            "question_type": "matching_sentence_endings",
+            "instruction": "Complete each sentence with the correct ending, A–F, below.",
+            "questions": [
+              {
+                "question_number": 20,
+                "question_text": "Peer review was institutionalized",
+                "options": [
+                  "A. in the mid-20th century.",
+                  "B. to promote collaboration.",
+                  "C. as a response to reviewer fatigue.",
+                  "D. to increase publication speed.",
+                  "E. in the 18th century.",
+                  "F. to reduce information overload."
+                ],
+                "answer": "A"
+              },
+              {
+                "question_number": 21,
+                "question_text": "Bias in peer review can result in",
+                "options": [
+                  "A. in the mid-20th century.",
+                  "B. to promote collaboration.",
+                  "C. as a response to reviewer fatigue.",
+                  "D. the suppression of innovative ideas.",
+                  "E. in the 18th century.",
+                  "F. to reduce information overload."
+                ],
+                "answer": "D"
+              },
+              {
+                "question_number": 22,
+                "question_text": "Open peer review aims",
+                "options": [
+                  "A. in the mid-20th century.",
+                  "B. to promote collaboration.",
+                  "C. as a response to reviewer fatigue.",
+                  "D. the suppression of innovative ideas.",
+                  "E. to increase transparency.",
+                  "F. to reduce information overload."
+                ],
+                "answer": "E"
+              },
+              {
+                "question_number": 23,
+                "question_text": "Post-publication peer review allows",
+                "options": [
+                  "A. in the mid-20th century.",
+                  "B. to promote collaboration.",
+                  "C. as a response to reviewer fatigue.",
+                  "D. the suppression of innovative ideas.",
+                  "E. to increase transparency.",
+                  "F. the wider community to comment on research."
+                ],
+                "answer": "F"
+              }
+            ]
+          },
+          {
+            "questions_range": "24-26",
+            "question_type": "short_answer",
+            "instruction": "Answer the questions below using NO MORE THAN THREE WORDS AND/OR A NUMBER from the passage.",
+            "questions": [
+              {
+                "question_number": 24,
+                "question_text": "Who typically evaluates manuscripts in the peer review process?",
+                "options": null,
+                "answer": "independent experts"
+              },
+              {
+                "question_number": 25,
+                "question_text": "Which movement in peer review involves publishing review reports alongside articles?",
+                "options": null,
+                "answer": "open peer review"
+              },
+              {
+                "question_number": 26,
+                "question_text": "What is one function of peer review mentioned in the passage?",
+                "options": null,
+                "answer": "quality control"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passage_number": 3,
+        "title": "The Paradox of Choice in Modern Consumer Culture",
+        "content": "In contemporary consumer societies, individuals are confronted with an unprecedented array of choices, from the mundane selection of breakfast cereals to the complex decision-making involved in career planning or healthcare. This proliferation of options is often heralded as a hallmark of personal freedom and economic progress. However, a growing body of psychological and sociological research suggests that an overabundance of choice may paradoxically undermine well-being, leading to decision fatigue, anxiety, and dissatisfaction.\n\nThe concept of the 'paradox of choice' was popularized by psychologist Barry Schwartz, who argued that while some choice is undoubtedly beneficial, excessive choice can be debilitating. Schwartz’s empirical studies demonstrated that consumers presented with a limited set of options were more likely to make a purchase and report satisfaction than those confronted with a vast assortment. The cognitive burden of evaluating numerous alternatives can induce paralysis, as individuals fear making the wrong decision or missing out on superior options. This phenomenon, known as 'analysis paralysis,' is exacerbated by the modern emphasis on individual responsibility and self-optimization.\n\nMoreover, the psychological consequences of abundant choice extend beyond the act of decision-making. Post-decisional regret is more pronounced when alternatives are plentiful, as individuals ruminate over the paths not taken. The rise of social comparison, fueled by digital media, further amplifies dissatisfaction, as people benchmark their choices against curated representations of others’ lives. In this context, the freedom to choose becomes a source of pressure rather than empowerment.\n\nCritics of the paradox of choice thesis contend that the negative effects of choice overload are context-dependent. For instance, in domains where preferences are well-defined or stakes are low, individuals may relish variety. Furthermore, cultural factors mediate the experience of choice: research indicates that people from collectivist societies, who are accustomed to group-based decision-making, may experience less stress in the face of multiple options than their individualist counterparts. Thus, the impact of choice abundance is neither universal nor uniform.\n\nThe commercial implications of the paradox of choice are significant. Marketers and retailers have begun to recognize that curating selections and guiding consumers through decision processes can enhance satisfaction and loyalty. Techniques such as personalized recommendations, default options, and decision aids are increasingly employed to mitigate the adverse effects of choice overload. At the same time, there is a growing movement advocating for 'choice architecture'—the deliberate structuring of environments to facilitate better decisions without restricting freedom.\n\nUltimately, the paradox of choice raises profound questions about autonomy, happiness, and the design of modern life. While the expansion of choice is often equated with progress, it is clear that more is not always better. Navigating the complexities of abundance requires not only individual strategies but also systemic interventions that acknowledge the cognitive and emotional limits of human decision-makers.",
+        "question_sets": [
+          {
+            "questions_range": "27-32",
+            "question_type": "yes_no_not_given",
+            "instruction": "Do the following statements agree with the views of the writer? Write YES if the statement agrees with the views of the writer, NO if it contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+            "questions": [
+              {
+                "question_number": 27,
+                "question_text": "Having more choices always leads to greater happiness.",
+                "options": null,
+                "answer": "NO"
+              },
+              {
+                "question_number": 28,
+                "question_text": "Decision fatigue can result from too many options.",
+                "options": null,
+                "answer": "YES"
+              },
+              {
+                "question_number": 29,
+                "question_text": "Social media has intensified the negative effects of choice overload.",
+                "options": null,
+                "answer": "YES"
+              },
+              {
+                "question_number": 30,
+                "question_text": "All cultures experience choice overload in the same way.",
+                "options": null,
+                "answer": "NO"
+              },
+              {
+                "question_number": 31,
+                "question_text": "Retailers are unaware of the paradox of choice.",
+                "options": null,
+                "answer": "NO"
+              },
+              {
+                "question_number": 32,
+                "question_text": "Choice architecture restricts consumer freedom.",
+                "options": null,
+                "answer": "NO"
+              }
+            ]
+          },
+          {
+            "questions_range": "33-37",
+            "question_type": "matching_headings",
+            "instruction": "Choose the correct heading for each section from the list of headings below. Write the correct number, i–viii, next to questions 33–37.",
+            "questions": [
+              {
+                "question_number": 33,
+                "question_text": "Section 1",
+                "options": [
+                  "i. The origins of consumer choice",
+                  "ii. The psychological impact of too many options",
+                  "iii. The paradox of choice explained",
+                  "iv. Cultural differences in decision-making",
+                  "v. Commercial responses to choice overload",
+                  "vi. The role of digital media",
+                  "vii. The future of consumer culture",
+                  "viii. The limits of autonomy"
+                ],
+                "answer": "i"
+              },
+              {
+                "question_number": 34,
+                "question_text": "Section 2",
+                "options": [
+                  "i. The origins of consumer choice",
+                  "ii. The psychological impact of too many options",
+                  "iii. The paradox of choice explained",
+                  "iv. Cultural differences in decision-making",
+                  "v. Commercial responses to choice overload",
+                  "vi. The role of digital media",
+                  "vii. The future of consumer culture",
+                  "viii. The limits of autonomy"
+                ],
+                "answer": "iii"
+              },
+              {
+                "question_number": 35,
+                "question_text": "Section 3",
+                "options": [
+                  "i. The origins of consumer choice",
+                  "ii. The psychological impact of too many options",
+                  "iii. The paradox of choice explained",
+                  "iv. Cultural differences in decision-making",
+                  "v. Commercial responses to choice overload",
+                  "vi. The role of digital media",
+                  "vii. The future of consumer culture",
+                  "viii. The limits of autonomy"
+                ],
+                "answer": "ii"
+              },
+              {
+                "question_number": 36,
+                "question_text": "Section 4",
+                "options": [
+                  "i. The origins of consumer choice",
+                  "ii. The psychological impact of too many options",
+                  "iii. The paradox of choice explained",
+                  "iv. Cultural differences in decision-making",
+                  "v. Commercial responses to choice overload",
+                  "vi. The role of digital media",
+                  "vii. The future of consumer culture",
+                  "viii. The limits of autonomy"
+                ],
+                "answer": "iv"
+              },
+              {
+                "question_number": 37,
+                "question_text": "Section 5",
+                "options": [
+                  "i. The origins of consumer choice",
+                  "ii. The psychological impact of too many options",
+                  "iii. The paradox of choice explained",
+                  "iv. Cultural differences in decision-making",
+                  "v. Commercial responses to choice overload",
+                  "vi. The role of digital media",
+                  "vii. The future of consumer culture",
+                  "viii. The limits of autonomy"
+                ],
+                "answer": "v"
+              }
+            ]
+          },
+          {
+            "questions_range": "38-40",
+            "question_type": "short_answer",
+            "instruction": "Answer the questions below using NO MORE THAN THREE WORDS from the passage.",
+            "questions": [
+              {
+                "question_number": 38,
+                "question_text": "Who popularized the term 'paradox of choice'?",
+                "options": null,
+                "answer": "Barry Schwartz"
+              },
+              {
+                "question_number": 39,
+                "question_text": "What term describes the inability to decide due to too many options?",
+                "options": null,
+                "answer": "analysis paralysis"
+              },
+              {
+                "question_number": 40,
+                "question_text": "What is the deliberate structuring of environments to aid decision-making called?",
+                "options": null,
+                "answer": "choice architecture"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "tasks": [
+      {
+        "task_number": 1,
+        "instruction": "You should spend about 20 minutes on this task. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "data_description": "The table below provides information about the percentage of households in five different countries (Canada, Germany, Japan, Brazil, and India) that owned various types of electronic devices in the years 2000 and 2020. The devices listed are televisions, computers, and smartphones. In 2000, television ownership was highest in Canada (95%), followed by Germany (92%), Japan (90%), Brazil (70%), and India (45%). By 2020, television ownership had increased slightly in all countries, with Canada and Germany both at 98%, Japan at 97%, Brazil at 85%, and India at 70%. Computer ownership in 2000 was highest in Japan (60%), with Canada at 55%, Germany at 50%, Brazil at 20%, and India at 8%. In 2020, computer ownership rose significantly: Japan (90%), Canada (88%), Germany (85%), Brazil (60%), and India (35%). Smartphone ownership was negligible in all countries in 2000 (all below 2%), but by 2020, it had surged: Japan (95%), Canada (92%), Germany (90%), Brazil (80%), and India (65%)."
+      },
+      {
+        "task_number": 2,
+        "instruction": "You should spend about 40 minutes on this task. Write about the following topic. Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+        "prompt": "Some people believe that the primary purpose of education is to prepare individuals to be useful members of society. Others argue that education should help people achieve personal ambitions. Discuss both these views and give your own opinion."
+      }
+    ]
+  },
+  "speaking": {
+    "part_1": {
+      "topic": "Hobbies and Free Time",
+      "questions": [
+        "What do you like to do in your free time?",
+        "Have your hobbies changed since you were a child?",
+        "How much time do you spend on your hobbies each week?",
+        "Do you prefer to spend your free time alone or with others?"
+      ]
+    },
+    "part_2": {
+      "cue_card_topic": "Describe a creative activity you enjoy doing.",
+      "bullet_points": [
+        "What the activity is",
+        "How you first became interested in it",
+        "How often you do this activity",
+        "Why you find it enjoyable or meaningful"
+      ],
+      "instruction": "You will have to talk about the topic for one to two minutes. You have one minute to think about what you are going to say."
+    },
+    "part_3": {
+      "topic": "Creativity and Leisure in Modern Life",
+      "questions": [
+        "Do you think people today have enough opportunities to be creative in their daily lives?",
+        "How important is it for people to have creative hobbies, and why?"
+      ]
+    }
+  }
+}

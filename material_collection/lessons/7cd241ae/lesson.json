@@ -1,0 +1,293 @@
+{
+  "intro": "Exponentiation helps you describe repeated multiplication and fast growth, which shows up in patterns, science, and graphs that rise (or fall) quickly.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "What It Means",
+      "blocks": [
+        {
+          "id": "block-1",
+          "type": "text",
+          "title": "The core idea",
+          "content": "In b^n, b is the base and n is the exponent. It means multiply b by itself n times (when n is a positive whole number).",
+          "latex": [
+            "b^n=\\underbrace{b\\cdot b\\cdot \\dots \\cdot b}_{n\\text{ times}}",
+            "5^3=5\\cdot 5\\cdot 5=125"
+          ]
+        },
+        {
+          "id": "block-2",
+          "type": "text",
+          "title": "Two key special exponents",
+          "content": "Any nonzero number to the 0 power is 1, and any number to the 1 power is itself.",
+          "latex": [
+            "b^0=1\\ (b\\neq 0)",
+            "b^1=b"
+          ]
+        },
+        {
+          "id": "block-3",
+          "type": "graph",
+          "title": "A quick picture",
+          "prompt": "Compare how fast these grow: y=2^x and y=3^x. Notice both pass through (0,1).",
+          "expression": "2**x",
+          "x_min": -3,
+          "x_max": 3,
+          "y_min": 0,
+          "y_max": 30
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "How To Work With It",
+      "blocks": [
+        {
+          "id": "block-4",
+          "type": "text",
+          "title": "Power rules (same base)",
+          "content": "These rules help you simplify without expanding everything.",
+          "latex": [
+            "a^m\\cdot a^n=a^{m+n}",
+            "\\frac{a^m}{a^n}=a^{m-n}\\ (a\\neq 0)",
+            "(a^m)^n=a^{mn}"
+          ]
+        },
+        {
+          "id": "block-5",
+          "type": "text",
+          "title": "Quick examples",
+          "content": "Add exponents when multiplying, subtract when dividing, and multiply exponents for a power of a power.",
+          "latex": [
+            "2^3\\cdot 2^4=2^{3+4}=2^7",
+            "\\frac{5^6}{5^2}=5^{6-2}=5^4",
+            "(3^2)^4=3^{2\\cdot 4}=3^8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "Practice",
+      "blocks": [
+        {
+          "id": "block-6",
+          "type": "graph-playground",
+          "title": "Try It Yourself",
+          "prompt": "Change the base and see how the curve changes. Keep x between -3 and 3 so the graph stays readable.",
+          "challenge": "Make a curve that grows faster than 2^x but slower than 4^x.",
+          "initial_expression": "3**x"
+        },
+        {
+          "id": "block-7",
+          "type": "text",
+          "title": "One real-life style example",
+          "content": "If you double something each step, that’s a power of 2. For example, after 5 steps of doubling: 2^5 = 32.",
+          "latex": [
+            "2^5=32"
+          ]
+        }
+      ]
+    }
+  ],
+  "mini_test": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "What does 3^4 mean?",
+      "options": [
+        "3+3+3+3",
+        "3\\cdot 4",
+        "3\\cdot 3\\cdot 3\\cdot 3",
+        "4\\cdot 4\\cdot 4"
+      ],
+      "latex": [
+        "3^4"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Simplify: 2^3 \\u00b7 2^5 = ?",
+      "options": [
+        "2^8",
+        "2^15",
+        "4^8",
+        "2^2"
+      ],
+      "latex": [
+        "2^3\\cdot 2^5"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Simplify: (5^2)^3 = ?",
+      "options": [
+        "5^5",
+        "5^6",
+        "25^3",
+        "10^6"
+      ],
+      "latex": [
+        "(5^2)^3"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "prompt": "Which point is on the graph y = 2^x?",
+      "options": [
+        "(0, 0)",
+        "(0, 1)",
+        "(1, 1)",
+        "(2, 2)"
+      ],
+      "latex": [
+        "y=2^x"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "number-answer",
+      "prompt": "Compute: 4^3",
+      "placeholder": "Enter a number"
+    },
+    {
+      "id": "q6",
+      "type": "number-answer",
+      "prompt": "Compute: 10^0",
+      "placeholder": "Enter a number"
+    },
+    {
+      "id": "q7",
+      "type": "number-answer",
+      "prompt": "Simplify to a single power: 3^7 / 3^2 = 3^?",
+      "placeholder": "Enter the exponent"
+    },
+    {
+      "id": "q8",
+      "type": "true-false",
+      "prompt": "True or false: For any nonzero b, b^0 = 1.",
+      "statement": "For any nonzero b, b^0 = 1."
+    },
+    {
+      "id": "q9",
+      "type": "true-false",
+      "prompt": "True or false: 2^3 + 2^3 = 2^6.",
+      "statement": "2^3 + 2^3 = 2^6."
+    },
+    {
+      "id": "q10",
+      "type": "true-false",
+      "prompt": "True or false: (a^m)^n = a^(m+n).",
+      "statement": "(a^m)^n = a^(m+n)."
+    }
+  ],
+  "answer_key": [
+    {
+      "question_id": "q1",
+      "correct_option_index": 2,
+      "explanation": "An exponent tells how many times to multiply the base by itself."
+    },
+    {
+      "question_id": "q2",
+      "correct_option_index": 0,
+      "explanation": "When multiplying same bases, add exponents: 3+5=8."
+    },
+    {
+      "question_id": "q3",
+      "correct_option_index": 1,
+      "explanation": "A power of a power multiplies exponents: 2\\u00d73=6."
+    },
+    {
+      "question_id": "q4",
+      "correct_option_index": 1,
+      "explanation": "2^0=1, so (0,1) is always on y=2^x."
+    },
+    {
+      "question_id": "q5",
+      "accepted_answers": [
+        "64"
+      ],
+      "explanation": "4^3 means 4\\u00b74\\u00b74=64."
+    },
+    {
+      "question_id": "q6",
+      "accepted_answers": [
+        "1"
+      ],
+      "explanation": "Any nonzero number to the 0 power equals 1."
+    },
+    {
+      "question_id": "q7",
+      "accepted_answers": [
+        "5"
+      ],
+      "explanation": "Divide same bases by subtracting exponents: 7-2=5."
+    },
+    {
+      "question_id": "q8",
+      "correct_answer": true,
+      "explanation": "The zero-exponent rule says b^0=1 for b\\u22600."
+    },
+    {
+      "question_id": "q9",
+      "correct_answer": false,
+      "explanation": "Adding equal powers doubles the value: 2^3+2^3=2\\u00b72^3=2^4, not 2^6."
+    },
+    {
+      "question_id": "q10",
+      "correct_answer": false,
+      "explanation": "The correct rule is (a^m)^n=a^(mn), not a^(m+n)."
+    }
+  ],
+  "narration_script": null,
+  "lesson_code": "7cd241ae",
+  "subject": "math",
+  "topic": "exponentiation",
+  "learner_profile": {
+    "learner_id": "0560d14a",
+    "display_name": "Duy",
+    "folder_slug": "duy__0560d14a",
+    "learning_by_doing": true,
+    "learning_by_listening": false,
+    "learning_by_reading": false,
+    "hobbies": [
+      "swimming"
+    ],
+    "favorite_food": "noodles"
+  },
+  "research_sources": [
+    {
+      "query": "what is exponentiation in math",
+      "title": "Exponentiation",
+      "url": "https://en.wikipedia.org/wiki/Exponentiation",
+      "snippet": "Exponentiation Graphs of y = bx for various bases b: base 10, base e, base 2, base ⁠12⁠. Each curve passes through the point (0, 1) because any nonzero number raised to the power of 0 is 1. At x = 1, the value of y equals the base because any number raised to the power of 1 is the number itself. In mathematics, exponentiation, denoted bn, is an operation involving two numbers: the base, b, and the exponent or power, n. When n is a positive integer, exponentiation corresponds to repeated multiplication of the base: that is, bn is the product of multiplying n bases: b n = b × b × ⋯ × b × b ⏟ n times . {\\displaystyle b^{n}=\\underbrace {b\\times b\\times \\dots \\times b\\times b} _{n{\\text{ times..."
+    },
+    {
+      "query": "what is exponentiation in math",
+      "title": "Exponentiation",
+      "url": "https://en.wikipedia.org/wiki/Exponent",
+      "snippet": "Exponentiation - WikipediaJump to content WikipediaThe Free Encyclopedia Search Search # Exponentiation 88 languages * Afrikaans * Alemannisch * አማርኛ * العربية * Asturianu * Azərbaycanca * বাংলা * Башҡортса * Беларуская * Bikol Central * Български * Bosanski * Буряад * Català * Чӑвашла * Čeština * ChiShona * Cymraeg * Dansk * Deutsch * Eesti * Ελληνικά * Español * Esperanto * Euskara * فارسی * Føroyskt * Français * Gaeilge * Galego * 贛語 * Хальмг * 한국어 * Հայերեն * हिन्दी * Hrvatski * Ido * Bahasa Indonesia * Interlingua * Íslenska * Italiano * עברית * Қазақша * Kriyòl gwiyannen * Latina * Latviešu * Lietuvių * Limburgs * Lingua Franca Nova * Magyar * Македонски * Bahasa Melayu * Nederlands..."
+    },
+    {
+      "query": "what is exponentiation in math",
+      "title": "Exponentiation",
+      "url": "https://en.wikipedia.org/wiki/Exponentiation?wprov=sfti1",
+      "snippet": "Exponentiation - WikipediaJump to content WikipediaThe Free Encyclopedia Search Search # Exponentiation 88 languages * Afrikaans * Alemannisch * አማርኛ * العربية * Asturianu * Azərbaycanca * বাংলা * Башҡортса * Беларуская * Bikol Central * Български * Bosanski * Буряад * Català * Чӑвашла * Čeština * ChiShona * Cymraeg * Dansk * Deutsch * Eesti * Ελληνικά * Español * Esperanto * Euskara * فارسی * Føroyskt * Français * Gaeilge * Galego * 贛語 * Хальмг * 한국어 * Հայերեն * हिन्दी * Hrvatski * Ido * Bahasa Indonesia * Interlingua * Íslenska * Italiano * עברית * Қазақша * Kriyòl gwiyannen * Latina * Latviešu * Lietuvių * Limburgs * Lingua Franca Nova * Magyar * Македонски * Bahasa Melayu * Nederlands..."
+    },
+    {
+      "query": "exponentiation formula list",
+      "title": "Math formulas:   Exponents",
+      "url": "https://www.mathportal.org/formulas/functions/exponent.php",
+      "snippet": "Math formulas and cheat sheets generator for exponential formulas mathportal.org * Site map * Math Tests * Math Lessons * Math Formulas * Calculators Math Calculators, Lessons and Formulas It is time to solve your math problem mathportal.org * HW Help (paid service) * Math Lessons * Math Formulas * Calculators open main many * Math Formulas * :: * Functions * :: * Exponents Formulas Notice:Clickhereto get the most up-to-date list of allexponents formulas.. # Math formulas:Exponents ||| **0**formulas included in custom cheat sheet| ### Exponential Formulas |$$ a^p = \\\\underbrace{a \\\\cdot a \\\\cdot \\\\dots a }\\_p \\~\\~\\~( \\\\text{if} \\~\\~ p \\\\in \\\\mathbb{N} ) $$| |$$ a^0 = 1 \\~\\~\\~ (\\\\text{if}..."
+    },
+    {
+      "query": "exponentiation formula list",
+      "title": "CALCULLA - Mathematical tables: power rules",
+      "url": "https://calculla.com/exponentiation",
+      "snippet": "CALCULLA - Mathematical tables: power rules EN PL ◀ Mathematical tables: power rules ▶ # Beta version# BETA TEST VERSION OF THIS ITEMThis online calculator is currently under heavy development. It may or it may NOT work correctly.You CAN try to use it. You CAN even get the proper results.However, please VERIFY all results on your own, as the level of completion of this item is NOT CONFIRMED.Feel free to send any ideas and comments ! ⌛ Loading... # Exponentiation: general formulas# | Name | Formula | | --- | --- | | Power with natural exponent | Show sourcean=a⋅a⋅a⋅…⋅a⏟na^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n} | | Power with rational exponent | Show sourceapq=apq=(aq)p..."
+    }
+  ]
+}
