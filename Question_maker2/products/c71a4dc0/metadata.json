@@ -1,0 +1,12 @@
+{
+  "run_code": "c71a4dc0",
+  "pdf_hash": "9b9b7df9ad8ee4524a3e7821244bfc43e87a56f4b4b9a584fd266c715624c0b9",
+  "source_filename": "Lecture 2 - Introduction to Mobile Network Generations.pdf",
+  "created_at": "2026-03-17T07:24:56.086798Z",
+  "mode": "full_pipeline",
+  "artifacts": {
+    "claims": true,
+    "questions": true,
+    "test": true
+  }
+}

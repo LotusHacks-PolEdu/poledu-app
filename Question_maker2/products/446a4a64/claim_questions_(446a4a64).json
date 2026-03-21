@@ -1,0 +1,215 @@
+{
+  "main_theme": "Seasons, Weather, and Small Talk in German-Speaking Countries",
+  "sub_topics": [
+    "Weather Vocabulary and Descriptions",
+    "Predicting Weather Patterns",
+    "Comparative Adjectives",
+    "Months of the Year",
+    "Seasons (Spring, Summer, Autumn, Winter)",
+    "Small Talk Topics (Weather, Food, Leisure)",
+    "Small Talk Etiquette"
+  ],
+  "questions_by_chunk": [
+    {
+      "chunk_id": 0,
+      "page_label": 1,
+      "topic": "Weather Vocabulary and Descriptions",
+      "questions": [
+        {
+          "claim": "The presence of a cloud is described as 'bewölkt'.",
+          "question": "What word describes the presence of clouds in German?"
+        },
+        {
+          "claim": "Snowfall is described as 'es schneit'.",
+          "question": "How is snowfall described in German?"
+        },
+        {
+          "claim": "Rain is described as 'es regnet'.",
+          "question": "How is rain described in German?"
+        },
+        {
+          "claim": "Sunshine is described as 'es ist sonnig'.",
+          "question": "How is sunshine described in German?"
+        },
+        {
+          "claim": "Wind is described as 'es ist windig'.",
+          "question": "How is wind described in German?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 1,
+      "page_label": 2,
+      "topic": "German Seasons and Months",
+      "questions": [
+        {
+          "claim": "From March to May, it is spring in Germany.",
+          "question": "When does spring typically occur in Germany?"
+        },
+        {
+          "claim": "From June to August, it is summer in Germany.",
+          "question": "During which months does Germany experience summer?"
+        },
+        {
+          "claim": "Autumn is from September to November.",
+          "question": "What months constitute autumn in Germany?"
+        },
+        {
+          "claim": "Winter is in the months of December, January, and February.",
+          "question": "Which months are considered winter in Germany?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 2,
+      "page_label": 3,
+      "topic": "German Small Talk Topics",
+      "questions": [
+        {
+          "claim": "Weather is a top topic for small talk in Central Europe.",
+          "question": "Is discussing the weather a common small talk topic in Central Europe?"
+        },
+        {
+          "claim": "Discussing food is a suitable topic for small talk in Germany.",
+          "question": "Is discussing food a suitable small talk topic in Germany?"
+        },
+        {
+          "claim": "Asking if someone has eaten at a particular place is a small talk topic.",
+          "question": "Is asking if someone has eaten at a specific restaurant considered small talk?"
+        },
+        {
+          "claim": "Sports, cinema, theater, vacation, and music are potential small talk topics.",
+          "question": "Are sports, cinema, theater, vacation, and music potential small talk topics?"
+        },
+        {
+          "claim": "Money is not a good topic for small talk in many countries.",
+          "question": "Is discussing money generally considered an appropriate small talk topic?"
+        },
+        {
+          "claim": "Politics is not a good topic for small talk in many countries.",
+          "question": "Is discussing politics generally considered an appropriate small talk topic?"
+        },
+        {
+          "claim": "Speaking negatively about other people should be avoided during small talk.",
+          "question": "Should negative comments about others be avoided during small talk?"
+        },
+        {
+          "claim": "Small talk should focus on positive or neutral topics.",
+          "question": "Should small talk primarily focus on positive or neutral subjects?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 3,
+      "page_label": 4,
+      "topic": "German Tourism and Vacation Preferences",
+      "questions": [
+        {
+          "claim": "An increasing number of people are traveling to Germany, Austria, or Switzerland for vacations.",
+          "question": "How has the number of tourists visiting Germany, Austria, and Switzerland for vacations changed recently?"
+        },
+        {
+          "claim": "Tourism experts state people travel to Germany, Austria, or Switzerland to cycle or hike.",
+          "question": "What are the primary reasons cited by tourism experts for travel to Germany, Austria, and Switzerland?"
+        },
+        {
+          "claim": "Children in Austria have summer vacation between June and September.",
+          "question": "What are the typical months for summer vacation for children in Austria?"
+        },
+        {
+          "claim": "Camping involves cooking, eating, and sleeping outdoors.",
+          "question": "What activities are typically associated with camping?"
+        },
+        {
+          "claim": "Campers may relocate during inclement weather.",
+          "question": "Under what conditions might campers need to relocate during a vacation?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 4,
+      "page_label": 5,
+      "topic": "German Tourism and Vacation Types",
+      "questions": []
+    },
+    {
+      "chunk_id": 5,
+      "page_label": 6,
+      "topic": "Vacation Item Associations",
+      "questions": [
+        {
+          "claim": "A spoon, fork, and knife are associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with spoons, forks, and knives?"
+        },
+        {
+          "claim": "A swimsuit is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with swimsuits?"
+        },
+        {
+          "claim": "A bikini is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with bikinis?"
+        },
+        {
+          "claim": "A winter jacket is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with winter jackets?"
+        },
+        {
+          "claim": "Soap is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with soap?"
+        },
+        {
+          "claim": "A handbag is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with handbags?"
+        },
+        {
+          "claim": "A sleeping bag is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with sleeping bags?"
+        },
+        {
+          "claim": "A rain jacket is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with rain jackets?"
+        },
+        {
+          "claim": "Dishes are associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with dishes?"
+        },
+        {
+          "claim": "Swim trunks are associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with swim trunks?"
+        },
+        {
+          "claim": "A tent is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with tents?"
+        },
+        {
+          "claim": "Gloves are associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with gloves?"
+        },
+        {
+          "claim": "Sunscreen is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with sunscreen?"
+        },
+        {
+          "claim": "Sunglasses are associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with sunglasses?"
+        },
+        {
+          "claim": "An umbrella is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with umbrellas?"
+        },
+        {
+          "claim": "A travel guide is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with travel guides?"
+        },
+        {
+          "claim": "A helmet is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with helmets?"
+        },
+        {
+          "claim": "A towel is associated with some vacation locations.",
+          "question": "Which vacation locations are commonly associated with towels?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Test Generator</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>📚 PDF Test Generator</h1>
+
+        <div class="card">
+            <h2>1. Upload & Generate</h2>
+            <form id="generate-form">
+                <div class="form-group">
+                    <label for="backend-url-input">Cloudflare Backend URL (HTTPS):</label>
+                    <div class="inline-input-action">
+                        <input type="url" id="backend-url-input" name="backend_url" placeholder="https://your-subdomain.trycloudflare.com/" inputmode="url" spellcheck="false">
+                        <button type="button" id="reset-backend-url-btn" class="secondary-btn">Reset</button>
+                    </div>
+                    <small class="helper-text">Used for all API calls. Auto-saved in this browser.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="pdf-file">Upload PDF Document:</label>
+                    <input type="file" id="pdf-file" name="file" accept=".pdf" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fallback-mode">Model Fallback Mode:</label>
+                    <select id="fallback-mode" name="fallback_mode">
+                        <option value="0">27B Only (Best Quality)</option>
+                        <option value="1">27B then 12B Fallback</option>
+                        <option value="2">12B Only (Faster)</option>
+                    </select>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="num-mcq">MCQ:</label>
+                        <input type="number" id="num-mcq" name="num_mcq" value="14" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="num-tf">True/False:</label>
+                        <input type="number" id="num-tf" name="num_tf" value="8" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="num-short">Short Answer:</label>
+                        <input type="number" id="num-short" name="num_short" value="6" min="0">
+                    </div>
+                </div>
+
+                <button type="submit" id="generate-btn">Generate Test Pipeline</button>
+            </form>
+
+            <div id="loading-indicator" class="hidden">
+                <p>⏳ Processing pipeline... Tracking progress:</p>
+                <pre id="live-terminal" class="terminal-box"></pre>
+            </div>
+            
+           <div style="text-align: center; margin-bottom: 20px;">
+            <a href="quiz.html" style="color: #3498db; text-decoration: none; font-weight: bold;">📝 Go to Test Player</a>
+        </div>
+
+        <div id="result-box" class="hidden">
+            <p><strong>Success!</strong> Your test is ready. Your access code is:</p>
+            <h3 id="access-code-display"></h3>
+            
+            <div style="display: flex; gap: 10px; margin-top: 15px;">
+                <button type="button" id="download-btn" class="btn" style="background-color: #6c757d;">Download JSON</button>
+                <button type="button" id="take-test-btn" class="btn" style="background-color: #28a745;">Take Test Now</button>
+            </div>
+        </div>
+
+            <div id="error-box" class="hidden error"></div>
+        </div>
+
+        <div class="card">
+            <h2>2. Retrieve Test JSON</h2>
+            <form id="retrieve-form">
+                <div class="form-group">
+                    <label for="access-code-input">Enter Access Code:</label>
+                    <input type="text" id="access-code-input" placeholder="e.g. 4f8a9b2c" required>
+                </div>
+                <div class="action-row">
+                    <button type="submit" id="retrieve-btn">Download JSON</button>
+                    <button type="button" id="retrieve-take-test-btn">Take Test</button>
+                    <button type="button" id="retrieve-view-log-btn">View Log</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "run_code": "4a5f4a3a",
+  "pdf_hash": "a13e3df2e7d80856c9f4b343a68aa7358bd5ec414d4954bc98a1a2dc49822ae5",
+  "source_filename": "Assignment 1 (1).pdf",
+  "created_at": "2026-03-17T09:02:07.345253Z",
+  "mode": "full_pipeline",
+  "artifacts": {
+    "claims": true,
+    "questions": true,
+    "test": true
+  }
+}

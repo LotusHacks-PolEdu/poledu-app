@@ -1,0 +1,3010 @@
+{
+  "main_theme": "An introduction to the evolution of mobile network technologies and generations.",
+  "sub_topics": [
+    "Cellular system fundamentals (reuse, handoff, power control)",
+    "Rationale for cellular systems (coverage and capacity)",
+    "Comparison of mobile network generations (2G, 3G, 4G, 5G, 6G)",
+    "Multiple access techniques (FDMA, TDMA, CDMA, OFDMA)",
+    "Radio and core network architecture across generations",
+    "Interpretation of 'G' labels and their relation to standards",
+    "Connection between network design and real-world applications (voice, data, IoT)"
+  ],
+  "questions_by_chunk": [
+    {
+      "chunk_id": 0,
+      "page_label": 1,
+      "topic": "Mobile Network Generations Introduction",
+      "questions": []
+    },
+    {
+      "chunk_id": 1,
+      "page_label": 2,
+      "topic": "Mobile Network Fundamentals",
+      "questions": [
+        {
+          "claim": "Cellular systems employ frequency reuse.",
+          "question": "How does frequency reuse work in cellular systems?"
+        },
+        {
+          "claim": "Handoff is a fundamental aspect of cellular systems.",
+          "question": "What is the role of handoff in cellular networks?"
+        },
+        {
+          "claim": "Power control is a fundamental aspect of cellular systems.",
+          "question": "Why is power control important in cellular systems?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 2,
+      "page_label": 3,
+      "topic": "Mobile Network Generations and Access Techniques",
+      "questions": [
+        {
+          "claim": "Cellular systems are organized into cells to provide coverage and capacity.",
+          "question": "How does cellular network organization using cells contribute to coverage and capacity?"
+        },
+        {
+          "claim": "Multiple access techniques have evolved from FDMA to TDMA/CDMA to OFDMA across mobile network generations.",
+          "question": "What is the historical progression of multiple access techniques in mobile network generations, from FDMA to OFDMA?"
+        },
+        {
+          "claim": "2G, 3G, 4G, 5G, and 6G networks each have distinct radio and core network blocks.",
+          "question": "What are the key differences in radio and core network architecture between 2G, 3G, 4G, 5G, and 6G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 3,
+      "page_label": 4,
+      "topic": "Mobile Network Generations Overview",
+      "questions": [
+        {
+          "claim": "Cellular systems are organized into cells to improve coverage and capacity.",
+          "question": "How does cellular network cell organization contribute to improved coverage and capacity?"
+        },
+        {
+          "claim": "Mobile network generations have evolved from 1G to 5G.",
+          "question": "What is the chronological order of mobile network generations, from 1G to 5G?"
+        },
+        {
+          "claim": "2G mobile networks utilized GSM and CDMA technologies.",
+          "question": "Which specific technologies were used in 2G mobile networks, such as GSM and CDMA?"
+        },
+        {
+          "claim": "3G mobile networks utilized UMTS and WCDMA technologies.",
+          "question": "Which technologies were utilized in 3G mobile networks, including UMTS and WCDMA?"
+        },
+        {
+          "claim": "4G mobile networks utilized LTE technology.",
+          "question": "What technology was primarily used in 4G mobile networks?"
+        },
+        {
+          "claim": "5G mobile networks utilize NR and 5GC technologies.",
+          "question": "What technologies are currently utilized in 5G mobile networks, including NR and 5GC?"
+        },
+        {
+          "claim": "6G mobile networks are heading towards utilizing Terahertz frequencies.",
+          "question": "What frequencies are 6G mobile networks expected to utilize?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 4,
+      "page_label": 5,
+      "topic": "Mobile Network Generation Drivers",
+      "questions": [
+        {
+          "claim": "Traffic demand grows from voice to messaging to smartphone broadband to massive IoT.",
+          "question": "What factors drove the increasing demand for bandwidth in mobile network generations?"
+        },
+        {
+          "claim": "Spectrum is a scarce resource, necessitating better spectral efficiency and reuse.",
+          "question": "How has the limited availability of spectrum influenced the development of mobile network generations?"
+        },
+        {
+          "claim": "Mobility and reliability requirements increase with each generation, including handoff, QoS, and security.",
+          "question": "How have mobility and reliability requirements changed across successive mobile network generations?"
+        },
+        {
+          "claim": "Core networks evolve from circuit switching to packet switching to cloud-native services.",
+          "question": "How has the core network architecture evolved across different mobile network generations?"
+        },
+        {
+          "claim": "Each mobile network generation includes changes to radio access, such as waveform, multiple access, coding, and MIMO.",
+          "question": "What specific radio access technology changes occurred with each successive mobile network generation?"
+        },
+        {
+          "claim": "Each mobile network generation includes changes to the core network, such as switching, mobility management, and policy/QoS.",
+          "question": "What core network changes occurred with each successive mobile network generation?"
+        },
+        {
+          "claim": "New services, such as SMS, mobile web, streaming, and URLLC, become standard with each generation.",
+          "question": "What new services became prevalent with the introduction of each subsequent mobile network generation?"
+        },
+        {
+          "claim": "Marketing labels for mobile network generations can differ from strict ITU definitions.",
+          "question": "How do marketing labels for mobile network generations differ from their technical definitions according to ITU standards?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 5,
+      "page_label": 6,
+      "topic": "Cellular Network Fundamentals",
+      "questions": [
+        {
+          "claim": "A cellular network splits a region into multiple small coverage areas called cells.",
+          "question": "What are the small coverage areas within a cellular network called?"
+        },
+        {
+          "claim": "Cells are served by low-power base stations.",
+          "question": "What type of equipment serves each cell in a cellular network?"
+        },
+        {
+          "claim": "The same frequencies can be reused in non-adjacent cells to increase capacity.",
+          "question": "How does cellular technology utilize frequencies to increase network capacity?"
+        },
+        {
+          "claim": "Handoff allows users to move between cells while maintaining connectivity.",
+          "question": "What is the purpose of handoff in a cellular network?"
+        },
+        {
+          "claim": "Capacity can be scaled by densifying the network with smaller cells and more sites.",
+          "question": "How does network density affect cellular network capacity?"
+        },
+        {
+          "claim": "Smarter interference control can improve network capacity.",
+          "question": "How can interference control contribute to improved cellular network capacity?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 6,
+      "page_label": 7,
+      "topic": "Cellular Network Components and Organization",
+      "questions": [
+        {
+          "claim": "A base station consists of an antenna, radios, and control functions serving a cell.",
+          "question": "What are the primary components of a base station?"
+        },
+        {
+          "claim": "The core network handles switching, routing, mobility management, and subscriber databases.",
+          "question": "What functions does the core network perform in a cellular network?"
+        },
+        {
+          "claim": "Control channels are used for setup, paging, and mobility management.",
+          "question": "What types of communication are facilitated by control channels?"
+        },
+        {
+          "claim": "Traffic channels are used for user voice and data transmission.",
+          "question": "What types of communication are facilitated by traffic channels?"
+        },
+        {
+          "claim": "BTS is the naming convention for 2G radio sites.",
+          "question": "What is the naming convention for 2G radio sites?"
+        },
+        {
+          "claim": "NodeB is the naming convention for 3G radio sites.",
+          "question": "What is the naming convention for 3G radio sites?"
+        },
+        {
+          "claim": "eNodeB is the naming convention for 4G radio sites.",
+          "question": "What is the naming convention for 4G radio sites?"
+        },
+        {
+          "claim": "gNodeB is the naming convention for 5G radio sites.",
+          "question": "What is the naming convention for 5G radio sites?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 7,
+      "page_label": 8,
+      "topic": "Cellular Network Wave Propagation",
+      "questions": [
+        {
+          "claim": "A traversing wave exists in cellular network organization.",
+          "question": "How does wave propagation contribute to the structure of cellular networks?"
+        },
+        {
+          "claim": "A reflected wave exists in cellular network organization.",
+          "question": "How do reflected waves impact cellular network wave propagation?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 8,
+      "page_label": 9,
+      "topic": "Cellular Network Geometry and Coverage",
+      "questions": [
+        {
+          "claim": "Real cellular coverage is irregular due to terrain and buildings.",
+          "question": "How does terrain and building density affect real cellular coverage?"
+        },
+        {
+          "claim": "Cellular network planning uses idealized shapes for coverage modeling.",
+          "question": "What idealized shapes are used in cellular network coverage modeling?"
+        },
+        {
+          "claim": "Hexagons approximate equal-distance neighbors in cellular networks.",
+          "question": "Do hexagons accurately represent equal-distance neighbors in cellular networks?"
+        },
+        {
+          "claim": "Hexagons simplify frequency reuse planning in cellular networks.",
+          "question": "How does the use of hexagons simplify frequency reuse planning in cellular networks?"
+        },
+        {
+          "claim": "The cell radius influences cellular coverage.",
+          "question": "What is the relationship between cell radius and cellular coverage?"
+        },
+        {
+          "claim": "The inter-site distance influences cellular coverage.",
+          "question": "What is the impact of inter-site distance on cellular coverage?"
+        },
+        {
+          "claim": "The cell radius influences interference in cellular networks.",
+          "question": "How does cell radius influence interference within a cellular network?"
+        },
+        {
+          "claim": "The inter-site distance influences interference in cellular networks.",
+          "question": "How does inter-site distance influence interference within a cellular network?"
+        },
+        {
+          "claim": "Square cell patterns have a distance of √3.",
+          "question": "What is the distance between adjacent cells in a square cell pattern?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 9,
+      "page_label": 10,
+      "topic": "Frequency Reuse and Interference",
+      "questions": [
+        {
+          "claim": "Adjacent cells in a mobile network use different channels to limit co-channel interference.",
+          "question": "How does frequency reuse minimize co-channel interference in adjacent mobile network cells?"
+        },
+        {
+          "claim": "A cluster of N cells uses a complete set of frequencies and then this pattern repeats.",
+          "question": "What is the frequency allocation pattern used in a cluster of mobile cells?"
+        },
+        {
+          "claim": "The reuse factor is calculated as 1/N, where N is the number of cells in a cluster.",
+          "question": "How is the reuse factor determined based on the number of cells in a cluster?"
+        },
+        {
+          "claim": "A smaller reuse factor (N) indicates more frequency reuse and a greater need for interference control.",
+          "question": "What is the relationship between a smaller reuse factor and the need for interference control in mobile networks?"
+        },
+        {
+          "claim": "There is a trade-off between capacity and interference in mobile networks.",
+          "question": "What is the trade-off between capacity and interference in mobile network design?"
+        },
+        {
+          "claim": "Signal-to-interference-plus-noise ratio (SINR) and quality are affected by the capacity versus interference trade-off.",
+          "question": "How does the capacity versus interference trade-off affect signal-to-interference-plus-noise ratio (SINR) and signal quality?"
+        },
+        {
+          "claim": "A signal strength of less than 0 dB indicates a very poor signal and high interference/noise.",
+          "question": "What does a signal strength of less than 0 dB indicate in a mobile network?"
+        },
+        {
+          "claim": "A signal strength between 0 and 10 dB results in a low, unstable connection.",
+          "question": "What signal strength range corresponds to a low, unstable connection?"
+        },
+        {
+          "claim": "A signal strength between 10 and 20 dB provides a moderate to good connection.",
+          "question": "What signal strength range provides a moderate to good connection?"
+        },
+        {
+          "claim": "A signal strength greater than 20 dB provides an excellent connection and high throughput.",
+          "question": "What signal strength range indicates an excellent connection and high throughput?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 10,
+      "page_label": 11,
+      "topic": "LTE and 5G Signal Strength",
+      "questions": [
+        {
+          "claim": "An RSRP (dBm) value greater than or equal to -10 dBm indicates excellent signal strength.",
+          "question": "What RSRP (dBm) value indicates excellent signal strength according to LTE standards?"
+        },
+        {
+          "claim": "An RSRQ (dB) value greater than or equal to -10 dB indicates excellent signal strength.",
+          "question": "What RSRQ (dB) value indicates excellent signal strength according to LTE standards?"
+        },
+        {
+          "claim": "A SINR (dB) value greater than or equal to 20 dB indicates excellent signal strength.",
+          "question": "What SINR (dB) value indicates excellent signal strength according to LTE standards?"
+        },
+        {
+          "claim": "An RSRP (dBm) value between -80 and -90 dBm corresponds to an RSRQ (dB) value between -10 and -15 dB and a SINR (dB) value between 13 and 20 dB.",
+          "question": "What RSRP (dBm) and RSRQ (dB) values, along with a SINR (dB) value, correspond to a signal quality range of -80 to -90 dBm, -10 to -15 dB, and 13 to 20 dB, respectively?"
+        },
+        {
+          "claim": "An RSRP (dBm) value between -90 and -100 dBm corresponds to an RSRQ (dB) value between -15 and -20 dB and a SINR (dB) value between 0 and 13 dB.",
+          "question": "What RSRP (dBm), RSRQ (dB), and SINR (dB) values correspond to a signal quality range of -90 to -100 dBm, -15 to -20 dB, and 0 to 13 dB, respectively?"
+        },
+        {
+          "claim": "An RSRP (dBm) value less than or equal to -100 dBm corresponds to an RSRQ (dB) value less than or equal to -20 dB and a SINR (dB) value less than or equal to 0 dB.",
+          "question": "What RSRP (dBm), RSRQ (dB), and SINR (dB) values correspond to a signal quality range of less than or equal to -100 dBm, less than or equal to -20 dB, and less than or equal to 0 dB, respectively?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 11,
+      "page_label": 12,
+      "topic": "Frequency Reuse and Distance",
+      "questions": [
+        {
+          "claim": "The reuse distance D increases with cluster size N.",
+          "question": "How does the reuse distance D change as the cluster size N increases?"
+        },
+        {
+          "claim": "A frequency reuse pattern can be represented by a circle with radius D.",
+          "question": "What geometric representation describes a frequency reuse pattern, and what does the radius represent?"
+        },
+        {
+          "claim": "Planning involves choosing N to balance capacity.",
+          "question": "What considerations are involved in determining the optimal cluster size N for mobile network planning?"
+        },
+        {
+          "claim": "The equation N = 2 + + (I × ) represents a relationship between cluster size and other factors.",
+          "question": "What equation describes the relationship between cluster size N and other factors, including frequency reuse distance?"
+        },
+        {
+          "claim": "According to the Law of Cosines, D = √3N.",
+          "question": "According to the Law of Cosines, how is the reuse distance D related to the cluster size N?"
+        },
+        {
+          "claim": "D represents the minimum frequency reuse distance.",
+          "question": "What does the term 'reuse distance' D specifically refer to in the context of mobile networks?"
+        },
+        {
+          "claim": "R represents the cell radius.",
+          "question": "What does the variable R represent in relation to cell radius and frequency reuse?"
+        },
+        {
+          "claim": "Modern systems incorporate interference coordination and dynamic reuse.",
+          "question": "How do modern mobile network systems address interference, and how does this relate to frequency reuse?"
+        },
+        {
+          "claim": "The reuse factor is equal to 1/N.",
+          "question": "What is the relationship between the reuse factor and the cluster size N?"
+        },
+        {
+          "claim": "The ratio D/R depends on the cluster size N.",
+          "question": "How does the ratio of reuse distance D to cell radius R vary with the cluster size N?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 12,
+      "page_label": 13,
+      "topic": "Frequency Reuse Patterns",
+      "questions": [
+        {
+          "claim": "Reuse distance D grows with cluster size N.",
+          "question": "Does the reuse distance (D) increase as the cluster size (N) increases?"
+        },
+        {
+          "claim": "The formula D = √3N calculates the minimum frequency reuse distance.",
+          "question": "What formula calculates the minimum frequency reuse distance (D) based on cluster size (N)?"
+        },
+        {
+          "claim": "R represents the cell radius.",
+          "question": "What does the variable 'R' represent in the context of mobile network cell radius?"
+        },
+        {
+          "claim": "1/N represents the reuse factor.",
+          "question": "What is the meaning of 1/N in relation to frequency reuse?"
+        },
+        {
+          "claim": "Modern systems utilize interference coordination and dynamic reuse.",
+          "question": "How do modern mobile systems manage interference, and what role does dynamic frequency reuse play?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 13,
+      "page_label": 14,
+      "topic": "Mobile Network Capacity Scaling",
+      "questions": [
+        {
+          "claim": "Adding spectrum and channels can increase network capacity.",
+          "question": "How does increasing spectrum and channel availability impact mobile network capacity?"
+        },
+        {
+          "claim": "Cell splitting involves using smaller cells in areas with high traffic.",
+          "question": "What is the purpose of cell splitting in high-traffic areas?"
+        },
+        {
+          "claim": "Sectoring utilizes directional antennas to reduce interference.",
+          "question": "How does sectoring utilize directional antennas to mitigate interference?"
+        },
+        {
+          "claim": "Three sectors per site is an example of sectoring.",
+          "question": "What is a typical example of sectoring configuration?"
+        },
+        {
+          "claim": "Densification involves using microcells and femtocells.",
+          "question": "How does densification employ microcells and femtocells to enhance network capacity?"
+        },
+        {
+          "claim": "Antennas can be placed on rooftops and lamp posts for densification.",
+          "question": "Where are antennas commonly placed during densification efforts?"
+        },
+        {
+          "claim": "Interference coordination enables tighter frequency reuse.",
+          "question": "How does interference coordination facilitate tighter frequency reuse?"
+        },
+        {
+          "claim": "Interference Coordination (ICIC) and Coordinated Multi-Point (CoMP) are used in LTE/LTE-A networks.",
+          "question": "Which LTE/LTE-A technologies utilize Interference Coordination (ICIC) and Coordinated Multi-Point (CoMP)?"
+        },
+        {
+          "claim": "Interference Coordination (ICIC) reduces inter-cell interference (ICI).",
+          "question": "What is the primary function of Interference Coordination (ICIC) within cellular networks?"
+        },
+        {
+          "claim": "Interference Coordination (ICIC) uses frequency and power coordination via X2 interfaces.",
+          "question": "How does Interference Coordination (ICIC) achieve frequency and power coordination?"
+        },
+        {
+          "claim": "Coordinated Multi-Point (CoMP) allows multiple base stations to coordinate transmissions.",
+          "question": "What is the core functionality of Coordinated Multi-Point (CoMP) in mobile networks?"
+        },
+        {
+          "claim": "Coordinated Multi-Point (CoMP) offers dynamic management for higher data rates.",
+          "question": "What benefits does Coordinated Multi-Point (CoMP) provide in terms of data rate management?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 14,
+      "page_label": 15,
+      "topic": "Cell Splitting and Network Architecture",
+      "questions": [
+        {
+          "claim": "Cell splitting involves replacing one large cell with multiple smaller cells.",
+          "question": "How does cell splitting specifically involve the modification of cell size?"
+        },
+        {
+          "claim": "Cell splitting increases capacity by reusing spectrum more frequently.",
+          "question": "How does cell splitting contribute to increased network capacity?"
+        },
+        {
+          "claim": "Cell splitting requires more sites.",
+          "question": "What is the impact of cell splitting on the number of physical cell sites required?"
+        },
+        {
+          "claim": "Cell splitting requires more fronthaul infrastructure.",
+          "question": "What additional infrastructure is needed to support cell splitting?"
+        },
+        {
+          "claim": "Cell splitting requires more backhaul infrastructure.",
+          "question": "What additional infrastructure is needed to support cell splitting?"
+        },
+        {
+          "claim": "Cell splitting requires increased coordination.",
+          "question": "What level of coordination is necessary for cell splitting to function effectively?"
+        },
+        {
+          "claim": "Fronthaul and backhaul are distinct segments in mobile network architecture.",
+          "question": "What is the distinction between fronthaul and backhaul in mobile network architecture?"
+        },
+        {
+          "claim": "Fronthaul and backhaul connect user devices to the core network.",
+          "question": "How do fronthaul and backhaul connect user devices to the core network?"
+        },
+        {
+          "claim": "Cell splitting increases spectrum reuse in high-demand areas.",
+          "question": "How does cell splitting improve spectrum reuse, particularly in areas with high demand?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 15,
+      "page_label": 16,
+      "topic": "Mobile Network Cell Types & Design",
+      "questions": [
+        {
+          "claim": "Sectoring divides a cell into wedge-shaped sectors using directional antennas.",
+          "question": "How does sectoring divide a cellular cell?"
+        },
+        {
+          "claim": "Microcells are small outdoor cells designed for dense urban streets.",
+          "question": "What is the typical deployment location of microcells?"
+        },
+        {
+          "claim": "Femtocells are very small indoor cells intended for use in homes or enterprises.",
+          "question": "What is the intended use case for femtocells?"
+        },
+        {
+          "claim": "Multiple microcells and picocells can be used to increase network capacity.",
+          "question": "Can the use of multiple microcells and picocells increase network capacity?"
+        },
+        {
+          "claim": "Special tuning can be applied to manage uplink interference.",
+          "question": "What techniques are used to manage uplink interference in mobile networks?"
+        },
+        {
+          "claim": "A multi-layer network design is called a HetNet (heterogeneous network).",
+          "question": "What is a HetNet (heterogeneous network) in the context of mobile network design?"
+        },
+        {
+          "claim": "The goal of sectoring, microcells, and femtocells is to improve Signal-to-Interference-plus-Noise Ratio (SINR).",
+          "question": "How do sectoring, microcells, and femtocells contribute to Signal-to-Interference-plus-Noise Ratio (SINR)?"
+        },
+        {
+          "claim": "The goal of sectoring, microcells, and femtocells is to increase spatial reuse.",
+          "question": "What is the primary objective of sectoring, microcells, and femtocells regarding network performance?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 16,
+      "page_label": 17,
+      "topic": "Mobile Network Channel Types",
+      "questions": [
+        {
+          "claim": "Control channels in a mobile network carry synchronization information.",
+          "question": "Do control channels in a mobile network carry synchronization information?"
+        },
+        {
+          "claim": "Control channels in a mobile network carry system information.",
+          "question": "Do control channels in a mobile network carry system information?"
+        },
+        {
+          "claim": "Control channels in a mobile network carry paging messages.",
+          "question": "Do control channels in a mobile network carry paging messages?"
+        },
+        {
+          "claim": "Control channels in a mobile network carry access requests.",
+          "question": "Do control channels in a mobile network carry access requests?"
+        },
+        {
+          "claim": "Paging in a mobile network is a process used to locate and establish communication with a mobile device when it is not in active use.",
+          "question": "What is the purpose of paging in a mobile network?"
+        },
+        {
+          "claim": "Paging in a mobile network is used when a mobile device needs to be reached for an incoming call.",
+          "question": "Is paging in a mobile network used for incoming calls?"
+        },
+        {
+          "claim": "Paging in a mobile network is used when a mobile device needs to be reached for an incoming message.",
+          "question": "Is paging in a mobile network used for incoming messages?"
+        },
+        {
+          "claim": "Paging in a mobile network is used when a mobile device needs to be reached for an incoming data session.",
+          "question": "Is paging in a mobile network used for incoming data sessions?"
+        },
+        {
+          "claim": "Traffic channels carry user voice frames.",
+          "question": "Do traffic channels carry user voice frames?"
+        },
+        {
+          "claim": "Traffic channels carry packet data.",
+          "question": "Do traffic channels carry packet data?"
+        },
+        {
+          "claim": "Capacity in a mobile network is limited by data resources.",
+          "question": "Is mobile network capacity limited by data resources?"
+        },
+        {
+          "claim": "Capacity in a mobile network is limited by control overhead.",
+          "question": "Is mobile network capacity limited by control overhead?"
+        },
+        {
+          "claim": "5G adds richer control for beam management.",
+          "question": "Does 5G include enhanced control for beam management?"
+        },
+        {
+          "claim": "5G adds control for ultra-reliable access.",
+          "question": "Does 5G include control for ultra-reliable access?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 17,
+      "page_label": 18,
+      "topic": "Mobile Network Architecture",
+      "questions": [
+        {
+          "claim": "User equipment (UE) connects to a base station over the air interface.",
+          "question": "How does user equipment (UE) communicate with a base station?"
+        },
+        {
+          "claim": "Base stations connect to the core network, which handles switching, routing, and subscriber services.",
+          "question": "What functions does the core network perform within a mobile network?"
+        },
+        {
+          "claim": "The core network connects to the Internet and public telephone networks.",
+          "question": "How does the core network connect to external networks like the Internet and public telephone networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 18,
+      "page_label": 19,
+      "topic": "Mobile Network Handoff Mechanisms",
+      "questions": [
+        {
+          "claim": "Handoff transfers an active connection as a User Equipment (UE) moves between cells.",
+          "question": "What is the role of a User Equipment (UE) during a mobile network handoff?"
+        },
+        {
+          "claim": "Hard handoff is a break-before-make connection transfer.",
+          "question": "Is a hard handoff a break-before-make or make-before-break connection transfer?"
+        },
+        {
+          "claim": "Hard handoff is typical in GSM, LTE, and NR systems.",
+          "question": "In which mobile network technologies is a hard handoff typically employed?"
+        },
+        {
+          "claim": "Soft handoff is a make-before-break connection transfer.",
+          "question": "Is a soft handoff a make-before-break or break-before-make connection transfer?"
+        },
+        {
+          "claim": "Soft handoff was classic in CDMA systems.",
+          "question": "In which mobile network systems was soft handoff historically common?"
+        },
+        {
+          "claim": "The goal of handoff is to minimize call drop and interruption.",
+          "question": "What is the primary objective of mobile network handoff?"
+        },
+        {
+          "claim": "Handoff aims to control interference.",
+          "question": "What is the intended outcome of handoff in terms of network performance?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 19,
+      "page_label": 20,
+      "topic": "Handoff Decisions and Mechanisms",
+      "questions": [
+        {
+          "claim": "Handoff transfers an active connection as a User Equipment (UE) moves between cells.",
+          "question": "How does a handoff process transfer an active connection when a User Equipment (UE) moves between cells?"
+        },
+        {
+          "claim": "Hard handoff is a break-before-make process, typical in GSM, LTE, and NR.",
+          "question": "What distinguishes a hard handoff from a soft handoff in terms of its process?"
+        },
+        {
+          "claim": "Soft handoff is a make-before-break process, classic in CDMA systems.",
+          "question": "In which mobile network technologies is a break-before-make handoff (hard handoff) typically employed?"
+        },
+        {
+          "claim": "A goal of handoff is to minimize call drop and interruption while controlling interference.",
+          "question": "What is the primary objective of handoff mechanisms in mobile networks?"
+        },
+        {
+          "claim": "Handoff decisions can be based on comparisons of relative signal strength between serving and neighbor cells.",
+          "question": "How do handoff decisions utilize comparisons of signal strength between cells?"
+        },
+        {
+          "claim": "Threshold Th1 prevents 'ping-pong' effects on weak edges.",
+          "question": "What is the purpose of Threshold Th1 in handoff procedures?"
+        },
+        {
+          "claim": "Threshold Th2 is assigned to base station B.",
+          "question": "What is the role of Threshold Th2 in the handoff process?"
+        },
+        {
+          "claim": "Handoff to base station A occurs when a handoff to base station B is initiated.",
+          "question": "Under what circumstances does a handoff to base station B initiate a handoff to base station A?"
+        },
+        {
+          "claim": "A car is moving from base station A at location L to base station B at location Lβ.",
+          "question": "Can you describe a scenario where a vehicle transitions from one base station to another while maintaining a similar location?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 20,
+      "page_label": 21,
+      "topic": "Mobile Network Power Control",
+      "questions": [
+        {
+          "claim": "The goal of power control is to provide enough power for reliable reception without causing excessive interference.",
+          "question": "How does mobile network power control balance reliable reception with minimizing interference?"
+        },
+        {
+          "claim": "Open-loop power control involves the User Equipment (UE) estimating path loss and setting power.",
+          "question": "What is the role of User Equipment (UE) in open-loop power control?"
+        },
+        {
+          "claim": "Open-loop power control is fast but less accurate.",
+          "question": "What are the trade-offs between the speed and accuracy of open-loop power control?"
+        },
+        {
+          "claim": "Closed-loop power control involves the network commanding UE power adjustments.",
+          "question": "How does closed-loop power control utilize network feedback for UE power adjustments?"
+        },
+        {
+          "claim": "Closed-loop power control is accurate but requires feedback.",
+          "question": "What are the key differences between the accuracy and feedback requirements of open-loop and closed-loop power control?"
+        },
+        {
+          "claim": "Power control is critical in Code Division Multiple Access (CDMA) systems.",
+          "question": "Is power control a significant feature in Code Division Multiple Access (CDMA) networks?"
+        },
+        {
+          "claim": "Power control is critical in uplink-limited systems.",
+          "question": "Why is power control particularly important in uplink-limited communication systems?"
+        },
+        {
+          "claim": "The near–far problem is addressed by power control in CDMA and uplink-limited systems.",
+          "question": "How does power control address the near–far problem in CDMA and uplink-limited systems?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 21,
+      "page_label": 22,
+      "topic": "Traffic Engineering and Capacity Planning",
+      "questions": [
+        {
+          "claim": "Systems have a finite number of channels and resources.",
+          "question": "What limitations exist regarding the number of channels and resources within mobile network systems?"
+        },
+        {
+          "claim": "Some calls or requests may be blocked when systems are under load.",
+          "question": "Under what conditions might calls or requests be blocked in a mobile network experiencing high load?"
+        },
+        {
+          "claim": "Grade of Service (GoS) is the probability of blocking or dropping calls.",
+          "question": "What does Grade of Service (GoS) represent in the context of telecommunications and contact centers?"
+        },
+        {
+          "claim": "Grade of Service (GoS) is a key metric in telecommunications and contact centres.",
+          "question": "Why is Grade of Service (GoS) considered a crucial metric in telecommunications?"
+        },
+        {
+          "claim": "Erlang models estimate the needed capacity for a given load and blocking probability.",
+          "question": "How do Erlang models contribute to capacity planning for mobile networks?"
+        },
+        {
+          "claim": "Queueing delay and scheduling are concepts similar to blocking probability in packet systems.",
+          "question": "How are queueing delay and scheduling related to blocking probability in packet-switched systems?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 22,
+      "page_label": 23,
+      "topic": "Mobile Network Generation Evolution",
+      "questions": [
+        {
+          "claim": "Different tracks of cellular system development evolved in parallel.",
+          "question": "How did different cellular system development paths progress concurrently?"
+        },
+        {
+          "claim": "GSM evolved to WCDMA.",
+          "question": "What was the evolutionary relationship between GSM and WCDMA?"
+        },
+        {
+          "claim": "AMPS evolved to IS-95.",
+          "question": "What was the progression from AMPS to IS-95?"
+        },
+        {
+          "claim": "IS-95 evolved to CDMA2000.",
+          "question": "What was the sequence of advancements from IS-95 to CDMA2000?"
+        },
+        {
+          "claim": "CDMA2000 evolved to 1XEV-DO.",
+          "question": "What developments followed CDMA2000, specifically leading to 1XEV-DO?"
+        },
+        {
+          "claim": "1XEV-DO evolved to IXEV-DO.",
+          "question": "What is the lineage of 1XEV-DO, including its subsequent evolution?"
+        },
+        {
+          "claim": "WCDMA evolved to LTE.",
+          "question": "What was the transition from WCDMA to LTE?"
+        },
+        {
+          "claim": "WCDMA evolved to LTE-Advanced.",
+          "question": "What advancements occurred in WCDMA's evolution, specifically with LTE-Advanced?"
+        },
+        {
+          "claim": "IXEV-DO remained at IXEV-DO.",
+          "question": "What is the status of IXEV-DO technology?"
+        },
+        {
+          "claim": "Rel.0 evolved to Rel.A.",
+          "question": "How did Rel.0 relate to Rel.A in mobile network standards?"
+        },
+        {
+          "claim": "Rel.A evolved to Rev. B.",
+          "question": "How did Rel.A relate to Rev. B in mobile network standards?"
+        },
+        {
+          "claim": "Each generation of mobile networks improves data rates.",
+          "question": "How have data rates increased across successive mobile network generations?"
+        },
+        {
+          "claim": "Each generation of mobile networks improves spectral efficiency.",
+          "question": "How has spectral efficiency improved across successive mobile network generations?"
+        },
+        {
+          "claim": "The 3rd Generation Partnership Project (3GPP) evolves standards in releases.",
+          "question": "How does the 3GPP contribute to the evolution of mobile network standards?"
+        },
+        {
+          "claim": "1G evolved to 2G.",
+          "question": "What was the progression from 1G to 2G mobile networks?"
+        },
+        {
+          "claim": "2G evolved to 3G.",
+          "question": "Did 2G network technology evolve into 3G network technology?"
+        },
+        {
+          "claim": "3G evolved to LTE.",
+          "question": "Did 3G network technology evolve into LTE (Long Term Evolution) network technology?"
+        },
+        {
+          "claim": "LTE evolved to LTE-Advanced.",
+          "question": "Did LTE (Long Term Evolution) network technology evolve into LTE-Advanced network technology?"
+        },
+        {
+          "claim": "Data rates in the first generation (1G) were less than or equal to 10 kbps.",
+          "question": "What were the data rates in the first generation (1G) mobile networks?"
+        },
+        {
+          "claim": "Data rates in 2G were 9.664 xops.",
+          "question": "What were the data rates in 2G mobile networks?"
+        },
+        {
+          "claim": "Data rates in 3G were 384 ktps-2 M0ps.",
+          "question": "What were the data rates in 3G mobile networks?"
+        },
+        {
+          "claim": "Data rates in 3.9G were 384 kbps.",
+          "question": "What were the data rates in 3.9G mobile networks?"
+        },
+        {
+          "claim": "Data rates in 4G were 20 Mbps.",
+          "question": "What were the data rates in 4G mobile networks?"
+        },
+        {
+          "claim": "Data rates in later 4G networks reached <100 Mbps.",
+          "question": "What were the maximum data rates achieved in later 4G networks?"
+        },
+        {
+          "claim": "Data rates in advanced 4G networks exceeded 100 Mbps.",
+          "question": "What were the data rates in advanced 4G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 23,
+      "page_label": 24,
+      "topic": "Mobile Network Generations Comparison",
+      "questions": [
+        {
+          "claim": "1G networks, introduced in the 1980s, utilized analog voice transmission with Frequency Division Multiple Access (FDMA).",
+          "question": "What transmission method did 1G networks utilize?"
+        },
+        {
+          "claim": "1G networks provided voice call services.",
+          "question": "What services did 1G networks primarily offer?"
+        },
+        {
+          "claim": "2G networks, introduced in the 1990s, supported digital voice and Short Message Service (SMS).",
+          "question": "What technologies did 2G networks support besides voice?"
+        },
+        {
+          "claim": "2G networks provided voice, SMS, and low-rate data services.",
+          "question": "What services were available through 2G networks?"
+        },
+        {
+          "claim": "2.5G networks, introduced in the 2000s, enabled packet data transmission on 2G cores.",
+          "question": "What type of data transmission did 2.5G networks introduce?"
+        },
+        {
+          "claim": "2.5G networks provided Wireless Application Protocol (WAP), email, and early web access.",
+          "question": "What services were commonly accessed through 2.5G networks?"
+        },
+        {
+          "claim": "3G networks, introduced in the 2000s, were based on the International Mobile Telecommunications 2000 (IMT-2000) standard.",
+          "question": "What standard underpinned 3G networks?"
+        },
+        {
+          "claim": "3G networks provided web access, multimedia services, and video calling.",
+          "question": "What types of services were offered by 3G networks?"
+        },
+        {
+          "claim": "4G networks, introduced in the 2010s, were based on an All-IP broadband architecture using Long Term Evolution (LTE).",
+          "question": "What architectural foundation did 4G networks utilize?"
+        },
+        {
+          "claim": "4G networks provided streaming, applications, and Voice over IP (VoIP) services.",
+          "question": "What services were commonly provided by 4G networks?"
+        },
+        {
+          "claim": "5G networks, introduced in the 2020s, utilize a flexible New Radio (NR) interface and a 5G core network.",
+          "question": "What key components define 5G networks?"
+        },
+        {
+          "claim": "5G networks support enhanced Mobile Broadband (eMBB), Ultra-Reliable Low Latency Communications (URLLC), and massive Internet of Things (IoT).",
+          "question": "What are the three primary use cases supported by 5G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 24,
+      "page_label": 25,
+      "topic": "1G Mobile Networks",
+      "questions": [
+        {
+          "claim": "1G mobile networks utilized analog voice transmission with Frequency Division Multiple Access (FDMA).",
+          "question": "How did 1G mobile networks transmit voice signals?"
+        },
+        {
+          "claim": "1G mobile networks provided voice calls as a typical service.",
+          "question": "What was the primary service offered by 1G mobile networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 25,
+      "page_label": 26,
+      "topic": "1G Mobile Network Technology",
+      "questions": [
+        {
+          "claim": "The first commercial cellular systems were introduced in the 1980s.",
+          "question": "When were the first commercial cellular systems introduced?"
+        },
+        {
+          "claim": "1G used analog FM for voice transmission.",
+          "question": "What type of modulation was used for voice transmission in 1G networks?"
+        },
+        {
+          "claim": "1G utilized circuit-switched calls.",
+          "question": "What type of call switching was utilized in 1G networks?"
+        },
+        {
+          "claim": "1G employed FDMA with relatively wide channels.",
+          "question": "What frequency division multiple access (FDMA) scheme was used in 1G?"
+        },
+        {
+          "claim": "AMPS used 30 kHz channels in 1G.",
+          "question": "What was the channel width used by AMPS in 1G?"
+        },
+        {
+          "claim": "1G had limited security.",
+          "question": "What were the security limitations of 1G networks?"
+        },
+        {
+          "claim": "1G had limited capacity, creating pressure for digital systems.",
+          "question": "What were the capacity limitations of 1G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 26,
+      "page_label": 27,
+      "topic": "1G Standards and Operation",
+      "questions": [
+        {
+          "claim": "AMPS was a 1G standard used in North America.",
+          "question": "What was the AMPS standard and in which region was it primarily used?"
+        },
+        {
+          "claim": "NMT was a 1G standard used in Nordic countries.",
+          "question": "What 1G standard was utilized in Nordic countries, and what was its role?"
+        },
+        {
+          "claim": "TACS was a 1G standard used in the UK and Europe.",
+          "question": "What 1G standard was used in the UK and Europe, and what was its operational scope?"
+        },
+        {
+          "claim": "1G systems used Frequency Division Duplexing (FDD) operation with separate uplink and downlink frequency bands.",
+          "question": "How did 1G systems utilize frequency bands for communication?"
+        },
+        {
+          "claim": "In 1G systems, each call occupied one dedicated frequency channel.",
+          "question": "How did 1G systems allocate frequency channels for individual calls?"
+        },
+        {
+          "claim": "Roaming and interoperability were limited across regions in 1G networks.",
+          "question": "What were the limitations of roaming and interoperability in 1G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 27,
+      "page_label": 28,
+      "topic": "1G Radio Characteristics (AMPS)",
+      "questions": [
+        {
+          "claim": "AMPS used analog voice using Frequency Modulation (FM).",
+          "question": "How did AMPS utilize modulation techniques for voice transmission?"
+        },
+        {
+          "claim": "AMPS operated around the 800 MHz band.",
+          "question": "What frequency band did AMPS operate on?"
+        },
+        {
+          "claim": "AMPS utilized Frequency Division Multiple Access (FDMA) where one user is allocated per frequency channel.",
+          "question": "What access method did AMPS employ for multiple users?"
+        },
+        {
+          "claim": "AMPS had a 30 kHz channel spacing.",
+          "question": "What was the channel spacing used in AMPS?"
+        },
+        {
+          "claim": "AMPS employed control channels for paging and call setup.",
+          "question": "What types of channels did AMPS utilize for communication?"
+        },
+        {
+          "claim": "AMPS employed traffic channels for voice.",
+          "question": "How did AMPS handle voice communication?"
+        },
+        {
+          "claim": "AMPS used separate uplink and downlink bands with Frequency Division Duplexing (FDD).",
+          "question": "What type of duplexing scheme did AMPS employ?"
+        },
+        {
+          "claim": "AMPS planned frequency reuse via clusters.",
+          "question": "How did AMPS manage frequency usage?"
+        },
+        {
+          "claim": "AMPS allocated one dedicated analog channel per call.",
+          "question": "How many dedicated analog channels were allocated per call in AMPS?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 28,
+      "page_label": 29,
+      "topic": "Mobile Network Generation Timeline",
+      "questions": [
+        {
+          "claim": "The first generation of mobile networks (1G) featured large handsets.",
+          "question": "What were the physical characteristics of handsets used in the first generation of mobile networks (1G)?"
+        },
+        {
+          "claim": "The first generation of mobile networks (1G) had expensive minutes.",
+          "question": "How did the cost of mobile minutes compare across the first generation of mobile networks (1G)?"
+        },
+        {
+          "claim": "The first generation of mobile networks (1G) provided limited coverage.",
+          "question": "What was the geographic coverage area of the first generation of mobile networks (1G)?"
+        },
+        {
+          "claim": "The second generation of mobile networks (2G) enabled smaller devices.",
+          "question": "How did the second generation of mobile networks (2G) impact the size of mobile devices?"
+        },
+        {
+          "claim": "The second generation of mobile networks (2G) introduced SMS functionality.",
+          "question": "What new communication features were introduced with the second generation of mobile networks (2G)?"
+        },
+        {
+          "claim": "The second generation of mobile networks (2G) offered improved battery life.",
+          "question": "How did the second generation of mobile networks (2G) affect battery life compared to previous generations?"
+        },
+        {
+          "claim": "The third, fourth, and fifth generations of mobile networks (3G, 4G, 5G) facilitated smartphone usage.",
+          "question": "How did the third, fourth, and fifth generations of mobile networks (3G, 4G, 5G) contribute to the rise of smartphones?"
+        },
+        {
+          "claim": "The third, fourth, and fifth generations of mobile networks (3G, 4G, 5G) supported data-centric usage.",
+          "question": "What types of usage were primarily supported by the third, fourth, and fifth generations of mobile networks (3G, 4G, 5G)?"
+        },
+        {
+          "claim": "The Nokia 10108 device was associated with the first generation of mobile networks (1G) in 1981.",
+          "question": "What mobile device was associated with the first generation of mobile networks (1G) and released in 1981?"
+        },
+        {
+          "claim": "The second generation of mobile networks (2G) became available in 1992.",
+          "question": "In what year did the second generation of mobile networks (2G) become commercially available?"
+        },
+        {
+          "claim": "The third generation of mobile networks (3G) became available in 2001.",
+          "question": "In what year did the third generation of mobile networks (3G) become commercially available?"
+        },
+        {
+          "claim": "The fourth generation of mobile networks (4G) became available in 2011.",
+          "question": "In what year did the fourth generation of mobile networks (4G) become commercially available?"
+        },
+        {
+          "claim": "The fifth generation of mobile networks (5G) became available in 2020.",
+          "question": "In what year did the fifth generation of mobile networks (5G) become commercially available?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 29,
+      "page_label": 30,
+      "topic": "1G Technology Limitations",
+      "questions": [
+        {
+          "claim": "1G systems had capacity limits due to one channel per call.",
+          "question": "What were the capacity limitations of 1G systems?"
+        },
+        {
+          "claim": "1G systems experienced interference constraints.",
+          "question": "What interference constraints did 1G systems experience?"
+        },
+        {
+          "claim": "Audio quality in 1G degraded with noise.",
+          "question": "How did audio quality in 1G systems degrade?"
+        },
+        {
+          "claim": "Audio quality in 1G degraded with fading.",
+          "question": "How did audio quality in 1G systems degrade due to signal conditions?"
+        },
+        {
+          "claim": "1G analog calls were easy to eavesdrop on due to weak security.",
+          "question": "Why were 1G analog calls susceptible to eavesdropping?"
+        },
+        {
+          "claim": "1G did not have efficient packet data support.",
+          "question": "Did 1G technology offer efficient packet data support?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 30,
+      "page_label": 31,
+      "topic": "2G Mobile Network Characteristics",
+      "questions": [
+        {
+          "claim": "2G networks provide digital voice services.",
+          "question": "What digital services were offered by 2G networks?"
+        },
+        {
+          "claim": "2G networks provide messaging services.",
+          "question": "What messaging services were available on 2G networks?"
+        },
+        {
+          "claim": "2G networks offer improved capacity compared to 1G networks.",
+          "question": "How did 2G networks' capacity compare to 1G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 31,
+      "page_label": 32,
+      "topic": "2G Mobile Network Technology",
+      "questions": [
+        {
+          "claim": "2G networks represent a shift from analog to digital traffic channels.",
+          "question": "Did 2G networks transition from analog to digital communication?"
+        },
+        {
+          "claim": "TDMA (GSM) is a method for achieving better spectral efficiency in 2G networks.",
+          "question": "How did TDMA (GSM) contribute to spectral efficiency in 2G networks?"
+        },
+        {
+          "claim": "CDMA (IS-95) is a method for achieving better spectral efficiency in 2G networks.",
+          "question": "How did CDMA (IS-95) contribute to spectral efficiency in 2G networks?"
+        },
+        {
+          "claim": "Encryption in 2G networks improves privacy.",
+          "question": "Did 2G networks incorporate encryption for enhanced privacy?"
+        },
+        {
+          "claim": "Error correction in 2G networks improves voice quality.",
+          "question": "Did 2G networks utilize error correction techniques to improve voice quality?"
+        },
+        {
+          "claim": "SMS was enabled by 2G networks.",
+          "question": "Was SMS technology enabled by 2G networks?"
+        },
+        {
+          "claim": "Basic data services were enabled by 2G networks.",
+          "question": "What basic data services were available through 2G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 32,
+      "page_label": 33,
+      "topic": "Multiple Access Techniques in Mobile Networks",
+      "questions": [
+        {
+          "claim": "FDMA splits the spectrum into frequency channels, as used in 1G networks.",
+          "question": "How does Frequency Division Multiple Access (FDMA) allocate radio spectrum?"
+        },
+        {
+          "claim": "TDMA shares a frequency by dividing it into time slots.",
+          "question": "How does Time Division Multiple Access (TDMA) manage radio frequency resources?"
+        },
+        {
+          "claim": "GSM utilizes TDMA, allowing 8 users per 200 kHz carrier.",
+          "question": "What access technique does GSM utilize, and how many users can it support per carrier?"
+        },
+        {
+          "claim": "CDMA shares time and frequency using spreading codes to separate users.",
+          "question": "How does Code Division Multiple Access (CDMA) differentiate users in a network?"
+        },
+        {
+          "claim": "OFDMA shares many narrow subcarriers dynamically.",
+          "question": "How does Orthogonal Frequency Division Multiple Access (OFDMA) function in mobile networks?"
+        },
+        {
+          "claim": "LTE and NR utilize OFDMA.",
+          "question": "Which multiple access techniques are used in LTE and 5G NR networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 33,
+      "page_label": 34,
+      "topic": "GSM Network Characteristics",
+      "questions": [
+        {
+          "claim": "GSM (Global System for Mobile Communications) was originally developed for Europe.",
+          "question": "Where was GSM (Global System for Mobile Communications) originally developed?"
+        },
+        {
+          "claim": "GSM (Global System for Mobile Communications) is now deployed globally.",
+          "question": "What is the current global deployment status of GSM (Global System for Mobile Communications)?"
+        },
+        {
+          "claim": "GSM (Global System for Mobile Communications) uses SIM-based identity to enable device portability.",
+          "question": "How does GSM (Global System for Mobile Communications) utilize SIMs for device portability?"
+        },
+        {
+          "claim": "SIMs used in GSM (Global System for Mobile Communications) networks can roam.",
+          "question": "Can SIMs used in GSM (Global System for Mobile Communications) networks be used for roaming?"
+        },
+        {
+          "claim": "GSM (Global System for Mobile Communications) combines FDMA for carriers with TDMA for time slots.",
+          "question": "What technologies does GSM (Global System for Mobile Communications) combine for its radio interface?"
+        },
+        {
+          "claim": "GSM (Global System for Mobile Communications) defines both the radio interface and core network functions.",
+          "question": "What network functions does GSM (Global System for Mobile Communications) define?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 34,
+      "page_label": 35,
+      "topic": "GSM Network Architecture Components",
+      "questions": [
+        {
+          "claim": "The GSM architecture includes both a radio interface and a core network.",
+          "question": "What are the key components of the GSM architecture?"
+        },
+        {
+          "claim": "BTS (cell) is controlled by BSC (handoff within BSS) in the GSM radio access network.",
+          "question": "How does the BTS (cell) relate to the BSC (handoff) within the GSM radio access network?"
+        },
+        {
+          "claim": "AuC, HLR, VLR, and EIR are subscriber databases within the GSM core network.",
+          "question": "What are the roles of AuC, HLR, VLR, and EIR as subscriber databases in the GSM core network?"
+        },
+        {
+          "claim": "The ME (Mobile Equipment) communicates with the Base transceiver station.",
+          "question": "How does the Mobile Equipment (ME) interact with the Base transceiver station?"
+        },
+        {
+          "claim": "GPRS nodes (SGSN/GGSN) were later added to GSM for packet data.",
+          "question": "What was the purpose of adding GPRS nodes (SGSN/GGSN) to the GSM network?"
+        },
+        {
+          "claim": "The Um interface connects the ME to the Base transceiver station.",
+          "question": "What is the function of the Um interface in the GSM network?"
+        },
+        {
+          "claim": "The Abis interface connects the Base transceiver station to the BSC.",
+          "question": "What is the Abis interface's role within the GSM network?"
+        },
+        {
+          "claim": "The VLR is a component of the GSM network.",
+          "question": "What is the function of the VLR component within the GSM network?"
+        },
+        {
+          "claim": "The HLR is a component of the GSM network.",
+          "question": "What is the function of the HLR component within the GSM network?"
+        },
+        {
+          "claim": "The Base station is a component of the GSM network.",
+          "question": "What is the role of the Base station component within the GSM network?"
+        },
+        {
+          "claim": "The Mobile Operation and maintenance center is a component of the GSM network.",
+          "question": "What is the role of the Mobile Operation and maintenance center component within the GSM network?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 35,
+      "page_label": 36,
+      "topic": "GSM Air Interface Specifications",
+      "questions": [
+        {
+          "claim": "The carrier spacing in GSM is 200 kHz.",
+          "question": "What is the carrier spacing in GSM?"
+        },
+        {
+          "claim": "Each carrier in GSM supports 8 time slots within a TDMA frame.",
+          "question": "How many time slots does each carrier in GSM support within a TDMA frame?"
+        },
+        {
+          "claim": "Voice in GSM is encoded using a speech codec.",
+          "question": "What type of codec is used to encode voice in GSM?"
+        },
+        {
+          "claim": "Voice in GSM is protected by error control coding.",
+          "question": "What type of error control coding protects voice in GSM?"
+        },
+        {
+          "claim": "Interleaving in GSM helps mitigate burst errors caused by fading.",
+          "question": "How does interleaving in GSM mitigate burst errors?"
+        },
+        {
+          "claim": "A Hyperframe in GSM consists of 2048 Superframes.",
+          "question": "How many Superframes are contained within a Hyperframe in GSM?"
+        },
+        {
+          "claim": "GMSK modulation is used in classic GSM.",
+          "question": "What modulation scheme is used in classic GSM?"
+        },
+        {
+          "claim": "EDGE uses 8-PSK modulation.",
+          "question": "What modulation scheme is used in EDGE?"
+        },
+        {
+          "claim": "A Multiframe in GSM consists of 26 Multiframe.",
+          "question": "How many Multiframe units constitute a Multiframe in GSM?"
+        },
+        {
+          "claim": "A Superframe in GSM consists of 51 Multiframe.",
+          "question": "How many Multiframe units comprise a Superframe in GSM?"
+        },
+        {
+          "claim": "A Superframe in GSM is approximately 235 milliseconds in duration.",
+          "question": "What is the approximate duration of a Superframe in GSM (in milliseconds)?"
+        },
+        {
+          "claim": "A TDMA Frame in GSM is 4.615 milliseconds in duration.",
+          "question": "What is the duration of a TDMA Frame in GSM (in milliseconds)?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 36,
+      "page_label": 37,
+      "topic": "GSM Security Mechanisms",
+      "questions": [
+        {
+          "claim": "The SIM in GSM contains secret key material.",
+          "question": "Does the SIM card in GSM contain secret key material?"
+        },
+        {
+          "claim": "The GSM network authenticates the SIM via a challenge-response mechanism.",
+          "question": "How does the GSM network authenticate the SIM card?"
+        },
+        {
+          "claim": "Air-interface encryption in GSM protects voice and signaling over the radio link.",
+          "question": "What type of encryption protects voice and signaling in GSM?"
+        },
+        {
+          "claim": "Temporary identifiers, such as TMSI, help reduce tracking in GSM.",
+          "question": "How does the TMSI (Temporary Mobile Subscriber Identity) contribute to reducing tracking in GSM?"
+        },
+        {
+          "claim": "Security in GSM is strongest on the radio hop.",
+          "question": "Where is the strongest security implemented in GSM?"
+        },
+        {
+          "claim": "End-to-end security in GSM is application-dependent.",
+          "question": "How does security in GSM vary depending on the application?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 37,
+      "page_label": 38,
+      "topic": "2G, 2.5G, and 2.75G Technologies",
+      "questions": [
+        {
+          "claim": "Circuit-switched data is inefficient for bursty internet traffic.",
+          "question": "How does circuit-switched data compare to packet switching in terms of efficiency for handling bursty internet traffic?"
+        },
+        {
+          "claim": "GPRS introduces packet switching.",
+          "question": "What technology introduced packet switching in mobile networks?"
+        },
+        {
+          "claim": "GPRS provides \"always-on\" connectivity.",
+          "question": "What feature of GPRS allowed for a persistent connection?"
+        },
+        {
+          "claim": "EDGE increases bits per symbol using 8-PSK modulation.",
+          "question": "How does EDGE utilize modulation techniques to achieve higher data rates?"
+        },
+        {
+          "claim": "EDGE provides higher data rates than previous generations.",
+          "question": "How do EDGE data rates compare to those of previous 2G and 2.5G technologies?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 38,
+      "page_label": 39,
+      "topic": "IS-95 (cdmaOne) Technology",
+      "questions": [
+        {
+          "claim": "IS-95 (cdmaOne) is based on DS-CDMA (spread spectrum).",
+          "question": "What is the underlying technology used in IS-95 (cdmaOne) communication?"
+        },
+        {
+          "claim": "In IS-95 (cdmaOne), many users share the same wideband carrier.",
+          "question": "How does IS-95 (cdmaOne) manage multiple users on a single carrier?"
+        },
+        {
+          "claim": "Users in IS-95 (cdmaOne) are separated by codes.",
+          "question": "How does IS-95 (cdmaOne) differentiate between users?"
+        },
+        {
+          "claim": "IS-95 (cdmaOne) requires tight power control to avoid near–far problems.",
+          "question": "What role does power control play in IS-95 (cdmaOne) network operation?"
+        },
+        {
+          "claim": "IS-95 (cdmaOne) supports soft handoff.",
+          "question": "Does IS-95 (cdmaOne) support handoff procedures?"
+        },
+        {
+          "claim": "IS-95 (cdmaOne) utilizes RAKE receivers for multipath combining.",
+          "question": "What technology does IS-95 (cdmaOne) employ to handle signal interference?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 39,
+      "page_label": 40,
+      "topic": "CDMA Technical Characteristics",
+      "questions": [
+        {
+          "claim": "Wideband spreading in CDMA reduces the impact of frequency-selective fading.",
+          "question": "How does wideband spreading in CDMA mitigate the effects of frequency-selective fading?"
+        },
+        {
+          "claim": "RAKE combines energy from multiple signal paths.",
+          "question": "What is the mechanism behind RAKE (Receiver Adaptive) technology in CDMA?"
+        },
+        {
+          "claim": "CDMA experiences graceful degradation as the number of users increases interference gradually.",
+          "question": "How does CDMA handle increased interference as the number of users grows?"
+        },
+        {
+          "claim": "Power control is mandatory in CDMA to address the near–far problem.",
+          "question": "Why is power control a mandatory feature in CDMA networks?"
+        },
+        {
+          "claim": "Uncontrolled users in CDMA can cause self-jamming.",
+          "question": "What are the potential consequences of uncontrolled user behavior in a CDMA system?"
+        },
+        {
+          "claim": "CDMA capacity is limited by interference and required quality, not just the number of channels.",
+          "question": "What factors primarily limit CDMA capacity, beyond simply the number of available channels?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 40,
+      "page_label": 41,
+      "topic": "Soft Handoff and RAKE Receiver",
+      "questions": [
+        {
+          "claim": "A User Equipment (UE) can connect to multiple base stations briefly during transitions using soft handoff.",
+          "question": "How does soft handoff allow a User Equipment (UE) to connect to multiple base stations simultaneously?"
+        },
+        {
+          "claim": "A RAKE receiver correlates multiple delayed copies of a signal.",
+          "question": "What is the function of a RAKE (Rice-Alder) receiver in mobile communication?"
+        },
+        {
+          "claim": "A RAKE receiver combines multiple delayed copies of a signal.",
+          "question": "How does a RAKE receiver combine multiple delayed signal copies?"
+        },
+        {
+          "claim": "Soft handoff and a RAKE receiver provide smoother mobility.",
+          "question": "What is the impact of soft handoff and RAKE receivers on mobile device mobility?"
+        },
+        {
+          "claim": "Soft handoff and a RAKE receiver improve link robustness.",
+          "question": "How do soft handoff and RAKE receivers contribute to the reliability of a mobile connection?"
+        },
+        {
+          "claim": "Soft handoff increases signaling within the network.",
+          "question": "Does soft handoff increase the amount of signaling exchanged within a mobile network?"
+        },
+        {
+          "claim": "Soft handoff increases complexity in the User Equipment (UE).",
+          "question": "What is the effect of soft handoff on the complexity of a User Equipment (UE)?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 41,
+      "page_label": 42,
+      "topic": "2G Services and User Experience",
+      "questions": [
+        {
+          "claim": "2G networks provided clearer voice quality through the use of digital codecs and error correction.",
+          "question": "How did 2G networks improve voice quality compared to previous generations?"
+        },
+        {
+          "claim": "SMS and early messaging ecosystems were introduced with 2G networks.",
+          "question": "What services, including messaging, were introduced with 2G networks?"
+        },
+        {
+          "claim": "Roaming became practical with 2G networks, especially with GSM SIMs.",
+          "question": "How did 2G networks facilitate international roaming?"
+        },
+        {
+          "claim": "Early mobile data rates in 2G networks reached tens of kbps using CSD, and later GPRS/EDGE.",
+          "question": "What were the typical data rates achieved in 2G networks using CSD and GPRS/EDGE?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 42,
+      "page_label": 43,
+      "topic": "2.5G/2.75G Mobile Networks",
+      "questions": [
+        {
+          "claim": "GPRS and EDGE utilize the foundations of 2G networks for packet data transmission.",
+          "question": "How do GPRS and EDGE rely on 2G network technologies for packet data transmission?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 43,
+      "page_label": 44,
+      "topic": "GPRS Technology and Architecture",
+      "questions": [
+        {
+          "claim": "GPRS adds packet-switched data to GSM Phase 2.",
+          "question": "How does GPRS integrate packet-switched data with GSM Phase 2?"
+        },
+        {
+          "claim": "GPRS supports persistent data connections.",
+          "question": "Does GPRS support persistent data connections?"
+        },
+        {
+          "claim": "Persistent data connections are better for bursty traffic.",
+          "question": "Is persistent data connection usage beneficial for bursty network traffic?"
+        },
+        {
+          "claim": "GPRS introduces packet core nodes called SGSN.",
+          "question": "What are the packet core nodes introduced by GPRS technology?"
+        },
+        {
+          "claim": "GPRS introduces packet core nodes called GGSN.",
+          "question": "What are the roles of SGSN and GGSN in the GPRS architecture?"
+        },
+        {
+          "claim": "GPRS introduces new Quality of Service (QoS) concepts.",
+          "question": "What new Quality of Service (QoS) concepts were introduced by GPRS?"
+        },
+        {
+          "claim": "GPRS throughput depends on coding.",
+          "question": "How does GPRS throughput relate to coding techniques?"
+        },
+        {
+          "claim": "GPRS throughput depends on the number of time slots assigned.",
+          "question": "How does GPRS throughput relate to the number of time slots assigned?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 44,
+      "page_label": 45,
+      "topic": "EDGE Technology and Data Rates",
+      "questions": [
+        {
+          "claim": "EDGE utilizes higher-order modulation, such as 8-PSK, to increase the number of bits per symbol.",
+          "question": "How does EDGE technology utilize higher-order modulation, such as 8-PSK, to increase data rates?"
+        },
+        {
+          "claim": "EDGE is often referred to as “2.75G” due to its data rates approaching early 3G.",
+          "question": "What is the reason EDGE is often referred to as ‘2.75G’?"
+        },
+        {
+          "claim": "EDGE is compatible with GSM carriers and time slots, representing an incremental upgrade.",
+          "question": "What characteristics of EDGE make it compatible with existing GSM carriers and time slots?"
+        },
+        {
+          "claim": "EDGE enabled improved WAP and web experiences prior to the widespread adoption of 3G wideband technology.",
+          "question": "How did EDGE contribute to improvements in WAP and web experiences before the prevalence of 3G wideband technology?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 45,
+      "page_label": 46,
+      "topic": "3G and IMT-2000",
+      "questions": []
+    },
+    {
+      "chunk_id": 46,
+      "page_label": 47,
+      "topic": "3G Network Goals and Features",
+      "questions": [
+        {
+          "claim": "3G networks aimed to provide higher data rates for internet access.",
+          "question": "What were the primary goals of 3G networks regarding data rates?"
+        },
+        {
+          "claim": "3G networks aimed to provide higher data rates for multimedia applications.",
+          "question": "What types of applications were 3G networks designed to support with higher data rates?"
+        },
+        {
+          "claim": "3G networks aimed to support global roaming.",
+          "question": "Did 3G networks prioritize global roaming capabilities?"
+        },
+        {
+          "claim": "3G networks aimed to provide service continuity.",
+          "question": "What was a key objective of 3G networks concerning service continuity?"
+        },
+        {
+          "claim": "3G networks were designed to support both circuit-switched voice communication.",
+          "question": "Did 3G networks maintain support for circuit-switched voice communication?"
+        },
+        {
+          "claim": "3G networks were designed to support packet-switched data communication.",
+          "question": "Did 3G networks introduce packet-switched data communication?"
+        },
+        {
+          "claim": "3G networks aimed for better spectral efficiency.",
+          "question": "What was a goal of 3G networks in terms of spectral efficiency?"
+        },
+        {
+          "claim": "3G networks aimed to improve mobility support.",
+          "question": "How did 3G networks improve mobility support?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 47,
+      "page_label": 48,
+      "topic": "3G Network Families and Evolution",
+      "questions": [
+        {
+          "claim": "UMTS / WCDMA is an evolution path for GSM operators.",
+          "question": "How is UMTS / WCDMA related to GSM network evolution?"
+        },
+        {
+          "claim": "UMTS / WCDMA was standardized in 3GPP.",
+          "question": "Which standards organization standardized UMTS / WCDMA?"
+        },
+        {
+          "claim": "CDMA2000 is an evolution path for IS-95.",
+          "question": "What is the relationship between CDMA2000 and IS-95 networks?"
+        },
+        {
+          "claim": "CDMA2000 historically existed within the 3GPP2 ecosystem.",
+          "question": "Within what ecosystem did CDMA2000 historically operate?"
+        },
+        {
+          "claim": "TD-SCDMA is a time-division synchronous CDMA technology.",
+          "question": "What type of technology is TD-SCDMA?"
+        },
+        {
+          "claim": "TD-SCDMA was historically used in China.",
+          "question": "Where was TD-SCDMA historically deployed?"
+        },
+        {
+          "claim": "Many networks later evolved toward LTE as a common 4G path.",
+          "question": "Which network technologies evolved toward LTE as a common 4G path?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 48,
+      "page_label": 49,
+      "topic": "3G Cell Sizes and Environments",
+      "questions": [
+        {
+          "claim": "In a 3G operating environment, cell size varies by environment.",
+          "question": "How does cell size vary in a 3G operating environment?"
+        },
+        {
+          "claim": "GEO satellites utilize macro, micro, and pico cells, with pico cells being for indoor use.",
+          "question": "What types of cells (macro, micro, pico) do GEO satellites utilize, and what is the purpose of pico cells?"
+        },
+        {
+          "claim": "GEO satellites also utilize Mega Cells which are regional.",
+          "question": "What are Mega Cells and what is their regional coverage?"
+        },
+        {
+          "claim": "GEO satellites also utilize Micro Cells which are for urban areas.",
+          "question": "What is the coverage area of Micro Cells utilized by GEO satellites?"
+        },
+        {
+          "claim": "LEO/MEO satellites utilize Global Cells.",
+          "question": "What types of cells do LEO/MEO satellites utilize?"
+        },
+        {
+          "claim": "LEO/MEO satellites utilize Macro Cells which are for suburban areas.",
+          "question": "What is the coverage area of Macro Cells utilized by LEO/MEO satellites?"
+        },
+        {
+          "claim": "LEO/MEO satellites utilize Pico Cells which are for in-building use.",
+          "question": "What is the coverage area of Pico Cells utilized by LEO/MEO satellites?"
+        },
+        {
+          "claim": "Smaller cells enable higher capacity.",
+          "question": "How does cell size impact network capacity?"
+        },
+        {
+          "claim": "Smaller cells enable better indoor coverage.",
+          "question": "How does cell size impact indoor coverage?"
+        },
+        {
+          "claim": "Satellite layers can complement terrestrial coverage.",
+          "question": "How can satellite layers complement terrestrial network coverage?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 49,
+      "page_label": 50,
+      "topic": "UMTS Radio Access Network Architecture",
+      "questions": [
+        {
+          "claim": "The Radio Network Subsystem (RNS) includes the Radio Network Controller (RNC) and the User Equipment (UE).",
+          "question": "What components are included in the Radio Network Subsystem (RNS)?"
+        },
+        {
+          "claim": "The Radio Network Controller (RNC) handles radio resource control.",
+          "question": "What radio resource control functions does the Radio Network Controller (RNC) manage?"
+        },
+        {
+          "claim": "The Radio Network Controller (RNC) handles mobility decisions.",
+          "question": "What mobility decisions does the Radio Network Controller (RNC) handle?"
+        },
+        {
+          "claim": "Node B is the 3G base station.",
+          "question": "What is the role of Node B in 3G networks?"
+        },
+        {
+          "claim": "Node B supports Frequency Division Duplexing (FDD).",
+          "question": "What type of duplexing does Node B support?"
+        },
+        {
+          "claim": "Node B supports Time Division Duplexing (TDD).",
+          "question": "What type of duplexing does Node B support?"
+        },
+        {
+          "claim": "Node B can support both FDD and TDD.",
+          "question": "Can Node B support both Frequency Division Duplexing (FDD) and Time Division Duplexing (TDD)?"
+        },
+        {
+          "claim": "The Radio Network Controller (RNC) is responsible for handover decisions requiring signaling to the User Equipment (UE).",
+          "question": "What handover decisions require signaling to the User Equipment (UE) and are managed by the Radio Network Controller (RNC)?"
+        },
+        {
+          "claim": "A cell offers Frequency Division Duplexing (FDD).",
+          "question": "Does a cell utilize Frequency Division Duplexing (FDD)?"
+        },
+        {
+          "claim": "A cell offers Time Division Duplexing (TDD).",
+          "question": "Does a cell utilize Time Division Duplexing (TDD)?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 50,
+      "page_label": 51,
+      "topic": "UMTS Core Network Architecture",
+      "questions": [
+        {
+          "claim": "The circuit-switched domain in UMTS supports traditional voice calling using MSC/VLR.",
+          "question": "How does the circuit-switched domain in UMTS handle traditional voice calls?"
+        },
+        {
+          "claim": "The packet-switched domain in UMTS supports data using SGSN/GGSN from GPRS.",
+          "question": "What role do SGSN and GGSN play in the packet-switched domain of UMTS?"
+        },
+        {
+          "claim": "Release 99 of UMTS reused much of the GSM/GPRS core network to accelerate deployment.",
+          "question": "What core network elements were reused in Release 99 of UMTS?"
+        },
+        {
+          "claim": "Later releases of UMTS enhanced packet capability with HSPA/HSPA+.",
+          "question": "How did later UMTS releases enhance packet data capabilities?"
+        },
+        {
+          "claim": "Evolved High Speed Packet Access (HSPA+) is a technical standard for wireless broadband telecommunication.",
+          "question": "What is the definition of Evolved High Speed Packet Access (HSPA+)?"
+        },
+        {
+          "claim": "HSPA+ is an evolution of the earlier HSPA standard.",
+          "question": "How is HSPA+ related to the HSPA standard?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 51,
+      "page_label": 52,
+      "topic": "WCDMA and OVSF Coding",
+      "questions": [
+        {
+          "claim": "Wideband CDMA uses a constant chip rate.",
+          "question": "What is the chip rate of Wideband CDMA (WCDMA)?"
+        },
+        {
+          "claim": "Different spreading factors in Wideband CDMA support different data rates.",
+          "question": "How do different spreading factors in WCDMA affect data rates?"
+        },
+        {
+          "claim": "OVSF coding is used in Wideband CDMA.",
+          "question": "What role does OVSF coding play in WCDMA?"
+        },
+        {
+          "claim": "Scrambling codes separate users in WCDMA.",
+          "question": "How do scrambling codes function in WCDMA?"
+        },
+        {
+          "claim": "Scrambling codes relax strict synchronization requirements in WCDMA.",
+          "question": "How do scrambling codes impact synchronization requirements in WCDMA?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 52,
+      "page_label": 53,
+      "topic": "3G Upgrades and Evolution",
+      "questions": [
+        {
+          "claim": "HSDPA utilizes adaptive modulation and coding techniques.",
+          "question": "Does HSDPA utilize adaptive modulation and coding techniques?"
+        },
+        {
+          "claim": "HSDPA utilizes HARQ (Hybrid Automatic Repeat Request).",
+          "question": "Does HSDPA utilize HARQ (Hybrid Automatic Repeat Request)?"
+        },
+        {
+          "claim": "HSDPA utilizes fast scheduling.",
+          "question": "Does HSDPA utilize fast scheduling?"
+        },
+        {
+          "claim": "HSUPA provides higher uplink throughput.",
+          "question": "Does HSUPA provide higher uplink throughput?"
+        },
+        {
+          "claim": "HSUPA improves latency.",
+          "question": "Does HSUPA improve latency?"
+        },
+        {
+          "claim": "HSPA+ employs higher-order modulation, such as 64-QAM.",
+          "question": "Does HSPA+ employ higher-order modulation, such as 64-QAM?"
+        },
+        {
+          "claim": "HSPA+ utilizes MIMO (Multiple-Input Multiple-Output).",
+          "question": "Does HSPA+ utilize MIMO (Multiple-Input Multiple-Output)?"
+        },
+        {
+          "claim": "HSPA+ utilizes multi-carrier technology.",
+          "question": "Does HSPA+ utilize multi-carrier technology?"
+        },
+        {
+          "claim": "HSDPA is a downlink technology.",
+          "question": "Is HSDPA considered a downlink technology?"
+        },
+        {
+          "claim": "HSUPA is an uplink technology.",
+          "question": "Is HSUPA considered an uplink technology?"
+        },
+        {
+          "claim": "HSDPA, HSUPA, and HSPA+ are considered 'evolved 3G' systems.",
+          "question": "Are HSDPA, HSUPA, and HSPA+ considered 'evolved 3G' systems?"
+        },
+        {
+          "claim": "Evolved 3G systems bridged toward LTE capabilities.",
+          "question": "Did Evolved 3G systems bridge toward LTE capabilities?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 53,
+      "page_label": 54,
+      "topic": "Cellular Network Characteristics and Limitations",
+      "questions": [
+        {
+          "claim": "In CDMA systems, an increase in the number of users leads to increased interference.",
+          "question": "How does an increase in the number of users affect interference in CDMA systems?"
+        },
+        {
+          "claim": "Increased interference in CDMA systems results in reduced coverage.",
+          "question": "Does increased interference in CDMA systems lead to reduced coverage?"
+        },
+        {
+          "claim": "In GSM, a mobile device receives an exclusive signal from the base station.",
+          "question": "Does a mobile device in GSM receive a single, exclusive signal from the base station?"
+        },
+        {
+          "claim": "In GSM, the number of devices in a cell does not influence cell size.",
+          "question": "Does the number of devices in a GSM cell influence cell size?"
+        },
+        {
+          "claim": "In UMTS, cell size is closely correlated to cell capacity.",
+          "question": "Is there a correlation between cell size and cell capacity in UMTS?"
+        },
+        {
+          "claim": "Signal-to-noise ratio determines cell capacity in UMTS.",
+          "question": "How does signal-to-noise ratio determine cell capacity in UMTS?"
+        },
+        {
+          "claim": "Noise in UMTS is generated by interference from other cells.",
+          "question": "What is the source of noise in UMTS networks?"
+        },
+        {
+          "claim": "Noise in UMTS is generated by interference from other users of the same cell.",
+          "question": "What are the sources of noise in UMTS networks?"
+        },
+        {
+          "claim": "Edge users in UMTS may drop out of the cell when they hit power limits.",
+          "question": "Can edge users in UMTS drop out of the cell due to power limits?"
+        },
+        {
+          "claim": "Dropping of edge users in UMTS shrinks the effective cell size.",
+          "question": "Does the dropping of edge users in UMTS affect the effective cell size?"
+        },
+        {
+          "claim": "Interference increases the noise level in UMTS.",
+          "question": "How does interference impact the noise level in UMTS?"
+        },
+        {
+          "claim": "Devices at the edge of a UMTS cell cannot increase their output power beyond a maximum limit.",
+          "question": "What is the maximum output power limit for devices at the edge of a UMTS cell?"
+        },
+        {
+          "claim": "A limitation on the maximum number of users within a cell is required in UMTS.",
+          "question": "Is a limit on the maximum number of users within a cell required in UMTS?"
+        },
+        {
+          "claim": "Cell breathing complicates network planning in UMTS.",
+          "question": "How does cell breathing complicate network planning in UMTS?"
+        },
+        {
+          "claim": "Network planning in UMTS must account for load-dependent coverage.",
+          "question": "Does network planning in UMTS need to account for load-dependent coverage?"
+        },
+        {
+          "claim": "In UMTS, capacity and coverage are linked through cell breathing.",
+          "question": "How is capacity and coverage related in UMTS networks, specifically through the concept of 'cell breathing'?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 54,
+      "page_label": 55,
+      "topic": "3G Capabilities and Limitations",
+      "questions": [
+        {
+          "claim": "3G systems enabled internet access on mobile phones.",
+          "question": "Did 3G networks provide internet access to mobile phones?"
+        },
+        {
+          "claim": "3G systems utilized packet data and shared radio resources dynamically.",
+          "question": "How did 3G systems manage radio resources?"
+        },
+        {
+          "claim": "Users of 3G systems experienced variable throughput.",
+          "question": "What was the typical throughput experienced by users on 3G networks?"
+        },
+        {
+          "claim": "Users of 3G systems experienced variable latency.",
+          "question": "What was the typical latency experienced by users on 3G networks?"
+        },
+        {
+          "claim": "Early video calling in 3G systems was limited by uplink capacity.",
+          "question": "What were the limitations of video calling in early 3G systems?"
+        },
+        {
+          "claim": "Early video calling in 3G systems was limited by latency.",
+          "question": "What factors limited early video calling in 3G systems?"
+        },
+        {
+          "claim": "Mobile web browsing speeds in 3G ranged from hundreds of kbps to a few Mbps.",
+          "question": "What were the typical mobile web browsing speeds achieved on 3G networks?"
+        },
+        {
+          "claim": "3G systems supported picture messaging and richer media.",
+          "question": "What types of media were supported by 3G systems?"
+        },
+        {
+          "claim": "The variable throughput and latency of 3G motivated improvements in scheduling.",
+          "question": "How did variable throughput and latency in 3G networks influence network scheduling?"
+        },
+        {
+          "claim": "The variable throughput and latency of 3G motivated the move to OFDMA in LTE.",
+          "question": "How did the challenges of 3G networks contribute to the development of OFDMA in LTE?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 55,
+      "page_label": 56,
+      "topic": "4G Network Characteristics",
+      "questions": [
+        {
+          "claim": "4G systems utilize an All-IP Broadband architecture.",
+          "question": "What is the underlying network architecture of 4G systems?"
+        },
+        {
+          "claim": "LTE and LTE-Advanced are examples of 4G technologies.",
+          "question": "What are LTE and LTE-Advanced technologies?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 56,
+      "page_label": 57,
+      "topic": "4G Network Architecture and Technologies",
+      "questions": [
+        {
+          "claim": "4G utilizes an All-IP packet core.",
+          "question": "Does 4G network architecture utilize an All-IP packet core?"
+        },
+        {
+          "claim": "Voice in 4G is implemented as VoIP over LTE, known as VoLTE.",
+          "question": "How is voice communication implemented in 4G networks?"
+        },
+        {
+          "claim": "LTE employs OFDMA for the downlink.",
+          "question": "What modulation technique does LTE use for downlink transmissions?"
+        },
+        {
+          "claim": "LTE employs SC-FDMA for the uplink.",
+          "question": "What modulation technique does LTE use for uplink transmissions?"
+        },
+        {
+          "claim": "4G networks exhibit lower latency compared to previous generations.",
+          "question": "How does 4G latency compare to previous mobile network generations?"
+        },
+        {
+          "claim": "4G networks have higher spectral efficiency than previous generations.",
+          "question": "How does 4G spectral efficiency compare to previous mobile network generations?"
+        },
+        {
+          "claim": "MIMO and improved coding techniques contribute to the higher spectral efficiency of 4G.",
+          "question": "What technologies contribute to the higher spectral efficiency of 4G networks?"
+        },
+        {
+          "claim": "4G networks feature a flat architecture.",
+          "question": "What is the architectural design of 4G networks?"
+        },
+        {
+          "claim": "More functionality was moved to the base station (eNodeB) in 4G networks.",
+          "question": "How has the distribution of functionality changed in 4G base stations (eNodeBs) compared to previous generations?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 57,
+      "page_label": 58,
+      "topic": "4G Performance Targets and LTE",
+      "questions": [
+        {
+          "claim": "4G (IMT-Advanced) had a peak data rate target of approximately 100 Mbit/s for high mobility scenarios.",
+          "question": "What was the peak data rate target for 4G (IMT-Advanced) in high mobility scenarios?"
+        },
+        {
+          "claim": "4G (IMT-Advanced) had a peak data rate target of approximately 1 Gbit/s for low mobility scenarios.",
+          "question": "What was the peak data rate target for 4G (IMT-Advanced) in low mobility scenarios?"
+        },
+        {
+          "claim": "4G networks utilized an all-IP packet switched network architecture.",
+          "question": "What network architecture did 4G networks utilize?"
+        },
+        {
+          "claim": "4G networks aimed for scalable bandwidth.",
+          "question": "What was a key goal of 4G networks regarding bandwidth?"
+        },
+        {
+          "claim": "4G networks aimed for high spectral efficiency.",
+          "question": "What was a key goal of 4G networks regarding spectral efficiency?"
+        },
+        {
+          "claim": "Initial LTE deployments were marketed as 4G before fully meeting IMT-Advanced targets.",
+          "question": "Were initial LTE deployments marketed as 4G before achieving all IMT-Advanced targets?"
+        },
+        {
+          "claim": "LTE-Advanced introduced carrier aggregation features.",
+          "question": "What carrier aggregation features were introduced in LTE-Advanced?"
+        },
+        {
+          "claim": "LTE-Advanced features aligned better with IMT-Advanced expectations.",
+          "question": "Did LTE-Advanced features better align with the expectations set by IMT-Advanced?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 58,
+      "page_label": 59,
+      "topic": "LTE Network Architecture Components",
+      "questions": [
+        {
+          "claim": "The E-UTRAN utilizes eNodeB base stations to handle radio scheduling and mobility.",
+          "question": "What role does the eNodeB base station play in the E-UTRAN network?"
+        },
+        {
+          "claim": "The S1-MME interface connects to the iCore.c component.",
+          "question": "What is the function of the S1-MME interface?"
+        },
+        {
+          "claim": "The LTE-Uu interface connects to the UE (User Equipment).",
+          "question": "What is the purpose of the LTE-Uu interface?"
+        },
+        {
+          "claim": "The Evolved Packet Core (EPC) includes the MME for control functions.",
+          "question": "Which component within the Evolved Packet Core (EPC) handles control functions?"
+        },
+        {
+          "claim": "The Evolved Packet Core (EPC) includes SGW/PGW for user plane gateway functions.",
+          "question": "Which components within the Evolved Packet Core (EPC) are responsible for user plane gateway functions?"
+        },
+        {
+          "claim": "The Evolved Packet Core (EPC) includes the HSS for subscriber data.",
+          "question": "Which component within the Evolved Packet Core (EPC) stores subscriber data?"
+        },
+        {
+          "claim": "Bearers provide Quality of Service (QoS).",
+          "question": "How do bearers contribute to network performance?"
+        },
+        {
+          "claim": "Policy control steers traffic and charging.",
+          "question": "What is the role of policy control in an LTE network?"
+        },
+        {
+          "claim": "VoLTE utilizes IMS for voice services over IP.",
+          "question": "What technology does VoLTE utilize for voice services?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 59,
+      "page_label": 60,
+      "topic": "LTE Radio and Key Concepts",
+      "questions": [
+        {
+          "claim": "Downlink in LTE uses Orthogonal Frequency Division Multiple Access (OFDMA) with many narrow subcarriers.",
+          "question": "How does LTE downlink utilize Orthogonal Frequency Division Multiple Access (OFDMA) and subcarriers?"
+        },
+        {
+          "claim": "LTE schedulers assign time-frequency resource blocks to each user.",
+          "question": "How do LTE schedulers allocate time-frequency resources to users?"
+        },
+        {
+          "claim": "Adaptive modulation and coding (AMC) in LTE reacts to channel quality.",
+          "question": "How does Adaptive Modulation and Coding (AMC) function within LTE?"
+        },
+        {
+          "claim": "A Resource Block (RB) is the smallest schedulable unit in LTE.",
+          "question": "What is the definition of a Resource Block (RB) in LTE?"
+        },
+        {
+          "claim": "Hybrid Automatic Repeat Request (HARQ) provides fast retransmissions in LTE.",
+          "question": "How does Hybrid Automatic Repeat Request (HARQ) contribute to data transmission in LTE?"
+        },
+        {
+          "claim": "Multiple-Input Multiple-Output (MIMO) uses multiple antennas to improve throughput and coverage in LTE.",
+          "question": "How does Multiple-Input Multiple-Output (MIMO) technology enhance LTE performance?"
+        },
+        {
+          "claim": "Uplink in LTE uses Single-Carrier Frequency Division Multiple Access (SC-FDMA) to reduce User Equipment (UE) power amplifier stress.",
+          "question": "What access method does LTE uplink utilize, and why?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 60,
+      "page_label": 61,
+      "topic": "LTE-Advanced (4G+) Features",
+      "questions": [
+        {
+          "claim": "LTE-Advanced utilizes carrier aggregation to combine multiple carriers for wider bandwidth.",
+          "question": "How does LTE-Advanced utilize carrier aggregation?"
+        },
+        {
+          "claim": "LTE-Advanced employs higher-order MIMO configurations, such as 4x4 and 8x8 in some cases.",
+          "question": "What MIMO configurations are employed in LTE-Advanced?"
+        },
+        {
+          "claim": "CoMP and interference coordination in LTE-Advanced improve performance at the edge of the network.",
+          "question": "How do CoMP and interference coordination enhance LTE-Advanced performance?"
+        },
+        {
+          "claim": "HetNets, which mix macro cells and small cells, are used in LTE-Advanced for coverage and capacity.",
+          "question": "What role do HetNets play in LTE-Advanced network design?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 61,
+      "page_label": 62,
+      "topic": "VoLTE and IP Voice Services",
+      "questions": [
+        {
+          "claim": "Voice over LTE (VoLTE) implements voice as an IP service (VoIP) on the LTE packet core.",
+          "question": "What is the fundamental implementation of Voice over LTE (VoLTE) in terms of voice communication?"
+        },
+        {
+          "claim": "VoLTE provides better spectral efficiency than legacy circuit-switched voice.",
+          "question": "How does VoLTE's spectral efficiency compare to traditional circuit-switched voice technologies?"
+        },
+        {
+          "claim": "VoLTE enables high-definition voice quality.",
+          "question": "What voice quality improvements does VoLTE offer compared to previous voice technologies?"
+        },
+        {
+          "claim": "VoLTE enables faster call setup times.",
+          "question": "What is the typical call setup time difference between VoLTE and legacy voice systems?"
+        },
+        {
+          "claim": "VoLTE requires an IP Multimedia Subsystem (IMS) for operation.",
+          "question": "What is the role of the IP Multimedia Subsystem (IMS) in the operation of VoLTE?"
+        },
+        {
+          "claim": "VoLTE requires Quality of Service (QoS) mechanisms.",
+          "question": "What Quality of Service (QoS) mechanisms are necessary for VoLTE functionality?"
+        },
+        {
+          "claim": "VoLTE requires careful interworking mechanisms to support roaming.",
+          "question": "What interworking considerations are required for VoLTE to function correctly during mobile roaming?"
+        },
+        {
+          "claim": "A phone call on LTE is a real-time IP session with strict delay and loss requirements.",
+          "question": "How is a Voice over LTE (VoLTE) call characterized in terms of its network session?"
+        },
+        {
+          "claim": "Networks prioritize VoLTE traffic using dedicated QoS bearers.",
+          "question": "How do mobile networks prioritize VoLTE traffic?"
+        },
+        {
+          "claim": "Other applications share best-effort resources when VoLTE is in use.",
+          "question": "How does VoLTE traffic sharing impact other network applications?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 62,
+      "page_label": 63,
+      "topic": "LTE Radio and Monitoring",
+      "questions": [
+        {
+          "claim": "LTE control channels include scheduling metadata that is often unencrypted.",
+          "question": "Does LTE control channel scheduling metadata in LTE networks typically include encryption?"
+        },
+        {
+          "claim": "LTEye demonstrates low-cost passive monitoring to infer utilization and link quality in LTE networks.",
+          "question": "How does LTEye utilize passive monitoring to assess network utilization and link quality in LTE networks?"
+        },
+        {
+          "claim": "LTEye can help researchers understand spectrum use.",
+          "question": "What is the primary application of LTEye in understanding spectrum usage?"
+        },
+        {
+          "claim": "LTEye can help policy makers understand spectrum use.",
+          "question": "How does LTEye contribute to understanding spectrum usage for policy makers?"
+        },
+        {
+          "claim": "LTEye can help researchers understand LTE network performance.",
+          "question": "How does LTEye assist researchers in evaluating LTE network performance?"
+        },
+        {
+          "claim": "LTEye can help policy makers understand LTE network performance.",
+          "question": "How does LTEye support policy makers in assessing LTE network performance?"
+        },
+        {
+          "claim": "Radio scheduling shapes user experience in LTE networks.",
+          "question": "In LTE networks, how does radio scheduling impact the user experience?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 63,
+      "page_label": 64,
+      "topic": "Cellular Network Capacity and Congestion",
+      "questions": [
+        {
+          "claim": "Cellular links exhibit highly variable capacity due to scheduling and channel changes.",
+          "question": "How do scheduling and channel changes contribute to variable capacity in cellular links?"
+        },
+        {
+          "claim": "Classic congestion control mechanisms may cause per-user queues to become overfilled, resulting in high latency.",
+          "question": "In cellular networks, how can traditional congestion control mechanisms lead to overfilled queues and increased latency?"
+        },
+        {
+          "claim": "Sprout forecasts near-future delivery to minimize delay while sustaining throughput.",
+          "question": "What is the purpose of Sprout's near-future delivery strategy in minimizing delay and sustaining throughput?"
+        },
+        {
+          "claim": "Radio evolution necessitates changes in the behavior of end-to-end protocols.",
+          "question": "How does radio evolution necessitate changes in end-to-end protocols within cellular networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 64,
+      "page_label": 65,
+      "topic": "5G Network Architecture",
+      "questions": [
+        {
+          "claim": "5G utilizes New Radio (NR) and a 5G Core network.",
+          "question": "What are the key components of 5G network architecture?"
+        },
+        {
+          "claim": "5G supports enhanced Mobile Broadband (eMBB).",
+          "question": "How does 5G enhance mobile broadband capabilities?"
+        },
+        {
+          "claim": "5G supports Ultra-Reliable Low Latency Communications (URLLC).",
+          "question": "What types of communication does 5G support with ultra-low latency?"
+        },
+        {
+          "claim": "5G supports massive Internet of Things (IoT).",
+          "question": "How does 5G enable massive Internet of Things (IoT) deployments?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 65,
+      "page_label": 66,
+      "topic": "5G Network Drivers and Applications",
+      "questions": [
+        {
+          "claim": "Mobile data is experiencing an explosion in volume due to video and cloud applications.",
+          "question": "How has the increasing use of video and cloud applications impacted mobile data volume?"
+        },
+        {
+          "claim": "There is a need for better efficiency in mobile networks.",
+          "question": "What factors are driving the need for improved efficiency in mobile networks?"
+        },
+        {
+          "claim": "Industrial automation is a new vertical application for 5G networks.",
+          "question": "What specific industrial applications are being enabled by 5G networks?"
+        },
+        {
+          "claim": "Connected vehicles are a new vertical application for 5G networks.",
+          "question": "What are the emerging applications of 5G networks in the connected vehicle sector?"
+        },
+        {
+          "claim": "Smart cities are a new vertical application for 5G networks.",
+          "question": "What new applications are being developed for 5G networks within the context of smart cities?"
+        },
+        {
+          "claim": "Massive IoT requires high device density.",
+          "question": "What are the key requirements for supporting massive Internet of Things (IoT) deployments?"
+        },
+        {
+          "claim": "Massive IoT requires low energy operation.",
+          "question": "What are the energy efficiency considerations for massive IoT applications on 5G networks?"
+        },
+        {
+          "claim": "5G networks are designed to be more flexible.",
+          "question": "How does 5G network design prioritize flexibility?"
+        },
+        {
+          "claim": "Network slicing is a feature of 5G networks.",
+          "question": "What is the role of network slicing in 5G network capabilities?"
+        },
+        {
+          "claim": "Edge computing is a feature of 5G networks.",
+          "question": "What is the function of edge computing within 5G network architecture?"
+        },
+        {
+          "claim": "Private deployments are a feature of 5G networks.",
+          "question": "What is the significance of private 5G deployments?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 66,
+      "page_label": 67,
+      "topic": "5G Performance Requirements",
+      "questions": [
+        {
+          "claim": "The peak data rate target for 5G downlink is 20 Gbit/s.",
+          "question": "What is the peak downlink data rate target for 5G?"
+        },
+        {
+          "claim": "The peak data rate target for 5G uplink is 10 Gbit/s.",
+          "question": "What is the peak uplink data rate target for 5G?"
+        },
+        {
+          "claim": "The user experienced data rate for 5G is 100 Mbit/s downlink in typical coverage.",
+          "question": "What is the typical 5G downlink user experienced data rate?"
+        },
+        {
+          "claim": "The latency target for 5G URLLC user plane is approximately 1 ms.",
+          "question": "What is the latency target for 5G URLLC user plane?"
+        },
+        {
+          "claim": "The latency target for 5G eMBB user plane is approximately 4 ms.",
+          "question": "What is the latency target for 5G eMBB user plane?"
+        },
+        {
+          "claim": "The connection density for 5G mMTC can reach up to 1,000,000 devices per km² under specific scenarios.",
+          "question": "What is the connection density achievable for 5G mMTC under specific scenarios?"
+        },
+        {
+          "claim": "Real 5G performance depends on spectrum.",
+          "question": "How does spectrum impact real 5G performance?"
+        },
+        {
+          "claim": "Real 5G performance depends on bandwidth.",
+          "question": "How does bandwidth impact real 5G performance?"
+        },
+        {
+          "claim": "Real 5G performance depends on deployment density.",
+          "question": "How does deployment density impact real 5G performance?"
+        },
+        {
+          "claim": "Real 5G performance depends on device capability.",
+          "question": "How does device capability impact real 5G performance?"
+        },
+        {
+          "claim": "Real 5G performance depends on load.",
+          "question": "How does network load impact real 5G performance?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 67,
+      "page_label": 68,
+      "topic": "5G Service Categories and Examples",
+      "questions": [
+        {
+          "claim": "Enhanced Mobile Broadband (eMBB) supports high throughput applications such as 4K/8K video and Augmented/Virtual Reality.",
+          "question": "How does Enhanced Mobile Broadband (eMBB) support applications like 4K/8K video and Augmented/Virtual Reality?"
+        },
+        {
+          "claim": "Stadium uplink for content creators is an example of an Enhanced Mobile Broadband (eMBB) application.",
+          "question": "Can a stadium uplink for content creators be considered an example of Enhanced Mobile Broadband (eMBB)?"
+        },
+        {
+          "claim": "Fixed wireless access is an example of an Enhanced Mobile Broadband (eMBB) application.",
+          "question": "Is fixed wireless access an example of Enhanced Mobile Broadband (eMBB)?"
+        },
+        {
+          "claim": "Ultra-Reliable Low-Latency Communications (URLLC) is applicable to factory control systems.",
+          "question": "To what extent is Ultra-Reliable Low-Latency Communications (URLLC) applicable to factory control systems?"
+        },
+        {
+          "claim": "Robotics is an application area for Ultra-Reliable Low-Latency Communications (URLLC).",
+          "question": "In what application areas is Ultra-Reliable Low-Latency Communications (URLLC) utilized?"
+        },
+        {
+          "claim": "Automated guided vehicles in a warehouse utilize Ultra-Reliable Low-Latency Communications (URLLC).",
+          "question": "How do automated guided vehicles in a warehouse utilize Ultra-Reliable Low-Latency Communications (URLLC)?"
+        },
+        {
+          "claim": "Massive Machine-Type Communications (mMTC) is used for sensors.",
+          "question": "What is the primary use case for Massive Machine-Type Communications (mMTC)?"
+        },
+        {
+          "claim": "Meters are an example of devices utilizing Massive Machine-Type Communications (mMTC).",
+          "question": "Are meters an example of devices utilizing Massive Machine-Type Communications (mMTC)?"
+        },
+        {
+          "claim": "Trackers are an example of devices utilizing Massive Machine-Type Communications (mMTC).",
+          "question": "Are trackers an example of devices utilizing Massive Machine-Type Communications (mMTC)?"
+        },
+        {
+          "claim": "Smart agriculture sensors can last for years on battery power when using Massive Machine-Type Communications (mMTC).",
+          "question": "How long can smart agriculture sensors operate on battery power when utilizing Massive Machine-Type Communications (mMTC)?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 68,
+      "page_label": 69,
+      "topic": "5G New Radio Innovations",
+      "questions": [
+        {
+          "claim": "Flexible numerology in 5G NR adapts to low frequencies.",
+          "question": "How does flexible numerology in 5G NR adapt to low frequencies?"
+        },
+        {
+          "claim": "Flexible numerology in 5G NR adapts to high frequencies.",
+          "question": "How does flexible numerology in 5G NR adapt to high frequencies?"
+        },
+        {
+          "claim": "Massive MIMO and beamforming improve 5G NR coverage.",
+          "question": "How does Massive MIMO and beamforming improve 5G NR coverage?"
+        },
+        {
+          "claim": "Massive MIMO and beamforming improve 5G NR capacity.",
+          "question": "How does Massive MIMO and beamforming improve 5G NR capacity?"
+        },
+        {
+          "claim": "5G NR supports sub-6 GHz spectrum.",
+          "question": "What spectrum bands does 5G NR support?"
+        },
+        {
+          "claim": "5G NR supports mmWave spectrum.",
+          "question": "What spectrum bands does 5G NR support, specifically mmWave?"
+        },
+        {
+          "claim": "5G NR is designed for diverse use cases.",
+          "question": "What diverse use cases is 5G NR designed for?"
+        },
+        {
+          "claim": "5G NR provides scalable bandwidth options.",
+          "question": "What scalable bandwidth options are provided by 5G NR?"
+        },
+        {
+          "claim": "5G NR provides scalable latency options.",
+          "question": "What scalable latency options are provided by 5G NR?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 69,
+      "page_label": 70,
+      "topic": "5G Spectrum Characteristics",
+      "questions": [
+        {
+          "claim": "Sub-6 GHz spectrum provides better coverage and penetration.",
+          "question": "How does sub-6 GHz spectrum compare to other spectrum bands in terms of coverage and penetration?"
+        },
+        {
+          "claim": "Sub-6 GHz spectrum offers moderate bandwidth.",
+          "question": "What is the bandwidth offered by sub-6 GHz spectrum?"
+        },
+        {
+          "claim": "mmWave spectrum provides huge bandwidth.",
+          "question": "What is the bandwidth capacity of mmWave spectrum?"
+        },
+        {
+          "claim": "mmWave spectrum has short range.",
+          "question": "What is the typical range of mmWave spectrum?"
+        },
+        {
+          "claim": "mmWave spectrum is sensitive to blockage.",
+          "question": "How does mmWave spectrum perform in the presence of obstructions and blockage?"
+        },
+        {
+          "claim": "Coverage-first layers tend to use lower bands, such as 600–900 MHz.",
+          "question": "Which frequency bands are typically used for coverage-first 5G deployments?"
+        },
+        {
+          "claim": "Capacity-first layers use mid-band, such as 3–4 GHz.",
+          "question": "Which frequency bands are typically used for capacity-first 5G deployments?"
+        },
+        {
+          "claim": "Capacity-first layers use mmWave in hotspots.",
+          "question": "In 5G deployments, when is mmWave spectrum typically utilized?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 70,
+      "page_label": 71,
+      "topic": "5G Deployment Architectures",
+      "questions": [
+        {
+          "claim": "NSA (Non-Standalone) 5G NR utilizes an LTE core network.",
+          "question": "Does NSA (Non-Standalone) 5G NR rely on an existing LTE core network?"
+        },
+        {
+          "claim": "NSA (Non-Standalone) deployment enables a faster rollout of 5G.",
+          "question": "How does NSA (Non-Standalone) 5G deployment impact the speed of 5G rollout?"
+        },
+        {
+          "claim": "SA (Standalone) 5G utilizes both 5G NR and a 5G core network.",
+          "question": "What components are utilized in SA (Standalone) 5G network architecture?"
+        },
+        {
+          "claim": "SA (Standalone) deployment enables network slicing.",
+          "question": "What capabilities are enabled by SA (Standalone) 5G deployment?"
+        },
+        {
+          "claim": "SA (Standalone) deployment enables full 5G features.",
+          "question": "How does DSS (Dynamic Spectrum Sharing) facilitate the coexistence of LTE and 5G NR spectrum?"
+        },
+        {
+          "claim": "DSS (Dynamic Spectrum Sharing) allows spectrum to be shared between LTE and 5G NR.",
+          "question": "What is the typical initial deployment strategy for mobile network operators regarding 5G?"
+        },
+        {
+          "claim": "Operators frequently begin with NSA deployments.",
+          "question": "What is the progression of 5G deployment, from NSA to SA?"
+        },
+        {
+          "claim": "Operators migrate to SA as 5G core network upgrades become available.",
+          "question": ""
+        }
+      ]
+    },
+    {
+      "chunk_id": 71,
+      "page_label": 72,
+      "topic": "5G Core Network Architecture",
+      "questions": [
+        {
+          "claim": "Network Functions (NFs) expose services via standardized APIs.",
+          "question": "How do Network Functions (NFs) expose services in the 5G core network?"
+        },
+        {
+          "claim": "The control plane and user plane are separated in the 5G core network.",
+          "question": "Is the control plane and user plane separated in the 5G core network?"
+        },
+        {
+          "claim": "The UPF carries user data.",
+          "question": "What role does the UPF play in the 5G core network?"
+        },
+        {
+          "claim": "A Service-Based Architecture (SBA) makes the 5G core more modular.",
+          "question": "How does a Service-Based Architecture (SBA) contribute to the modularity of the 5G core?"
+        },
+        {
+          "claim": "A Service-Based Architecture (SBA) makes the 5G core more scalable.",
+          "question": "How does a Service-Based Architecture (SBA) contribute to the scalability of the 5G core?"
+        },
+        {
+          "claim": "A Service-Based Architecture (SBA) enables network slicing.",
+          "question": "How does a Service-Based Architecture (SBA) enable network slicing in the 5G core?"
+        },
+        {
+          "claim": "A Service-Based Architecture (SBA) enables edge deployments.",
+          "question": "How does a Service-Based Architecture (SBA) enable edge deployments in the 5G core?"
+        },
+        {
+          "claim": "A Service-Based Architecture (SBA) enables faster introduction of new services compared to monolithic cores.",
+          "question": "How does a Service-Based Architecture (SBA) impact the speed of introducing new services compared to traditional core networks?"
+        },
+        {
+          "claim": "AMF is a Key Network Function in the 5G core.",
+          "question": "What is the role of the AMF (Access and Mobility Management Function) in the 5G core network?"
+        },
+        {
+          "claim": "SMF is a Key Network Function in the 5G core.",
+          "question": "What is the role of the SMF (Session Management Function) in the 5G core network?"
+        },
+        {
+          "claim": "UPF is a Key Network Function in the 5G core.",
+          "question": "What is the role of the UPF (User Plane Function) in the 5G core network?"
+        },
+        {
+          "claim": "AUSF is a Key Network Function in the 5G core.",
+          "question": "What is the role of the AUSF (Authentication Server Function) in the 5G core network?"
+        },
+        {
+          "claim": "UDM is a Key Network Function in the 5G core.",
+          "question": "What is the role of the UDM (User Data Management Function) in the 5G core network?"
+        },
+        {
+          "claim": "PCF is a Key Network Function in the 5G core.",
+          "question": "What is the role of the PCF (Policy Control Function) in the 5G core network?"
+        },
+        {
+          "claim": "NRF is a Key Network Function in the 5G core.",
+          "question": "What is the role of the NRF (Network Repository Function) in the 5G core network?"
+        },
+        {
+          "claim": "NSSF is a Key Network Function in the 5G core.",
+          "question": "What is the role of the Non-Service Function (NSSF) in the 5G core network architecture?"
+        },
+        {
+          "claim": "The 5G core is designed for cloud-native deployment.",
+          "question": "Is the 5G core network architecture designed for cloud-native deployment?"
+        },
+        {
+          "claim": "The 5G core is designed for automation.",
+          "question": "Is the 5G core network architecture designed for automation?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 72,
+      "page_label": 73,
+      "topic": "Network Slicing and Edge Computing",
+      "questions": [
+        {
+          "claim": "Network slicing enables multiple logical networks on shared infrastructure.",
+          "question": "How does network slicing utilize shared infrastructure to create multiple logical networks?"
+        },
+        {
+          "claim": "Each network slice can have tailored Quality of Service (QoS).",
+          "question": "Can different network slices be configured with specific Quality of Service (QoS) parameters?"
+        },
+        {
+          "claim": "Each network slice can have tailored security policies.",
+          "question": "Can different network slices be configured with specific security policies?"
+        },
+        {
+          "claim": "Mobile Edge Computing (MEC) brings compute resources closer to the radio access network.",
+          "question": "What is the role of Mobile Edge Computing (MEC) in bringing compute resources closer to the radio access network?"
+        },
+        {
+          "claim": "MEC aims to reduce latency.",
+          "question": "What is the primary goal of Mobile Edge Computing (MEC) regarding latency?"
+        },
+        {
+          "claim": "Edge computing can reduce backhaul load.",
+          "question": "How does edge computing contribute to reducing the load on the backhaul network?"
+        },
+        {
+          "claim": "Private 5G deployments can benefit from edge computing.",
+          "question": "In what ways can private 5G deployments leverage edge computing?"
+        },
+        {
+          "claim": "Industry deployments can benefit from edge computing.",
+          "question": "In what ways can industry deployments benefit from edge computing?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 73,
+      "page_label": 74,
+      "topic": "Mobile Network Generations",
+      "questions": []
+    },
+    {
+      "chunk_id": 74,
+      "page_label": 75,
+      "topic": "6G Network Characteristics and Timeline",
+      "questions": [
+        {
+          "claim": "The research phase for 6G networks occurred between 2020 and 2025.",
+          "question": "When did the research phase for 6G networks primarily take place?"
+        },
+        {
+          "claim": "Standardization of 6G networks is projected to occur between approximately 2026 and 2028.",
+          "question": "What is the projected timeframe for the standardization of 6G networks?"
+        },
+        {
+          "claim": "The 3rd Generation Partnership Project is leading the standardization of 6G networks.",
+          "question": "Which organization is currently leading the standardization efforts for 6G networks?"
+        },
+        {
+          "claim": "Commercial deployment of 6G networks is projected to occur around 2030.",
+          "question": "What is the anticipated year for the commercial deployment of 6G networks?"
+        },
+        {
+          "claim": "6G networks are expected to be 100 times faster than 5G networks.",
+          "question": "How much faster are 6G networks expected to be compared to 5G networks in terms of speed?"
+        },
+        {
+          "claim": "6G networks are designed to be intelligent and AI-native.",
+          "question": "What are the key design features of 6G networks regarding intelligence and AI?"
+        },
+        {
+          "claim": "6G networks will integrate communication, sensing, and computing.",
+          "question": "How will 6G networks integrate communication, sensing, and computing technologies?"
+        },
+        {
+          "claim": "6G networks aim to provide seamless coverage across ground, air, and space.",
+          "question": "What is the intended coverage scope of 6G networks – specifically across ground, air, and space?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 75,
+      "page_label": 76,
+      "topic": "6G Network Performance and Technologies",
+      "questions": [
+        {
+          "claim": "The peak data rate of 6G is up to 1 Tbps.",
+          "question": "What is the peak data rate expected for 6G networks?"
+        },
+        {
+          "claim": "The latency of 6G is less than 0.1 ms.",
+          "question": "What is the anticipated latency of 6G networks?"
+        },
+        {
+          "claim": "6G utilizes Sub-THz frequency bands ranging from 100 GHz to 1 THz.",
+          "question": "What frequency bands (in GHz) are utilized by 6G networks?"
+        },
+        {
+          "claim": "6G networks are AI-Native.",
+          "question": "How does 6G network design incorporate artificial intelligence?"
+        },
+        {
+          "claim": "6G networks have built-in Artificial Intelligence for self-optimization.",
+          "question": "How does 6G network design utilize artificial intelligence for network management?"
+        },
+        {
+          "claim": "6G networks employ predictive traffic management.",
+          "question": "What traffic management techniques are employed in 6G networks?"
+        },
+        {
+          "claim": "6G networks support autonomous network operation.",
+          "question": "What level of network automation is envisioned for 6G networks?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 76,
+      "page_label": 77,
+      "topic": "6G Key Technologies",
+      "questions": [
+        {
+          "claim": "Terahertz Communication is a key technology.",
+          "question": "What role does Terahertz Communication play in 6G technology?"
+        },
+        {
+          "claim": "The spectrum used in Terahertz Communication is ultra-high frequency.",
+          "question": "What is the frequency range utilized in Terahertz Communication?"
+        },
+        {
+          "claim": "Terahertz Communication provides extremely high data throughput.",
+          "question": "What is the expected data throughput offered by Terahertz Communication?"
+        },
+        {
+          "claim": "Terahertz Communication enables short-range ultra-fast transmission.",
+          "question": "What is the typical range of Terahertz Communication?"
+        },
+        {
+          "claim": "Non-Terrestrial Networks (NTN) are a key technology.",
+          "question": "What is the significance of Non-Terrestrial Networks (NTN) in 6G?"
+        },
+        {
+          "claim": "NTN integrates with Low Earth Orbit (LEO) satellites.",
+          "question": "How does Non-Terrestrial Networks (NTN) integrate with Low Earth Orbit (LEO) satellites?"
+        },
+        {
+          "claim": "NTN aims to provide global internet coverage.",
+          "question": "What is the intended goal of Non-Terrestrial Networks (NTN) regarding internet coverage?"
+        },
+        {
+          "claim": "NTN utilizes a space-air-ground unified architecture.",
+          "question": "What architectural approach does Non-Terrestrial Networks (NTN) employ?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 77,
+      "page_label": 78,
+      "topic": "Reconfigurable Intelligent Surfaces (RIS)",
+      "questions": [
+        {
+          "claim": "Intelligent Surfaces perform smart signal reflection and beamforming.",
+          "question": "How do Reconfigurable Intelligent Surfaces (RIS) perform signal manipulation?"
+        },
+        {
+          "claim": "Intelligent Surfaces reflect signals from transmitters to receivers.",
+          "question": "Do Reconfigurable Intelligent Surfaces (RIS) reflect signals from transmitters to receivers?"
+        },
+        {
+          "claim": "Incident signals are received by Intelligent Surfaces.",
+          "question": "Do Reconfigurable Intelligent Surfaces (RIS) receive incident signals?"
+        },
+        {
+          "claim": "Intelligent Surfaces enhance reflected signals to receivers.",
+          "question": "Do Reconfigurable Intelligent Surfaces (RIS) enhance reflected signals to receivers?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 78,
+      "page_label": 79,
+      "topic": "6G Applications and Potential",
+      "questions": [
+        {
+          "claim": "Holographic communication is an expected application of 6G networks.",
+          "question": "What applications are predicted for 6G networks, specifically holographic communication?"
+        },
+        {
+          "claim": "Extended Reality (XR) and the Metaverse are expected applications of 6G networks.",
+          "question": "What applications are predicted for 6G networks, specifically Extended Reality (XR) and the Metaverse?"
+        },
+        {
+          "claim": "Fully autonomous transportation is an expected application of 6G networks.",
+          "question": "What applications are predicted for 6G networks, specifically fully autonomous transportation?"
+        },
+        {
+          "claim": "Remote robotic surgery is an expected application of 6G networks.",
+          "question": "What applications are predicted for 6G networks, specifically remote robotic surgery?"
+        },
+        {
+          "claim": "Digital twins of entire cities are an expected application of 6G networks.",
+          "question": "What applications are predicted for 6G networks, specifically digital twins of entire cities?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 79,
+      "page_label": 80,
+      "topic": "6G Network Performance Metrics",
+      "questions": [
+        {
+          "claim": "The data rate for 6G networks ranges from 0.1 Gb/s to 20 Gb/s.",
+          "question": "What is the expected data rate range for 6G networks?"
+        },
+        {
+          "claim": "The data rate for an unspecified network is 1 Gb/s to 1 Tb/s.",
+          "question": "What data rates are cited for an unspecified network (e.g., a future network)?"
+        },
+        {
+          "claim": "The reliability of both the 6G network and the unspecified network is 2.",
+          "question": "What is the reliability metric associated with both 6G and an unspecified network?"
+        },
+        {
+          "claim": "A challenge for 6G networks is extremely high infrastructure cost.",
+          "question": "What is a key challenge related to the infrastructure cost of 6G networks?"
+        },
+        {
+          "claim": "A challenge for the unspecified network is THz propagation limitations.",
+          "question": "What propagation limitations pose a challenge for an unspecified network?"
+        },
+        {
+          "claim": "The latency for 6G networks is less than 100.",
+          "question": "What is the latency target for 6G networks?"
+        },
+        {
+          "claim": "The latency for the unspecified network is less than 10 cm in two dimensions.",
+          "question": "What is the latency target for an unspecified network in two dimensions?"
+        },
+        {
+          "claim": "The latency for the unspecified network is less than 1 cm in three dimensions.",
+          "question": "What is the latency target for an unspecified network in three dimensions?"
+        },
+        {
+          "claim": "An energy efficiency requirement for 6G networks is addressing cybersecurity risks.",
+          "question": "Does 6G have an energy efficiency requirement specifically related to cybersecurity?"
+        },
+        {
+          "claim": "A challenge for the unspecified network is global standardization coordination.",
+          "question": "What is a challenge related to global standardization coordination for an unspecified network?"
+        }
+      ]
+    },
+    {
+      "chunk_id": 80,
+      "page_label": 81,
+      "topic": "6G Network Characteristics",
+      "questions": [
+        {
+          "claim": "The data rate for 6G networks is expected to be between 0.1 Gb/s and 20 Gb/s.",
+          "question": "What is the expected data rate range for 6G networks?"
+        },
+        {
+          "claim": "The data rate for 6G networks is expected to be between 1 Gb/s and 1 Tb/s.",
+          "question": "What is the expected data rate range for 6G networks?"
+        },
+        {
+          "claim": "The reliability of 6G networks is expected to be 2.",
+          "question": "What is the expected reliability of 6G networks?"
+        },
+        {
+          "claim": "The latency of 6G networks is expected to be less than 100.",
+          "question": "What is the anticipated latency of 6G networks?"
+        },
+        {
+          "claim": "The latency of 6G networks is expected to be less than 10 cm in two dimensions.",
+          "question": "What is the anticipated latency of 6G networks?"
+        },
+        {
+          "claim": "The latency of 6G networks is expected to be less than 1 cm in three dimensions.",
+          "question": "What is the anticipated latency of 6G networks?"
+        },
+        {
+          "claim": "Extremely high infrastructure cost is a challenge for 6G networks.",
+          "question": "What are the infrastructure cost challenges associated with 6G networks?"
+        },
+        {
+          "claim": "THz propagation limitations are a challenge for 6G networks.",
+          "question": "What are the propagation limitations related to THz frequencies in 6G networks?"
+        },
+        {
+          "claim": "Cybersecurity risks are an energy efficiency requirement for 6G networks.",
+          "question": "How do cybersecurity risks impact energy efficiency requirements for 6G networks?"
+        },
+        {
+          "claim": "Global standardization coordination is an energy efficiency requirement for 6G networks.",
+          "question": "How does global standardization coordination relate to energy efficiency requirements for 6G networks?"
+        }
+      ]
+    }
+  ]
+}

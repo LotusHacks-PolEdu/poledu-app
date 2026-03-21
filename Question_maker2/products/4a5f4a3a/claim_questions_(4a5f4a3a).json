@@ -1,0 +1,40 @@
+{
+  "main_theme": "Algorithmic problem-solving in introductory programming.",
+  "sub_topics": [
+    "Polygon Perimeter Calculation",
+    "Age Difference Algorithm",
+    "Quadratic Equation Solver",
+    "Algorithm Design",
+    "Flowcharting",
+    "Fundamentals of Programming"
+  ],
+  "questions_by_chunk": [
+    {
+      "chunk_id": 0,
+      "page_label": 1,
+      "topic": "Algorithmic Problem Definitions",
+      "questions": [
+        {
+          "claim": "A program can accept the lengths of four sides of a polygon as input.",
+          "question": "Can a program accept the lengths of four sides of a polygon as input?"
+        },
+        {
+          "claim": "A program can calculate and display the perimeter of a polygon given the lengths of its four sides.",
+          "question": "Can a program calculate and display the perimeter of a polygon given the lengths of its four sides?"
+        },
+        {
+          "claim": "An algorithm can determine the number of years until a father's age is double his son's age.",
+          "question": "Can an algorithm determine the number of years until a father's age is double his son's age?"
+        },
+        {
+          "claim": "An algorithm can output the real solutions of a second-order polynomial equation of the form ax² + bx + c = 0, given parameters a, b, and c.",
+          "question": "Can an algorithm output the real solutions of a second-order polynomial equation of the form ax² + bx + c = 0, given parameters a, b, and c?"
+        },
+        {
+          "claim": "A second-order polynomial equation can have one or two real solutions.",
+          "question": "Can a second-order polynomial equation have one or two real solutions?"
+        }
+      ]
+    }
+  ]
+}

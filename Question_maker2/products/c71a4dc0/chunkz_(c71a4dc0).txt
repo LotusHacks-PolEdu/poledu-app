@@ -1,0 +1,2002 @@
+--- Chunk 0 (Length: 392 | Page 1) ---
+
+Vietnamese-German University
+
+# MULTI-DISCIPLINARY PROJECT
+
+# LECTURE 2 – INTRODUCTION TO MOBILE NETWORK GENERATIONS
+
+Course Code: 60SCI029
+
+Course Instructor: Dr. Nguyen Ngoc Truong Minh
+
+Head of Department of Telecommunications
+
+School of Electrical Engineering, International University
+
+Vietnam National University Ho Chi Minh City
+
+nntminh@hcmiu.edu.vn
+
+Ho Chi Minh City, February 2026
+
+
+--- Chunk 1 (Length: 367 | Page 2) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Lecture Content
+
+- Why cellular systems?
+- Review cellular fundamentals (reuse, handoff, power control)
+- Compare generations and key technologies
+- Connect standards to real-world deployments
+- Summary
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+# 2
+
+
+--- Chunk 2 (Length: 572 | Page 3) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Lecture Objectives
+
+- Explain why cellular systems are organized into cells (coverage + capacity)
+- Compare multiple access techniques across generations (FDMA → TDMA / CDMA → OFDMA)
+- Describe the main radio + core network blocks for 2G / 3G / 4G / 5G / 6G
+- Interpret “G” labels: standards, capabilities, and deployment reality
+- Connect design choices to real applications (voice, messaging, broadband, IoT)
+
+March 1, 2026    Multi-Disciplinary Project Course
+
+
+--- Chunk 3 (Length: 528 | Page 4) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Lecture Objectives
+
+- Cellular fundamentals (cells, reuse, handoff, power control)
+- Generations overview (1G → 5G) and what changed each time
+- Deep dive: 2G (GSM &#x26; CDMA), 3G (UMTS/WCDMA), 4G (LTE), 5G (NR + 5GC)
+- Heading to 6G (Terahertz frequencies)
+- Real-world examples, typical speeds/latency, and deployment trade-offs
+- Suggested videos + quick quiz
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+4
+
+
+
+
+--- Chunk 4 (Length: 816 | Page 5) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Why do “generations” exist?
+
+# A useful mental model
+
+- Traffic demand grows (voice → messaging → smartphone broadband → massive IoT)
+- Spectrum is scarce → need better spectral efficiency and reuse
+- Mobility + reliability requirements increase (handoff, QoS, security)
+- Core networks evolve (circuit → packet → cloud-native services)
+
+# Each generation is a bundle of:
+
+- Radio access changes (waveform, multiple access, coding, MIMO)
+- Core network changes (switching, mobility management, policy/QoS)
+- New services that become “normal” (e.g., SMS, mobile web, streaming, URLLC)
+
+Reality check: marketing labels can lag or lead the strict ITU definitions.
+
+March 1, 2026
+Multi-Disciplinary Project Course
+
+
+
+--- Chunk 5 (Length: 507 | Page 6) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Cellular idea (the “cell” abstraction)
+
+- Split a region into many small coverage areas (cells) served by low-power base stations
+- Reuse the same frequencies in non-adjacent cells to increase capacity
+- Move users between cells with handoff as they travel
+- Scale capacity by densifying: smaller cells, more sites, smarter interference control
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+6
+
+
+--- Chunk 6 (Length: 506 | Page 7) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Cellular network organization (high level)
+
+- Base station (BS): antenna + radios + control functions serving a cell
+- Core network: switching/routing, mobility management, subscriber databases
+- Control channels: setup + paging + mobility; Traffic channels: user voice/data
+- Modern naming: BTS / NodeB / eNodeB / gNodeB (2G/3G/4G/5G radio sites)
+
+March 1, 2026 Multi-Disciplinary Project Course
+
+7
+
+
+
+--- Chunk 7 (Length: 239 | Page 8) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Cellular network organization (high level)
+
+Travening wave
+
+=== Reflected wave
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+8
+
+
+
+
+--- Chunk 8 (Length: 656 | Page 9) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE) Course Code: 61CSE329
+
+# Cell shapes and coverage models
+
+- Real coverage is irregular (terrain / buildings), but planning uses idealized shapes
+- Hexagons approximate equal-distance neighbors and simplify reuse planning
+
+| (a) Square pattern | (b) Hexagonal pattern |
+| ------------------ | --------------------- |
+| d=√3               |                       |
+
+# 13.1 CELLULAR GEOMETRIES
+
+Cell radius R and inter-site distance influence coverage + interference
+
+Idealized square vs hexagonal cell geometry (planning model)
+
+March 1, 2026 Multi-Disciplinary Project Course
+
+
+
+--- Chunk 9 (Length: 782 | Page 10) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Frequency reuse (capacity foundation)
+
+- Adjacent cells use different channels to limit co-channel interference
+- A “cluster” of N cells uses a complete set of frequencies → then repeats
+- Reuse factor = 1/N (smaller N = more reuse = more interference control needed)
+- Key trade-off: capacity vs interference (and thus SINR and quality)
+
+| <0 dB    | Very poor signal, high interference/noise |
+| -------- | ----------------------------------------- |
+| 0-10 dB  | Low, unstable connection                  |
+| 10-20 dB | Moderate to good connection               |
+| >20 dB   | Excellent connection, high throughput     |
+
+March 1, 2026
+Multi-Disciplinary Project Course
+10
+
+
+
+--- Chunk 10 (Length: 492 | Page 11) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Frequency reuse (capacity foundation)
+
+# LTE &#x26; 5G Signal Strength Reference Table
+
+| RSRP (dBm)  | RSRQ (dB)  | SINR (dB) |
+| ----------- | ---------- | --------- |
+| Excellent   | >= -10     | >= 20     |
+| -80 to -90  | -10 to -15 | 13 to 20  |
+| -90 to -100 | -15 to -20 | 0 to 13   |
+| <= -100     | <= -20     | <= 0      |
+
+March 1, 2026 Multi-Disciplinary Project Course 11
+
+
+
+--- Chunk 11 (Length: 779 | Page 12) ---
+
+Lecture 2 – Introduction to Mobile Network Generations  Computer Science (CSE)                                             Course Code: 61CSE329
+
+# Reuse patterns &#x26; reuse distance
+
+- Reuse distance D grows with cluster size N
+- Circle with radius D
+- Planning chooses N to balance capacity
+- N = 2 + + (I × )
+(a) Frequency reuse pattern for N= 4
+Frequency reuse pattern for N=7
+- By the Law of Cosines:
+- D = √3N
+- D is minimum frequency reuse distance
+- R is the cell radius
+- Modern systems add interference coordination and dynamic reuse
+- 1/N is the reuse factor
+- (c) Black cells indicate a frequency reuse for N - 19
+
+# 13.2 FREQUENCY REUSE PATTERNS
+
+Example reuse patterns; D/R depends on cluster size N
+
+March 1, 2026          Multi-Disciplinary Project Course
+
+12
+
+
+--- Chunk 12 (Length: 465 | Page 13) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Reuse patterns &#x26; reuse distance
+
+| 2 | 2 | 3 | 3 | 7 | 2 | 7 | 2 | 3 |
+| - | - | - | - | - | - | - | - | - |
+| 2 | 3 | 6 | 4 | 6 | 5 |   |   |   |
+| 2 | 1 |   | 5 | 7 | 2 | 3 | 7 | 3 |
+|   | 3 | 3 | 3 | 6 |   | 4 | 6 |   |
+|   | 2 | 6 | 4 | 2 | 5 | 7 | 2 | 3 |
+|   |   | 5 | 4 | 5 |   |   |   |   |
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+13
+
+
+
+
+--- Chunk 13 (Length: 857 | Page 14) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# How networks scale capacity over time
+
+- Add spectrum (new bands) and add channels where possible
+- Cell splitting: smaller cells in hotspots
+- Sectoring: directional antennas reduce interference (e.g., 3 sectors per site)
+- Densification: microcells/femtocells; antennas on rooftops and lamp posts
+- Interference coordination (ICIC/CoMP) enables tighter reuse
+
+Interference Coordination (ICIC/CoMP) in LTE/LTE-A networks reduces inter-cell interference (ICI) to improve edge-user performance. ICIC uses frequency/power coordination via X2 interfaces, while CoMP (Coordinated Multi-Point) allows multiple base stations to coordinate transmissions, offering dynamic management for higher data rates.
+
+March 1, 2026
+Multi-Disciplinary Project Course
+14
+
+
+
+--- Chunk 14 (Length: 551 | Page 15) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Cell splitting (concept)
+
+- Replace one large cell with multiple smaller ones
+- Increases capacity by reusing spectrum more frequently
+- Requires more sites, fronthaul, backhaul, and coordination
+
+# 13.3 CELL SPLITTING
+
+Fronthaul and backhaul are distinct segments in mobile network architecture that connect user devices to the core network.
+
+Cell splitting increases reuse in high-demand areas
+
+March 1, 2026
+Multi-Disciplinary Project Course
+
+
+
+--- Chunk 15 (Length: 586 | Page 16) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE) Course Code: 61CSE329
+
+# Sectoring, microcells, femtocells
+
+- Sectoring: divide a cell into wedge-shaped sectors with directional antennas
+- Microcells: small outdoor cells for dense urban streets
+- Femtocells: very small indoor cells (home/enterprise)
+- Many micro/pico cells for capacity
+- Special tuning to manage uplink interference
+
+# Goal:
+
+improve SINR and increase spatial reuse
+
+This multi-layer design is called a HetNet (heterogeneous network).
+
+March 1, 2026 Multi-Disciplinary Project Course
+
+
+
+--- Chunk 16 (Length: 696 | Page 17) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Control vs traffic: why signaling matters
+
+- Control channels carry: synchronization, system information, paging, access requests
+Paging in a mobile network is a process used to locate and establish communication with a mobile device when it is not in active use but needs to be reached for an incoming call, message, or data session.
+- Traffic channels carry: user voice frames or packet data
+- Capacity is limited by: both data resources and control overhead
+- 5G adds: richer control for beam management and ultra-reliable access
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+17
+
+
+--- Chunk 17 (Length: 901 | Page 18) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE) Course Code: 61CSE329
+
+# Where the base station sits in the end-to-end path
+
+- User equipment (UE) connects to a base station over the air interface
+- Base stations connect to the core network (switching, routing, subscriber services)
+- Core connects to Internet + public telephone networks (legacy voice)
+
+| User Equipment (UE)                         | Base Station                         | Core Network             | Internet/PSTN |
+| ------------------------------------------- | ------------------------------------ | ------------------------ | ------------- |
+| Public telecommunications switching network | Mobile telecommunications controller | Base transceiver station |               |
+
+# 13.5 OVERVIEW OF CELLULAR SYSTEM
+
+Cellular Wireless Networks 13-10
+
+March 1, 2026 Multi-Disciplinary Project Course
+
+18
+
+
+
+--- Chunk 18 (Length: 460 | Page 19) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# Mobility and handoff (handover)
+
+- Handoff transfers an active connection as a UE moves between cells
+- Hard handoff: break-before-make (typical in GSM/LTE/NR)
+- Soft handoff: make-before-break (classic in CDMA systems)
+- Goal: minimize call drop and interruption while controlling interference
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+19
+
+
+
+
+--- Chunk 19 (Length: 1293 | Page 20) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# Handoff decision: thresholds and hysteresis
+
+- Relative signal strength compares
+
+| serving vs neighbor cell | Base                                  | Base                         |
+| ------------------------ | ------------------------------------- | ---------------------------- |
+| station A                | Received signal at base station A, SA | Received signal at station B |
+| station B                | Sβ                                    |                              |
+
+Assignment
+
+| Th1           | Threshold prevents “ping-pong” on weak edges |
+| ------------- | -------------------------------------------- |
+| Th2           | Assigned to B                                |
+| Handoff to A  | Handoff to B                                 |
+| Assigned to A |                                              |
+
+Car is moving from base station A at location L to base station B at Lβ
+
+# Relative signal strength
+
+(PB−PA)
+
+# Handoff decision as a function of handoff scheme
+
+# Hysteresis mechanism
+
+# 13.7 HANDOFF BETWEEN TWO CELLS
+
+Cellular Wireless Networks 13-18
+
+# Handoff decision concepts: threshold and hysteresis
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+20
+
+
+
+
+--- Chunk 20 (Length: 495 | Page 21) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Power control (why it matters)
+
+- Goal: enough power for reliable reception, but not so much that interference explodes
+- Open-loop: UE estimates path loss and sets power (fast, less accurate)
+- Closed-loop: network commands UE power adjustments (accurate, needs feedback)
+- Critical in CDMA and uplink-limited systems (near–far problem)
+
+March 1, 2026
+Multi-Disciplinary Project Course
+21
+
+
+--- Chunk 21 (Length: 668 | Page 22) ---
+
+Lecture 2 – Introduction to Mobile Network Generations
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Traffic engineering intuition
+
+- Systems have finite channels / resources → some calls / requests may block under load
+- Grade of Service (GoS): probability of blocking / dropping targets
+GOS is a key metric in the context of telecommunications and contact centres. It quantifies the level of service quality experienced by callers or users.
+- Erlang models estimate needed capacity for a given load and blocking probability
+- In packet systems, similar concepts appear as queueing delay and scheduling
+
+March 1, 2026
+
+# Multi-Disciplinary Project Course
+
+22
+
+
+--- Chunk 22 (Length: 1172 | Page 23) ---
+
+Lecture 2 – Introduction to Mobile Network Generations
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Big picture: how cellular systems evolved
+
+- Different “tracks” evolved in parallel
+
+|      |       | LTE      |         | LTE-Advanced |         |   |   |   |
+| ---- | ----- | -------- | ------- | ------------ | ------- | - | - | - |
+|      |       |          |         | Rel. 8       | Rel. 10 |   |   |   |
+| GSM  | WCDMA | WCDMA    | WCDMA   | WCDMA        |         |   |   |   |
+| AMPS | IS-95 | CDMA2000 | 1XEV-DO | IXEV-DO      | IXEV-DO |   |   |   |
+|      | IX    | Rel.0    | Rev.A   | Rev. B       |         |   |   |   |
+
+# IG
+
+2G 2.5G 3G evolved 3G 3.9G 4G
+
+- Each generation improves data rates and spectral efficiency
+
+| Data Rate | ≤10 kbps | 9.664 xops | 384 ktps-2 M0ps | 384 kbps | 20 Mbps | | |<100 Mbps | >100 Mbps |
+| --------- | -------- | ---------- | --------------- | -------- | ------- | ------------ | --------- |---|---|
+
+Standards evolve in releases (3GPP - The 3rd Generation Partnership Project) rather than a single jump
+
+Example evolution map: 1G → 2G → 3G → LTE → LTE-Advanced
+
+March 1, 2026 Multi-Disciplinary Project Course
+
+
+--- Chunk 23 (Length: 796 | Page 24) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Quick comparison (1G → 5G)
+
+| Gen  | Era   | Core idea                  | Typical services            |
+| ---- | ----- | -------------------------- | --------------------------- |
+| 1G   | 1980s | Analog voice (FDMA)        | Voice calls                 |
+| 2G   | 1990s | Digital voice + SMS        | Voice, SMS, low-rate data   |
+| 2.5G | 2000s | Packet data on 2G cores    | WAP, email, early web       |
+| 3G   | 2000s | Mobile internet (IMT-2000) | Web, multimedia, video call |
+| 4G   | 2010s | All-IP broadband (LTE)     | Streaming, apps, VoIP       |
+| 5G   | 2020s | Flexible NR + 5G core      | eMBB, URLLC, massive IoT    |
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+24
+
+
+
+--- Chunk 24 (Length: 191 | Page 25) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# 1G
+
+Analog Cellular Voice
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+25
+
+
+
+
+--- Chunk 25 (Length: 388 | Page 26) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 1G overview
+
+- First commercial cellular systems (1980s)
+- Analog FM voice; circuit-switched calls
+- FDMA with relatively wide channels (e.g., 30 kHz in AMPS)
+- Limited security and limited capacity → pressure for digital systems
+
+March 1, 2026
+Multi-Disciplinary Project Course
+26
+
+
+
+--- Chunk 26 (Length: 484 | Page 27) ---
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Common 1G standards (examples)
+
+- AMPS (North America), NMT (Nordic countries), TACS (UK/Europe)
+- FDD operation: separate uplink and downlink frequency bands
+- Channelization: each call occupies one dedicated frequency channel
+- Roaming and interoperability were limited across regions
+
+# 1G Mobile Network Explained
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+27
+
+
+--- Chunk 27 (Length: 601 | Page 28) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 1G radio characteristics (AMPS as example)
+
+Example numbers (AMPS)
+• Analog voice using FM
+• Operated around the 800 MHz band
+• FDMA: one user per frequency channel
+• 30 kHz channel spacing
+• Control channels for paging + call setup; traffic channels for voice
+• Separate uplink/downlink bands (FDD)
+• Frequency reuse planned via clusters
+Exact allocations differ by region and operator; the key idea is one dedicated analog channel per call.
+
+March 1, 2026 Multi-Disciplinary Project Course 28
+
+
+
+--- Chunk 28 (Length: 611 | Page 29) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# User experience changed with each generation
+
+# EVOLUTION OF 1G TO 5G TECHNOLOGY
+
+- Early 1G: large handsets, expensive minutes, limited coverage
+- 2G: smaller devices, SMS, better battery life
+- 3G / 4G / 5G: smartphones + data-centric usage
+
+| NOKIA 10108 | 1G   | 2G   | 3G   | 4G   | 5G   |
+| ----------- | ---- | ---- | ---- | ---- | ---- |
+|             | 1981 | 1992 | 2001 | 2011 | 2020 |
+
+Illustrative “1G → 5G” device evolution (not to scale)
+
+March 1, 2026 Multi-Disciplinary Project Course 29
+
+
+
+--- Chunk 29 (Length: 381 | Page 30) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Why 1G was not enough
+
+- Capacity limits: one channel per call; interference constraints
+- Audio quality degrades with noise and fading
+- Weak security: analog calls are easy to eavesdrop
+- No efficient packet data support
+
+March 1, 2026
+Multi-Disciplinary Project Course
+30
+
+
+
+--- Chunk 30 (Length: 212 | Page 31) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# 2G
+
+Digital Voice + Messaging, better capacity
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+31
+
+
+
+
+--- Chunk 31 (Length: 408 | Page 32) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 2G overview
+
+- Shift from analog to digital traffic channels
+- Better spectral efficiency via TDMA (GSM) and CDMA (IS-95)
+- Encryption and error correction improve privacy and voice quality
+- Enables new services: SMS and basic data
+- 2G explanation
+
+March 1, 2026
+Multi-Disciplinary Project Course
+32
+
+
+
+--- Chunk 32 (Length: 487 | Page 33) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# Multiple access: FDMA vs TDMA vs CDMA (intuition)
+
+- FDMA: split spectrum into frequency channels (1G)
+- TDMA: share a frequency by time slots (GSM: 8 users per 200 kHz carrier)
+- CDMA: share time+frequency using spreading codes; users separated by codes
+- OFDMA (later): many narrow subcarriers shared dynamically (LTE/NR)
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+33
+
+
+--- Chunk 33 (Length: 447 | Page 34) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# GSM (Global System for Mobile Communications)
+
+- 2G standard originally developed for Europe; now deployed globally
+- SIM-based identity enables device portability (SIMs “roam”)
+- Combines FDMA (carriers) with TDMA (time slots)
+- Defines both radio interface and core network functions
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+34
+
+
+
+
+--- Chunk 34 (Length: 1522 | Page 35) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# GSM architecture (radio + core)
+
+| Um                                                                |                        | Abis                       |                                         |
+| ----------------------------------------------------------------- | ---------------------- | -------------------------- | --------------------------------------- |
+| • Radio access: BTS (cell) controlled by BSC (handoff within BSS) | ME                     | Base transceiver station   | VLR                                     |
+| AuC                                                               | EIR                    | HLR                        | Base station                            |
+| • Core: MSC switching + subscriber databases (HLR/VLR/AuC/EIR)    | SIM                    | Base station               | Mobile Operation and maintenance center |
+| Mobile station                                                    | transceiver            | controller                 |                                         |
+| ME                                                                | Base station subsystem | Data communication network | Network subsystem                       |
+| • Packet data later added via GPRS nodes (SGSN/GGSN)              |                        |                            |                                         |
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+35
+
+
+
+
+--- Chunk 35 (Length: 716 | Page 36) ---
+
+Lecture 2 – Introduction to Mobile Network Generations
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# GSM air interface (very simplified)
+
+- 200 kHz carrier spacing; each carrier supports 8 time slots (TDMA frame)
+- Voice is encoded (speech codec) and protected by error control coding
+- Interleaving helps against burst errors (fading)
+
+Hyperframe = 2048 Superframes
+
+3 Hours 28 Minutes 53 Seconds and 760 milliseconds
+
+2047
+
+# Modulation:
+
+GMSK in classic GSM; later EDGE uses 8-PSK
+
+| Multiframe    | Superframe    | Approx |
+| ------------- | ------------- | ------ |
+| 26 Multiframe | 51 Multiframe | 235 mS |
+
+TDMA Frame = 4.615 mS
+
+0 1 2 3 4 5 7
+
+March 1, 2026
+
+# Multi-Disciplinary Project Course
+
+36
+
+
+--- Chunk 36 (Length: 486 | Page 37) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# GSM security (high level)
+
+- SIM contains secret key material; network authenticates the SIM via challenge-response
+- Air-interface encryption protects voice and signaling over the radio link
+- Temporary identifiers (e.g., TMSI) help reduce tracking
+- Security is strongest on the radio hop; end-to-end security is app-dependent
+
+March 1, 2026
+Multi-Disciplinary Project Course
+37
+
+
+--- Chunk 37 (Length: 472 | Page 38) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# From 2G to “2.5G”: the data pressure
+
+- Circuit-switched data (CSD) is inefficient for bursty internet traffic
+- GPRS introduces packet switching and “always-on” connectivity
+- EDGE increases bits/symbol (8-PSK) for higher data rates
+
+| GSM  | 2G (2G) |
+| ---- | ------- |
+| GPRS | (2.5G)  |
+| EDGE | (2.75G) |
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+38
+
+
+
+
+--- Chunk 38 (Length: 642 | Page 39) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# IS-95 (cdmaOne) overview
+
+FDMA
+• 2G family based on DS-CDMA (spread spectrum)
+• Many users share the same wideband carrier; separated by codes
+• Requires tight power control to avoid near–far problems
+• Supports soft handoff and RAKE receivers (multipath combining)
+
+| POWER | TIME | FREQUENCY |
+| ----- | ---- | --------- |
+|       |      | TDMA      |
+| POWER | TIME | FREQUENCY |
+| CDMA  |      |           |
+| POWER | TIME | FREQUENCY |
+
+©CBT Nuggets. All rights reserved. CBTnuets
+March 1, 2026
+Multi-Disciplinary Project Course
+39
+
+
+--- Chunk 39 (Length: 628 | Page 40) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# CDMA: why it’s different
+
+- Frequency diversity: wideband spreading reduces frequency-selective fading impact
+- Multipath resistance: RAKE combines energy from multiple paths
+- Graceful degradation: more users raise interference gradually
+
+# Challenges
+
+- Near–far problem → power control is mandatory
+- Self-jamming if users aren’t well controlled
+- Softer capacity limit (interference-limited)
+
+Capacity depends on interference and required quality, not just channels.
+
+March 1, 2026
+Multi-Disciplinary Project Course
+40
+
+
+--- Chunk 40 (Length: 491 | Page 41) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Soft handoff &#x26; RAKE receiver (concept)
+
+- Soft handoff: UE can connect to multiple base stations briefly during transitions
+- RAKE receiver: correlates multiple delayed copies (multipath) and combines them
+- Benefit: smoother mobility and improved link robustness
+- Trade-off: more signaling and complexity in network and UE
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+41
+
+
+
+
+--- Chunk 41 (Length: 400 | Page 42) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 2G services: what users actually noticed
+
+- Clearer voice (digital codecs + error correction)
+- SMS and early messaging ecosystems
+- Roaming became practical (especially with GSM SIMs)
+- Early mobile data: tens of kbps (CSD, later GPRS/EDGE)
+
+March 1, 2026
+Multi-Disciplinary Project Course
+42
+
+
+
+--- Chunk 42 (Length: 223 | Page 43) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# 2.5G / 2.75G
+
+# Packet Data on 2G Foundations (GPRS/EDGE)
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+43
+
+
+
+
+--- Chunk 43 (Length: 439 | Page 44) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# GPRS (General Packet Radio Service)
+
+- Adds packet-switched data to GSM (“Phase 2”)
+- Supports persistent data connections (better for bursty traffic)
+- Introduces packet core nodes (SGSN, GGSN) and new QoS concepts
+- Throughput depends on coding and number of time slots assigned
+
+March 1, 2026
+Multi-Disciplinary Project Course
+44
+
+
+
+--- Chunk 44 (Length: 483 | Page 45) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# EDGE (Enhanced Data Rates for GSM Evolution)
+
+- Uses higher-order modulation (e.g., 8-PSK) to increase bits/symbol
+- Often called “2.75G” because it approaches early 3G-like data rates
+- Compatible with GSM carriers and time slots (incremental upgrade)
+- Enabled richer WAP/web experiences before 3G wideband adoption
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+45
+
+
+
+
+--- Chunk 45 (Length: 212 | Page 46) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# 3G
+
+# IMT-2000 and the Move to Mobile Internet
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+46
+
+
+
+
+--- Chunk 46 (Length: 421 | Page 47) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 3G goals (IMT-2000 vision)
+
+- Higher data rates for internet access and multimedia
+- Global roaming and service continuity
+- Support for both circuit-switched (voice) and packet-switched data
+- Better spectral efficiency and mobility support
+
+# 3G explanation
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+47
+
+
+
+
+--- Chunk 47 (Length: 446 | Page 48) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Major 3G families
+
+- UMTS / WCDMA (evolution path for GSM operators; standardized in 3GPP)
+- CDMA2000 (evolution path for IS-95; 3GPP2 ecosystem historically)
+- TD-SCDMA (time-division synchronous CDMA, historically in China)
+- Many networks later evolved toward LTE as a common 4G path
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+48
+
+
+--- Chunk 48 (Length: 797 | Page 49) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE) Course Code: 61CSE329
+
+# Cell sizes and operating environments
+
+# 3G operating Environment
+
+- Cell size varies by environment:
+- | GEO Satellite                 | LEO/MEO Satellite       |
+| ----------------------------- | ----------------------- |
+| macro → micro → pico (indoor) | Global Cell             |
+| Mega Cell (Regional)          | Macro Cell (Suburban)   |
+| Micro Cell (Urban)            | Pico Cell (In-Building) |
+
+Smaller cells enable higher capacity and better indoor coverage
+- Satellite layers can complement terrestrial coverage
+
+# 3G Characteristics by cell size and mobile speed
+
+Illustration of macro/micro/pico cells and satellite overlays
+
+March 1, 2026 Multi-Disciplinary Project Course 49
+
+
+
+--- Chunk 49 (Length: 863 | Page 50) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# UMTS radio access: UTRAN
+
+# UTRAN ARCHITECTURE
+
+| RNS                          | RNC: Radio Network Controller |
+| ---------------------------- | ----------------------------- |
+| UE                           | Node B                        |
+| RNS: Radio Network Subsystem | Iu                            |
+| RNC                          | CN                            |
+
+- RNC handles radio resource control and mobility decisions
+- Node B is the 3G base station (supports FDD/TDD variants)
+- Node B can support FDD or TDD or both
+- RNC is responsible for handover decisions requiring signaling to the UE
+- Cell offers FDD or TDD
+
+Prof. Dr.-Ing. Jochen H. Schiller www.jochenschiller.de MC - 2013
+
+March 1, 2026
+
+# Multi-Disciplinary Project Course
+
+50
+
+
+
+
+--- Chunk 50 (Length: 654 | Page 51) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# UMTS core network: circuit + packet domains
+
+- Circuit-switched domain supports traditional voice calling (MSC/VLR)
+- Packet-switched domain supports data (SGSN/GGSN from GPRS)
+- Release 99 reused much of GSM/GPRS core to accelerate deployment
+- Later releases enhanced packet capability (HSPA/HSPA+)
+
+Evolved High Speed Packet Access, better known as HSPA+, HSPA or HSPAP, is a technical standard for wireless broadband telecommunication. It is an evolution of the earlier HSPA standard.
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+51
+
+
+
+
+--- Chunk 51 (Length: 993 | Page 52) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# WCDMA basics: spreading and variable rates
+
+- Wideband CDMA uses a constant chip rate; different spreading factors support different data rates
+- OVSF (ORTHOGONAL VARIABLE SPREADING FACTOR) CODING
+
+| 1,1,1.1             | 1,1,1,1,1,1,1,1              |
+| ------------------- | ---------------------------- |
+| 1,1                 | 1,1,1,1,-1,-1,-1,-1          |
+| X,X                 | 1,1,-1-11,1,-1,-1,1,1,-1,-1  |
+| X                   | X,-X                         |
+| 1,-1,1,-1           | 1,-1,1,-1,1,-1,1,-1          |
+| 1.-1                | 1,-1,1,-1,-1,1,-1,1          |
+| 1,-1,-1,1,1,-1,-1,1 | 1,-1,-1.11,-1,-1,1,-1,1,1.-1 |
+
+- Scrambling codes separate users and relax strict synchronization requirements
+
+# OVSF code tree (variable spreading factors)
+
+Prof. Dr.-Ing. Jochen H. Schiller www.jochenschiller.de MC - 2013
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+52
+
+
+
+--- Chunk 52 (Length: 464 | Page 53) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 3G upgrades: HSDPA / HSUPA / HSPA+
+
+- HSDPA (downlink): adaptive modulation/coding, HARQ, fast scheduling
+- HSUPA (uplink): higher uplink throughput and improved latency
+- HSPA+: higher-order modulation (e.g., 64-QAM), MIMO, multi-carrier
+- These “evolved 3G” systems bridged toward LTE capabilities
+
+March 1, 2026    Multi-Disciplinary Project Course    53
+
+
+
+--- Chunk 53 (Length: 1179 | Page 54) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# UMTS “cell breathing” (interference-limited)
+
+- In CDMA systems, more users → more interference → reduced coverage
+- BREATHING CELLS
+
+# GSM
+
+- Mobile device gets exclusive signal from the base station
+- Number of devices in a cell does not influence cell size
+
+# UMTS
+
+- Cell size is closely correlated to the cell capacity
+- Signal-to-noise ratio determines cell capacity
+- Noise is generated by interference from:
+- other cells
+- other users of the same cell
+
+Edge users hit power limits first and may drop, shrinking the effective cell.
+
+- Interference increases noise level
+- Devices at the edge of a cell cannot further increase their output power (max. power limit) and thus drop out of the cell
+- No more communication possible
+
+Limitation of the max. number of users within a cell required. Cell breathing complicates network planning.
+
+Planning must account for load-dependent coverage. Cell breathing: capacity and coverage are linked in UMTS.
+
+Prof. Dr.-Ing. Jochen H. Schiller www.jochenschiller.de MC - 2013
+
+March 1, 2026 Multi-Disciplinary Project Course 54
+
+
+
+--- Chunk 54 (Length: 618 | Page 55) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 3G user experience: what became possible
+
+# Engineering tension
+
+- Mobile web browsing and email (hundreds of kbps to a few Mbps)
+- Picture messaging and richer media
+- Early video calling (limited by uplink and latency)
+- Always-on data became common
+
+3G systems brought internet to phones, but packet data shared radio resources dynamically. Users experienced variable throughput and latency, motivating better scheduling and later the move to OFDMA in LTE.
+
+March 1, 2026 Multi-Disciplinary Project Course 55
+
+
+
+--- Chunk 55 (Length: 209 | Page 56) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# 4G
+
+All-IP Broadband (LTE and LTE-Advanced)
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+56
+
+
+
+
+--- Chunk 56 (Length: 443 | Page 57) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# What changed in 4G?
+
+- All-IP packet core (voice becomes VoIP over LTE – VoLTE)
+- New radio access: OFDMA downlink and SC-FDMA uplink (LTE)
+- Lower latency and higher spectral efficiency (MIMO + better coding)
+- Flat architecture: more functionality moved to the base station (eNodeB)
+
+March 1, 2026
+Multi-Disciplinary Project Course
+57
+
+
+
+--- Chunk 57 (Length: 588 | Page 58) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 4G (IMT-Advanced) performance targets
+
+# (concept)
+
+Important caveat
+
+- Targets for peak data rates: ~100 Mbit/s (high mobility) and ~1 Gbit/s (low mobility)
+- All-IP packet switched network
+- Scalable bandwidth and high spectral efficiency
+
+LTE was first marketed as “4G” before fully meeting IMT-Advanced targets. LTE-Advanced introduced features (e.g., carrier aggregation) that aligned better with IMT-Advanced expectations.
+
+March 1, 2026 Multi-Disciplinary Project Course
+
+58
+
+
+
+--- Chunk 58 (Length: 1668 | Page 59) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE) Course Code: 61CSE329
+
+# LTE architecture (birds-eye view)
+
+| MobilePacketCore.com                                                                           |                       |
+| ---------------------------------------------------------------------------------------------- | --------------------- |
+| Control Plane                                                                                  | Mobile.PacketCore.com |
+| User Plane                                                                                     |                       |
+| eNodeB                                                                                         | MobilePacket          |
+| E-UTRAN: eNodeB base stations handle radio scheduling and mobility                             |                       |
+| S1-MME                                                                                         | iCore.c               |
+| LTE-Uu                                                                                         | UE                    |
+| S1-U                                                                                           |                       |
+| Evolved Packet Core (EPC): MME (control), SGW/PGW (user plane gateways), HSS (subscriber data) |                       |
+| Bearers provide QoS; policy control steers traffic and charging                                |                       |
+| VoLTE uses IMS for voice services over IP                                                      |                       |
+
+March 1, 2026 Multi-Disciplinary Project Course 59
+
+
+--- Chunk 59 (Length: 662 | Page 60) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# LTE radio: OFDMA resource grid (intuition)
+
+- Downlink uses OFDMA: many narrow subcarriers
+- Scheduler assigns time-frequency “resource blocks” per user
+- Adaptive modulation &#x26; coding (AMC) reacts to channel quality
+- Resource Block (RB): smallest schedulable unit
+- HARQ: fast retransmissions
+- MIMO: multiple antennas for throughput/coverage
+
+# Key LTE concepts
+
+- Uplink uses SC-FDMA to reduce UE power amplifier stress
+
+# These ideas continue into 5G NR
+
+with more flexibility (numerology).
+
+March 1, 2026 Multi-Disciplinary Project Course 60
+
+
+
+
+--- Chunk 60 (Length: 464 | Page 61) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# LTE-Advanced (4G+) highlights
+
+- Carrier aggregation: combine multiple carriers for wider bandwidth
+- Higher-order MIMO configurations (e.g., 4×4, 8×8 in some cases)
+- CoMP and interference coordination improve edge performance
+- HetNets: mix macro + small cells for coverage and capacity
+- 4G explanation
+
+March 1, 2026
+Multi-Disciplinary Project Course
+61
+
+
+
+--- Chunk 61 (Length: 625 | Page 62) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Why VoLTE matters
+
+- Voice becomes an IP service (VoIP) on LTE’s packet core
+- Better spectral efficiency than legacy circuit-switched voice
+- Enables HD voice and faster call setup
+- But requires IMS + QoS and careful interworking for roaming
+
+# Everyday example
+
+A phone call on LTE is essentially a real-time IP session with strict delay and loss requirements. Networks prioritize it using dedicated QoS bearers, while your other apps share best-effort resources.
+
+March 1, 2026
+Multi-Disciplinary Project Course
+62
+
+
+
+--- Chunk 62 (Length: 511 | Page 63) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Research example: LTEye (seeing the LTE radio)
+
+- LTE control channels include scheduling metadata that is often unencrypted
+- LTEye demonstrates low-cost passive monitoring to infer utilization and link quality
+- Helps researchers and policy makers understand spectrum use and performance
+- Illustrates how “radio scheduling” shapes user experience
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+63
+
+
+
+
+--- Chunk 63 (Length: 543 | Page 64) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Research example: Sprout (cellular variability and transport)
+
+- Cellular links have highly variable capacity (scheduling + channel changes)
+- Classic congestion control may overfill per-user queues → high latency
+- Sprout forecasts near-future delivery to keep delay low while maintaining throughput
+- Takeaway: radio evolution changes how end-to-end protocols should behave
+
+March 1, 2026    Multi-Disciplinary Project Course    64
+
+
+--- Chunk 64 (Length: 205 | Page 65) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 5G
+
+NR + 5G Core (eMBB, URLLC, massive IoT)
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+65
+
+
+
+
+--- Chunk 65 (Length: 449 | Page 66) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Why 5G?
+
+- Exploding mobile data (video, cloud apps) and need for better efficiency
+- New verticals: industrial automation, connected vehicles, smart cities
+- Massive IoT: high device density and low energy operation
+- More flexible networks: slicing, edge computing, private deployments
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+66
+
+
+
+
+--- Chunk 66 (Length: 607 | Page 67) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE) Course Code: 61CSE329
+
+# 5G (IMT-2020) requirements snapshot
+
+- Peak data rate targets: 20 Gbit/s downlink, 10 Gbit/s uplink
+- User experienced data rate: 100 Mbit/s DL (typical coverage)
+- Latency targets: ~1 ms (URLLC user plane), ~4 ms (eMBB user plane)
+- Connection density: up to 1,000,000 devices per km² (mMTC) under specific scenarios, not a guarantee for every user. Real performance depends on spectrum, bandwidth, deployment density, device capability, and load.
+
+March 1, 2026 Multi-Disciplinary Project Course 67
+
+
+
+--- Chunk 67 (Length: 886 | Page 68) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 5G service categories
+
+| Service Category                         | Concrete Examples                                                                             |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------- |
+| eMBB (enhanced Mobile Broadband)         | high throughput (4K/8K video, AR/VR) eMBB: stadium uplink for creators, fixed wireless access |
+| URLLC (Ultra-Reliable Low-Latency Comms) | factory control, robotics URLLC: automated guided vehicles in a warehouse                     |
+| mMTC (massive Machine-Type Comms)        | sensors, meters, trackers mMTC: smart agriculture sensors lasting years on battery            |
+
+March 1, 2026 Multi-Disciplinary Project Course 68
+
+
+
+--- Chunk 68 (Length: 459 | Page 69) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 5G NR radio innovations (high level)
+
+- Flexible numerology (subcarrier spacing) adapts to low or high frequencies
+- Massive MIMO + beamforming improves coverage and capacity
+- Supports both sub-6 GHz and mmWave spectrum
+- Designed for diverse use cases with scalable bandwidth and latency options
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+69
+
+
+
+
+--- Chunk 69 (Length: 483 | Page 70) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# 5G spectrum: sub-6 vs mmWave
+
+# Rule of thumb
+
+- Sub-6 GHz: better coverage and penetration; moderate bandwidth
+- mmWave: huge bandwidth; short range and sensitive to blockage
+
+# Coverage-first layers tend to use
+
+lower bands (e.g., 600–900 MHz). Capacity-first layers use mid-band (e.g., 3–4 GHz) or mmWave in hotspots.
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+70
+
+
+--- Chunk 70 (Length: 509 | Page 71) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# 5G deployment: NSA vs SA (and DSS)
+
+- NSA (Non-Standalone): 5G NR radio anchored to LTE core (faster rollout)
+- SA (Standalone): 5G NR + 5G Core (enables slicing and full 5G features)
+- DSS (Dynamic Spectrum Sharing): share spectrum between LTE and NR
+- Operators often start NSA, then migrate to SA as core upgrades mature
+- 1G to 5G evolution
+
+March 1, 2026    Multi-Disciplinary Project Course    71
+
+
+
+--- Chunk 71 (Length: 647 | Page 72) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# 5G Core: Service-Based Architecture (SBA)
+
+- Network Functions (NFs) expose services via standardized APIs
+- Separation of control plane and user plane (UPF carries user data)
+
+# Why it matters
+
+SBA makes the core more modular and scalable, enabling features like network slicing, edge deployments, and faster introduction of new services compared to monolithic cores.
+
+# Key NFs:
+
+- AMF
+- SMF
+- UPF
+- AUSF
+- UDM
+- PCF
+- NRF
+- NSSF
+
+Designed for cloud-native deployment and automation
+
+March 1, 2026 Multi-Disciplinary Project Course 72
+
+
+
+
+--- Chunk 72 (Length: 537 | Page 73) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Network slicing and edge computing
+
+- Slicing: multiple logical networks on shared infrastructure
+- Each slice can have tailored QoS, security, and policy
+- MEC/edge brings compute closer to the radio for low latency
+- Useful for private 5G and industry deployments
+
+# Example
+
+- A port could run:
+
+Edge compute processes video near the site to reduce backhaul load and latency.
+
+March 1, 2026 Multi-Disciplinary Project Course 73
+
+
+
+--- Chunk 73 (Length: 190 | Page 74) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# 6G
+
+# The Next Evolution
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+74
+
+
+
+
+--- Chunk 74 (Length: 460 | Page 75) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# What is 6G?
+
+- Research phase: 2020–2025
+- Standardization: ~2026–2028 (led by 3rd Generation Partnership Project)
+- Commercial deployment: ~2030
+- 100× faster than 5G
+- Intelligent and AI-native networks
+- Integration of communication, sensing, and computing
+- Seamless coverage: ground + air + space
+
+March 1, 2026 Multi-Disciplinary Project Course 75
+
+
+
+--- Chunk 75 (Length: 447 | Page 76) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Target Performance and Key Technologies
+
+- Peak data rate: up to 1 Tbps
+- Latency: &#x3C; 0.1 ms
+- Frequency bands: Sub-THz (100 GHz–1 THz)
+- AI-Native Network
+- Built-in Artificial Intelligence for self-optimization
+- Predictive traffic management
+- Autonomous network operation
+
+March 1, 2026    Multi-Disciplinary Project Course    76
+
+
+--- Chunk 76 (Length: 442 | Page 77) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Key Technologies
+
+- Terahertz Communication
+- Ultra-high frequency spectrum
+- Extremely high data throughput
+- Short-range ultra-fast transmission
+- Non-Terrestrial Networks (NTN)
+- Integration with LEO satellites
+- Global internet coverage
+- Space-air-ground unified architecture
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+77
+
+
+
+
+--- Chunk 77 (Length: 1065 | Page 78) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Key Technologies
+
+# Intelligent Surfaces (RIS)
+
+| Transmitter                             | Receiver 1        | Co               | Receiver 2                 |
+| --------------------------------------- | ----------------- | ---------------- | -------------------------- |
+| Smart signal reflection and beamforming | reflected signals | incident signals | enhanced reflected signals |
+
+# Integrated Sensing &#x26; Communication
+
+| Network can detect objects and environment |             | Passive RIS     | RIS            |                       |
+| ------------------------------------------ | ----------- | --------------- | -------------- | --------------------- |
+| Enables smart cities, autonomous systems   | input patch | phase-shift     | input patch    | reflection-type power |
+| output circuit                             |             | passive element | active element |                       |
+
+March 1, 2026
+Multi-Disciplinary Project Course
+78
+
+
+--- Chunk 78 (Length: 393 | Page 79) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Applications &#x26; Challenges of 6G
+
+# Expected Applications
+
+- Holographic communication
+- Extended Reality (XR) &#x26; Metaverse
+- Fully autonomous transportation
+- Remote robotic surgery
+- Digital twins of entire cities
+
+March 1, 2026    Multi-Disciplinary Project Course    79
+
+
+
+
+--- Chunk 79 (Length: 1071 | Page 80) ---
+
+
+Lecture 2 – Introduction to Mobile Network Generations
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Applications &#x26; Challenges of 6G
+
+# Industry Transformation
+
+- Smart manufacturing 4.0
+- Precision agriculture
+- AI-powered healthcare
+
+| Data rate                      | 0.1 Gb/s to 20 Gb/s                | 1 Gb/s to 1 Tb/s                    |
+| ------------------------------ | ---------------------------------- | ----------------------------------- |
+| Reliability                    | 2                                  | 2                                   |
+| Challenges                     | Extremely high infrastructure cost | THz propagation limitations         |
+| Latency                        | Less than 100                      | Less than 10 cm in two dimensions   |
+| Energy efficiency requirements | Cybersecurity risks                | Global standardization coordination |
+|                                | Less than 1 cm in three dimensions |                                     |
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+80
+
+
+
+
+--- Chunk 80 (Length: 739 | Page 81) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# Suggested videos + quick check
+
+- Video: “A Quick Introduction to 3GPP” (standards &#x26; releases)
+- Video: “A Deep Dive into 3GPP 5G NR” (NR basics)
+- Video: “LTE 4G Architecture Basics” (EPC and radio overview)
+- Series: Rohde &#x26; Schwarz “Demystifying 5G” (practical topics)
+- Optional reading: IEEE Spectrum on 6G perspectives
+
+# Mini-quiz (3 questions)
+
+1. Why does frequency reuse increase capacity?
+2. What’s the biggest difference between CDMA and OFDMA?
+3. NSA vs SA: what changes in the core network?
+
+# Next lecture
+
+deeper LTE/NR physical layer and scheduling.
+
+March 1, 2026 Multi-Disciplinary Project Course 81
+
+
+
+
+--- Chunk 81 (Length: 179 | Page 82) ---
+
+
+# Lecture 2 – Introduction to Mobile Network Generations
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+End of Lecture 2
+
+March 1, 2026
+
+Multi-Disciplinary Project Course
+
+82
+
+
+

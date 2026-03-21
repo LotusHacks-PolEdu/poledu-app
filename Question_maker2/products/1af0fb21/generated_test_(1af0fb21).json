@@ -1,0 +1,112 @@
+{
+  "main_theme": "Residential Service Fee Notification",
+  "generated_at": "2026-03-16T16:15:53.204813",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 4,
+      "points_each": 1.5
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 2,
+      "points_each": 1.0
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 1,
+      "points_each": 2.0
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "According to the Residential Service Fee Notification, what is the total area of the apartment in square meters?",
+        "options": [
+          "A. 50.76",
+          "B. 51.76",
+          "C. 52.76",
+          "D. 53.76"
+        ],
+        "answer": "B",
+        "points": 1.5,
+        "source_claim": "The apartment's area is 51.76 square meters."
+      },
+      {
+        "id": 2,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "What is the unit price, as stated in the notification, for apartment management services per square meter?",
+        "options": [
+          "A. 5,500",
+          "B. 6,000",
+          "C. 6,500",
+          "D. 7,000"
+        ],
+        "answer": "C",
+        "points": 1.5,
+        "source_claim": "The unit price for apartment management is 6,500 per square meter."
+      },
+      {
+        "id": 3,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "The Residential Service Fee Notification specifies a fee for motorcycle, electric motorcycle, or electric bicycle ownership. What is this fee per vehicle?",
+        "options": [
+          "A. 50,000",
+          "B. 65,000",
+          "C. 75,000",
+          "D. 85,000"
+        ],
+        "answer": "C",
+        "points": 1.5,
+        "source_claim": "The fee for a motorcycle, electric motorcycle, or electric bicycle is 75,000 per vehicle."
+      },
+      {
+        "id": 4,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "Based on the Residential Service Fee Notification, what is the current water meter reading?",
+        "options": [
+          "A. 480 cubic meters",
+          "B. 490 cubic meters",
+          "C. 500 cubic meters",
+          "D. 510 cubic meters"
+        ],
+        "answer": "B",
+        "points": 1.5,
+        "source_claim": "The new water meter reading is 490 cubic meters."
+      }
+    ],
+    "true_false": [
+      {
+        "id": 1,
+        "topic": "Residential Service Fee Breakdown",
+        "statement": "The charge for each automobile registered is 750,000 currency units.",
+        "answer": true,
+        "explanation": "This is a direct paraphrase of the original claim regarding the car fee.",
+        "points": 1.0,
+        "source_claim": "The fee for a car is 750,000 per vehicle."
+      },
+      {
+        "id": 2,
+        "topic": "Residential Service Fee Breakdown",
+        "statement": "The previous water consumption recorded was 487 cubic meters.",
+        "answer": false,
+        "explanation": "The original claim stated 477 cubic meters; this was altered to 487 to make the statement false.",
+        "points": 1.0,
+        "source_claim": "The old water meter reading is 477 cubic meters."
+      }
+    ],
+    "short_answer": [
+      {
+        "id": 1,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "According to the notification, what specific monetary amount is designated as the temporary electricity cost?",
+        "answer": "The notification states the temporary electricity cost is 2,800. This figure represents a specific component of the overall Residential Service Fee.",
+        "points": 2.0,
+        "source_claim": "The temporary electricity cost is 2,800."
+      }
+    ]
+  }
+}

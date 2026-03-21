@@ -1,0 +1,2080 @@
+--- Chunk 0 (Length: 390 | Page 1) ---
+
+Vietnamese-German University
+
+# MULTI-DISCIPLINARY PROJECT
+
+# LECTURE 3 – INTRODUCTION TO SATELLITE COMMUNICATIONS
+
+Course Code: 60SCI029
+
+Course Instructor: Dr. Nguyen Ngoc Truong Minh
+
+Head of Department of Telecommunications
+
+School of Electrical Engineering, International University
+
+Vietnam National University Ho Chi Minh City
+
+nntminh@hcmiu.edu.vn
+
+Ho Chi Minh City, February 2026
+
+
+--- Chunk 1 (Length: 389 | Page 2) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Lecture Content
+
+- Overview and Historical Evolution of Satellite Communications
+- Basic Satellite Communication Model
+- Three Kepler’s Laws
+- Satellite Launching and Orbits
+- Antenna Fundamentals
+- Friis Equation and Path Loss Equation
+
+March 5, 2026
+Multi-Disciplinary Project Course
+
+
+--- Chunk 2 (Length: 282 | Page 3) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Lecture Objectives
+
+- Space Segment
+- Earth Segment
+- Power System
+- Reliability and Lifetime
+- Emerging Trends
+- Summary
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+3
+
+
+--- Chunk 3 (Length: 625 | Page 4) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Satellite Communications – Overview
+
+• Satellite communications enable long-distance wireless connectivity using orbiting repeaters above the Earth surface.
+
+Systems consist of space segment, ground segment, and interconnecting transmission links.
+
+They support voice, video, broadband data, navigation, and emergency communications services.
+
+Used for fixed, mobile, maritime, aeronautical, and broadcast satellite services globally.
+
+March 5, 2026       Multi-Disciplinary Project Course                         4
+
+
+
+
+--- Chunk 4 (Length: 549 | Page 5) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# Historical Evolution of Satellite Communications
+
+- Concept of Geostationary Orbit proposed by Sir Arthur C. Clarke in 1945 in a technical article.
+- Sputnik 1 launched in 1957 marked beginning of artificial satellite era.
+- Early Bird became first commercial geostationary communications satellite in 1965.
+- Modern constellations include GEO, MEO, and LEO broadband satellite networks.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+5
+
+
+
+
+--- Chunk 5 (Length: 358 | Page 6) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# Historical Evolution of Satellite Communications
+
+- First living creature in space (Laika) on Sputnik 02
+- First commercial communications satellite ComSat
+- First man on the moon (Neil Armstrong)
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+6
+
+
+
+
+--- Chunk 6 (Length: 659 | Page 7) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Historical Evolution of Satellite Communications
+
+| EUTELSAT - European regional satellite |                                      |                           |   |
+| -------------------------------------- | ------------------------------------ | ------------------------- | - |
+|                                        |                                      | GlobalStar begins service |   |
+|                                        | CubeSat-OSCAR 56 (Cute-1.7) launched | March 5, 2026             |   |
+
+# Multi-Disciplinary Project Course
+
+7
+
+
+
+
+--- Chunk 7 (Length: 4635 | Page 8) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Historical Evolution of Satellite Communications
+
+Khoa hoc cóng nghé Thú tu, 5/3/2025, 10:50 (GMT+7)
+
+|       |                                                        | 2023:                                                                     | V tinh LOTUSat-1 cúa Vit Nam sn sàng lên qu dao                                     |                                                                              |
+| ----- | ------------------------------------------------------ | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+|       |                                                        |                                                                           | Vé tinh LOTUSat-1 cua Viét Nam da ché tao xong, hé thóng mat dát tai Hòa Lac        |                                                                              |
+|       |                                                        | 2021:                                                                     | LOTUSat-1                                                                           | Thông tin duoc PGS.TS Pham Anh Tuán, Tóng Giám dóc Trung tám Va tru Viét Nam |
+|       | 2019:                                                  | NanoDragon \[580kg]                                                       | (VNSC), Vin Hàn lám Khoa hoc và Công nghé Viét Nam, chia sé vói VnExpress ngày 5/3. |                                                                              |
+|       | 2013:                                                  | MicroDragon \[4kg]                                                        | Ké hoach phóng LOTUSat-1 váo tháng 2/2025 phái dòi lai vá chua có lich cu thé, do   |                                                                              |
+|       | VNREDSat-1 \[50kg]                                     | tén lura dáy Epsilon-S phóng thur nghiêm không thành công hôm 26/11/2024. |                                                                                     |                                                                              |
+| 2012: | \[120kg]                                               | ©NEC                                                                      |                                                                                     |                                                                              |
+|       | VINASAT-2                                              | STI/MONRE                                                                 |                                                                                     |                                                                              |
+|       | VNPT                                                   | PicoDragon                                                                |                                                                                     |                                                                              |
+| 2008: | \[1kg]                                                 |                                                                           | VÉ TINH 'RÓNG VIÉT NAM' &                                                           |                                                                              |
+|       | VINASAT-1                                              |                                                                           | CHIEN LUOC CONG NGHÉ VÖ TRU                                                         |                                                                              |
+|       | VNPT                                                   | Vièt Narn dang phat trien vé tinh "róng Viet Nam"                         |                                                                                     |                                                                              |
+|       | nhiéu kich thudc, voi chien lugc vé nén kinh tế wì tru |                                                                           |                                                                                     |                                                                              |
+
+Manage and develop by other agencies
+
+Manage and develop by VNSC
+
+March 5, 2026 Multi-Disciplinary Project Course 8
+
+
+
+--- Chunk 8 (Length: 565 | Page 9) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Basic Satellite Communication Model
+
+- Satellite acts as spaceborne repeater receiving, amplifying, frequency translating, and retransmitting signals.
+- Uplink carries signal from Earth station to satellite transponder.
+- Downlink transmits processed signal from satellite to destination Earth station.
+- Link budget ensures received power exceeds receiver sensitivity threshold.
+
+March 5, 2026    Multi-Disciplinary Project Course                            9
+
+
+
+--- Chunk 9 (Length: 506 | Page 10) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Advantages of Satellite Communications
+
+- Global coverage including oceans, deserts, mountains, and remote rural regions.
+- Distance-independent cost structure compared to terrestrial fiber networks.
+- Rapid deployment without extensive ground infrastructure construction.
+- Natural support for broadcast and multicast transmission architectures.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+10
+
+
+
+
+--- Chunk 10 (Length: 546 | Page 11) ---
+
+Lecture 3 – Introduction to Satellite Communications
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Limitations of Satellite Systems
+
+- Propagation delay significant for geostationary systems due to 36,000 kilometer altitude.
+- Rain attenuation severely impacts high-frequency Ku and Ka bands.
+- Launch costs and orbital slot coordination increase capital expenditures.
+- Limited onboard power compared with terrestrial communication infrastructure.
+
+# Propagation latency explanation
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+11
+
+
+--- Chunk 11 (Length: 383 | Page 12) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Satellite Systems
+
+• There are about 8,900 satellites from more than 40 countries have been launched in the space (some 5,000 remain in orbit till 2018), most of them are used for communications.
+
+Ethereum World !!!
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+12
+
+
+
+
+--- Chunk 12 (Length: 433 | Page 13) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Satellite Systems
+
+| Transmitter | Ground wave | Receiver |   |
+| ----------- | ----------- | -------- | - |
+|             | Earth       |          |   |
+
+lonosphere (80 - 720 km)
+
+Mesosphere (50 - 80 km)
+
+Stratosphere (12 - 50 km)
+
+Troposphere (0 - 12 km)
+
+March 5, 2026    Multi-Disciplinary Project Course                  13
+
+
+
+--- Chunk 13 (Length: 505 | Page 14) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Satellite Communication Applications
+
+- Direct-to-home (DTH) television broadcasting and high-definition satellite radio services.
+- Backhaul connectivity for cellular base stations in underserved areas.
+- Maritime and aeronautical broadband for ships and aircraft.
+- Disaster recovery communications when terrestrial infrastructure fails.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+14
+
+
+--- Chunk 14 (Length: 493 | Page 15) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE)  Course Code: 61CSE329
+
+# Classification by Orbit Types
+
+- Geostationary (GEO) satellites remain fixed relative to Earth equator.
+- Low Earth Orbit (LEO) satellites provide low-latency global broadband coverage.
+- Medium Earth Orbit (MEO) satellites balance latency and constellation size.
+- Highly elliptical orbits serve high-latitude regions effectively.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+15
+
+
+--- Chunk 15 (Length: 1030 | Page 16) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Classification by Orbit Types
+
+| GEO   | Satellite Missions               |                            |       |    |                           |    |
+| ----- | -------------------------------- | -------------------------- | ----- | -- | ------------------------- | -- |
+| LEO   | Communications                   | 66%                        | Other | 6% | Earth Science/Meteorology | 5% |
+| EARTH | MEO                              | Astrophysics/Space Physics | 5%    |    |                           |    |
+|       | Earth Observation/Remote Sensing | 5%                         |       |    |                           |    |
+|       | Military Surveillance            | 6%                         |       |    |                           |    |
+|       | Navigation                       | 7%                         |       |    |                           |    |
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+16
+
+
+
+
+--- Chunk 16 (Length: 627 | Page 17) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# What are the components of a satellite?
+
+- Antennas (command, communication…)
+- COMMAND ANTENNA
+- COMMUNICATION ANTENNA
+- Many satellites are powered by rechargeable batteries, solar cells
+- BATTERICS
+- SOLAR CELLS
+- Radios (receivers and transmitters)
+- RADIO RECEIVERS
+- TRANSMITTERS
+- Rockets (fuel, motor…)
+- ROCKET FUEL
+- Small thrusters provide altitude i.e., stabilize the satellite’s position in space
+- MAIN ROCKET MOTOR
+- ROCKET THRUSTERS
+- CAMERA
+- Cameras
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+17
+
+
+
+
+--- Chunk 17 (Length: 616 | Page 18) ---
+
+Lecture 3 – Introduction to Satellite Communications
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# How satellites work?
+
+# Satellite
+
+- An Earth Station sends message in GHz range (Uplink)
+- Satellite receives and retransmits signals back (Downlink)
+
+| Transmitting    | Receiving        |
+| --------------- | ---------------- |
+| Earth station   | Earth station    |
+| Input frequency | Output frequency |
+
+- Difference between Downlink and Uplink frequency is 2GHz
+
+# Frequency coverage
+
+- For instance, SatCom C-3 (4/6 GHz), EchoStar FSS-1 (12/14 GHz)…
+
+March 5, 2026
+Multi-Disciplinary Project Course
+18
+
+
+--- Chunk 18 (Length: 525 | Page 19) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# In-Class Exercise – Introduction
+
+1. Explain why geostationary satellites experience approximately 250 milliseconds one-way propagation delay.
+2. Compare satellite and fiber communication regarding coverage and latency.
+3. Identify three satellite services requiring global continuous coverage.
+4. Sketch simple block diagram of satellite uplink and downlink chain.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+19
+
+
+
+
+--- Chunk 19 (Length: 711 | Page 20) ---
+
+Lecture 3 – Introduction to Satellite Communications
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Kepler’s First Law – Elliptical Orbits
+
+1. Satellite orbits the Earth following an elliptical trajectory at one focal point.
+2. Semi-major axis determines the average orbital distance from Earth center.
+3. Eccentricity defines the orbit shape from circular to highly elliptical.
+4. Circular orbit achieved when the eccentricity equals zero.
+
+| Major axis        | Minor axis |
+| ----------------- | ---------- |
+| b                 |            |
+| F1                | F2         |
+| Center of ellipse |            |
+| a                 | a          |
+
+March 5, 2026    Multi-Disciplinary Project Course
+
+
+--- Chunk 20 (Length: 636 | Page 21) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE) Course Code: 61CSE329
+
+# Kepler’s Second Law – Equal Areas
+
+1. Satellite sweeps equal areas in equal times around barycenter.
+
+2. Velocity highest at perigee and lowest at apogee positions.
+
+3. Orbital angular momentum conserved in absence of external torques.
+
+4. Energy conservation explains variation in instantaneous orbital velocity.
+
+| Earth     | A2$    | apogee |
+| --------- | ------ | ------ |
+| perigee   | S      |        |
+|           | $A\_{$ | $S}$   |
+| Satellite |        |        |
+
+March 5, 2026
+
+Multi-Disciplinary Project Course 21
+
+
+
+
+--- Chunk 21 (Length: 1918 | Page 22) ---
+
+Lecture 3 – Introduction to Satellite Communications
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Kepler’s Third Law – Period Relationship
+
+| Square of the orbital period proportional to the cube of semi-major axis. |                |                       |                |          |   |         |
+| ------------------------------------------------------------------------- | -------------- | --------------------- | -------------- | -------- | - | ------- |
+| Geostationary Earth orbit                                                 | Orbital period | 20 hours (GEO+300 km) |                |          |   |         |
+|                                                                           | Galileo        | 15 hours              |                | COMPASS  |   |         |
+|                                                                           |                | GPS                   | MEO satellites | 10 hours |   |         |
+|                                                                           |                |                       |                | GLONASS  |   | 5 hours |
+
+# Radius of orbit
+
+| Height above sea level                    | 40000 km              | 30000 km   | 20000 km    | 10000 km   |
+| ----------------------------------------- | --------------------- | ---------- | ----------- | ---------- |
+| Earth’s geocentric gravitational constant | 3.986005 x 10¹⁴ m³/s² |            |             |            |
+| 10000 miles                               | ISS                   | 10000 km   | 20000 miles | 20000 km   |
+| 15000 km/h                                | 7000 mph              | 25000 km/h | 10000 mph   | 20000 km/h |
+| 15000 km/h                                | Outer Van Allen belt  | 11000 km/h |             |            |
+
+# Determines altitude required for 24-hour geostationary orbit.
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+# 22
+
+
+--- Chunk 22 (Length: 523 | Page 23) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Derivation of GEO Altitude
+
+- Geostationary period equals sidereal day approximately 86,164 seconds (a normal Christian day is 86,400 seconds).
+- Substitute orbital period into Kepler equation to compute semi-major axis.
+- Resulting orbital radius approximately 42,164 kilometers from Earth center.
+- Subtract Earth radius to obtain 35,786 kilometer GEO altitude.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+23
+
+
+
+
+--- Chunk 23 (Length: 492 | Page 24) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Orbital Parameters
+
+- Inclination defines the angle between the Equatorial orbital plane and the Earth equator.
+- Right ascension of ascending node specifies the orbit orientation in space.
+- Argument of perigee describes the orientation within the orbital plane.
+- True anomaly indicates the instantaneous satellite position angle.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+24
+
+
+
+
+--- Chunk 24 (Length: 708 | Page 25) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# GEO Characteristics
+
+- Satellite appears stationary to ground observers at equator.
+- The principle of GPS
+
+| Satellite 1 | Satellite 3 |
+| ----------- | ----------- |
+| Satellite 2 |             |
+
+- Three satellites separated 120 degrees provide near-global coverage.
+- High latency limits real-time interactive applications.
+- Station keeping required to counter gravitational perturbations.
+
+| Signal Segment | Control Segment | User Segment |
+| -------------- | --------------- | ------------ |
+| Bidirectional  | One Way         | Signal       |
+
+March 5, 2026
+Multi-Disciplinary Project Course
+25
+
+
+
+--- Chunk 25 (Length: 420 | Page 26) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# LEO Characteristics
+
+- Altitude between 500 and 1,500 kilometers above Earth surface.
+- Orbital period approximately 90 to 120 minutes.
+- Lower propagation delay approximately 5 to 20 milliseconds.
+- Requires large constellation for continuous global coverage.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+26
+
+
+
+
+--- Chunk 26 (Length: 490 | Page 27) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# MEO Characteristics
+
+- Altitude typically around 8,000 to 20,000 kilometers.
+- Used for navigation systems such as GPS constellation.
+- Moderate latency around 70 to 100 milliseconds.
+- Requires fewer satellites compared with LEO networks.
+
+| ME | Altitude          |
+| -- | ----------------- |
+|    | 5,000 - 20,000 km |
+
+equator
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+27
+
+
+
+
+--- Chunk 27 (Length: 447 | Page 28) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Orbital Perturbations
+
+- Earth oblateness causes nodal regression and argument drift.
+- Solar and Lunar gravitational forces alter orbital inclination.
+- Atmospheric drag reduces altitude of low Earth satellites.
+- Station-keeping thrusters correct orbital deviations periodically.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+28
+
+
+--- Chunk 28 (Length: 475 | Page 29) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Launching and Transfer Orbits
+
+- Satellites launched into low parking orbit before transfer maneuver.
+- Hohmann transfer orbit raises satellite to geostationary altitude.
+- Apogee motor circularizes orbit at final altitude.
+- Launch vehicles must provide required delta-V budget.
+
+# SpaceX Starlink 14 Mission Recap
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+29
+
+
+
+
+--- Chunk 29 (Length: 2620 | Page 30) ---
+
+Lecture 3 – Introduction to Satellite Communications
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Launching and Transfer Orbits
+
+| Station acquisition                               | Earth capture                    | To sun                                      |
+| ------------------------------------------------- | -------------------------------- | ------------------------------------------- |
+| T2 + 1 \~2 months                                 | T3 + 4.5h                        | Sun acquisition                             |
+|                                                   | T3 + 1h                          | -To sun                                     |
+|                                                   | Deploy solar arrays and antennas |                                             |
+|                                                   | To earth                         | T3 + 15 m                                   |
+| Transfer orbit                                    | Jettison fairing                 | To + 215s                                   |
+|                                                   |                                  | 17 Design Tz + 5 m                          |
+| Orbit and attitude injection                      | T, = $To$                        | Atlas-Centaur launch T                      |
+| T{2} + 1 \~ 20h                                   | +27 m                            | Centaur reorientation                       |
+|                                                   | to orbit normal                  | T2 + 30 m                                   |
+| Apogee motor firing                               | Drift orbit velocity correction  | Tg = T2 + 24.25 h                           |
+| Satellite separation                              | Final attitude adjustment        | Orbit and attitude determination            |
+| Ty + 2m                                           | T\_2} - 2.4h                     | Spin up                                     |
+| T + 2m + 2s                                       | TC\&R line established           | 15 Initiate drift orbit velocity correction |
+|                                                   | T2 + 20 m                        | Reorientation to apogee motor fire attitude |
+|                                                   | T2 + 23.75h                      |                                             |
+| Reorientation for drift orbit velocity correction | T2 + 20 h                        |                                             |
+
+March 5, 2026
+Multi-Disciplinary Project Course
+30
+
+
+--- Chunk 30 (Length: 480 | Page 31) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Orbit Visualization
+
+• There will be East and West limits on the geostationary are visible from any given Earth station.
+
+The limits will be set by the geographic coordinates of the Earth station and the antenna elevation.
+
+The lowest elevation in theory is zero, when the antenna is pointing along the horizontal.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+31
+
+
+--- Chunk 31 (Length: 475 | Page 32) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# In-Class Exercise – Orbits
+
+1. Calculate GEO altitude using Kepler’s third law from first principles.
+2. Determine orbital period of satellite at 1,000 kilometer altitude.
+3. Explain why LEO requires constellation rather than single satellite.
+4. Draw and label orbital elements for inclined elliptical orbit.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+32
+
+
+--- Chunk 32 (Length: 477 | Page 33) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Antenna Fundamentals
+
+- Antenna converts guided electromagnetic (EM) energy into radiated waves in free space.
+- Radiation pattern describes angular distribution of radiated power.
+- Gain measures directional amplification relative to isotropic radiator.
+- Polarization describes orientation of electric field vector.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+33
+
+
+
+
+--- Chunk 33 (Length: 415 | Page 34) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Antenna Fundamentals
+
+| 270a       | D = 151   |           |
+| ---------- | --------- | --------- |
+| side lobes | main lobe |           |
+| 180        |           |           |
+| back lobe  |           |           |
+| 90         | Co-pol    | Cross pol |
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+34
+
+
+
+
+--- Chunk 34 (Length: 498 | Page 35) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE) Course Code: 61CSE329
+
+# Parabolic Reflector Antennas
+
+- Widely used in Satellite - Earth stations for high gain.
+- Gain proportional to aperture area divided by wavelength squared.
+- Beamwidth inversely proportional to antenna diameter.
+- High directivity reduces interference from adjacent satellites.
+
+# Geostationary satellite
+
+# Ground station
+
+# Ground station
+
+March 5, 2026 Multi-Disciplinary Project Course 35
+
+
+
+--- Chunk 35 (Length: 483 | Page 36) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Antenna Polarization
+
+- Satellite systems use linear or circular polarization.
+- Orthogonal polarization enables frequency reuse within same band.
+- Cross-polarization discrimination measures isolation between polarizations.
+- Rain may cause depolarization especially at higher frequencies.
+
+| RHCP | LHCP |
+| ---- | ---- |
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+36
+
+
+
+
+--- Chunk 36 (Length: 753 | Page 37) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE) Course Code: 61CSE329
+
+# Friis Transmission Equation
+
+• Received power (Pᵣ) equals transmitted power (Pₜ) times transmit gain (Gₜ) times receive gain (Gᵣ).
+
+Assumes line-of-sight (LOS) and no additional atmospheric losses.
+
+| (θr,                       | \[(θ, φ,)                 |                   |
+| -------------------------- | ------------------------- | ----------------- |
+| Transmitting antenna       |                           |                   |
+| (Pt, Gt, Dt, ecdt, Γt, βt) | R                         | Receiving antenna |
+|                            | (P, Gr, Dr, ecdr, Γr, βr) |                   |
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+37
+
+
+
+
+--- Chunk 37 (Length: 469 | Page 38) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Free Space Path Loss
+
+- Path loss: the decrease in signal strength of a signal traveling between two antennas. Increases with frequency and distance between transmitter and receiver.
+- Major contributor to satellite link attenuation. GEO path loss typically exceeds 190 dB at Ku band.
+
+Pr = σ Got Gor λ² / (4πR²)
+
+March 5, 2026
+Multi-Disciplinary Project Course
+38
+
+
+
+--- Chunk 38 (Length: 406 | Page 39) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Example – GEO Link Path Loss
+
+1. Assume frequency 14 GHz and distance 38,000 kilometers.
+2. Compute wavelength approximately 0.0214 meters.
+3. Calculate free space path loss approximately 206 decibels.
+4. Demonstrates necessity of high-gain antennas.
+
+March 5, 2026
+Multi-Disciplinary Project Course
+39
+
+
+--- Chunk 39 (Length: 495 | Page 40) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# System Noise Temperature
+
+- Receiver noise modeled using equivalent noise temperature concept.
+- Total noise includes antenna noise and receiver front-end noise.
+- Noise power is a function of Boltzmann constant, temperature, and bandwidth.
+- Fundamental to Carrier-to-Noise (C/N) ratio calculation.
+
+March 5, 2026    Multi-Disciplinary Project Course                            40
+
+
+
+
+--- Chunk 40 (Length: 1280 | Page 41) ---
+
+Lecture 3 – Introduction to Satellite Communications
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Carrier-to-Noise Ratio
+
+C / N equals received carrier power divided by noise power.
+
+In decibels, we subtract noise power from carrier power.
+
+Higher C / N improves bit error rate (BER) performance.
+
+Design to ensure the adequate margin under worst-case fading.
+
+|                         | Measuring C/N levels over time |
+| ----------------------- | ------------------------------ |
+| Carrier level = 30 dBmV | 50                             |
+|                         | 40                             |
+| A                       | 30                             |
+|                         | 20                             |
+|                         | 10                             |
+|                         | 0                              |
+| C/N ratio = 65 dB       | -10                            |
+|                         | -20                            |
+|                         | -30                            |
+|                         | -40                            |
+|                         | -50                            |
+| Noise level = -35 dBmV  |                                |
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+41
+
+
+--- Chunk 41 (Length: 470 | Page 42) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# In-Class Exercise – Antennas and Friis
+
+1. Derive Friis equation starting from power density definition.
+2. Calculate antenna diameter required for 45 dBi gain at 12 GHz.
+3. Estimate free space path loss for LEO satellite at 1,200 kilometers.
+4. Explain impact of polarization mismatch on received power.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+42
+
+
+--- Chunk 42 (Length: 433 | Page 43) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Link Budget Overview
+
+- Link budget accounts for gains and losses along communication path.
+- Includes transmit power, antenna gains, path loss, and atmospheric losses.
+- Ensures required C / N achieved at the receiver input.
+- Performed separately for uplink and downlink.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+43
+
+
+
+
+--- Chunk 43 (Length: 447 | Page 44) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Uplink Budget Components
+
+- Earth station transmits the power and antenna gain determine the uplink EIRP.
+- Free space path loss calculated for uplink frequency.
+- Satellite receive antenna gain contributes positively.
+- Atmospheric and rain attenuation subtracted from link.
+
+March 5, 2026    Multi-Disciplinary Project Course    44
+
+
+
+
+--- Chunk 44 (Length: 427 | Page 45) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Downlink Budget Components
+
+- Satellite transponder output power determines the downlink EIRP.
+- Downlink path loss calculated using downlink frequency.
+- Earth station antenna gain adds received carrier strength.
+- System noise temperature determines noise floor level.
+
+March 5, 2026
+Multi-Disciplinary Project Course
+45
+
+
+
+--- Chunk 45 (Length: 1880 | Page 46) ---
+
+Lecture 3 – Introduction to Satellite Communications
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Noise Power Calculation
+
+• Assume the system noise temperature 500 Kelvin.
+
+| Transmit (downlink) |      |               |      |      |      |      |      |      |      |      |      |      |
+| ------------------- | ---- | ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 3720                | 3760 | 3800          | 3840 | 3880 | 3920 | 3960 | 4000 | 4040 | 4080 | 4120 | 4160 | 4199 |
+|                     | 3740 | 3780          | 3820 | 3860 | 3900 | 3940 | 3980 | 4020 | 4100 | 4140 | T/M  |      |
+|                     | 3701 |               | 4060 | 20   | 4180 |      |      |      |      |      |      |      |
+|                     |      | Frequency MHz |      |      |      |      |      |      |      |      |      |      |
+|                     | 3700 |               |      | 4200 |      |      |      |      |      |      |      |      |
+
+| Receive (uplink) |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+| ---------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|                  | 5945 | 5985 | 6025 | 6065 | 6105 | 6145 | 6185 | 6225 | 6265 | 6305 | 6345 | 6385 | 6424 |      |
+|                  |      | 5965 | 6005 | 6045 | 6085 | 6125 | 6165 | 6205 | 6245 | 6285 | 6325 | 6365 | CMD  | 6405 |
+|                  |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+|                  | 5925 |      |      |      | 6425 |      |      |      |      |      |      |      |      |      |
+
+Noise power equals kTB converted to decibel watts.
+
+Compute approximate noise floor around minus 128 dBW.
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+46
+
+
+--- Chunk 46 (Length: 470 | Page 47) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Eb/N₀ and BER
+
+- Energy per bit to noise density ratio relates to digital performance.
+
+C/N Ratio (dB) = (Eb/No)dB + 10*log(Bit rate/Bandwidth)
+
+Eb/No (dB) = (C/N)dB + 10*log(Bandwidth/Bit rate)
+
+Each modulation scheme requires minimum Eb / N₀ threshold.
+
+Forward error correction reduces required Eb / N₀.
+
+March 5, 2026    Multi-Disciplinary Project Course    47
+
+
+
+
+--- Chunk 47 (Length: 414 | Page 48) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Availability and Fade Margin
+
+- Rain attenuation dominant at frequencies above 10GHz.
+- Design includes fade margin for 99.9 percent availability.
+- Adaptive coding and modulation mitigates fading impact.
+- Site diversity improves link reliability.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+48
+
+
+--- Chunk 48 (Length: 423 | Page 49) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Interference Considerations
+
+- Adjacent satellite interference due to small orbital spacing.
+- Intermodulation distortion within satellite transponder.
+- Terrestrial interference from microwave links.
+- Regulatory coordination minimizes cross-system interference.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+49
+
+
+
+
+--- Chunk 49 (Length: 422 | Page 50) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Multiple Access Techniques
+
+- FDMA assigns separate frequency bands to users.
+- TDMA allocates time slots within same carrier frequency.
+- CDMA uses orthogonal spreading codes for separation.
+- Demand assignment improves transponder utilization efficiency.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+50
+
+
+--- Chunk 50 (Length: 435 | Page 51) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Real-World Case Study – GEO System
+
+- Example geostationary broadcast satellite serving continental region.
+- Ku-band used for direct-to-home television services.
+- Large gateway uplinks and small consumer dish antennas.
+- Link budget optimized for mass-market affordability.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+51
+
+
+
+
+--- Chunk 51 (Length: 453 | Page 52) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# In-Class Exercise – Link Budget
+
+1. Perform complete link budget for given parameters provided by instructor.
+2. Determine required fade margin for 99.99 percent availability.
+3. Compute Eb over N₀ for 8PSK modulation scheme.
+4. Discuss trade-off between antenna size and transmit power.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+52
+
+
+--- Chunk 52 (Length: 1216 | Page 53) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Space Segment Architecture
+
+| Satellite consists of payload and supporting bus subsystems. | Space segment      |
+| ------------------------------------------------------------ | ------------------ |
+| Payload includes transponders and antenna subsystem.         | Spacecraft         |
+| Bus provides power, thermal control, and attitude control.   | Ground station     |
+| Telemetry and command ensure operational monitoring.         | Launch facility    |
+|                                                              | Control center     |
+|                                                              | Customer terminals |
+|                                                              | I\&T facility      |
+|                                                              | Pre-launch         |
+|                                                              | Remote terminals   |
+|                                                              | Ground segment     |
+|                                                              | User segment       |
+
+March 5, 2026 Multi-Disciplinary Project Course 53
+
+
+
+--- Chunk 53 (Length: 591 | Page 54) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Space Segment Architecture
+
+| payload volume  | star sensors        | S-Band low gain antenna |
+| --------------- | ------------------- | ----------------------- |
+|                 | sun sensors         | GPS antenna             |
+|                 | solar panel         | magnetic field sensors  |
+| payload segment | electronics segment | high gain antenna       |
+|                 | service segment     | heat pipe               |
+
+March 5, 2026
+Multi-Disciplinary Project Course
+54
+
+
+--- Chunk 54 (Length: 470 | Page 55) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Satellite Transponder
+
+- Receives uplink signal using Low Noise Amplifier (LNA).
+- Frequency translation performed to avoid feedback interference.
+- High power amplifier boosts signal for downlink transmission.
+- Bandwidth typically 36 or 72 MHz per channel.
+
+Transponder explanation
+
+March 5, 2026    Multi-Disciplinary Project Course                            55
+
+
+
+--- Chunk 55 (Length: 419 | Page 56) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# High Power Amplifiers
+
+- Traveling wave tube amplifiers common in satellite payloads.
+- Operate near saturation for maximum power efficiency.
+- Back-off required for multi-carrier linear operation.
+- Solid-state amplifiers increasingly used in modern satellites.
+
+March 5, 2026
+Multi-Disciplinary Project Course
+56
+
+
+
+--- Chunk 56 (Length: 1079 | Page 57) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Attitude and Orbit Control System
+
+- Reaction wheels and thrusters maintain satellite pointing accuracy.
+- Sun sensors and star trackers provide orientation feedback.
+- Station keeping corrects longitudinal and inclination drift.
+- Precise pointing essential for narrow-beam antennas.
+
+| TELEMETRY AND COMMAND ANTENNA |                   | ANTENNA           |                               |
+| ----------------------------- | ----------------- | ----------------- | ----------------------------- |
+|                               | REFLECTOR         | ANTENNA FEEDS     |                               |
+| DESPUN REPEATER               | THERMAL RADIATOR  | 88888             | TRAVELING WAVE TUBE AMPLIFIER |
+| CONTROL THRUSTER (4)          | BATTERY PACK      |                   |                               |
+| PROPELLANT TANK (4)           | APOGEE KICK MOTOR | SOLAR CELL ARRAYS |                               |
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+57
+
+
+--- Chunk 57 (Length: 399 | Page 58) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Power Subsystem
+
+- Solar panels convert sunlight into electrical energy.
+- Batteries provide power during eclipse periods.
+- Power budget limits transponder output capability.
+- Degradation over time affects satellite lifetime.
+
+March 5, 2026    Multi-Disciplinary Project Course    58
+
+
+
+
+--- Chunk 58 (Length: 458 | Page 59) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Earth Segment Overview
+
+- Earth stations include antennas, RF chains, and baseband equipment.
+- Gateway stations connect satellite network to terrestrial internet.
+- User terminals vary from large dishes to handheld devices.
+- Tracking systems maintain antenna alignment with satellite.
+
+March 5, 2026    Multi-Disciplinary Project Course    59
+
+
+
+
+--- Chunk 59 (Length: 408 | Page 60) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# VSAT Systems
+
+- Very Small Aperture Terminals enable enterprise connectivity.
+- Star topology commonly used with central hub.
+- Operate frequently in Ku or Ka frequency bands.
+- Provide corporate networking and ATM connectivity.
+
+# VSAT explanation
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+60
+
+
+
+
+--- Chunk 60 (Length: 427 | Page 61) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Broadcast Earth Stations
+
+- High power uplink transmitters feed broadcast satellites.
+- Redundant amplifiers ensure uninterrupted transmission.
+- Large aperture antennas achieve high uplink gain.
+- Strict regulatory compliance required for uplink licensing.
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+61
+
+
+
+
+--- Chunk 61 (Length: 435 | Page 62) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# TT&#x26;C Subsystem
+
+- Telemetry monitors satellite health parameters continuously.
+- Tracking determines precise orbital position.
+- Command uplink allows ground control adjustments.
+- Critical for long-term mission sustainability.
+
+# TT&#x26;C Subsystem explanation
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+62
+
+
+
+
+--- Chunk 62 (Length: 416 | Page 63) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Case Study – Navigation System
+
+- MEO constellation provides global positioning capability.
+- Atomic clocks ensure precise timing synchronization.
+- Triangulation determines user position on Earth.
+- Widely integrated into smartphones and vehicles.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+63
+
+
+
+
+--- Chunk 63 (Length: 427 | Page 64) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Case Study – LEO Broadband
+
+- Large LEO constellation providing low-latency internet.
+- User terminals electronically steer phased-array antennas.
+- Inter-satellite links reduce reliance on ground gateways.
+- Competes with terrestrial fiber for rural broadband.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+64
+
+
+--- Chunk 64 (Length: 410 | Page 65) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Reliability and Lifetime
+
+- Typical geostationary satellite lifetime around 15 years.
+- Fuel availability limits station keeping duration.
+- Redundant subsystems enhance mission reliability.
+- End-of-life disposal to graveyard orbit required.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+65
+
+
+
+
+--- Chunk 65 (Length: 427 | Page 66) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# In-Class Exercise – System Design
+
+1. Design conceptual GEO satellite system for national broadcasting.
+2. Select frequency band and justify choice.
+3. Estimate approximate antenna sizes for uplink and downlink.
+4. Discuss advantages of LEO alternative for broadband.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+66
+
+
+
+
+--- Chunk 66 (Length: 380 | Page 67) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Atmospheric Layers
+
+- Signal passes through troposphere and ionosphere.
+- Water vapor absorption peak around 22 GHz.
+- Oxygen absorption peak near 60 GHz.
+- Higher frequencies more susceptible to atmospheric attenuation.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+67
+
+
+
+
+--- Chunk 67 (Length: 415 | Page 68) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Rain Attenuation
+
+- Rain droplets scatter and absorb microwave signals.
+- Specific attenuation increases with frequency.
+- Ka-band experiences significant rain fading.
+- Fade margin compensates during heavy rainfall.
+
+# Rain attenuation fading explanation
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+68
+
+
+
+
+--- Chunk 68 (Length: 408 | Page 69) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Ionospheric Effects
+
+- Ionosphere causes scintillation and phase delay.
+- Impacts L band navigation signals.
+- Total electron content influences signal delay.
+- Mitigation via dual-frequency correction techniques.
+
+# Ionospheric effects explanation
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+69
+
+
+
+
+--- Chunk 69 (Length: 390 | Page 70) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Polarization Effects
+
+- Rain may cause polarization rotation.
+- Cross-polar interference degrades signal quality.
+- Circular polarization reduces alignment sensitivity.
+- Proper antenna alignment essential for performance.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+70
+
+
+
+
+--- Chunk 70 (Length: 401 | Page 71) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+# Frequency Bands Overview
+
+- C-band resistant to rain but larger antennas required.
+- Ku-band widely used for broadcast services.
+- Ka-band enables high throughput satellite systems.
+- V-band emerging for future ultra-high capacity links.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+71
+
+
+
+
+--- Chunk 71 (Length: 571 | Page 72) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# High Throughput Satellites
+
+- Use spot beams for aggressive frequency reuse.
+- | Traditional Beam       | HTS Spot Beam                |
+| ---------------------- | ---------------------------- |
+| One hub, one line card | One hub, multiple line cards |
+- Employ Ka-band spectrum for higher bandwidth.
+- Gateway diversity improves overall network resilience.
+- Support multi-gigabit per second capacity.
+
+IDIRECT
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+72
+
+
+
+
+--- Chunk 72 (Length: 425 | Page 73) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Beamforming and Phased Arrays
+
+- Electronic beam steering without mechanical movement.
+- Multiple beams dynamically allocated to traffic demand.
+- Critical technology for LEO broadband user terminals.
+- Enables seamless satellite handover.
+- Beamforming explanation
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+73
+
+
+
+
+--- Chunk 73 (Length: 421 | Page 74) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Optical Satellite Communications
+
+- Laser links provide extremely high data rates.
+- Narrow beams reduce interference and interception.
+- Sensitive to atmospheric turbulence.
+- Promising for inter-satellite backbone connectivity.
+
+# Trending in Optics
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+74
+
+
+
+
+--- Chunk 74 (Length: 511 | Page 75) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Regulatory Framework
+
+- International Telecommunication Union (ITU) allocates orbital slots.
+- Coordination prevents interference between satellite networks.
+- National regulators license ground stations.
+- Compliance ensures sustainable spectrum usage.
+- Ground stations explained satellite data travel from Space to Earth.
+
+March 5, 2026    Multi-Disciplinary Project Course                            75
+
+
+
+--- Chunk 75 (Length: 483 | Page 76) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Sustainability and Space Debris
+
+- Growing number of satellites increases collision risk.
+- End-of-life disposal strategies reduce debris accumulation.
+- Active debris removal technologies under development.
+- Responsible space operations essential for long-term viability.
+- Graveyard orbits to reduce the collision.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+76
+
+
+--- Chunk 76 (Length: 436 | Page 77) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Emerging Trends
+
+- Integration of satellite and 5G terrestrial networks.
+- Software-defined payloads enabling flexible beam reconfiguration.
+- Artificial intelligence optimizing network resource allocation.
+- Mega-constellations transforming global broadband access.
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+77
+
+
+
+
+--- Chunk 77 (Length: 450 | Page 78) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Comparative Analysis – GEO vs LEO
+
+- GEO offers fixed coverage with fewer satellites.
+- LEO provides low latency but requires constellation.
+- Cost trade-offs between launch and ground complexity.
+- Application suitability depends on latency requirement.
+
+# Starlink constellation
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+78
+
+
+
+
+--- Chunk 78 (Length: 419 | Page 79) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Economic Considerations
+
+- Satellite manufacturing and launch represent major capital investment.
+- Ground segment scalability influences business model.
+- Broadband demand drives revenue projections.
+- Competition from fiber and mobile networks impacts pricing.
+
+March 5, 2026
+Multi-Disciplinary Project Course
+79
+
+
+
+--- Chunk 79 (Length: 404 | Page 80) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Comprehensive Numerical Review Slide
+
+- Recalculate full GEO link budget with updated parameters.
+- Compare with LEO path loss and latency.
+- Evaluate Eb over N₀ requirement for QPSK.
+- Assess effect of 3 dB additional rain attenuation.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+80
+
+
+
+
+--- Chunk 80 (Length: 408 | Page 81) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Capstone Exercise – Integrated Design
+
+- Design satellite network providing 1 Gbps national coverage.
+- Select orbit, frequency band, and modulation scheme.
+- Estimate antenna size and link margin.
+- Present design justification to class.
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+81
+
+
+
+
+--- Chunk 81 (Length: 415 | Page 82) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Summary – Key Technical Concepts
+
+- Orbital mechanics determine satellite altitude and coverage.
+- Antenna gain and path loss dominate link budget.
+- Noise temperature influences carrier-to-noise ratio.
+- Propagation effects require fade margin inclusion.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+82
+
+
+
+
+--- Chunk 82 (Length: 422 | Page 83) ---
+
+
+Lecture 3 – Introduction to Satellite Communications
+Computer Science (CSE)
+Course Code: 61CSE329
+
+# Summary – Engineering Trade-offs
+
+- Higher frequency increases bandwidth but increases attenuation.
+- Larger antennas improve gain but increase cost.
+- More satellites reduce latency but increase complexity.
+- Adaptive coding balances throughput and reliability.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+83
+
+
+
+
+--- Chunk 83 (Length: 656 | Page 84) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+# Computer Science (CSE)
+
+# Course Code: 61CSE329
+
+# Final Review Questions
+
+1. Derive GEO altitude from first principles.
+2. Compute free space path loss at 20 GHz.
+3. Explain relation between Eb over N0 and BER.
+4. Discuss future of integrated satellite-terrestrial systems.
+5. Encourage questions regarding mathematical derivations and system design.
+6. Discuss real-world satellite deployment challenges.
+7. Reflect on future research directions in space communications.
+8. Prepare for next lecture covering advanced modulation techniques.
+
+March 5, 2026
+
+Multi-Disciplinary Project Course
+
+84
+
+
+--- Chunk 84 (Length: 179 | Page 85) ---
+
+
+# Lecture 3 – Introduction to Satellite Communications
+
+Computer Science (CSE)
+
+Course Code: 61CSE329
+
+End of Lecture 3
+
+March 5, 2026
+
+# Multi-Disciplinary Project Course
+
+85
+
+
+

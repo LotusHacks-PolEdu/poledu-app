@@ -1,0 +1,32 @@
+{
+  "main_theme": "The growing risks associated with online sports gambling in the Americas.",
+  "sub_topics": [
+    "Prevalence of gambling and risk gambling in North America",
+    "Prevalence of gambling disorder in Latin America and the Caribbean",
+    "Socioeconomic factors linked to gambling disorder",
+    "Impact of sports events (e.g., FIFA World Cup) on betting exposure",
+    "Comparison to tobacco and alcohol industry marketing tactics",
+    "Negative health and wellbeing effects of gambling",
+    "Need for regulation, limits on marketing, and international collaboration"
+  ],
+  "claims_by_chunk": [
+    {
+      "chunk_id": 0,
+      "page_label": 1,
+      "topic": "Online Sports Gambling Prevalence & Disorder",
+      "claims": [
+        "Approximately 61.3% of adults in North America reported gambling within the past 12 months.",
+        "13.8% of adults in North America who gambled engaged in risk gambling activities.",
+        "Gambling disorder is a mental health condition recognized in both the DSM-5 and ICD-11.",
+        "Gambling disorder is defined by a persistent pattern of gambling despite significant distress or impairment in daily functioning.",
+        "33.7% of adolescents reported gambling.",
+        "27.8% of adolescents who gambled engaged in risk gambling activities.",
+        "The prevalence of gambling disorder in Latin America and the Caribbean ranged from 1.1% to 38.2%.",
+        "Brazil showed the highest rates of gambling disorder, ranging from 20.4% to 38.2%.",
+        "Gambling disorder is more common among people in deprived areas.",
+        "Gambling disorder is more common among those who do not have a high school diploma or equivalent.",
+        "Gambling disorder is more common among those with low income or unemployment."
+      ]
+    }
+  ]
+}

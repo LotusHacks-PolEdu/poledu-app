@@ -1,0 +1,57 @@
+{
+  "main_theme": "Residential Service Fee Notification",
+  "sub_topics": [
+    "Fee Breakdown (Management, Vehicle, Water, Electricity)",
+    "Outstanding Balance (Previous Month)",
+    "Payment Details (Methods & Account Information)",
+    "Payment Deadline & Late Fee Policy",
+    "Contact Information",
+    "VAT Calculation",
+    "Usage Data (Water Meter Readings)"
+  ],
+  "questions_by_chunk": [
+    {
+      "chunk_id": 0,
+      "page_label": 1,
+      "topic": "Residential Service Fee Breakdown",
+      "questions": [
+        {
+          "claim": "The apartment's area is 51.76 square meters.",
+          "question": "What is the area of the apartment in square meters?"
+        },
+        {
+          "claim": "The unit price for apartment management is 6,500 per square meter.",
+          "question": "What is the apartment management unit price per square meter?"
+        },
+        {
+          "claim": "The fee for a motorcycle, electric motorcycle, or electric bicycle is 75,000 per vehicle.",
+          "question": "What is the fee for a motorcycle, electric motorcycle, or electric bicycle?"
+        },
+        {
+          "claim": "The fee for a car is 750,000 per vehicle.",
+          "question": "What is the fee for a car?"
+        },
+        {
+          "claim": "The old water meter reading is 477 cubic meters.",
+          "question": "What was the old water meter reading in cubic meters?"
+        },
+        {
+          "claim": "The new water meter reading is 490 cubic meters.",
+          "question": "What is the new water meter reading in cubic meters?"
+        },
+        {
+          "claim": "The water usage is 13 cubic meters.",
+          "question": "What is the water usage in cubic meters?"
+        },
+        {
+          "claim": "The unit price for water is 11,304 per cubic meter.",
+          "question": "What is the unit price for water per cubic meter?"
+        },
+        {
+          "claim": "The temporary electricity cost is 2,800.",
+          "question": "What is the temporary electricity cost?"
+        }
+      ]
+    }
+  ]
+}

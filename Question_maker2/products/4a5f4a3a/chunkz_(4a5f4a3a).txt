@@ -1,0 +1,19 @@
+--- Chunk 0 (Length: 645 | Page 1) ---
+# Example 8
+
+Perry Brown needs a program that will allow him to enter the length of four sides of a polygon. The program should display the perimeter of the polygon. Complete the flowchart for this problem.
+
+# Example 9
+
+Define an algorithm that returns the number of years until a father will have an age double of its son's age.
+
+# Example 10
+
+Work out the algorithm that outputs the solutions of a 2nd order polynomial ax2 + bx + c = 0, given the parameters a, b, and c. Only real solutions will be treated. The cases with 1 or 2 solutions will be separated.
+
+Instructor: V. Q. Bao
+
+Fundamentals of Programming with Economic Applications
+
+121
+

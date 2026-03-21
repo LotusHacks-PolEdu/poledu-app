@@ -1,0 +1,850 @@
+{
+  "main_theme": "An introduction to the evolution of mobile network technologies and generations.",
+  "generated_at": "2026-03-17T14:24:56.068483",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 50,
+      "points_each": 0.12
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 8,
+      "points_each": 0.25
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 6,
+      "points_each": 0.33
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "5G Service Categories and Examples",
+        "question": "Which of the following best exemplifies an Enhanced Mobile Broadband (eMBB) application within the context of 5G services?",
+        "options": [
+          "A. Remote surgery requiring ultra-low latency.",
+          "B. Connecting a massive number of IoT sensors in a smart city.",
+          "C. Streaming live video from a sporting event to a large audience.",
+          "D. Providing reliable communication for autonomous vehicles."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "Stadium uplink for content creators is an example of an Enhanced Mobile Broadband (eMBB) application."
+      },
+      {
+        "id": 2,
+        "topic": "1G Technology Limitations",
+        "question": "What was a significant limitation of audio quality in the first generation (1G) of mobile networks?",
+        "options": [
+          "A. It was susceptible to eavesdropping due to weak encryption.",
+          "B. Audio quality was consistently high, but battery life was poor.",
+          "C. Audio quality degraded due to signal fading.",
+          "D. It lacked support for digital voice encoding."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "Audio quality in 1G degraded with fading."
+      },
+      {
+        "id": 3,
+        "topic": "6G Network Characteristics",
+        "question": "What is a key energy efficiency requirement for 6G networks?",
+        "options": [
+          "A. Increased base station density.",
+          "B. Global standardization coordination.",
+          "C. Exclusive use of millimeter wave frequencies.",
+          "D. Simplified network architecture."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Global standardization coordination is an energy efficiency requirement for 6G networks."
+      },
+      {
+        "id": 4,
+        "topic": "Frequency Reuse and Interference",
+        "question": "What signal strength generally indicates an excellent connection and high throughput in a cellular network?",
+        "options": [
+          "A. Less than -80 dB",
+          "B. Between -60 dB and -70 dB",
+          "C. Greater than 20 dB",
+          "D. Between -90 dB and -100 dB"
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "A signal strength greater than 20 dB provides an excellent connection and high throughput."
+      },
+      {
+        "id": 5,
+        "topic": "3G Cell Sizes and Environments",
+        "question": "Regarding cell sizes in 3G networks utilizing GEO satellites, where would pico cells typically be deployed?",
+        "options": [
+          "A. In rural areas with sparse coverage.",
+          "B. For wide-area coverage in metropolitan areas.",
+          "C. For indoor use.",
+          "D. Along highways for seamless handoff."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "GEO satellites utilize macro, micro, and pico cells, with pico cells being for indoor use."
+      },
+      {
+        "id": 6,
+        "topic": "LTE Network Architecture Components",
+        "question": "What core network component is utilized by VoLTE to deliver voice services over IP?",
+        "options": [
+          "A. PSTN",
+          "B. SS7",
+          "C. IMS",
+          "D. ATM"
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "VoLTE utilizes IMS for voice services over IP."
+      },
+      {
+        "id": 7,
+        "topic": "GSM Security Mechanisms",
+        "question": "What critical security element is stored within the SIM card in a GSM network?",
+        "options": [
+          "A. User's contact list.",
+          "B. Network configuration settings.",
+          "C. Secret key material.",
+          "D. Application download history."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "The SIM in GSM contains secret key material."
+      },
+      {
+        "id": 8,
+        "topic": "Cellular Network Characteristics and Limitations",
+        "question": "In UMTS networks, what is a primary source of noise that degrades signal quality?",
+        "options": [
+          "A. Atmospheric interference.",
+          "B. Interference from other users of the same cell.",
+          "C. Interference from other cells.",
+          "D. Hardware malfunctions in the mobile device."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "Noise in UMTS is generated by interference from other cells."
+      },
+      {
+        "id": 9,
+        "topic": "Cellular Network Geometry and Coverage",
+        "question": "How does the cell radius impact cellular network performance?",
+        "options": [
+          "A. It has no impact on coverage.",
+          "B. It influences cellular coverage.",
+          "C. It only affects data rates.",
+          "D. It determines the frequency band used."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "The cell radius influences cellular coverage."
+      },
+      {
+        "id": 10,
+        "topic": "3G Capabilities and Limitations",
+        "question": "What was the typical range of mobile web browsing speeds experienced in 3G networks?",
+        "options": [
+          "A. Tens of kbps.",
+          "B. Hundreds of kbps to a few Mbps.",
+          "C. Tens of Mbps.",
+          "D. Hundreds of Mbps."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Mobile web browsing speeds in 3G ranged from hundreds of kbps to a few Mbps."
+      },
+      {
+        "id": 11,
+        "topic": "Frequency Reuse and Distance",
+        "question": "How is a frequency reuse pattern commonly represented in cellular network planning?",
+        "options": [
+          "A. A square with side length D.",
+          "B. A triangle with base D.",
+          "C. A circle with radius D.",
+          "D. A rectangle with dimensions 2D x D."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "A frequency reuse pattern can be represented by a circle with radius D."
+      },
+      {
+        "id": 12,
+        "topic": "UMTS Core Network Architecture",
+        "question": "What is HSPA+ in the context of UMTS network evolution?",
+        "options": [
+          "A. A completely new network standard.",
+          "B. A replacement for the GSM core network.",
+          "C. An evolution of the earlier HSPA standard.",
+          "D. A protocol for satellite communication."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "HSPA+ is an evolution of the earlier HSPA standard."
+      },
+      {
+        "id": 13,
+        "topic": "Cellular Network Characteristics and Limitations",
+        "question": "In UMTS networks, what contributes to noise and signal degradation?",
+        "options": [
+          "A. Interference from other cells.",
+          "B. Interference from other users of the same cell.",
+          "C. Atmospheric conditions.",
+          "D. User device hardware limitations."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Noise in UMTS is generated by interference from other users of the same cell."
+      },
+      {
+        "id": 14,
+        "topic": "3G Capabilities and Limitations",
+        "question": "What characteristic of 3G networks prompted improvements in scheduling algorithms?",
+        "options": [
+          "A. Consistent high data rates.",
+          "B. Predictable latency.",
+          "C. Variable throughput and latency.",
+          "D. Unlimited bandwidth availability."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "The variable throughput and latency of 3G motivated improvements in scheduling."
+      },
+      {
+        "id": 15,
+        "topic": "Mobile Network Generation Evolution",
+        "question": "What was a key evolutionary step in mobile network technology?",
+        "options": [
+          "A. 2G evolved to 3G.",
+          "B. 3G evolved to 1G.",
+          "C. 1G evolved to 2G.",
+          "D. 4G evolved to 1G."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "1G evolved to 2G."
+      },
+      {
+        "id": 16,
+        "topic": "LTE Radio and Key Concepts",
+        "question": "What is the primary function of schedulers in LTE networks?",
+        "options": [
+          "A. To encrypt user data.",
+          "B. To assign time-frequency resource blocks to each user.",
+          "C. To manage handoffs between base stations.",
+          "D. To control the transmit power of mobile devices."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "LTE schedulers assign time-frequency resource blocks to each user."
+      },
+      {
+        "id": 17,
+        "topic": "Mobile Network Generation Drivers",
+        "question": "What changes are typically included with each new generation of mobile networks?",
+        "options": [
+          "A. Only changes to the radio access network.",
+          "B. Changes to the core network, such as switching, mobility management, and policy/QoS.",
+          "C. Only improvements in battery life.",
+          "D. Only changes to the user interface."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Each mobile network generation includes changes to the core network, such as switching, mobility management, and policy/QoS."
+      },
+      {
+        "id": 18,
+        "topic": "Mobile Network Generations Overview",
+        "question": "What is the current progression of mobile network generations?",
+        "options": [
+          "A. 1G to 4G.",
+          "B. 1G to 5G.",
+          "C. 2G to 4G.",
+          "D. 3G to 5G."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Mobile network generations have evolved from 1G to 5G."
+      },
+      {
+        "id": 19,
+        "topic": "LTE Radio and Monitoring",
+        "question": "What is a characteristic of LTE control channels?",
+        "options": [
+          "A. They are always heavily encrypted.",
+          "B. They include scheduling metadata that is often unencrypted.",
+          "C. They only carry user data.",
+          "D. They are only used during handoffs."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "LTE control channels include scheduling metadata that is often unencrypted."
+      },
+      {
+        "id": 20,
+        "topic": "EDGE Technology and Data Rates",
+        "question": "How does EDGE technology enhance data rates?",
+        "options": [
+          "A. By increasing the number of base stations.",
+          "B. By using higher-order modulation, such as 8-PSK, to increase the number of bits per symbol.",
+          "C. By reducing the frequency band used.",
+          "D. By decreasing the cell radius."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "EDGE utilizes higher-order modulation, such as 8-PSK, to increase the number of bits per symbol."
+      },
+      {
+        "id": 21,
+        "topic": "LTE Radio and Monitoring",
+        "question": "What role does LTEye play in the context of mobile networks?",
+        "options": [
+          "A. It optimizes battery life in mobile devices.",
+          "B. It helps policy makers understand spectrum use.",
+          "C. It provides real-time traffic monitoring for users.",
+          "D. It manages network security protocols."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "LTEye can help policy makers understand spectrum use."
+      },
+      {
+        "id": 22,
+        "topic": "3G Network Goals and Features",
+        "question": "What was a primary goal of 3G networks?",
+        "options": [
+          "A. To provide voice-only communication.",
+          "B. To provide higher data rates for internet access.",
+          "C. To reduce network complexity.",
+          "D. To extend battery life."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "3G networks aimed to provide higher data rates for internet access."
+      },
+      {
+        "id": 23,
+        "topic": "4G Network Architecture and Technologies",
+        "question": "What is a defining architectural characteristic of 4G networks?",
+        "options": [
+          "A. A hierarchical architecture.",
+          "B. A flat architecture.",
+          "C. A centralized architecture.",
+          "D. A mesh architecture."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "4G networks feature a flat architecture."
+      },
+      {
+        "id": 24,
+        "topic": "UMTS Core Network Architecture",
+        "question": "What components support traditional voice calling in the circuit-switched domain of UMTS?",
+        "options": [
+          "A. SGSN and GGSN.",
+          "B. MSC/VLR.",
+          "C. RNC and NodeB.",
+          "D. HSPA and HSPA+."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "The circuit-switched domain in UMTS supports traditional voice calling using MSC/VLR."
+      },
+      {
+        "id": 25,
+        "topic": "GSM Network Architecture Components",
+        "question": "Which of the following is a component of the GSM network responsible for operation and maintenance?",
+        "options": [
+          "A. BTS",
+          "B. BSC",
+          "C. Mobile Operation and maintenance center",
+          "D. MSC"
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "The Mobile Operation and maintenance center is a component of the GSM network."
+      },
+      {
+        "id": 26,
+        "topic": "Mobile Network Handoff Mechanisms",
+        "question": "What type of handoff is characterized as a 'make-before-break' connection transfer?",
+        "options": [
+          "A. Hard handoff.",
+          "B. Soft handoff.",
+          "C. Inter-system handoff.",
+          "D. Inter-frequency handoff."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Soft handoff is a make-before-break connection transfer."
+      },
+      {
+        "id": 27,
+        "topic": "Mobile Network Generation Timeline",
+        "question": "In what year did the third generation of mobile networks (3G) become commercially available?",
+        "options": [
+          "A. 1991",
+          "B. 1981",
+          "C. 2001",
+          "D. 2011"
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "The third generation of mobile networks (3G) became available in 2001."
+      },
+      {
+        "id": 28,
+        "topic": "6G Network Performance and Technologies",
+        "question": "What is a key characteristic of 6G networks?",
+        "options": [
+          "A. They are primarily focused on voice communication.",
+          "B. They are AI-Native.",
+          "C. They rely on older, established technologies.",
+          "D. They have limited support for new applications."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "6G networks are AI-Native."
+      },
+      {
+        "id": 29,
+        "topic": "IS-95 (cdmaOne) Technology",
+        "question": "What is a critical requirement for IS-95 (cdmaOne) to function effectively?",
+        "options": [
+          "A. High transmit power.",
+          "B. Tight power control to avoid near–far problems.",
+          "C. Wide frequency bands.",
+          "D. Simple modulation schemes."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "IS-95 (cdmaOne) requires tight power control to avoid near–far problems."
+      },
+      {
+        "id": 30,
+        "topic": "4G Performance Targets and LTE",
+        "question": "Which LTE feature more closely aligned with the expectations of the IMT-Advanced standard?",
+        "options": [
+          "A. LTE Release 8",
+          "B. LTE-Advanced",
+          "C. LTE Release 9",
+          "D. LTE Release 10"
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "LTE-Advanced features aligned better with IMT-Advanced expectations."
+      },
+      {
+        "id": 31,
+        "topic": "Mobile Network Generations Comparison",
+        "question": "What key technologies define 5G networks?",
+        "options": [
+          "A. A reliance on older 4G infrastructure.",
+          "B. The use of a flexible New Radio (NR) interface and a 5G core network.",
+          "C. Limited support for new applications.",
+          "D. A focus on reducing network capacity."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "5G networks, introduced in the 2020s, utilize a flexible New Radio (NR) interface and a 5G core network."
+      },
+      {
+        "id": 32,
+        "topic": "3G Capabilities and Limitations",
+        "question": "What motivated the transition from 3G to LTE and the adoption of OFDMA?",
+        "options": [
+          "A. The consistent high performance of 3G.",
+          "B. The variable throughput and latency of 3G.",
+          "C. The low cost of 3G infrastructure.",
+          "D. The simplicity of 3G scheduling algorithms."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "The variable throughput and latency of 3G motivated the move to OFDMA in LTE."
+      },
+      {
+        "id": 33,
+        "topic": "6G Key Technologies",
+        "question": "What is a significant advantage of Terahertz Communication in the context of 6G networks?",
+        "options": [
+          "A. Reduced power consumption.",
+          "B. Extremely high data throughput.",
+          "C. Improved signal penetration.",
+          "D. Lower network complexity."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Terahertz Communication provides extremely high data throughput."
+      },
+      {
+        "id": 34,
+        "topic": "Mobile Network Power Control",
+        "question": "Why is power control particularly important in Code Division Multiple Access (CDMA) systems?",
+        "options": [
+          "A. To minimize interference.",
+          "B. To maximize battery life.",
+          "C. To simplify network planning.",
+          "D. To increase data rates."
+        ],
+        "answer": "A",
+        "points": 0.12,
+        "source_claim": "Power control is critical in Code Division Multiple Access (CDMA) systems."
+      },
+      {
+        "id": 35,
+        "topic": "Frequency Reuse and Distance",
+        "question": "What does the parameter 'N' represent in the context of a frequency reuse pattern?",
+        "options": [
+          "A. The number of base stations.",
+          "B. The frequency band used.",
+          "C. The distance between cells.",
+          "D. The number of cells in a cluster that uses a complete set of frequencies."
+        ],
+        "answer": "D",
+        "points": 0.12,
+        "source_claim": "Planning involves choosing N to balance capacity."
+      },
+      {
+        "id": 36,
+        "topic": "Mobile Network Generation Evolution",
+        "question": "What evolutionary step followed LTE in mobile network technology?",
+        "options": [
+          "A. LTE-Advanced Pro",
+          "B. LTE-Advanced",
+          "C. 5G NR",
+          "D. 4G+"
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "LTE evolved to LTE-Advanced."
+      },
+      {
+        "id": 37,
+        "topic": "Frequency Reuse and Interference",
+        "question": "How is a frequency reuse pattern organized in a cellular network?",
+        "options": [
+          "A. Randomly distributed frequencies.",
+          "B. A cluster of N cells uses a complete set of frequencies and then this pattern repeats.",
+          "C. Each cell uses a unique frequency.",
+          "D. Frequencies are assigned based on user demand."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "A cluster of N cells uses a complete set of frequencies and then this pattern repeats."
+      },
+      {
+        "id": 38,
+        "topic": "GPRS Technology and Architecture",
+        "question": "What new core network nodes were introduced with GPRS?",
+        "options": [
+          "A. BTS and BSC.",
+          "B. MSC and VLR.",
+          "C. SGSN.",
+          "D. NodeB and RNC."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "GPRS introduces packet core nodes called SGSN."
+      },
+      {
+        "id": 39,
+        "topic": "LTE Radio and Key Concepts",
+        "question": "What multiple access technique is used in the downlink of LTE?",
+        "options": [
+          "A. TDMA",
+          "B. CDMA",
+          "C. OFDMA with many narrow subcarriers.",
+          "D. FDMA"
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "Downlink in LTE uses Orthogonal Frequency Division Multiple Access (OFDMA) with many narrow subcarriers."
+      },
+      {
+        "id": 40,
+        "topic": "LTE-Advanced (4G+) Features",
+        "question": "What technologies in LTE-Advanced contribute to improved performance, particularly at the network edge?",
+        "options": [
+          "A. MIMO and beamforming.",
+          "B. CoMP and interference coordination.",
+          "C. Carrier aggregation and VoLTE.",
+          "D. QPSK and QAM."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "CoMP and interference coordination in LTE-Advanced improve performance at the edge of the network."
+      },
+      {
+        "id": 41,
+        "topic": "2G, 2.5G, and 2.75G Technologies",
+        "question": "What key feature did GPRS introduce to mobile networks?",
+        "options": [
+          "A. Circuit switching.",
+          "B. Packet switching.",
+          "C. Frequency hopping.",
+          "D. Time division multiplexing."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "GPRS introduces packet switching."
+      },
+      {
+        "id": 42,
+        "topic": "4G Network Architecture and Technologies",
+        "question": "Compared to previous generations, what is a notable characteristic of 4G networks?",
+        "options": [
+          "A. Higher latency.",
+          "B. Lower data rates.",
+          "C. Lower latency.",
+          "D. Increased network complexity."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "4G networks exhibit lower latency compared to previous generations."
+      },
+      {
+        "id": 43,
+        "topic": "5G Performance Requirements",
+        "question": "What is the user experienced data rate target for 5G networks in typical coverage?",
+        "options": [
+          "A. 10 Mbit/s downlink.",
+          "B. 50 Mbit/s downlink.",
+          "C. 100 Mbit/s downlink.",
+          "D. 500 Mbit/s downlink."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "The user experienced data rate for 5G is 100 Mbit/s downlink in typical coverage."
+      },
+      {
+        "id": 44,
+        "topic": "Mobile Network Channel Types",
+        "question": "What enhancement does 5G bring to channel management?",
+        "options": [
+          "A. Simplified channel allocation.",
+          "B. Reduced channel bandwidth.",
+          "C. Richer control for beam management.",
+          "D. Elimination of control channels."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "5G adds richer control for beam management."
+      },
+      {
+        "id": 45,
+        "topic": "Cellular Network Fundamentals",
+        "question": "What is a fundamental characteristic of cells in a cellular network?",
+        "options": [
+          "A. They are served by high-power base stations.",
+          "B. They are served by low-power base stations.",
+          "C. They cover large geographical areas.",
+          "D. They operate on a single frequency."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Cells are served by low-power base stations."
+      },
+      {
+        "id": 46,
+        "topic": "LTE and 5G Signal Strength",
+        "question": "What do RSRP, RSRQ, and SINR values indicate in LTE and 5G networks?",
+        "options": [
+          "A. Network congestion levels.",
+          "B. User location information.",
+          "C. Signal strength and quality.",
+          "D. Battery life of mobile devices."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "An RSRP (dBm) value less than or equal to -100 dBm corresponds to an RSRQ (dB) value less than or equal to -20 dB and a SINR (dB) value less than or equal to 0 dB."
+      },
+      {
+        "id": 47,
+        "topic": "Mobile Network Generation Evolution",
+        "question": "What is a consistent trend observed across successive generations of mobile networks?",
+        "options": [
+          "A. Decreasing data rates.",
+          "B. Increasing network complexity.",
+          "C. Each generation of mobile networks improves data rates.",
+          "D. Reduced coverage areas."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "Each generation of mobile networks improves data rates."
+      },
+      {
+        "id": 48,
+        "topic": "Soft Handoff and RAKE Receiver",
+        "question": "What technologies work together to provide smoother mobility in cellular networks?",
+        "options": [
+          "A. Frequency hopping and power control.",
+          "B. Soft handoff and a RAKE receiver.",
+          "C. Cell selection and cell reselection.",
+          "D. Modulation and coding schemes."
+        ],
+        "answer": "B",
+        "points": 0.12,
+        "source_claim": "Soft handoff and a RAKE receiver provide smoother mobility."
+      },
+      {
+        "id": 49,
+        "topic": "Soft Handoff and RAKE Receiver",
+        "question": "During soft handoff, how many base stations can a User Equipment (UE) connect to simultaneously?",
+        "options": [
+          "A. Only one.",
+          "B. Two.",
+          "C. Multiple, briefly.",
+          "D. None, handoff is instantaneous."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "A User Equipment (UE) can connect to multiple base stations briefly during transitions using soft handoff."
+      },
+      {
+        "id": 50,
+        "topic": "Mobile Network Generation Evolution",
+        "question": "What was the evolutionary path from IS-95?",
+        "options": [
+          "A. To GSM.",
+          "B. To 3G.",
+          "C. To CDMA2000.",
+          "D. To LTE."
+        ],
+        "answer": "C",
+        "points": 0.12,
+        "source_claim": "IS-95 evolved to CDMA2000."
+      }
+    ],
+    "true_false": [
+      {
+        "id": 1,
+        "topic": "3G Upgrades and Evolution",
+        "statement": "HSDPA, HSUPA, and HSPA+ represent advancements built upon the foundation of 3G technology.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the original claim, confirming they are considered 'evolved 3G' systems.",
+        "points": 0.25,
+        "source_claim": "HSDPA, HSUPA, and HSPA+ are considered 'evolved 3G' systems."
+      },
+      {
+        "id": 2,
+        "topic": "Mobile Network Channel Types",
+        "statement": "Control channels in mobile networks primarily transmit user data.",
+        "answer": false,
+        "explanation": "This statement is false. Control channels carry signaling and synchronization information, *not* user data. The original claim stated they carry synchronization information.",
+        "points": 0.25,
+        "source_claim": "Control channels in a mobile network carry synchronization information."
+      },
+      {
+        "id": 3,
+        "topic": "6G Network Characteristics",
+        "statement": "6G networks prioritize enhanced security as a key component of their energy-saving designs.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the original claim, stating cybersecurity is an energy efficiency requirement.",
+        "points": 0.25,
+        "source_claim": "Cybersecurity risks are an energy efficiency requirement for 6G networks."
+      },
+      {
+        "id": 4,
+        "topic": "Mobile Network Generations Comparison",
+        "statement": "2G networks, launched in the 1980s, enabled digital voice calls and text messaging.",
+        "answer": false,
+        "explanation": "This is false. 2G networks were introduced in the 1990s, not the 1980s. The decade was altered.",
+        "points": 0.25,
+        "source_claim": "2G networks, introduced in the 1990s, supported digital voice and Short Message Service (SMS)."
+      },
+      {
+        "id": 5,
+        "topic": "5G Service Categories and Examples",
+        "statement": "Smart agricultural sensors are a typical application of Massive Machine-Type Communications (mMTC) in 5G.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the original claim, using 'smart agricultural sensors' as an example of mMTC devices, similar to 'meters'.",
+        "points": 0.25,
+        "source_claim": "Meters are an example of devices utilizing Massive Machine-Type Communications (mMTC)."
+      },
+      {
+        "id": 6,
+        "topic": "LTE Radio and Key Concepts",
+        "statement": "Single-Input Single-Output (SISO) technology utilizes multiple antennas to boost data rates and signal strength in LTE systems.",
+        "answer": false,
+        "explanation": "This is false. MIMO, not SISO, uses multiple antennas. The acronym was swapped to create a false statement.",
+        "points": 0.25,
+        "source_claim": "Multiple-Input Multiple-Output (MIMO) uses multiple antennas to improve throughput and coverage in LTE."
+      },
+      {
+        "id": 7,
+        "topic": "Cellular Network Characteristics and Limitations",
+        "statement": "In UMTS networks, dropping users near cell boundaries effectively expands the cell's coverage area.",
+        "answer": false,
+        "explanation": "This is the opposite of the original claim. Dropping edge users *shrinks* the effective cell size, it does not expand it.",
+        "points": 0.25,
+        "source_claim": "Dropping of edge users in UMTS shrinks the effective cell size."
+      },
+      {
+        "id": 8,
+        "topic": "2G Mobile Network Technology",
+        "statement": "2G technology marked a transition from digital to analog communication methods.",
+        "answer": false,
+        "explanation": "This is false. 2G represented a shift *from analog to digital* traffic channels, not the other way around. The direction of the transition was inverted.",
+        "points": 0.25,
+        "source_claim": "2G networks represent a shift from analog to digital traffic channels."
+      }
+    ],
+    "short_answer": [
+      {
+        "id": 1,
+        "topic": "Multiple Access Techniques in Mobile Networks",
+        "question": "Describe how OFDMA improves spectral efficiency in mobile networks.",
+        "answer": "OFDMA achieves spectral efficiency by dynamically sharing many narrow subcarriers, allowing for flexible resource allocation based on user needs and channel conditions.",
+        "points": 0.33,
+        "source_claim": "OFDMA shares many narrow subcarriers dynamically."
+      },
+      {
+        "id": 2,
+        "topic": "GSM Air Interface Specifications",
+        "question": "What is the primary purpose of a speech codec within the GSM air interface?",
+        "answer": "A speech codec in GSM is used to compress and decompress voice signals, enabling efficient transmission of audio over the limited bandwidth available.",
+        "points": 0.33,
+        "source_claim": "Voice in GSM is encoded using a speech codec."
+      },
+      {
+        "id": 3,
+        "topic": "Mobile Network Generation Drivers",
+        "question": "Name at least two specific aspects of radio access that typically change with each new mobile network generation.",
+        "answer": "Each generation typically changes the waveform used for transmission, and the multiple access technique employed to share the radio spectrum.",
+        "points": 0.33,
+        "source_claim": "Each mobile network generation includes changes to radio access, such as waveform, multiple access, coding, and MIMO."
+      },
+      {
+        "id": 4,
+        "topic": "Mobile Network Capacity Scaling",
+        "question": "Explain how sectoring contributes to increasing the capacity of a mobile network.",
+        "answer": "Sectoring increases capacity by dividing a cell into multiple sectors, each serving a smaller area and reusing frequencies, thereby reducing interference and increasing overall network throughput.",
+        "points": 0.33,
+        "source_claim": "Three sectors per site is an example of sectoring."
+      },
+      {
+        "id": 5,
+        "topic": "Mobile Network Generation Evolution",
+        "question": "What is the direct evolutionary path from WCDMA to a later mobile network technology?",
+        "answer": "WCDMA directly evolved into LTE-Advanced, building upon its foundation to deliver higher data rates and improved performance.",
+        "points": 0.33,
+        "source_claim": "WCDMA evolved to LTE-Advanced."
+      },
+      {
+        "id": 6,
+        "topic": "5G Core Network Architecture",
+        "question": "What role does the PCF play within the 5G core network architecture?",
+        "answer": "PCF (Policy Control Function) is a key network function in the 5G core responsible for policy control and charging, managing quality of service and data usage.",
+        "points": 0.33,
+        "source_claim": "PCF is a Key Network Function in the 5G core."
+      }
+    ]
+  }
+}

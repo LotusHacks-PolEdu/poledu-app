@@ -1,0 +1,70 @@
+Initializing Pipeline...
+Initializing Pipeline...
+============================================================
+STEP 1/5: Parsing PDF...
+============================================================
+Started parsing the file under job_id 1af519fa-b348-427e-afa8-12f05491d486
+  ✓ Parsed 1 pages → c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21\chunkz_(1af0fb21).txt
+
+============================================================
+STEP 2/5: Storing chunks in local database...
+============================================================
+Successfully stored 1 chunks locally in c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\database\1af0fb21
+
+============================================================
+STEP 3/5: Extracting claims...
+============================================================
+Fetching chunks from local database...
+Found 1 chunks.
+Extracting document theme...
+  Main theme: Residential Service Fee Notification
+  Sub-topics: ['Fee Breakdown (Management, Vehicle, Water, Electricity)', 'Outstanding Balance (Previous Month)', 'Payment Details (Methods & Account Information)', 'Payment Deadline & Late Fee Policy', 'Contact Information', 'VAT Calculation', 'Usage Data (Water Meter Readings)']
+Processing Chunk 0 (Page 1)...
+
+Done. Extracted 9 new claims from 1 chunks.
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21\extracted_claims_(1af0fb21).json
+
+============================================================
+STEP 4/5: Converting claims to verification questions...
+============================================================
+Loaded 1 chunks — Main theme: Residential Service Fee Notification
+Processing Chunk 0 (Page 1, 9 claims)...
+
+Done. Generated 9 questions from 1 chunks.
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21\claim_questions_(1af0fb21).json
+
+============================================================
+STEP 5/5: Generating test...
+============================================================
+Loading claims...
+  Loaded 9 claims — Theme: Residential Service Fee Notification
+  [WARN] Requested 28 questions but only 9 claims available. Reducing counts proportionally.
+  Sampled: 4 MCQ, 2 T/F, 1 Short
+
+[1/3] Multiple Choice
+  Generating 4 MCQ questions...
+  ✓ Generated 4 MCQ questions
+
+[2/3] True / False
+  Generating 2 T/F questions...
+  ✓ Generated 2 T/F questions
+
+[3/3] Short Answer
+  Generating 1 short-answer questions...
+  ✓ Generated 1 short-answer questions
+
+Done! Generated 7 questions total (max score: 10).
+  MCQ: 4 questions × 1.5 pts = 6 pts
+  T/F: 2 questions × 1.0 pts = 2 pts
+  Short: 1 questions × 2.0 pts = 2 pts
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21\generated_test_(1af0fb21).json
+
+============================================================
+ALL DONE!
+  Run code:       1af0fb21
+  Output folder:  c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21
+  Local DB path:  c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\database\1af0fb21
+  Claims file:    c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21\extracted_claims_(1af0fb21).json
+  Questions file: c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21\claim_questions_(1af0fb21).json
+  Test file:      c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\1af0fb21\generated_test_(1af0fb21).json
+============================================================

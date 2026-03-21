@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing / Load Screen -->
+  <div id="landing-screen" class="screen active">
+    <div class="landing-container">
+      <div class="landing-icon">📝</div>
+      <h1>Student Test</h1>
+      <p class="landing-subtitle">Load your generated test JSON to begin</p>
+      <label for="file-input" class="btn btn-primary btn-large">
+        <span class="btn-icon">📂</span> Load Test File
+      </label>
+      <input type="file" id="file-input" accept=".json" hidden>
+      <p id="load-error" class="error-msg"></p>
+    </div>
+  </div>
+
+  <!-- Test Screen -->
+  <div id="test-screen" class="screen">
+    <header id="test-header">
+      <div class="header-left">
+        <h1 id="theme-title"></h1>
+        <div class="header-meta">
+          <span id="score-info" class="badge"></span>
+          <span id="progress-info" class="badge badge-outline"></span>
+        </div>
+      </div>
+      <button id="submit-btn" class="btn btn-primary" disabled>Submit Test</button>
+    </header>
+
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <main id="questions-container">
+      <!-- Section: Multiple Choice -->
+      <section id="section-mcq" class="question-section">
+        <div class="section-header">
+          <h2>📋 Multiple Choice</h2>
+          <span class="section-points" id="mcq-points"></span>
+        </div>
+        <div id="mcq-questions" class="questions-list"></div>
+      </section>
+
+      <!-- Section: True / False -->
+      <section id="section-tf" class="question-section">
+        <div class="section-header">
+          <h2>✅ True / False</h2>
+          <span class="section-points" id="tf-points"></span>
+        </div>
+        <div id="tf-questions" class="questions-list"></div>
+      </section>
+
+      <!-- Section: Short Answer -->
+      <section id="section-short" class="question-section">
+        <div class="section-header">
+          <h2>✍️ Short Answer</h2>
+          <span class="section-points" id="short-points"></span>
+        </div>
+        <div id="short-questions" class="questions-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Results Screen -->
+  <div id="results-screen" class="screen">
+    <div class="results-container">
+      <div class="results-header">
+        <div class="results-score-circle" id="results-score-circle">
+          <span id="results-score-value">0</span>
+          <span class="results-score-total" id="results-score-total">/10</span>
+        </div>
+        <h1>Test Results</h1>
+        <p id="results-subtitle" class="results-subtitle"></p>
+      </div>
+
+      <div class="results-breakdown">
+        <div class="breakdown-card" id="breakdown-mcq">
+          <div class="breakdown-icon">📋</div>
+          <div class="breakdown-label">Multiple Choice</div>
+          <div class="breakdown-score" id="breakdown-mcq-score">0/0</div>
+        </div>
+        <div class="breakdown-card" id="breakdown-tf">
+          <div class="breakdown-icon">✅</div>
+          <div class="breakdown-label">True / False</div>
+          <div class="breakdown-score" id="breakdown-tf-score">0/0</div>
+        </div>
+        <div class="breakdown-card" id="breakdown-short">
+          <div class="breakdown-icon">✍️</div>
+          <div class="breakdown-label">Short Answer</div>
+          <div class="breakdown-score" id="breakdown-short-score">0/0</div>
+        </div>
+      </div>
+
+      <h2 class="review-heading">Review Answers</h2>
+
+      <div id="review-container"></div>
+
+      <div class="results-actions">
+        <button id="retake-btn" class="btn btn-primary btn-large">🔄 Retake Test</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

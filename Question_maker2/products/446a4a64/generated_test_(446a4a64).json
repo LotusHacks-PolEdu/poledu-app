@@ -1,0 +1,346 @@
+{
+  "main_theme": "Seasons, Weather, and Small Talk in German-Speaking Countries",
+  "generated_at": "2026-03-16T09:42:46.297328",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 14,
+      "points_each": 0.43
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 8,
+      "points_each": 0.25
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 6,
+      "points_each": 0.33
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "German Seasons and Months",
+        "question": "Which months typically constitute summer in Germany?",
+        "options": [
+          "A. March to May",
+          "B. June to August",
+          "C. September to November",
+          "D. December to February"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "From June to August, it is summer in Germany."
+      },
+      {
+        "id": 2,
+        "topic": "German Small Talk Topics",
+        "question": "When engaging in casual conversation in Germany, which topic is generally considered appropriate?",
+        "options": [
+          "A. Personal finances",
+          "B. Political affiliations",
+          "C. Discussing food",
+          "D. Detailed medical history"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Discussing food is a suitable topic for small talk in Germany."
+      },
+      {
+        "id": 3,
+        "topic": "Vacation Item Associations",
+        "question": "Which of the following items would you most likely associate with planning a trip to a new city?",
+        "options": [
+          "A. A winter coat",
+          "B. A travel guide",
+          "C. A pair of skis",
+          "D. A swimsuit"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "A travel guide is associated with some vacation locations."
+      },
+      {
+        "id": 4,
+        "topic": "Vacation Item Associations",
+        "question": "In which vacation scenario might a handbag be particularly useful?",
+        "options": [
+          "A. A camping trip in the mountains",
+          "B. A city break for shopping",
+          "C. A skiing holiday in the Alps",
+          "D. A hiking expedition in the forest"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "A handbag is associated with some vacation locations."
+      },
+      {
+        "id": 5,
+        "topic": "Weather Vocabulary and Descriptions",
+        "question": "How would you say 'it is raining' in German?",
+        "options": [
+          "A. Es ist kalt",
+          "B. Es ist windig",
+          "C. Es regnet",
+          "D. Es ist sonnig"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Rain is described as 'es regnet'."
+      },
+      {
+        "id": 6,
+        "topic": "German Tourism and Vacation Preferences",
+        "question": "During what months do children in Austria typically have their summer break?",
+        "options": [
+          "A. March to May",
+          "B. April to June",
+          "C. June to September",
+          "D. October to December"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Children in Austria have summer vacation between June and September."
+      },
+      {
+        "id": 7,
+        "topic": "Vacation Item Associations",
+        "question": "Which vacation destination would most likely prompt you to pack sunglasses?",
+        "options": [
+          "A. A ski resort in the Alps",
+          "B. A beach on the Mediterranean",
+          "C. A Christmas market in December",
+          "D. A forest cabin in autumn"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "Sunglasses are associated with some vacation locations."
+      },
+      {
+        "id": 8,
+        "topic": "German Small Talk Topics",
+        "question": "Which of the following topics is considered suitable for initiating small talk in Germany?",
+        "options": [
+          "A. Detailed family history",
+          "B. Sports, cinema, theater, vacation, and music",
+          "C. Income and investments",
+          "D. Religious beliefs"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "Sports, cinema, theater, vacation, and music are potential small talk topics."
+      },
+      {
+        "id": 9,
+        "topic": "Vacation Item Associations",
+        "question": "In what type of vacation activity would a helmet be most essential?",
+        "options": [
+          "A. Sunbathing on a beach",
+          "B. Visiting a museum",
+          "C. Cycling down a mountain",
+          "D. Attending a concert"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "A helmet is associated with some vacation locations."
+      },
+      {
+        "id": 10,
+        "topic": "German Tourism and Vacation Preferences",
+        "question": "According to tourism experts, what activities attract visitors to Germany, Austria, and Switzerland?",
+        "options": [
+          "A. Deep-sea fishing and surfing",
+          "B. Cycling and hiking",
+          "C. Desert safaris and camel riding",
+          "D. Volcano trekking and rainforest exploration"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "Tourism experts state people travel to Germany, Austria, or Switzerland to cycle or hike."
+      },
+      {
+        "id": 11,
+        "topic": "German Small Talk Topics",
+        "question": "What is a very common topic for starting a conversation in Central Europe?",
+        "options": [
+          "A. The stock market",
+          "B. The latest scientific discoveries",
+          "C. Weather",
+          "D. Philosophical debates"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Weather is a top topic for small talk in Central Europe."
+      },
+      {
+        "id": 12,
+        "topic": "Vacation Item Associations",
+        "question": "Which vacation location would necessitate packing gloves?",
+        "options": [
+          "A. A tropical island",
+          "B. A ski resort in the mountains",
+          "C. A beach in Spain",
+          "D. A city known for its warm climate"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "Gloves are associated with some vacation locations."
+      },
+      {
+        "id": 13,
+        "topic": "Weather Vocabulary and Descriptions",
+        "question": "How would you describe a sunny day in German?",
+        "options": [
+          "A. Es ist bewölkt",
+          "B. Es ist regnerisch",
+          "C. Es ist sonnig",
+          "D. Es ist windig"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Sunshine is described as 'es ist sonnig'."
+      },
+      {
+        "id": 14,
+        "topic": "Weather Vocabulary and Descriptions",
+        "question": "How is snowfall described in German?",
+        "options": [
+          "A. Es regnet",
+          "B. Es schneit",
+          "C. Es ist kalt",
+          "D. Es ist warm"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "Snowfall is described as 'es schneit'."
+      }
+    ],
+    "true_false": [
+      {
+        "id": 1,
+        "topic": "German Tourism and Vacation Preferences",
+        "statement": "Individuals enjoying camping trips will sometimes change their campsite if the weather turns bad.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the claim that campers may relocate during inclement weather.",
+        "points": 0.25,
+        "source_claim": "Campers may relocate during inclement weather."
+      },
+      {
+        "id": 2,
+        "topic": "Vacation Item Associations",
+        "statement": "Swim trunks are generally not considered appropriate attire for vacations in the German Alps.",
+        "answer": false,
+        "explanation": "The original claim stated swim trunks *are* associated with some vacation locations. This inverts that relationship, making it false.",
+        "points": 0.25,
+        "source_claim": "Swim trunks are associated with some vacation locations."
+      },
+      {
+        "id": 3,
+        "topic": "Vacation Item Associations",
+        "statement": "Bringing an umbrella is rarely useful when planning a trip to a German coastal region.",
+        "answer": false,
+        "explanation": "The original claim stated an umbrella *is* associated with some vacation locations. This statement makes the opposite claim.",
+        "points": 0.25,
+        "source_claim": "An umbrella is associated with some vacation locations."
+      },
+      {
+        "id": 4,
+        "topic": "Vacation Item Associations",
+        "statement": "A warm sleeping bag is commonly packed for camping holidays in the Bavarian Alps.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the claim that a sleeping bag is associated with some vacation locations.",
+        "points": 0.25,
+        "source_claim": "A sleeping bag is associated with some vacation locations."
+      },
+      {
+        "id": 5,
+        "topic": "Vacation Item Associations",
+        "statement": "Toiletries like soap are not typically considered essential items to pack for a vacation.",
+        "answer": false,
+        "explanation": "The original claim stated soap *is* associated with some vacation locations. This statement negates that.",
+        "points": 0.25,
+        "source_claim": "Soap is associated with some vacation locations."
+      },
+      {
+        "id": 6,
+        "topic": "German Small Talk Topics",
+        "statement": "Discussing current political events is generally considered a safe and welcome topic for initial conversations in Germany.",
+        "answer": false,
+        "explanation": "The original claim stated politics is *not* a good topic for small talk. This inverts the statement.",
+        "points": 0.25,
+        "source_claim": "Politics is not a good topic for small talk in many countries."
+      },
+      {
+        "id": 7,
+        "topic": "German Small Talk Topics",
+        "statement": "In German-speaking countries, it's unusual to ask someone if they've tried a specific restaurant as a way to start a casual conversation.",
+        "answer": false,
+        "explanation": "The original claim stated asking about restaurants *is* a small talk topic. This statement makes the opposite claim.",
+        "points": 0.25,
+        "source_claim": "Asking if someone has eaten at a particular place is a small talk topic."
+      },
+      {
+        "id": 8,
+        "topic": "Vacation Item Associations",
+        "statement": "A waterproof rain jacket is often packed for vacations to the North Sea coast.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the claim that a rain jacket is associated with some vacation locations.",
+        "points": 0.25,
+        "source_claim": "A rain jacket is associated with some vacation locations."
+      }
+    ],
+    "short_answer": [
+      {
+        "id": 1,
+        "topic": "German Small Talk Topics",
+        "question": "In German-speaking cultures, what general guideline should be followed when discussing others during initial conversations?",
+        "answer": "It's best to avoid speaking negatively about other people during small talk, as it's considered impolite.",
+        "points": 0.33,
+        "source_claim": "Speaking negatively about other people should be avoided during small talk."
+      },
+      {
+        "id": 2,
+        "topic": "Weather Vocabulary and Descriptions",
+        "question": "How would you describe windy weather in German, using a common phrase?",
+        "answer": "Windy weather is described as 'es ist windig' in German.",
+        "points": 0.33,
+        "source_claim": "Wind is described as 'es ist windig'."
+      },
+      {
+        "id": 3,
+        "topic": "German Small Talk Topics",
+        "question": "Why might discussing personal finances be considered inappropriate during casual conversation in many countries, including German-speaking ones?",
+        "answer": "Money is generally considered a private matter and discussing it can be seen as impolite or intrusive during small talk.",
+        "points": 0.33,
+        "source_claim": "Money is not a good topic for small talk in many countries."
+      },
+      {
+        "id": 4,
+        "topic": "German Tourism and Vacation Preferences",
+        "question": "Briefly describe what activities are typically involved in a camping vacation.",
+        "answer": "Camping typically involves preparing and consuming food, and sleeping in temporary shelter outdoors.",
+        "points": 0.33,
+        "source_claim": "Camping involves cooking, eating, and sleeping outdoors."
+      },
+      {
+        "id": 5,
+        "topic": "Vacation Item Associations",
+        "question": "What type of vacation or location would you most likely need to bring a swimsuit to?",
+        "answer": "A swimsuit is associated with vacations to places with swimming opportunities, such as beaches or swimming pools.",
+        "points": 0.33,
+        "source_claim": "A swimsuit is associated with some vacation locations."
+      },
+      {
+        "id": 6,
+        "topic": "Vacation Item Associations",
+        "question": "What type of vacation or location would you most likely need to bring a tent to?",
+        "answer": "A tent is associated with camping vacations, where it provides shelter outdoors.",
+        "points": 0.33,
+        "source_claim": "A tent is associated with some vacation locations."
+      }
+    ]
+  }
+}

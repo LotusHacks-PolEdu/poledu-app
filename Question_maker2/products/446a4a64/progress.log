@@ -1,0 +1,79 @@
+Initializing Pipeline...
+Initializing Pipeline...
+============================================================
+STEP 1/5: Parsing PDF...
+============================================================
+Started parsing the file under job_id dbf9ec64-a823-478b-bf02-4c55213e956c
+  ✓ Parsed 6 pages → c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64\chunkz_(446a4a64).txt
+
+============================================================
+STEP 2/5: Storing chunks in local database...
+============================================================
+Successfully stored 6 chunks locally in c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\database\446a4a64
+
+============================================================
+STEP 3/5: Extracting claims...
+============================================================
+Fetching chunks from local database...
+Found 6 chunks.
+Extracting document theme...
+  Main theme: Seasons, Weather, and Small Talk in German-Speaking Countries
+  Sub-topics: ['Weather Vocabulary and Descriptions', 'Predicting Weather Patterns', 'Comparative Adjectives', 'Months of the Year', 'Seasons (Spring, Summer, Autumn, Winter)', 'Small Talk Topics (Weather, Food, Leisure)', 'Small Talk Etiquette']
+Processing Chunk 0 (Page 1)...
+Processing Chunk 1 (Page 2)...
+Processing Chunk 2 (Page 3)...
+Processing Chunk 3 (Page 4)...
+Processing Chunk 4 (Page 5)...
+Processing Chunk 5 (Page 6)...
+
+Done. Extracted 40 new claims from 6 chunks.
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64\extracted_claims_(446a4a64).json
+
+============================================================
+STEP 4/5: Converting claims to verification questions...
+============================================================
+Loaded 6 chunks — Main theme: Seasons, Weather, and Small Talk in German-Speaking Countries
+Processing Chunk 0 (Page 1, 5 claims)...
+Processing Chunk 1 (Page 2, 4 claims)...
+Processing Chunk 2 (Page 3, 8 claims)...
+Processing Chunk 3 (Page 4, 5 claims)...
+Chunk 4 (Page 5): no claims, skipping.
+Processing Chunk 5 (Page 6, 18 claims)...
+
+Done. Generated 40 questions from 6 chunks.
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64\claim_questions_(446a4a64).json
+
+============================================================
+STEP 5/5: Generating test...
+============================================================
+Loading claims...
+  Loaded 40 claims — Theme: Seasons, Weather, and Small Talk in German-Speaking Countries
+  Sampled: 14 MCQ, 8 T/F, 6 Short
+
+[1/3] Multiple Choice
+  Generating 14 MCQ questions...
+  ✓ Generated 14 MCQ questions
+
+[2/3] True / False
+  Generating 8 T/F questions...
+  ✓ Generated 8 T/F questions
+
+[3/3] Short Answer
+  Generating 6 short-answer questions...
+  ✓ Generated 6 short-answer questions
+
+Done! Generated 28 questions total (max score: 10).
+  MCQ: 14 questions × 0.43 pts = 6 pts
+  T/F: 8 questions × 0.25 pts = 2 pts
+  Short: 6 questions × 0.33 pts = 2 pts
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64\generated_test_(446a4a64).json
+
+============================================================
+ALL DONE!
+  Run code:       446a4a64
+  Output folder:  c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64
+  Local DB path:  c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\database\446a4a64
+  Claims file:    c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64\extracted_claims_(446a4a64).json
+  Questions file: c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64\claim_questions_(446a4a64).json
+  Test file:      c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\446a4a64\generated_test_(446a4a64).json
+============================================================

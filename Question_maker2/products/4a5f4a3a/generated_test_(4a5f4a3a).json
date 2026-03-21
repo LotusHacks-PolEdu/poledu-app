@@ -1,0 +1,75 @@
+{
+  "main_theme": "Algorithmic problem-solving in introductory programming.",
+  "generated_at": "2026-03-17T16:02:07.326470",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 2,
+      "points_each": 3.0
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 1,
+      "points_each": 2.0
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 1,
+      "points_each": 2.0
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "Algorithmic Problem Definitions",
+        "question": "Which of the following problems is demonstrably solvable by an algorithm?",
+        "options": [
+          "A. Determining the philosophical meaning of life.",
+          "B. Predicting the exact price of a specific stock tomorrow.",
+          "C. Calculating the number of years until a father's age is double his son's age, given their current ages.",
+          "D. Proving or disproving the Riemann Hypothesis."
+        ],
+        "answer": "C",
+        "points": 3.0,
+        "source_claim": "An algorithm can determine the number of years until a father's age is double his son's age."
+      },
+      {
+        "id": 2,
+        "topic": "Algorithmic Problem Definitions",
+        "question": "A programmer needs to write a program to calculate the perimeter of a quadrilateral. What information is *sufficient* for the program to perform this calculation?",
+        "options": [
+          "A. The lengths of two adjacent sides and one diagonal.",
+          "B. The area and the length of one side.",
+          "C. The lengths of all four sides.",
+          "D. The coordinates of all four vertices."
+        ],
+        "answer": "C",
+        "points": 3.0,
+        "source_claim": "A program can calculate and display the perimeter of a polygon given the lengths of its four sides."
+      }
+    ],
+    "true_false": [
+      {
+        "id": 1,
+        "topic": "Algorithmic Problem Definitions",
+        "statement": "Algorithms can reliably determine the roots of any quadratic equation expressed as ax² + bx + c = 0, provided the coefficients a, b, and c are known.",
+        "answer": false,
+        "explanation": "While algorithms can *approximate* roots, they cannot always find *real* solutions, especially when the discriminant (b² - 4ac) is negative, resulting in complex roots. The statement implies a guaranteed real solution.",
+        "points": 2.0,
+        "source_claim": "An algorithm can output the real solutions of a second-order polynomial equation of the form ax² + bx + c = 0, given parameters a, b, and c."
+      }
+    ],
+    "short_answer": [
+      {
+        "id": 1,
+        "topic": "Algorithmic Problem Definitions",
+        "question": "Describe one way a program could utilize input representing the lengths of four sides of a polygon.",
+        "answer": "A program could use these lengths to calculate the polygon's perimeter by summing the four values. Alternatively, it could determine if the given lengths could form a valid quadrilateral based on triangle inequality principles.",
+        "points": 2.0,
+        "source_claim": "A program can accept the lengths of four sides of a polygon as input."
+      }
+    ]
+  }
+}

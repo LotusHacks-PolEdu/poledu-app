@@ -1,0 +1,12 @@
+{
+  "run_code": "a2ad3137",
+  "pdf_hash": "e53ed3d0c7dd4add27d791d8d8d24f0e49ab87a40b99043b73a022a28446675a",
+  "source_filename": "Fundamentals_of_Electrical_Engineering_I_9648.pdf",
+  "created_at": "2026-03-16T16:41:15.589323Z",
+  "mode": "full_pipeline",
+  "artifacts": {
+    "claims": true,
+    "questions": true,
+    "test": true
+  }
+}

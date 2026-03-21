@@ -1,0 +1,23 @@
+--- Chunk 0 (Length: 547 | Page 1) ---
+Vietnamese-German University
+
+# QUIZ FOR LECTURE 3 – INTRODUCTION TO SATELLITE COMMUNICATIONS (G01)
+
+DATE: 17/03/2026, TIME: 15H15-16H00
+
+# Q1. (30 marks) Basic Question
+
+Explain the concept of a Digital Twin and its key characteristics.
+
+# Q2. (30 marks) Basic Question
+
+Describe the architecture of a Digital Twin system and explain the role of each layer.
+
+# Q3. (40 marks) Application Question
+
+Discuss how Digital Twin technology can be applied to improve urban infrastructure and sustainability in Vietnam.
+
+------------- END -------------
+
+
+

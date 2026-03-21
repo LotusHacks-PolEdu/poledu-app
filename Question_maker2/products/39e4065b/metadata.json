@@ -1,0 +1,12 @@
+{
+  "run_code": "39e4065b",
+  "pdf_hash": "bacea72cf6d847543b22c29d0b0fa27045fd9b604cf92f723e2704a65fbf8240",
+  "source_filename": "Lecture 4 - Introduction to Digital Twins.pdf",
+  "created_at": "2026-03-17T09:20:54.582068Z",
+  "mode": "full_pipeline",
+  "artifacts": {
+    "claims": true,
+    "questions": true,
+    "test": true
+  }
+}

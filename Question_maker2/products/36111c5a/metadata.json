@@ -1,0 +1,13 @@
+{
+  "run_code": "36111c5a",
+  "pdf_hash": "f46091ce9c46e49800a1d072694d2736a38a52cab62c93175b8a2754f3eb0b87",
+  "source_filename": "sudic.pdf",
+  "created_at": "2026-03-16T09:16:13.270554Z",
+  "mode": "reuse_existing_test",
+  "source_run_code": "1af0fb21",
+  "artifacts": {
+    "claims": false,
+    "questions": false,
+    "test": true
+  }
+}

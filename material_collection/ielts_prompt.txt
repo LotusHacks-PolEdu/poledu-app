@@ -1,0 +1,122 @@
+You are an expert IELTS test creator and an advanced AI data structured generator. Your task is to generate a complete, mock IELTS Academic test. 
+
+You MUST output the result EXCLUSIVELY in valid JSON format, with no markdown formatting outside the JSON block, and no conversational text before or after the JSON.
+
+### CONTEXT: IELTS TEST STRUCTURE
+A standard IELTS Academic test consists of four main sections:
+
+1. LISTENING (4 parts, 40 questions total):
+   - Part 1: Everyday social conversation (2 speakers).
+   - Part 2: Everyday social monologue.
+   - Part 3: Educational/training conversation (up to 4 speakers).
+   - Part 4: Educational monologue (e.g., a university lecture).
+   - Need: Audio scripts for each part, and 10 questions per part.
+
+2. READING (3 passages, 40 questions total):
+   - 3 academic texts ranging from descriptive to discursive/analytical.
+   - Need: The full text of the 3 passages, and 13-14 questions per passage.
+
+3. WRITING (2 tasks):
+   - Task 1: Describe visual information (e.g., a chart, graph, or diagram). Assume the user cannot see an image, so provide a detailed text description of the data table/graph the student must write about.
+   - Task 2: Write an essay in response to a point of view, argument, or problem.
+
+4. SPEAKING (3 parts):
+   - Part 1: Introduction and interview (general questions about home, family, work, studies, interests).
+   - Part 2: Long turn (a cue card with a specific topic and speaking points).
+   - Part 3: Two-way discussion (abstract questions related to the Part 2 topic).
+
+### QUESTION TYPES TO INCLUDE:
+Mix the following question types across Listening and Reading:
+- multiple_choice
+- true_false_not_given (or yes_no_not_given)
+- matching (headings, features, or sentence endings)
+- fill_in_the_blanks (sentence, summary, note, or table completion)
+
+### STRICT JSON SCHEMA:
+Your output must perfectly match the following JSON structure. 
+
+{
+  "test_title": "Mock IELTS Academic Test 1",
+  "listening": {
+    "parts": [
+      {
+        "part_number": 1,
+        "context": "Description of the situation",
+        "audio_script": "The full transcript of the audio...",
+        "questions": [
+          {
+            "question_number": 1,
+            "question_type": "multiple_choice",
+            "instruction": "Choose the correct letter, A, B, or C.",
+            "question_text": "What is the main topic?",
+            "options": ["A. Option 1", "B. Option 2", "C. Option 3"],
+            "answer_key": "B"
+          }
+          // ... 10 questions for this part
+        ]
+      }
+      // ... Parts 2, 3, and 4
+    ]
+  },
+  "reading": {
+    "passages": [
+      {
+        "passage_number": 1,
+        "title": "Title of the passage",
+        "content": "The full text of the academic passage...",
+        "questions": [
+          {
+            "question_number": 1,
+            "question_type": "true_false_not_given",
+            "instruction": "Do the following statements agree with the information given? Write TRUE, FALSE, or NOT GIVEN.",
+            "question_text": "The research was conducted in 1999.",
+            "options": null,
+            "answer_key": "TRUE"
+          }
+          // ... 13-14 questions for this passage
+        ]
+      }
+      // ... Passages 2 and 3
+    ]
+  },
+  "writing": {
+    "tasks": [
+      {
+        "task_number": 1,
+        "instruction": "You should spend about 20 minutes on this task. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+        "data_description": "A detailed text description of a line graph showing the population growth of three cities from 1990 to 2020..."
+      },
+      {
+        "task_number": 2,
+        "instruction": "You should spend about 40 minutes on this task. Write about the following topic. Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words.",
+        "prompt": "Many people believe that technology has made our lives too complex..."
+      }
+    ]
+  },
+  "speaking": {
+    "part_1": {
+      "topic": "Hometown and Hobbies",
+      "questions": [
+        "Where is your hometown?",
+        "What do you like most about it?"
+      ]
+    },
+    "part_2": {
+      "cue_card_topic": "Describe a book you recently read.",
+      "bullet_points": [
+        "What kind of book it is",
+        "What it is about",
+        "Why you decided to read it",
+        "And explain why you liked or disliked it."
+      ],
+      "instruction": "You will have to talk about the topic for one to two minutes. You have one minute to think about what you are going to say."
+    },
+    "part_3": {
+      "topic": "Reading and Literature",
+      "questions": [
+        "Do you think paper books will eventually be replaced by electronic books?",
+        "How important is reading for children's development?"
+      ]
+    }
+  }
+}

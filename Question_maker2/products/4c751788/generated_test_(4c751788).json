@@ -1,0 +1,346 @@
+{
+  "main_theme": "Fundamentals of Satellite Communications",
+  "generated_at": "2026-03-16T15:21:36.091949",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 14,
+      "points_each": 0.43
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 8,
+      "points_each": 0.25
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 6,
+      "points_each": 0.33
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "Historical Milestones in Space",
+        "question": "Which of the following historical achievements is attributed to Neil Armstrong?",
+        "options": [
+          "A. First human to orbit the Earth",
+          "B. First man on the moon",
+          "C. First woman in space",
+          "D. First satellite launch"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "Neil Armstrong was the first man on the moon."
+      },
+      {
+        "id": 2,
+        "topic": "Kepler's Second Law and Orbital Dynamics",
+        "question": "According to Kepler's Second Law of Planetary Motion, what characteristic of a satellite's orbit remains constant?",
+        "options": [
+          "A. Its speed",
+          "B. Its distance from Earth",
+          "C. The area swept out per unit time",
+          "D. Its potential energy"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "A satellite sweeps equal areas in equal times around the barycenter."
+      },
+      {
+        "id": 3,
+        "topic": "Satellite System Limitations",
+        "question": "How do launch costs typically affect the overall economics of a satellite system?",
+        "options": [
+          "A. They decrease operational expenditures.",
+          "B. They have no significant impact on system costs.",
+          "C. They increase capital expenditures.",
+          "D. They primarily affect recurring revenue."
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Launch costs increase capital expenditures for satellite systems."
+      },
+      {
+        "id": 4,
+        "topic": "Satellite Communication Applications",
+        "question": "In what scenario is satellite communication particularly valuable?",
+        "options": [
+          "A. When high bandwidth is not required",
+          "B. When terrestrial infrastructure is fully operational",
+          "C. During disaster recovery when terrestrial infrastructure fails",
+          "D. For short-range communication needs"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Satellite communication supports disaster recovery when terrestrial infrastructure fails."
+      },
+      {
+        "id": 5,
+        "topic": "Satellite Launch and Orbit Transfer",
+        "question": "What is the primary function of an apogee motor in satellite orbit transfer?",
+        "options": [
+          "A. To lower the perigee altitude",
+          "B. To increase the inclination of the orbit",
+          "C. To circularize an orbit at a final altitude",
+          "D. To initiate the satellite's operational phase"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "An apogee motor circularizes an orbit at a final altitude."
+      },
+      {
+        "id": 6,
+        "topic": "Satellite System Design Considerations",
+        "question": "When designing a Geostationary Earth Orbit (GEO) satellite system, what aspect requires careful justification?",
+        "options": [
+          "A. The satellite's mass",
+          "B. The choice of frequency band",
+          "C. The number of transponders",
+          "D. The satellite's lifespan"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "The choice of frequency band requires justification in a GEO satellite system design."
+      },
+      {
+        "id": 7,
+        "topic": "Satellite Communication System Overview",
+        "question": "Which of the following services is commonly supported by satellite communication systems?",
+        "options": [
+          "A. Short-range Bluetooth connectivity",
+          "B. Local area network (LAN) access",
+          "C. Video services",
+          "D. Wired telephone networks"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Satellite communications support video services."
+      },
+      {
+        "id": 8,
+        "topic": "Kepler's Third Law and Orbits",
+        "question": "Approximately what is the orbital period of GLONASS satellites?",
+        "options": [
+          "A. 12 hours",
+          "B. 24 hours",
+          "C. 5 hours",
+          "D. 90 minutes"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "GLONASS satellites have an orbital period of 5 hours."
+      },
+      {
+        "id": 9,
+        "topic": "Downlink Budget and Signal Strength",
+        "question": "How does the Earth station antenna gain affect the downlink signal strength?",
+        "options": [
+          "A. It reduces the received carrier strength.",
+          "B. It has no effect on the received carrier strength.",
+          "C. It adds to the received carrier strength.",
+          "D. It only affects the uplink signal."
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Earth station antenna gain adds to the received carrier strength."
+      },
+      {
+        "id": 10,
+        "topic": "Satellite Power Systems",
+        "question": "What is the primary purpose of batteries in a satellite power system?",
+        "options": [
+          "A. To regulate solar panel output",
+          "B. To provide power during eclipse periods",
+          "C. To amplify the signal strength",
+          "D. To control the satellite's attitude"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "Batteries provide power during eclipse periods."
+      },
+      {
+        "id": 11,
+        "topic": "Atmospheric Layers",
+        "question": "Within what altitude range does the ionosphere typically extend above the Earth?",
+        "options": [
+          "A. 0 km to 20 km",
+          "B. 80 km to 720 km",
+          "C. 1000 km to 2000 km",
+          "D. 5000 km to 6000 km"
+        ],
+        "answer": "B",
+        "points": 0.43,
+        "source_claim": "The ionosphere extends from 80 km to 720 km above the Earth."
+      },
+      {
+        "id": 12,
+        "topic": "Satellite High Power Amplifiers",
+        "question": "What type of amplifier is becoming increasingly prevalent in modern satellite designs?",
+        "options": [
+          "A. Vacuum tube amplifiers",
+          "B. Traveling wave tube amplifiers (TWTAs)",
+          "C. Solid-state amplifiers",
+          "D. Klystron amplifiers"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "Solid-state amplifiers are increasingly used in modern satellites."
+      },
+      {
+        "id": 13,
+        "topic": "Satellite Communication Fundamentals",
+        "question": "What is the relationship between the bit energy to noise power spectral density ratio (Eb/N0) and the bit error rate (BER)?",
+        "options": [
+          "A. Eb/N0 is independent of BER.",
+          "B. Higher Eb/N0 generally leads to a higher BER.",
+          "C. Eb/N0 is related to the bit error rate (BER).",
+          "D. BER is solely determined by the modulation scheme."
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "The bit energy to noise power spectral density ratio (Eb/N0) is related to the bit error rate (BER)."
+      },
+      {
+        "id": 14,
+        "topic": "LEO Broadband Systems",
+        "question": "What is a key advantage of using a large Low Earth Orbit (LEO) constellation for internet service?",
+        "options": [
+          "A. High power requirements",
+          "B. Long propagation delays",
+          "C. Low-latency internet",
+          "D. Limited geographic coverage"
+        ],
+        "answer": "C",
+        "points": 0.43,
+        "source_claim": "A large LEO constellation provides low-latency internet."
+      }
+    ],
+    "true_false": [
+      {
+        "id": 1,
+        "topic": "Vietnamese Satellite Development Timeline",
+        "statement": "Vietnam's LOTUSat-1 satellite was prepared for liftoff in the year 2024.",
+        "answer": false,
+        "explanation": "The original claim stated 2023. This was altered to 2024 to make it false.",
+        "points": 0.25,
+        "source_claim": "The LOTUSat-1 satellite of Vietnam was ready for launch in 2023."
+      },
+      {
+        "id": 2,
+        "topic": "High Throughput Satellites",
+        "statement": "Conventional satellite networks typically employ a single central station and a single interface card.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the original claim, maintaining its truth.",
+        "points": 0.25,
+        "source_claim": "Traditional satellite systems have one hub and one line card."
+      },
+      {
+        "id": 3,
+        "topic": "Carrier-to-Noise Ratio Definition",
+        "statement": "When the Carrier-to-Noise ratio is 65 dB, the measured noise level is -30 dBmV.",
+        "answer": false,
+        "explanation": "The noise level was changed from -35 dBmV to -30 dBmV to make the statement false.",
+        "points": 0.25,
+        "source_claim": "A measured noise level is -35 dBmV when the C/N ratio is 65 dB."
+      },
+      {
+        "id": 4,
+        "topic": "Satellite Communications History",
+        "statement": "Intelsat-1, previously known as ComSat, marked the beginning of commercial satellite communications.",
+        "answer": false,
+        "explanation": "ComSat was not the first commercial satellite; Intelsat-1 was. The name was subtly altered.",
+        "points": 0.25,
+        "source_claim": "ComSat was the first commercial communications satellite."
+      },
+      {
+        "id": 5,
+        "topic": "GEO vs LEO Satellites",
+        "statement": "The expense of launching a satellite and the intricacy of the necessary ground infrastructure present a balancing act in satellite system design.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the original claim, retaining its accuracy.",
+        "points": 0.25,
+        "source_claim": "There are cost trade-offs between satellite launch costs and ground station complexity."
+      },
+      {
+        "id": 6,
+        "topic": "Kepler's First Law and Orbit Parameters",
+        "statement": "Satellites travel around the Earth in circular paths, with the Earth positioned at the center of the orbit.",
+        "answer": false,
+        "explanation": "Kepler's First Law states orbits are elliptical, not circular, and Earth is at a focal point, not the center.",
+        "points": 0.25,
+        "source_claim": "Satellites orbit the Earth following an elliptical trajectory with Earth located at one focal point."
+      },
+      {
+        "id": 7,
+        "topic": "Rain Attenuation in Satellite Communications",
+        "statement": "Microwave signals used in satellite communication can be scattered by rainfall.",
+        "answer": true,
+        "explanation": "Rain droplets do absorb *and* scatter microwave signals. This is a true statement, though the original focused on absorption.",
+        "points": 0.25,
+        "source_claim": "Rain droplets absorb microwave signals."
+      },
+      {
+        "id": 8,
+        "topic": "Satellite Link Budget and Performance",
+        "statement": "A comprehensive GEO link budget is fixed and cannot be adjusted once initially calculated.",
+        "answer": false,
+        "explanation": "The original claim stated a GEO link budget *can* be recalculated. This was inverted to make it false.",
+        "points": 0.25,
+        "source_claim": "A full Geostationary Earth Orbit (GEO) link budget can be recalculated with updated parameters."
+      }
+    ],
+    "short_answer": [
+      {
+        "id": 1,
+        "topic": "Atmospheric Layers",
+        "question": "Within what altitude range, measured from the Earth's surface, does the mesosphere exist?",
+        "answer": "The mesosphere extends from 50 kilometers to 80 kilometers above the Earth's surface. This layer is characterized by decreasing temperatures with altitude.",
+        "points": 0.33,
+        "source_claim": "The mesosphere extends from 50 km to 80 km above the Earth."
+      },
+      {
+        "id": 2,
+        "topic": "Satellite System Design Considerations",
+        "question": "What key calculation can be performed regarding antenna sizes when designing a Geostationary Earth Orbit (GEO) satellite communication system?",
+        "answer": "Antenna sizes for both the uplink (Earth to satellite) and downlink (satellite to Earth) can be estimated based on factors like frequency, power, and desired link margin. These calculations are crucial for establishing a reliable communication link.",
+        "points": 0.33,
+        "source_claim": "Antenna sizes for uplink and downlink can be estimated for a GEO satellite system."
+      },
+      {
+        "id": 3,
+        "topic": "Satellite Communication Applications",
+        "question": "Describe one specific application of satellite communication that benefits air travel.",
+        "answer": "Satellite communication provides broadband internet access for passengers and crew on aircraft, enabling connectivity during flights. This allows for services like streaming, email, and video conferencing.",
+        "points": 0.33,
+        "source_claim": "Satellite communication provides broadband for aircraft."
+      },
+      {
+        "id": 4,
+        "topic": "Satellite Transponder Functionality",
+        "question": "Explain the primary reason a satellite transponder utilizes frequency translation.",
+        "answer": "Frequency translation within a transponder shifts the signal's frequency to avoid interference from the uplink signal leaking back into the downlink, preventing feedback loops. This ensures clear and reliable communication.",
+        "points": 0.33,
+        "source_claim": "Frequency translation is performed by a transponder to avoid feedback interference."
+      },
+      {
+        "id": 5,
+        "topic": "Beamforming and Phased Arrays",
+        "question": "How does electronic beam steering, used in phased array antennas, differ from traditional beam steering methods?",
+        "answer": "Electronic beam steering allows for the direction of a satellite antenna's beam to be changed without any physical movement of the antenna itself. This is achieved by adjusting the phase of signals fed to individual antenna elements.",
+        "points": 0.33,
+        "source_claim": "Electronic beam steering is possible without mechanical movement."
+      },
+      {
+        "id": 6,
+        "topic": "Satellite Subsystems and Architecture",
+        "question": "What critical function does the 'bus' subsystem perform for a satellite in orbit?",
+        "answer": "The bus subsystem provides essential functions like attitude control, maintaining the satellite's orientation in space. It also manages power, thermal control, and data handling.",
+        "points": 0.33,
+        "source_claim": "The bus provides attitude control to the satellite."
+      }
+    ]
+  }
+}

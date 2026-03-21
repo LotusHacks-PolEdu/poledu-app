@@ -1,0 +1,40 @@
+Initializing Pipeline...
+============================================================
+STEP 1/5: Parsing PDF...
+============================================================
+Started parsing the file under job_id 1a1a1860-8171-4dda-836e-1d9e048bb859
+  ✓ Parsed 1 pages → c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\6ffbac99\chunkz_(6ffbac99).txt
+
+============================================================
+STEP 2/5: Storing chunks in local database...
+============================================================
+Successfully stored 1 chunks locally in c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\database\6ffbac99
+
+============================================================
+STEP 3/5: Extracting claims...
+============================================================
+Fetching chunks from local database...
+Found 1 chunks.
+Extracting document theme...
+  Main theme: The growing risks associated with online sports gambling in the Americas.
+  Sub-topics: ['Prevalence of gambling and risk gambling in North America', 'Prevalence of gambling disorder in Latin America and the Caribbean', 'Socioeconomic factors linked to gambling disorder', 'Impact of sports events (e.g., FIFA World Cup) on betting exposure', 'Comparison to tobacco and alcohol industry marketing tactics', 'Negative health and wellbeing effects of gambling', 'Need for regulation, limits on marketing, and international collaboration']
+Processing Chunk 0 (Page 1)...
+
+Done. Extracted 11 new claims from 1 chunks.
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\6ffbac99\extracted_claims_(6ffbac99).json
+
+============================================================
+STEP 4/5: Converting claims to verification questions...
+============================================================
+Loaded 1 chunks — Main theme: The growing risks associated with online sports gambling in the Americas.
+Processing Chunk 0 (Page 1, 11 claims)...
+
+Done. Generated 11 questions from 1 chunks.
+Saved to c:\Users\ADMIN\Downloads\rag_project\rag_project\Question_maker2\products\6ffbac99\claim_questions_(6ffbac99).json
+
+============================================================
+STEP 5/5: Generating test...
+============================================================
+Loading claims...
+  Loaded 11 claims — Theme: The growing risks associated with online sports gambling in the Americas.
+  [WARN] Requested 14 questions but only 11 claims available. Reducing counts proportionally.

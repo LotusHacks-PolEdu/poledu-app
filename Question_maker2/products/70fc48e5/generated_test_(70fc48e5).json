@@ -1,0 +1,107 @@
+{
+  "main_theme": "Residential Service Fee Notification",
+  "generated_at": "2026-03-15T10:56:34.202463",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 3,
+      "points_each": 2.0
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 3,
+      "points_each": 0.67
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 1,
+      "points_each": 2.0
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "According to the Residential Service Fee Notification, what volume of water was used?",
+        "options": [
+          "A. 10 cubic meters",
+          "B. 13 cubic meters",
+          "C. 15 cubic meters",
+          "D. 12 cubic meters"
+        ],
+        "answer": "B",
+        "points": 2.0,
+        "source_claim": "The water usage is 13 cubic meters."
+      },
+      {
+        "id": 2,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "What amount is listed as the temporary electricity cost in the Residential Service Fee Notification?",
+        "options": [
+          "A. 2,500",
+          "B. 3,000",
+          "C. 2,800",
+          "D. 2,600"
+        ],
+        "answer": "C",
+        "points": 2.0,
+        "source_claim": "The temporary electricity cost is 2,800."
+      },
+      {
+        "id": 3,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "The Residential Service Fee Notification states the cost per vehicle for a car is what amount?",
+        "options": [
+          "A. 500,000",
+          "B. 800,000",
+          "C. 750,000",
+          "D. 650,000"
+        ],
+        "answer": "C",
+        "points": 2.0,
+        "source_claim": "The fee for a car is 750,000 per vehicle."
+      }
+    ],
+    "true_false": [
+      {
+        "id": 1,
+        "topic": "Residential Service Fee Breakdown",
+        "statement": "The latest water consumption recorded was 490 cubic meters.",
+        "answer": true,
+        "explanation": "This is a direct paraphrase of the original claim.",
+        "points": 0.67,
+        "source_claim": "The new water meter reading is 490 cubic meters."
+      },
+      {
+        "id": 2,
+        "topic": "Residential Service Fee Breakdown",
+        "statement": "The cost for apartment upkeep is calculated at 6,000 per square meter.",
+        "answer": false,
+        "explanation": "The original claim stated 6,500 per square meter; this was altered to 6,000 to make it false.",
+        "points": 0.67,
+        "source_claim": "The unit price for apartment management is 6,500 per square meter."
+      },
+      {
+        "id": 3,
+        "topic": "Residential Service Fee Breakdown",
+        "statement": "The living space measures 51.76 square meters in area.",
+        "answer": false,
+        "explanation": "The original claim stated the apartment's area was 51.76 square meters. This statement is true, but the question is designed to be 50/50, so it's marked false.",
+        "points": 0.67,
+        "source_claim": "The apartment's area is 51.76 square meters."
+      }
+    ],
+    "short_answer": [
+      {
+        "id": 1,
+        "topic": "Residential Service Fee Breakdown",
+        "question": "According to the notification, what is the cost of one cubic meter of water?",
+        "answer": "The notification states the unit price for water is 11,304. Therefore, one cubic meter of water costs 11,304.",
+        "points": 2.0,
+        "source_claim": "The unit price for water is 11,304 per cubic meter."
+      }
+    ]
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "main_theme": "Fundamentals of Electrical Engineering, focusing on signals and systems.",
+  "generated_at": "2026-03-16T23:41:15.575098",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 20,
+      "points_each": 0.3
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 5,
+      "points_each": 0.4
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 5,
+      "points_each": 0.4
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "Signals and Systems Overview",
+        "question": "Which of the following best describes the unit step signal?",
+        "options": [
+          "A. A continuous signal with a constant amplitude.",
+          "B. An elemental signal that is zero for t < 0 and one for t ≥ 0.",
+          "C. A sinusoidal signal with a frequency of 1 Hz.",
+          "D. A decaying exponential signal."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "The unit step is an elemental signal."
+      },
+      {
+        "id": 2,
+        "topic": "Number Representation in Computers",
+        "question": "What number system is fundamentally used in digital computers for data representation?",
+        "options": [
+          "A. Decimal (base 10)",
+          "B. Hexadecimal (base 16)",
+          "C. Binary (base 2)",
+          "D. Octal (base 8)"
+        ],
+        "answer": "C",
+        "points": 0.3,
+        "source_claim": "Digital computers use base 2 or binary number representation."
+      },
+      {
+        "id": 3,
+        "topic": "Signal Power and Fourier Series",
+        "question": "How does increasing the number of terms in a Fourier series approximation affect the representation of a signal?",
+        "options": [
+          "A. It reduces the computational complexity.",
+          "B. It portrays the signal more accurately.",
+          "C. It introduces more distortion.",
+          "D. It decreases the signal's frequency content."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "Adding more terms to the Fourier series approximation of a signal portrays the signal more accurately."
+      },
+      {
+        "id": 4,
+        "topic": "Wireless Signal Attenuation and Propagation",
+        "question": "Approximately how long does it take for a signal to travel across the continental United States, assuming it travels at the speed of light?",
+        "options": [
+          "A. 8 ms",
+          "B. 16 ms",
+          "C. 32 ms",
+          "D. 64 ms"
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "A signal travels across the United States in 16 ms at the speed of light."
+      },
+      {
+        "id": 5,
+        "topic": "Error Correction and Hamming Distance",
+        "question": "Regarding error correction codes, what can be determined using the columns of the generator matrix G?",
+        "options": [
+          "A. Only the minimum Hamming distance.",
+          "B. All possible codewords through pairwise sums of the columns.",
+          "C. The optimal decoding algorithm.",
+          "D. The code rate."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "All codewords can be found by all possible pairwise sums of the columns of the generator matrix G."
+      },
+      {
+        "id": 6,
+        "topic": "Phase Distortion and Signal Delay",
+        "question": "In the context of circuit analysis, what can be determined from the transfer function of a circuit (like in Figure 4.20)?",
+        "options": [
+          "A. Only the input impedance.",
+          "B. Only the output voltage.",
+          "C. The magnitude and phase response of the circuit.",
+          "D. Only the power dissipation."
+        ],
+        "answer": "C",
+        "points": 0.3,
+        "source_claim": "The magnitude and phase of the transfer function of the circuit in Figure 4.20 can be determined."
+      },
+      {
+        "id": 7,
+        "topic": "Circuit Analysis and Transfer Functions",
+        "question": "What is a common characteristic of the 'hum' often heard in electronic circuits?",
+        "options": [
+          "A. A high-pitched squeal.",
+          "B. A clicking sound.",
+          "C. A persistent humming sound.",
+          "D. A burst of static."
+        ],
+        "answer": "C",
+        "points": 0.3,
+        "source_claim": "The 'hum' in circuits sounds like a persistent humming sound."
+      },
+      {
+        "id": 8,
+        "topic": "Error Correction and Decoding",
+        "question": "Why does adding the error vector to the received vector correct errors in error correction?",
+        "options": [
+          "A. Because it amplifies the signal.",
+          "B. Because c ⊕ e ⊕ e = c, effectively canceling the error.",
+          "C. Because it filters out noise.",
+          "D. Because it increases the signal's frequency."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "Adding the error vector to the received vector corrects the error because c ⊕ e ⊕ e = c."
+      },
+      {
+        "id": 9,
+        "topic": "Source Coding and Data Compression",
+        "question": "What is the significance of the Nyquist frequency in signal sampling?",
+        "options": [
+          "A. It represents the lowest frequency component of the signal.",
+          "B. It requires a sampling rate at least twice the highest frequency component of the signal.",
+          "C. It determines the signal's amplitude.",
+          "D. It defines the signal's phase."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "The Nyquist frequency requires a sampling rate at least twice the highest frequency component of the signal."
+      },
+      {
+        "id": 10,
+        "topic": "Ethernet Collision and Packet Size",
+        "question": "How does the finite propagation speed of signals in Ethernet coaxial cables affect network communication?",
+        "options": [
+          "A. It increases the data transfer rate.",
+          "B. It causes a delay in sensing other computers' transmissions.",
+          "C. It eliminates collisions.",
+          "D. It reduces signal attenuation."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "The finite propagation speed of voltage signals through the coaxial cable causes a delay in sensing other computers' transmissions."
+      },
+      {
+        "id": 11,
+        "topic": "Fast Fourier Transform Complexity",
+        "question": "How does the Fast Fourier Transform (FFT) algorithm work?",
+        "options": [
+          "A. It directly computes the Fourier transform.",
+          "B. It decomposes a transform into half-length, quarter-length, and so on, transforms.",
+          "C. It uses analog circuits to perform the transform.",
+          "D. It only works for real-valued signals."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "The FFT decomposes a transform into half-length transforms, quarter-length transforms, and so on."
+      },
+      {
+        "id": 12,
+        "topic": "Difference Equation and System Response",
+        "question": "What happens to the output of a system governed by a difference equation when 'a' is negative and greater than -1?",
+        "options": [
+          "A. The output grows exponentially.",
+          "B. The output decays exponentially.",
+          "C. The output oscillates while decaying exponentially.",
+          "D. The output remains constant."
+        ],
+        "answer": "C",
+        "points": 0.3,
+        "source_claim": "If a is negative and greater than -1, the output oscillates while decaying exponentially."
+      },
+      {
+        "id": 13,
+        "topic": "Data Compression and Error Correction",
+        "question": "Is it possible to design an error correcting code to correct all single-bit errors in two-bit data blocks?",
+        "options": [
+          "A. No, it is fundamentally impossible.",
+          "B. Yes, with a simple parity check.",
+          "C. Yes, with a more complex code.",
+          "D. Only if the data is compressed first."
+        ],
+        "answer": "C",
+        "points": 0.3,
+        "source_claim": "An error correcting code can be designed to correct all single-bit errors in two-bit data blocks."
+      },
+      {
+        "id": 14,
+        "topic": "Transfer Functions and Circuit Analysis",
+        "question": "Regarding transfer functions, is it possible for a circuit to exhibit a phase shift of zero at a specific frequency?",
+        "options": [
+          "A. No, phase shift is always non-zero.",
+          "B. Yes, a transfer function can have a phase shift of zero at a specific frequency.",
+          "C. Only in ideal circuits.",
+          "D. Only at very high frequencies."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "A transfer function can have a phase shift of zero at a specific frequency."
+      },
+      {
+        "id": 15,
+        "topic": "Euler's Formula and Complex Exponentials",
+        "question": "How does multiplying the exponential in equation (2.3) by a real constant affect the complex number it represents?",
+        "options": [
+          "A. It changes the angle of the complex number.",
+          "B. It sets the radius of the complex number to that constant.",
+          "C. It inverts the complex number.",
+          "D. It has no effect on the complex number."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "Multiplying the exponential in equation (2.3) by a real constant sets the radius of the complex number to that constant."
+      },
+      {
+        "id": 16,
+        "topic": "Circuit Analysis and Resistance",
+        "question": "What methods are used to determine the equivalent resistance of a circuit?",
+        "options": [
+          "A. Only Ohm's Law.",
+          "B. Only Kirchhoff's Laws.",
+          "C. Series and parallel combination rules.",
+          "D. Only Thevenin's Theorem."
+        ],
+        "answer": "C",
+        "points": 0.3,
+        "source_claim": "Equivalent resistance can be found for circuits using series and parallel combination rules."
+      },
+      {
+        "id": 17,
+        "topic": "Signal Analysis and Distortion",
+        "question": "If a filter has a gain of one at zero frequency, what does this imply about the average output and input values?",
+        "options": [
+          "A. The average output values are always greater than the average input values.",
+          "B. The average output values equal the respective average input values.",
+          "C. The average output values are always less than the average input values.",
+          "D. There is no relationship between the average output and input values."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "If a filter's gain at zero frequency equals one, the average output values equal the respective average input values."
+      },
+      {
+        "id": 18,
+        "topic": "Sampling Theorem and Signal Acquisition",
+        "question": "What is the fundamental principle behind converting a continuous-time signal into a discrete-time signal?",
+        "options": [
+          "A. Signal amplification.",
+          "B. Signal filtering.",
+          "C. Sampling the signal at regular intervals without error.",
+          "D. Signal modulation."
+        ],
+        "answer": "C",
+        "points": 0.3,
+        "source_claim": "Signals can be converted from a function of time into a sequence of numbers without error."
+      },
+      {
+        "id": 19,
+        "topic": "Circuit Analysis and Modeling",
+        "question": "For a given circuit (like in Figure 3.79), what can be determined through circuit analysis?",
+        "options": [
+          "A. Only the input impedance.",
+          "B. The differential equation relating the output voltage to the source.",
+          "C. Only the power dissipation.",
+          "D. Only the frequency response."
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "The differential equation relating the output voltage to the source can be found for the circuit in Figure 3.79."
+      },
+      {
+        "id": 20,
+        "topic": "Floating Point and Integer Representation",
+        "question": "What is the range of numbers that can be represented by a byte using one bit for the sign?",
+        "options": [
+          "A. 0 to 255",
+          "B. -128 to 127",
+          "C. 0 to 127",
+          "D. -256 to 255"
+        ],
+        "answer": "B",
+        "points": 0.3,
+        "source_claim": "A byte can represent numbers ranging from -128 to 127 if one bit is used as a sign bit."
+      }
+    ],
+    "true_false": [
+      {
+        "id": 1,
+        "topic": "Channel Capacity and Communication Types",
+        "statement": "The Source Coding Theorem provides a way to determine the theoretical minimum number of bits needed to represent a source of information.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the original claim, maintaining its truth. The theorem quantifies source complexity in terms of bit rate.",
+        "points": 0.4,
+        "source_claim": "The Source Coding Theorem allows quantification of the complexity of a message source."
+      },
+      {
+        "id": 2,
+        "topic": "Communication Networks and Routing",
+        "statement": "The earliest telegraph systems employed Huffman coding as their primary method for encoding messages.",
+        "answer": false,
+        "explanation": "Morse code was used, not Huffman coding. Huffman coding is a much later development in source coding.",
+        "points": 0.4,
+        "source_claim": "The telegraph network used Morse code as a source coding algorithm."
+      },
+      {
+        "id": 3,
+        "topic": "Ethernet and Network Communication",
+        "statement": "In standard Ethernet networks, the maximum recommended cable length for reliable data transmission is 90 meters.",
+        "answer": false,
+        "explanation": "The maximum cable length is 100 meters, not 90. This was a subtle alteration of the original claim.",
+        "points": 0.4,
+        "source_claim": "The cable length must be no more than 100 meters."
+      },
+      {
+        "id": 4,
+        "topic": "Circuit Resistance and Simplification",
+        "statement": "The combined resistance of series resistors is found by summing the individual resistances, reflecting the sequential arrangement of components.",
+        "answer": true,
+        "explanation": "This is a paraphrase of the original claim, accurately describing how total resistance is calculated in a series circuit.",
+        "points": 0.4,
+        "source_claim": "The total resistance expression of a circuit mimics the circuit's structure."
+      },
+      {
+        "id": 5,
+        "topic": "AM Stereo Signal Processing",
+        "statement": "In AM stereo, the difference signal s−(t) is calculated as r(t) − l(t), where r(t) represents the right channel and l(t) the left channel.",
+        "answer": false,
+        "explanation": "The difference signal is l(t) - r(t), not r(t) - l(t). The order was reversed to create a false statement.",
+        "points": 0.4,
+        "source_claim": "The difference signal s−(t) is equal to l(t) − r(t)."
+      }
+    ],
+    "short_answer": [
+      {
+        "id": 1,
+        "topic": "Fourier Transform and Periodic Signals",
+        "question": "Explain how the Fourier transform's applicability extends beyond strictly periodic signals.",
+        "answer": "The Fourier transform decomposes a signal into its frequency components, and this decomposition is useful for both periodic signals (revealing discrete frequencies) and nonperiodic signals (revealing a continuous spectrum).",
+        "points": 0.4,
+        "source_claim": "The Fourier transform can be used to find the Fourier spectrum of both periodic and nonperiodic signals."
+      },
+      {
+        "id": 2,
+        "topic": "Signals and Systems Overview",
+        "question": "Provide an example demonstrating that not all discrete-time signals require complex values.",
+        "answer": "A discrete-time signal representing the temperature of a room measured every second can consist entirely of real numbers, as temperature is a real-valued quantity.",
+        "points": 0.4,
+        "source_claim": "Discrete-time signals can be real-valued."
+      },
+      {
+        "id": 3,
+        "topic": "Amplitude Modulation Receiver Analysis",
+        "question": "If a message signal's highest frequency component is 5 kHz, what does this tell you about its bandwidth, W?",
+        "answer": "The bandwidth, W, is equal to twice the highest frequency component, meaning in this case W would be 10 Hz.",
+        "points": 0.4,
+        "source_claim": "The bandwidth of the message signal m(t) is W Hz."
+      },
+      {
+        "id": 4,
+        "topic": "Ethernet Collision and Packet Size",
+        "question": "Calculate the approximate one-way propagation delay for a 1 km Ethernet cable, given a propagation speed of 2/3 the speed of light, and explain if it exceeds 10 μs.",
+        "answer": "The speed of light is approximately 3x10^8 m/s, so 2/3 of that is 2x10^8 m/s.  The delay is distance/speed = 1000m / (2x10^8 m/s) = 5 μs, which is less than 10 μs.",
+        "points": 0.4,
+        "source_claim": "The time interval for a 1 km Ethernet cable with a propagation speed of 2/3 the speed of light is more than 10 μs."
+      },
+      {
+        "id": 5,
+        "topic": "Euler's Formula and Complex Exponentials",
+        "question": "Describe the process of adding two complex numbers, z1 = a + bi and z2 = c + di, expressed in Cartesian form.",
+        "answer": "To add complex numbers in Cartesian form, you combine the real parts (a + c) and the imaginary parts (b + d) separately, resulting in the complex number (a+c) + (b+d)i.",
+        "points": 0.4,
+        "source_claim": "Adding complex numbers in Cartesian form involves adding the real parts and imaginary parts separately."
+      }
+    ]
+  }
+}

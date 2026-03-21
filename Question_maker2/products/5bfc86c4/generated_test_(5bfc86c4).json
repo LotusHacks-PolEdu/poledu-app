@@ -1,0 +1,182 @@
+{
+  "main_theme": "The growing risks associated with online sports gambling in the Americas.",
+  "generated_at": "2026-03-16T15:04:51.258322",
+  "scoring": {
+    "total_score": 10,
+    "mcq_section": {
+      "total_points": 6,
+      "num_questions": 11,
+      "points_each": 0.55
+    },
+    "tf_section": {
+      "total_points": 2,
+      "num_questions": 0,
+      "points_each": 0
+    },
+    "short_section": {
+      "total_points": 2,
+      "num_questions": 0,
+      "points_each": 0
+    }
+  },
+  "questions": {
+    "multiple_choice": [
+      {
+        "id": 1,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "According to recent studies, which country in the Americas demonstrated the highest reported rates of gambling disorder?",
+        "options": [
+          "A. Canada",
+          "B. The United States",
+          "C. Brazil",
+          "D. Mexico"
+        ],
+        "answer": "C",
+        "points": 0.55,
+        "source_claim": "Brazil showed the highest rates of gambling disorder, ranging from 20.4% to 38.2%."
+      },
+      {
+        "id": 2,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "Approximately what percentage of adults in North America reported participating in some form of gambling within the past year?",
+        "options": [
+          "A. 42.5%",
+          "B. 61.3%",
+          "C. 78.9%",
+          "D. 55.1%"
+        ],
+        "answer": "B",
+        "points": 0.55,
+        "source_claim": "Approximately 61.3% of adults in North America reported gambling within the past 12 months."
+      },
+      {
+        "id": 3,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "Gambling disorder is officially recognized as a mental health condition by which of the following diagnostic manuals?",
+        "options": [
+          "A. Only the DSM-5",
+          "B. Only the ICD-11",
+          "C. Both the DSM-5 and ICD-11",
+          "D. Neither the DSM-5 nor the ICD-11"
+        ],
+        "answer": "C",
+        "points": 0.55,
+        "source_claim": "Gambling disorder is a mental health condition recognized in both the DSM-5 and ICD-11."
+      },
+      {
+        "id": 4,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "Research suggests that gambling disorder tends to be more prevalent among individuals residing in which type of areas?",
+        "options": [
+          "A. Affluent suburban communities",
+          "B. Rural agricultural regions",
+          "C. Deprived areas",
+          "D. Tourist destinations"
+        ],
+        "answer": "C",
+        "points": 0.55,
+        "source_claim": "Gambling disorder is more common among people in deprived areas."
+      },
+      {
+        "id": 5,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "What percentage of adolescents who engaged in gambling activities also participated in what are considered 'risk gambling' behaviors?",
+        "options": [
+          "A. 15.2%",
+          "B. 27.8%",
+          "C. 41.5%",
+          "D. 35.9%"
+        ],
+        "answer": "B",
+        "points": 0.55,
+        "source_claim": "27.8% of adolescents who gambled engaged in risk gambling activities."
+      },
+      {
+        "id": 6,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "Studies indicate a correlation between educational attainment and gambling disorder. Which group is statistically more likely to experience gambling disorder?",
+        "options": [
+          "A. Those with postgraduate degrees",
+          "B. Those with a high school diploma or equivalent",
+          "C. Those who do not have a high school diploma or equivalent",
+          "D. Those currently enrolled in higher education"
+        ],
+        "answer": "C",
+        "points": 0.55,
+        "source_claim": "Gambling disorder is more common among those who do not have a high school diploma or equivalent."
+      },
+      {
+        "id": 7,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "What was the observed range of gambling disorder prevalence across Latin America and the Caribbean?",
+        "options": [
+          "A. 0.5% to 10.2%",
+          "B. 1.1% to 38.2%",
+          "C. 5.8% to 25.1%",
+          "D. 15.5% to 45.7%"
+        ],
+        "answer": "B",
+        "points": 0.55,
+        "source_claim": "The prevalence of gambling disorder in Latin America and the Caribbean ranged from 1.1% to 38.2%."
+      },
+      {
+        "id": 8,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "What proportion of adolescents reported engaging in any form of gambling, according to recent data?",
+        "options": [
+          "A. 18.3%",
+          "B. 25.6%",
+          "C. 33.7%",
+          "D. 40.1%"
+        ],
+        "answer": "C",
+        "points": 0.55,
+        "source_claim": "33.7% of adolescents reported gambling."
+      },
+      {
+        "id": 9,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "Among adults in North America who gamble, approximately what percentage engage in risk gambling activities?",
+        "options": [
+          "A. 8.5%",
+          "B. 13.8%",
+          "C. 21.2%",
+          "D. 28.9%"
+        ],
+        "answer": "B",
+        "points": 0.55,
+        "source_claim": "13.8% of adults in North America who gambled engaged in risk gambling activities."
+      },
+      {
+        "id": 10,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "Which socioeconomic factor is most strongly associated with a higher prevalence of gambling disorder?",
+        "options": [
+          "A. High income and homeownership",
+          "B. Stable employment and retirement savings",
+          "C. Low income or unemployment",
+          "D. Entrepreneurship and business ownership"
+        ],
+        "answer": "C",
+        "points": 0.55,
+        "source_claim": "Gambling disorder is more common among those with low income or unemployment."
+      },
+      {
+        "id": 11,
+        "topic": "Online Sports Gambling Prevalence & Disorder",
+        "question": "How is gambling disorder clinically defined?",
+        "options": [
+          "A. A temporary increase in gambling frequency due to social events.",
+          "B. A desire to win large sums of money.",
+          "C. A persistent pattern of gambling despite significant distress or impairment in daily functioning.",
+          "D. Occasional impulsive bets with minimal financial impact."
+        ],
+        "answer": "C",
+        "points": 0.55,
+        "source_claim": "Gambling disorder is defined by a persistent pattern of gambling despite significant distress or impairment in daily functioning."
+      }
+    ],
+    "true_false": [],
+    "short_answer": []
+  }
+}
