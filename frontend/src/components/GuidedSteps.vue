@@ -80,6 +80,8 @@ function reveal(index: number): void {
   display: grid;
   gap: 0.5rem;
   transition: border-color 0.15s;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .guided-steps__step--revealed {
@@ -91,6 +93,7 @@ function reveal(index: number): void {
   display: flex;
   align-items: flex-start;
   gap: 0.65rem;
+  min-width: 0;
 }
 
 .guided-steps__num {
@@ -113,12 +116,17 @@ function reveal(index: number): void {
   font-size: 0.93rem;
   color: var(--color-text);
   line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
 .guided-steps__reveal {
   padding: 0.5rem 0.75rem;
   border-left: 3px solid var(--color-primary);
   margin-left: 2.15rem;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .guided-steps__reveal p {
@@ -126,6 +134,16 @@ function reveal(index: number): void {
   font-size: 0.88rem;
   color: var(--color-text);
   font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* LaTeX inside steps scrolls horizontally instead of overflowing */
+:deep(.katex-display),
+:deep(.katex) {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
 }
 
 .guided-steps__reveal-btn {
