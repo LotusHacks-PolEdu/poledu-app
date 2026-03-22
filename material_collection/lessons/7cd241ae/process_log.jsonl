@@ -1,6 +1,0 @@
-{"timestamp": "2026-03-21T17:53:40.274134+00:00", "state": "queued", "message": "Lesson request accepted and queued for processing."}
-{"timestamp": "2026-03-21T17:53:40.278146+00:00", "state": "researching topic", "message": "Starting math lesson generation for topic: exponentiation"}
-{"timestamp": "2026-03-21T17:53:41.443975+00:00", "state": "researching topic", "message": "Researching math topic with Exa query: what is exponentiation in math"}
-{"timestamp": "2026-03-21T17:53:42.225421+00:00", "state": "researching topic", "message": "Researching math topic with Exa query: exponentiation formula list"}
-{"timestamp": "2026-03-21T17:53:43.498703+00:00", "state": "generating lesson", "message": "Generating math lesson attempt 1 of 3."}
-{"timestamp": "2026-03-21T17:54:06.554628+00:00", "state": "completed", "message": "Saved math lesson JSON to lesson.json."}

@@ -16,19 +16,19 @@ dist/
 tempCodeRunnerFile.py
 
 # ── Generated runtime data ────────────────────────────────────────────────────
-material_collection/learners/*/
-material_collection/lessons/*/
-material_collection/ielts_tests/*/
-material_collection/outputs/
-material_collection/database/
-material_collection/ielts_test_*.json
-material_collection/ielts_test_*.raw.txt
+backend/learners/*/
+backend/lessons/*/
+backend/ielts_tests/*/
+backend/outputs/
+backend/database/
+backend/ielts_test_*.json
+backend/ielts_test_*.raw.txt
 
 # ── Node / frontend ───────────────────────────────────────────────────────────
 node_modules/
-GUI/PolEdu/dist/
-GUI/PolEdu/.env
-GUI/PolEdu/.env.*
+frontend/dist/
+frontend/.env
+frontend/.env.*
 
 # ── OS / editor ───────────────────────────────────────────────────────────────
 .DS_Store

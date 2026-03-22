@@ -17,4 +17,4 @@ def collect(pdf_path,index_name="default", db_root="database"):
     print("ALL DONE!")
     print(f"  Local DB path:  {os.path.join(db_root, index_name)}")
     print("=" * 60)
-collect("downloaded_pdfs\\ielts.pdf","ielts")
+collect(os.path.join(_BASE_DIR, "..", "docs", "ielts.pdf"), "ielts")
